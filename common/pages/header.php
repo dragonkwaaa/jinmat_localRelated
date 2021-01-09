@@ -1,13 +1,12 @@
 <header>
-	<div class="logoCase">
+	<a class="logoCase" href="/">
 		<!-- <i class="logo longSort"></i> -->
 		<span>진짜 맛있는 과일</span>
-	</div>
-
+	</a>
 	<div class="headerNav headerMainSort">
-		<a href="/" class="<?=($lCode == '0100' ? ' activated' : '')?> mr20">
+		<a href="/rawMat" class="<?=($lCode == '0100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">대시보드</span>
+			<span class="">원자재 관리</span>
         </a>
         <a href="/plan/" class="<?=($lCode == '0106' ? ' activated' : '')?> mr20">
 			<!-- <i class="engineerIcon"></i> -->
@@ -55,12 +54,6 @@
 			<span class="">결제관리</span>
 		</a> -->
 	</div>
-
-
-
-
-
-
 
 	<div class="headerNav rightSideSort">
 		<!-- <a href="/my/chiefLog" class="btn userGradeSort">최고관리자</a>

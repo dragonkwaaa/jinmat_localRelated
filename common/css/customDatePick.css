@@ -1,5 +1,5 @@
 .ui-datepicker .ui-datepicker-next {
-	background : url(/saemaul/manager/common/img/icon_calendar_next.png) no-repeat 0 2px / 44px 44px;
+	background : url(/common/img/icon_calendar_next.png) no-repeat 0 2px / 44px 44px;
 	height : 44px;
 	width : 44px;
 	margin-bottom : -4px;
@@ -8,7 +8,7 @@
 	transform : none;
 }
 .ui-datepicker .ui-datepicker-prev {
-	background : url(/saemaul/manager/common/img/icon_calendar_prev.png) no-repeat 0 2px / 44px 44px;
+	background : url(/common/img/icon_calendar_prev.png) no-repeat 0 2px / 44px 44px;
 	height : 44px;
 	width : 44px;
 	margin-bottom : -4px;

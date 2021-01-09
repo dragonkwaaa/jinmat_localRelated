@@ -1,22 +1,13 @@
 <!-- :: ksg1 = ksg_20210108_1551 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$lCode					=	'0100';
+	$lCode					=	'';
 ?>
 <body>
-
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
-
-
 	<!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/dash/pages/dash_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
-
-
-
-
-
-
 	<div class="wrapper">
 		<div class="contents">
 			<div class="section dashStatusSort">
@@ -53,43 +44,45 @@
 			</div>
 			<div class="section dashTableSort mt34">
 				<div class="titleBox sectionSort">
-					<div>승인요청내역</div>
+					<div>발주승인요청내역</div>
 					<a href="/plan/executeList" class="btn regLinkBtn">승인하기</a>
 				</div>
 				<div class="conGroup tableSort">
 					<table class="listTable">
 						<colgroup>
-							<col width="30">
-							<col width="30">
-							<col width="100">
-							<col width="60">
+							<col style="width : 500px">
+							<col style="width : 500px">
+							<col style="width : 500px">
+							<col style="width : 500px">
+							<col style="width : 500px">
+							<col style="width : 500px">
 						</colgroup>
 						<thead>
 						<tr>
 							<th>No.</th>
-							<th>유형</th>
-							<th>제목</th>
+							<th>분류</th>
+							<th>원자재명</th>
+							<th>업체명</th>
+							<th>메모</th>
 							<th>상태</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr>
-							<td>1</td>
-							<td>지출결의서</td>
-							<td>에이디치히얌 정기 구매</td>
+							<td>2</td>
+							<td>사과</td>
+							<td>홍옥</td>
+							<td>과일장수</td>
+							<td>홍옥 정기 보충</td>
 							<td>승인</td>
 						</tr>
 						<tr>
-							<td>2</td>
-							<td>기안서</td>
-							<td>바이엘 제약 의약품 구입 안건</td>
-							<td>미승인</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>품의서</td>
-							<td>의료세트 구매 절차</td>
-							<td>반려</td>
+							<td>1</td>
+							<td>사과</td>
+							<td>부사</td>
+							<td>과일장수</td>
+							<td>부사 긴급 보충</td>
+							<td>대기</td>
 						</tr>
 						</tbody>
 					</table>
