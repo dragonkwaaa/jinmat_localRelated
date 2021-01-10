@@ -390,31 +390,9 @@ a.btn.regLinkBtn {
 	width : 285px;
 	height : 210px;
 }
-.imgUploadBox {
-    display: inline-block;
-    vertical-align: top;
-	/* border: 1px solid #ccc; */
-	background-color : #f0f2f8;
-    overflow: hidden;
-    position: relative;
-	width : 100%;
-	height : 100%;
-}
 
-.imgUploadBox:before {
-	content : "";
-	position : absolute;
-	top : 50%;
-	left : 50%;
-	text-align: center;
-	transform: translate(-50%, -60%);
-	-webkit-transform: translate(-50%, -60%);
-	width : 71px;
-	height : 71px;
-	background : url(/common/img/icon_upload.png) no-repeat center / cover;
 
-	
-}
+
 .imgUploadBox .upload_btn {
     position: absolute;
     left: 0;
@@ -1174,14 +1152,7 @@ table.infoGroup .regDateDisplay {
 .conGroup.verticalManageSort.specHiddenMod.hide {
 	display : none;
 }
-.sbox.regFullSort {
-    /* width : 100%; */
-    width : calc(100% - 5px);
-    border : none;
-    background-color : #fff;
-    height : 27px;
-    border : 1px solid #d7dae2;
-}
+
 .sbox.regFullSort > a {
 	border : none;
 	padding : 11px 17px;
@@ -2003,3 +1974,142 @@ body{
 }
 /* :: innerC : 기존 내용 수정. */
 /* :: close : ksg_20210109_2003 : [진맛] 원자재 목록 페이지(양쪽 테이블 버전) 내용. */
+
+
+/* :: open : ksg_20210110_1755 : [진맛] 원자재 상세정보 페이지 내용 */
+/* :: innerO : 기존 내용 수정. */
+.imgUploadBox {
+    display: inline-block;
+    vertical-align: top;
+	background-color : #f0f2f8;
+    overflow: hidden;
+    position: relative;
+	width : 50px;
+	height : 50px;
+}
+.imgUploadBox:last-child {
+	margin-right : 0;
+}
+.imgUploadBox:before {
+	content : "";
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	text-align: center;
+	transform: translate(-50%, -60%);
+	-webkit-transform: translate(-50%, -60%);
+	width: calc(100% - 10px);
+    height: calc(100% - 10px);
+	background : url(/common/img/icon_upload.png) no-repeat center / cover;
+}
+.sbox.regFullSort {
+    width : calc(100% - 2px);
+    border : none;
+    background-color : #fff;
+    height : 27px;
+    border : 1px solid #d7dae2;
+}
+/* :: innerC : 기존 내용 수정. */
+/* : innerO : 신규 내용 추가. */
+.uploadGroup.showImgSort {
+	padding : 5px;
+}
+.cdBoxGroup.flatSort {
+	width : 100%;
+}
+.cdBoxGroup .cdBox.wareHsSort {
+	display : inline-block;
+	width : calc(50% - 25px);
+	border : 1px solid #ccc;
+	padding : 10px;
+	position : relative;
+}
+.cdBoxGroup .cdBox.wareHsSort:nth-child(2n-1) {
+	margin-right : 6px;
+}
+.cdBoxGroup .cdBox.wareHsSort:nth-child(n+3) {
+	margin-top : 5px;
+}
+.cdBox .cdBoxName {
+	font-size : 12px;
+}
+.cdBox .cdBoxCount {
+	position : absolute;
+	right : 10px;
+	font-size : 12px;
+	font-weight : 800;
+}
+.section .btnGroup.cdBoxGdLineSort {
+	margin-top: 0;
+	margin-left: 0;
+	text-align : center;
+	margin-bottom : 10px;
+}
+.section .btnGroup.cdBoxGdLineSort a.btn {
+	display: inline-block;
+    width: calc(25% - 2px);
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+	text-align: center;
+	border-radius : 0;
+	font-weight : 800;
+	background-color : #eee;
+	border : 1px solid #aaa;
+}
+.cdBoxGroup.consoleSort .cdBox .cdBoxCount {
+	position: relative;
+	display : block;
+	right: auto;
+	text-align : center;
+	width : 100%;
+	padding : 10px 0;
+}
+.cdBoxGroup.consoleSort .cdBox .cdBoxName {
+	width : 100%;
+	display : block;
+	text-align : center;
+}
+.historyCardGroup .dateGroup {
+	width : 100%;
+	padding-top : 15px;
+}
+.historyCardGroup .dateGroup .dateTxt {
+	font-size : 14px;
+	color : #aaa;
+	font-weight : 600;
+	margin-bottom : 10px;
+}
+.historyCardGroup .historyBox {
+	display : block;
+	width : calc(100% - 20px);
+	padding : 10px;
+	background-color : #eee;
+	margin-top : 10px;
+}
+.historyCardGroup .historyBox .titleBox {
+	font-size : 15px;
+	font-weight : 800;
+}
+.historyCardGroup .historyBox .historyInfo {
+	text-align : center;
+}
+.historyCardGroup .historyInfo .infoSeg {
+	display : inline-block;
+	vertical-align : middle;
+	width : calc(50% - 12px);
+	font-size : 12px;
+}
+.historyCardGroup .historyInfo .infoSeg.startSort {
+	padding-right : 5px;
+}
+.historyCardGroup .historyInfo .infoSeg.endSort {
+	padding-left : 5px;
+}
+.historyCardGroup .historyInfo .flowArrow {
+	width : 10px;
+	font-size : 15px;
+	vertical-align : middle;
+}
+/* : innerC : 신규 내용 추가. */
+/* :: close : ksg_20210110_1755 : [진맛] 원자재 상세정보 페이지 내용 */

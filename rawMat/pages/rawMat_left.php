@@ -13,6 +13,12 @@
 					<span class="ml11">원자재 병렬 테이블</span>
 				</a>
 			</li>
+			<li>
+				<a href="/rawMat/rawMatSpec" class="<?=($lCode == '0103' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">원자재 상세정보</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>
