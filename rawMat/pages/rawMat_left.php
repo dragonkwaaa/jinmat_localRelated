@@ -4,7 +4,7 @@
 			<li>
 				<a href="/rawMat/" class="<?=($lCode == '0100' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
-					<span class="ml11">원자재 단일 테이블</span>
+					<span class="ml11">원자재 목록</span>
 				</a>
 			</li>
 			<li>
@@ -14,7 +14,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="/rawMat/rawMatSpec" class="<?=($lCode == '0103' ? ' activated' : '')?>">
+				<a href="/rawMat/rawMatSpec" class="<?=($lCode == '0102' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">원자재 상세정보</span>
 				</a>

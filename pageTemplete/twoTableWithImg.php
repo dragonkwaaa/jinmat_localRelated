@@ -1,250 +1,114 @@
-<!-- :: ksg_4 = ksg_20210110_1659 -->
-<!-- :: ksg_3 = ksg_20210109_2153 -->
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$lCode					=	'0102';
+	$lCode					=	'0101';
 ?>
 <body>
 <div class="container">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/rawMat/pages/rawMat_left.php'; ?>
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/pageTemplete/pages/pageTemplete_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">
-            <!-- :: single : ksg_3 : [진맛] 검색어 파트 있던 곳. -->
-			<div class="section horizontalManageSort searcManageSort extendMod">
-                <div class="titleBox manageHeadlineSort">원자재목록</div>
-                <!-- :: open : ksg_4 : [진맛] 좌측 테이블의 상품 리스트 파트. 여기서는 인풋창 계열의 내용을 쓸 것이므로 이것은 display none 처리 함. -->
-				<div class="conGroup verticalManageSort bottomRowSort" style="display : none;">
-					<div class="headLineBox listControlSort">
-						<!-- <div class="selectGroup monthSort">
-							<select>
-								<option selected>2020년</option>
-								<option >2019년</option>
-								<option >2018년</option>
-								<option >2017년</option>
-							</select>
-							<select>
-								<option selected>6월</option>
-								<option >5월</option>
-								<option >4월</option>
-								<option >3월</option>
-							</select>
-						</div> -->
-						<div class="titleBox inlistConSort">
-							<div class="titleText">원자재목록</div>
-							<a href="javascript:void(0);" class="btn headRightAbMod addPlanBtn">원자재 추가</a>
-						</div>
-						<!-- <div class="sboxGroup listArraySort">
-							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
-								<option>등록순▼</option>
-								<option>등록순▲</option>
-							</select>
-							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
-						</div> -->
-					</div>
-					<table class="searchResultTable ">
-						<colgroup></colgroup>
-						<thead>
-						<tr>
-							<th>No.</th>
-							<th>직원명</th>
-							<th>아이디</th>
-                            <th>승인 등급</th>
-							<th>사용여부</th>
-							<th>관리</th>
-						</tr>
-						</thead>
+            <!-- :: ksg_2 : [진맛] 헤비한 검색어 입력 파트. 여기서는 간소화 버전을 사용할 것이므로 디스플레이 논 부여하여 숨김. -->
+			<div class="section horizontalManageSort searcManageSort topLineMod" style="display : none;">
+				<div class="titleBox manageHeadlineSort">직원검색</div>
+				<div class="conGroup verticalManageSort">
+					<table class="searchGroup">
+						<colgroup>
+							<col width="70">
+							<col width="*">
+							<col width="70">
+							<col width="*">
+						</colgroup>
 						<tbody>
-						<tr>
-							<td>
-								<div>2</div>
-							</td>
-							<td>곽반장</td>
-							<td>
-								sinwon1
-							</td>
-                            <td>
-								중간승인자
-							</td>
-							<td>
-								<div class="inTableRadioGroup">
-									<div class="radioCase">
-										<div class="radioIconBox">
-											<input type="radio" name="userUse" value="1" checked="">
-											<label></label>
-										</div>
-										<div class="radioTitle">사용</div>
-									</div>
-									<div class="radioCase">
-										<div class="radioIconBox">
-											<input type="radio" name="userUse" value="2" checked="">
-											<label></label>
-										</div>
-										<div class="radioTitle">미사용</div>
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn delSort">삭제</a>
-								</div>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-                </div>
-                <!-- :: close : ksg_4 : [진맛] 좌측 테이블의 상품 리스트 파트. 여기서는 인풋창 계열의 내용을 쓸 것이므로 이것은 display none 처리 함. -->
-                <!-- :: open : ksg_4 : [진맛] 좌측 테이블의 페이징 파트. 여기서는 인풋창 계열의 내용을 쓸 것이므로 이것은 display none 처리 함.  -->
-				<div class="page_group underSort" style="display : none;">
-					<ul class="page_box">
-						<li class="prev arrow">
-							<a href="javascript:void(0);"></a>
-						</li>
-						<li class="pageNum on">
-							<a href="javascript:void(0);">1</a>
-						</li>
-						<li class="pageNum">
-							<a href="javascript:void(0);">2</a>
-						</li>
-						<li class="next arrow">
-							<a href="javascript:void(0); "></a>
-						</li>
-					</ul>
-                </div>
-                <!-- :: close : ksg_4 : [진맛] 좌측 테이블의 페이징 파트. 여기서는 인풋창 계열의 내용을 쓸 것이므로 이것은 display none 처리 함.  -->
-                <!-- :: open : ksg_4 : [진맛] 좌측 테이블의 인풋창 버전 파트.  -->
-                <div class="specRegGroup">
-					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">원자재 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-                            <!-- :: open : ksg_4 : [진맛] 이미지 등록 파트. -->
 							<tr>
-								<th>이미지</th>
-								<td>
-                                    <div class="uploadGroup showImgSort">
-										<div class="imgUploadBox">
-											<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
-											<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-										</div>
-										<div class="imgUploadBox">
-											<input type="file" class="hide" accept="image/*" name="img_2" onchange="img_sel(this, event)">
-											<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-										</div>
-										<div class="imgUploadBox">
-											<input type="file" class="hide" accept="image/*" name="img_3" onchange="img_sel(this, event)">
-											<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-										</div>
-										<div class="imgUploadBox">
-											<input type="file" class="hide" accept="image/*" name="img_4" onchange="img_sel(this, event)">
-											<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-										</div>
-										<div class="imgUploadBox lastChild">
-											<input type="file" class="hide" accept="image/*" name="img_5" onchange="img_sel(this, event)">
-											<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-										</div>
-									</div>
-								</td>
-							</tr>
-                            <!-- :: close : ksg_4 : [진맛] 이미지 등록 파트. -->
-							<tr>
-								<th>직원명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>아이디</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>비밀번호</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>분류</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 지사</option>
-										<option>3. 대리점</option>
+								<th>검색어</th>
+								<td colspan="4">
+									<select class="sbox">
+										<option>전체</option>
+										<option>직원명</option>
+										<option>부서명</option>
+										<option>지사/대리점</option>
 									</select>
+									<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 								</td>
 							</tr>
 							<tr>
 								<th>소속</th>
 								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 인천지사</option>
-										<option>3. 경기지사</option>
-										<option>4. 부산지사</option>
-									</select>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">본사</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">지사</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">대리점</div>
+										</div>
+									</div>
 								</td>
-							</tr>
-							<tr>
-								<th>부서</th>
+								<th>
+									사용여부
+								</th>
 								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 간호부</option>
-										<option>2. 원무부</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>직급</th>
-								<td>
-									<input class="tbox regFullSort" value="과장">
-								</td>
-							</tr>
-							<tr>
-								<th>사용여부</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>1. 사용</option>
-										<option>2. 미사용</option>
-									</select>
-								</td>
-                            </tr>
-                            <tr>
-								<th>승인 등급</th>
-								<td>
-                                    <select class="sbox regFullSort listMod">
-							        	<option>선택</option>
-							        	<option selected="">1. 일반승인자</option>
-							        	<option>2. 중간승인자</option>
-							        	<option>3. 최종승인자</option>
-							        </select>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">사용</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">미사용</div>
+										</div>
+									</div>
 								</td>
 							</tr>
 							<tr>
 								<th>권한</th>
-								<td>
-									<div class="inTableRadioGroup inListSort">
+								<td colspan="4">
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+										</div>
 										<div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -278,7 +142,7 @@
 												<input type="checkbox" name="" value="">
 												<label></label>
 											</div>
-											<div class="checkBoxTitle">기초항목관리</div>
+											<div class="checkBoxTitle">기초항목 관리</div>
 										</div>
 										<div class="checkBoxCase">
 											<div class="checkBoxIconBox">
@@ -304,56 +168,181 @@
 									</div>
 								</td>
 							</tr>
-							</tbody>
-						</table>
-					</div>
-                </div>
-                <!-- :: close : ksg_4 : [진맛] 좌측 테이블의 인풋창 버전 파트.  -->
-                <!-- :: open : ksg_4 : [진맛] 좌측 테이블의 하단 내용(납작한 카드박스 버전) 파트. -->
-                <div class="specRegGroup">
-					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">재고 분포 정보</div>
-							</div>
+							<tr>
+								<th>
+									요청기간
+								</th>
+								<td colspan="4">
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
+									</div>
+									<div class="betweenWaveText">~</div>
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+									</div>
+									<div class="btnGroup inTableSearch">
+										<a href="javascript:void(0);" class="btn searchSort">검색</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+            </div>
+            <!-- :: ksg_2 : [진맛] 헤비한 검색어 입력 파트. 여기서는 간소화 버전을 사용할 것이므로 디스플레이 논 부여하여 숨김. -->
+            <!-- :: open : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
+            <div class="section horizontalManageSort searcManageSort topLineMod">
+				<div class="titleBox manageHeadlineSort">원자재 검색</div>
+				<div class="conGroup verticalManageSort">
+					<table class="searchGroup">
+						<colgroup>
+							<col width="70">
+							<col width="*">
+							<col width="70">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>검색어</th>
+								<td colspan="4">
+									<select class="sbox">
+										<option>전체</option>
+										<option>직원명</option>
+										<option>부서명</option>
+										<option>지사/대리점</option>
+                                    </select>
+                                    <!-- :: open : ksg_2 : [진맛] 적당한 길이의 인풋과 검색 버튼 파트. -->
+                                    <input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요." style="display : none;">
+                                    <input class="tbox withBtnSchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
+                                    <div class="btnGroup inTableSearch">
+										<a href="javascript:void(0);" class="btn searchSort">검색</a>
+                                    </div>
+                                    <!-- :: close : ksg_2 : [진맛] 적당한 길이의 인풋과 검색 버튼 파트. -->
+								</td>
+							</tr>
+						</tbody>
+                    </table>
+                    <!-- :: open : ksg_2 : [진맛] 테이블 밖에 배치되는 "검색" 버튼.. -->
+                    <div class="btnGroup verticalBottomSort">
+                        <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
+                    </div>
+                    <!-- :: close : ksg_2 : [진맛] 테이블 밖에 배치되는 "검색" 버튼.. -->
+				</div>
+			</div>
+			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
+			<div class="headLineBox pageControlSort">
+                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
+			</div>
+			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
+            <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
+			<div class="section horizontalManageSort searcManageSort extendMod">
+				<div class="titleBox manageHeadlineSort">원자재 목록</div>
+				<div class="conGroup verticalManageSort bottomRowSort">
+					<div class="headLineBox listControlSort">
+						<!-- <div class="selectGroup monthSort">
+							<select>
+								<option selected>2020년</option>
+								<option >2019년</option>
+								<option >2018년</option>
+								<option >2017년</option>
+							</select>
+							<select>
+								<option selected>6월</option>
+								<option >5월</option>
+								<option >4월</option>
+								<option >3월</option>
+							</select>
+						</div> -->
+						<div class="titleBox inlistConSort">
+							<div class="titleText">원자재 목록</div>
+							<a href="/rawMat/rawMatSpec" class="btn headRightAbMod addPlanBtn">원자재 추가</a>
 						</div>
-                        <!-- :: open : ksg_4 : [진맛] 납작한 카드박스 파트. -->
-                        <div class="cdBoxGroup flatSort">
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                            <a href="javascript:void(0);" class="cdBox wareHsSort">
-                                <i class="locaIcon"></i>
-                                <span class="cdBoxName">서울 창고</span>
-                                <span class="cdBoxCount f_blue">150</span>
-                            </a>
-                        </div>
-                        <!-- :: close : ksg_4 : [진맛] 납작한 카드박스 파트. -->
+						<!-- <div class="sboxGroup listArraySort">
+							<select class="sbox">
+								<option>번호순▼</option>
+								<option>번호순▲</option>
+								<option>등록순▼</option>
+								<option>등록순▲</option>
+							</select>
+							<select class="sbox">
+								<option>40개씩</option>
+								<option>80개씩</option>
+								<option>100개씩</option>
+							</select>
+						</div> -->
 					</div>
-                </div>
-                <!-- :: close : ksg_4 : [진맛] 좌측 테이블의 하단 내용(납작한 카드박스 버전) 파트. -->
+					<table class="searchResultTable ">
+						<colgroup></colgroup>
+						<thead>
+						<tr>
+							<th>No.</th>
+							<th>직원명</th>
+							<th>아이디</th>
+							<!-- <th>비밀번호</th> -->
+							<!-- <th>소속</th> -->
+                            <th>승인 등급</th>
+							<th>사용여부</th>
+							<th>관리</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>
+								<div>2</div>
+							</td>
+							<td>곽반장</td>
+							<td>
+								sinwon1
+							</td>
+                            <td>
+								중간승인자
+							</td>
+							<!-- <td>
+							</td> -->
+							<td>
+								<div class="inTableRadioGroup">
+									<div class="radioCase">
+										<div class="radioIconBox">
+											<input type="radio" name="userUse" value="1" checked="">
+											<label></label>
+										</div>
+										<div class="radioTitle">사용</div>
+									</div>
+									<div class="radioCase">
+										<div class="radioIconBox">
+											<input type="radio" name="userUse" value="2" checked="">
+											<label></label>
+										</div>
+										<div class="radioTitle">미사용</div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn delSort">삭제</a>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="page_group underSort">
+					<ul class="page_box">
+						<li class="prev arrow">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="pageNum on">
+							<a href="javascript:void(0);">1</a>
+						</li>
+						<li class="pageNum">
+							<a href="javascript:void(0);">2</a>
+						</li>
+						<li class="next arrow">
+							<a href="javascript:void(0); "></a>
+						</li>
+					</ul>
+				</div>
             </div>
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
 			<div class="section horizontalManageSort extendMod">
@@ -363,7 +352,7 @@
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
 							<div class="titleBox inlistConSort">
-								<div class="titleText">직원정보</div>
+								<div class="titleText">원자재 정보</div>
 							</div>
 						</div>
 						<table class="infoGroup">
@@ -704,6 +693,10 @@
 					<a href="javascript:void(0);" class="btn saveSort">저장</a>
                 </div>
                 <!-- :: close : ksg_2 [진맛] 우측 테이블 내용에 따라 같이 숨기는 내용. display none 처리 함. -->
+
+
+
+
                 <!-- :: open : ksg_2 : [진맛] 우측 테이블 내용물2. 개별 항목에 대한 종합 정보(사진/단순 내용.) -->
                 <div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
@@ -719,7 +712,7 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>
+									<th class="flatImgSort">
                                         <div class="imgBgCase">
                                             <img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
                                         </div>
@@ -737,7 +730,7 @@
 									</td>
                                 </tr>
                                 <tr>
-									<th>
+									<th class="flatImgSort">
                                         <div class="imgBgCase">
                                             <img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
                                         </div>
@@ -764,90 +757,12 @@
 					<a href="javascript:void(0);" class="btn saveSort">저장</a>
                 </div>
                 <!-- :: close : ksg_2 : [진맛] 우측 테이블 내용물2. 개별 항목에 대한 종합 정보(사진/단순 내용.) -->
-                <!-- :: open : ksg_4 : [진맛] 우측 테이블 내용물. 재고/컨트롤버튼/작업내역 카드박스 버전. -->
-                <div class="specInfoGroup">
-					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">재고 내역</div>
-							</div>
-                        </div>
-                        <!-- :: open : ksg_4 : [진맛] 콘솔버튼이 포함된 카드박스 파트. -->
-                        <div class="cdBoxGroup consoleSort">
-                            <div class="cdBox wareHsSort">
-                                <div class="btnGroup cdBoxGdLineSort">
-                                    <a href="javascript:void(0);" class="btn f_blue">입고</a>
-                                    <a href="javascript:void(0);" class="btn f_red">출고</a>
-                                    <a href="javascript:void(0);" class="btn f_emerald">변경</a>
-                                    <a href="javascript:void(0);" class="btn f_charcooal">이동</a>
-                                </div>
-                                <div class="cdBoxCount f_blue">150</div>
-                                <div class="cdBoxName">서울지사</div>
-                                <div class="historyCardGroup">
-                                    <div class="dateGroup">
-                                        <div class="dateTxt">2021.01.01</div>
-                                        <a href="javascript:void(0);" class="historyBox">
-                                            <div class="titleBox">이동</div>
-                                            <div class="historyInfo">
-                                                <div class="infoSeg startSort">
-                                                    <div>경남지사</div>
-                                                    <div>
-                                                        <span>80</span>
-                                                        <span>→</span>
-                                                        <span>50</span>
-                                                    </div>
-                                                </div>
-                                                <span class="flowArrow">→</span>
-                                                <div class="infoSeg endSort">
-                                                    <div>경남지사</div>
-                                                    <div>
-                                                        <span>80</span>
-                                                        <span>→</span>
-                                                        <span>50</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="javascript:void(0);" class="historyBox">
-                                            <div class="titleBox">이동</div>
-                                            <div class="historyInfo">
-                                                <div class="infoSeg startSort">
-                                                    <div>경남지사</div>
-                                                    <div>
-                                                        <span>80</span>
-                                                        <span>→</span>
-                                                        <span>50</span>
-                                                    </div>
-                                                </div>
-                                                <span class="flowArrow">→</span>
-                                                <div class="infoSeg endSort">
-                                                    <div>경남지사</div>
-                                                    <div>
-                                                        <span>80</span>
-                                                        <span>→</span>
-                                                        <span>50</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- :: close : ksg_4 : [진맛] 콘솔버튼이 포함된 카드박스 파트. -->
-					</div>
-                </div>
-                <!-- :: close : ksg_4 : [진맛] 우측 테이블 내용물. 재고/컨트롤버튼/작업내역 카드박스 버전. -->
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>
 	</div>
 </div>
 <!-- :: single : ksg_2 : [진맛]다른 작업물의 달력 스크립트 링크 있던 곳. -->
-<!-- :: open : ksg_4 : [진맛] 이미지 업로드 스크립트 연결 내용. -->
-<script src="/common/js/exif-js.js"></script>
-<script src="/common/js/imgSet.js"></script>
-<!-- :: close : ksg_4 : [진맛] 이미지 업로드 스크립트 연결 내용. -->
 <script>
 // :: single : ksg_2 [진맛] 다른 작업물의 "상세보기 표시, 숨기기", "상세검색 표시, 숨기기." 스크립트 있던 곳.
 // :: open : ksg_2 : [진맛] 원자재 목록을 클릭 시, 우측의 테이블 내용과 하단 버튼이 나타나도록 하는 내용.

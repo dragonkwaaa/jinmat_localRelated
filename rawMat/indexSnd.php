@@ -1,7 +1,7 @@
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$lCode					=	'0102';
+	$lCode					=	'0101';
 ?>
 <body>
 <div class="container">
