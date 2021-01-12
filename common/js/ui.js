@@ -49,3 +49,10 @@ $(document).mouseup(function (e) {
 	}
 });
 // :: close : ksg_20210109_2138 : [진맛] 팝업창 외부를 클릭하면 팝업창이 닫히게 하는 스크립트.
+
+// :: open : ksg_20210112_2306 : [진맛] 팝업창의 X 버튼이나 닫기 버튼을 클릭하면, 팝업창이 닫히게 하는 스크립트.
+function closePop(){
+	$('.popup.centerSort').hide();
+	$('.contents').removeClass('overlay');
+}
+// :: close : ksg_20210112_2306 : [진맛] 팝업창의 X 버튼이나 닫기 버튼을 클릭하면, 팝업창이 닫히게 하는 스크립트.
