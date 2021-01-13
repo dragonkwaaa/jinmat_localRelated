@@ -1,9 +1,10 @@
+<!-- :: ksg_5 = ksg_20210113_1650 -->
 <!-- :: ksg_4 = ksg_20210112_2039 -->
 <!-- :: ksg_3 = ksg_20210112_1604 -->
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$lCode					=	'0100';
+	$lCode					=	'0101';
 ?>
 <body>
 <div class="container">
@@ -22,7 +23,7 @@
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort AsymDoub1">
-				<div class="titleBox manageHeadlineSort">원자재 품목</div>
+				<div class="titleBox manageHeadlineSort">생산품 품목</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
 						<!-- <div class="selectGroup monthSort">
@@ -51,9 +52,9 @@
 									<td>
 										<select class="sbox">
 											<option>전체</option>
-											<option>품목명</option>
-											<option>품목코드</option>
-											<option>품종</option>
+											<option>상품명</option>
+											<option>상품코드</option>
+											<option>생산지</option>
 										</select>
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 									</td>
@@ -65,7 +66,7 @@
                     	</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<div class="titleBox inlistConSort">
-							<div class="titleText">원자재 품목</div>
+							<div class="titleText">생산품 품목</div>
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
@@ -84,20 +85,22 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 200px;">
+							<col style="width : 150px;">
 							<col style="width : 70px;">
 							<col style="width : 90px;">
+							<col style="width : 150px;">
 							<col style="width : 90px;">
 							<col style="width : 60px;">
 						</colgroup>
 						<thead>
 						<tr>
 							<th>
-								품목명<br>
-								(품목코드)
+								생산품명<br>
+								(생산품코드)
 							</th>
 							<th>이미지</th>
                             <th>바코드</th>
+							<th>생산지</th>
 							<th>사용여부</th>
 							<th>관리</th>
 						</tr>
@@ -127,6 +130,9 @@
 								<div class="mt2">
 									<input class="tbox regFullSort listMod" placeholder="바코드번호" value="">
 								</div>
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="생산지" value="">
 							</td>
 							<td>
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
@@ -166,6 +172,9 @@
 								</div>
 							</td>
 							<td>
+								<input class="tbox regFullSort listMod" placeholder="생산지" value="충남농장">
+							</td>
+							<td>
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 								<select class="sbox regFullSort">
 									<option>사용</option>
@@ -200,6 +209,9 @@
 								<div class="mt2">
 									<input class="tbox regFullSort listMod" placeholder="바코드번호" value="A1133451">
 								</div>
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="생산지" value="강원협동조합">
 							</td>
 							<td>
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
@@ -239,7 +251,80 @@
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
 			<div class="section horizontalManageSort AsymDoub2">
                 <div class="titleBox manageHeadlineSort">상세정보</div>
-				<!-- :: open : ksg_3 : [진맛] 좌측 테이블과 유사한 구조의, 우측 상품 상세정보 내용. -->
+
+
+
+				<!-- :: open : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
+				<div class="specRegGroup hide">
+					<div class="conGroup verticalManageSort">
+						<div class="headLineBox listControlSort">
+							<div class="titleBox inlistConSort">
+								<div class="titleText">생산품 정보</div>
+							</div>
+						</div>
+						<table class="infoGroup">
+							<colgroup>
+								<col width="100">
+								<col width="*">
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>생산품명</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>생산품 코드</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<!-- :: open : ksg_5 : [진맛] 이미지 등록 파트. -->
+							<tr>
+								<th>이미지</th>
+								<td>
+									<div class="imgUploadBox">
+										<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
+										<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
+									</div>
+								</td>
+							</tr>
+                            <!-- :: close : ksg_5 : [진맛] 이미지 등록 파트. -->
+							<tr>
+								<th>바코드 이미지</th>
+								<td>
+									<div class="imgBgCase noneCSort">
+										<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>바코드 번호</th>
+								<td>
+									<input class="tbox regFullSort" value="" readonly>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+                </div>
+				<!-- :: close : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- :: open : ksg_5 : [진맛] 생산품에 필요한 원자재 목록 파트. -->
 				<div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
@@ -269,7 +354,7 @@
                     		</div>
 							<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 							<div class="titleBox inlistConSort">
-								<div class="titleText">원자재 상세정보</div>
+								<div class="titleText">사용 원자재 목록</div>
 							</div>
 							<div class="sboxGroup listArraySort">
 								<select class="sbox">
@@ -455,7 +540,7 @@
 					</div>
 					<!-- :: single : ksg_4 : [진맛] 우측 하단의 창고별 재고 확인 테이블 내용 있던 곳. -->
 				</div>
-				<!-- :: close : ksg_3 : [진맛] 좌측 테이블과 유사한 구조의, 우측 상품 상세정보 내용. -->
+				<!-- :: close : ksg_5 : [진맛] 생산품에 필요한 원자재 목록 파트. -->
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>
@@ -520,6 +605,18 @@
 </div>  
 <!-- :: close : ksg_4 : [진맛] 품종의 품질을 설정하는 팝업. -->
 
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="/common/js/exif-js.js"></script>
 <script src="/common/js/imgSet.js"></script>
 <script src="/common/js/datePick.js"></script>
@@ -536,8 +633,8 @@
 // :: open : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 $(document).on('click', '.conGroup.verticalManageSort .searchResultTable tr.reged', function(){
     $('.specInfoGroup.hide').removeClass('hide');
+	$('.specRegGroup').removeClass('hide');
     $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
-	$('.specRegGroup').addClass('hide');
 	$(this).siblings('tr').removeClass('activated');
 	$(this).addClass('activated');
 });

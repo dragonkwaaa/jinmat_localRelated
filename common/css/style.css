@@ -2209,3 +2209,11 @@ body{
 } */
 /* :: innerC : 삭제하는 기존 내용. */
 /* :: close : ksg_20210112_1550 : [진맛] 원자재 목록 페이지 추가 내용. */
+
+/* :: open : ksg_20210113_1728 : [진맛] 생산품 목록 페이지 내용. */
+.imgBgCase.noneCSort {
+	margin-left : 0;
+	margin-right : 0;
+	display : inline-block;
+}
+/* :: close : ksg_20210113_1728 : [진맛] 생산품 목록 페이지 내용. */
