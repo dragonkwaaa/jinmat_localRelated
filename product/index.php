@@ -277,7 +277,7 @@
 							<tr>
 								<th>생산품 코드</th>
 								<td>
-									<input class="tbox regFullSort" value="">
+									<input class="tbox regFullSort" value="" readonly>
 								</td>
 							</tr>
 							<!-- :: open : ksg_5 : [진맛] 이미지 등록 파트. -->
@@ -305,6 +305,48 @@
 									<input class="tbox regFullSort" value="" readonly>
 								</td>
 							</tr>
+							<tr>
+								<th>기준 Kg</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>규격</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>생산지 형태</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>생산지명</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>생산지 주소</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>생산단가</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>출고단가</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
 							</tbody>
 						</table>
 					</div>
@@ -328,8 +370,8 @@
 				<div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
-							<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
-							<table class="searchGroup inTblSort">
+							<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
+							<table class="searchGroup inTblSort" style="display : none;">
 								<colgroup>
 									<col style="width : 30%;">
 									<col style="width : 70%;">
@@ -349,14 +391,17 @@
 									</tr>
 								</tbody>
 							</table>
-                    		<div class="btnGroup verticalBottomSort inTblSort">
+							<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
+							<!-- :: open : ksg_5 : [진맛] 테이블 내의 "검색" 버튼 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
+                    		<div class="btnGroup verticalBottomSort inTblSort" style="display : none;">
                     		    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     		</div>
-							<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
+							<!-- :: close : ksg_5 : [진맛] 테이블 내의 "검색" 버튼 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 							<div class="titleBox inlistConSort">
 								<div class="titleText">사용 원자재 목록</div>
 							</div>
-							<div class="sboxGroup listArraySort">
+							<!-- :: open : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
+							<div class="sboxGroup listArraySort" style="display : none;">
 								<select class="sbox">
 									<option>번호순▼</option>
 									<option>번호순▲</option>
@@ -369,33 +414,42 @@
 									<option>100개씩</option>
 								</select>
 							</div>
+							<!-- :: close : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 						</div>
 						<table class="infoGroup txtCSort">
 						<colgroup>
-							<col style="width : 100px;">
+							<col style="width : 80px;">
+							<col style="width : 80px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
 							<col style="width : 90px;">
-							<col style="width : 50px;">
-							<col style="width : 200px;">
+							<col style="width : 70px;">
+							<col style="width : 150px;">
 							<col style="width : 50px;">
 						</colgroup>
 						<thead>
 						<tr>
 							<th>
+								<div>품목명</div>
+								<div>(품목코드)</div>
+							</th>
+							<th>
 								<div>품종명</div>
 								<div>(품종코드)</div>
 							</th>
-							<th>이미지</th>
+							<th>
+								품종<br>
+								이미지
+							</th>
                             <th>규격</th>
                             <th>기준Kg</th>
 							<th>바코드</th>
 							<th>입고단가</th>
 							<th>출고단가</th>
-							<th>사용여부</th>
+							<th>사용 수량</th>
 							<th>비고</th>
 							<th>관리</th>
 						</tr>
@@ -403,6 +457,14 @@
 						<tbody>
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
+							<td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="품목명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="품목코드" value="">
+								</div>
+							</td>
 							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="품종명" value="">
@@ -439,12 +501,7 @@
 								<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
 							</td>
 							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<input class="tbox regFullSort listMod" placeholder="사용 수량" value="">
 							</td>
 							<!-- :: open : ksg_4 : [진맛] 품질 팝업을 띄우는 버튼. -->
 							<!-- <td>
@@ -464,6 +521,14 @@
 						</tr>
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
+							<td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="품목명" value="부민">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="품목코드" value="A1235123">
+								</div>
+							</td>
 							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="품종명" value="부민">
@@ -498,24 +563,15 @@
 								<input class="tbox regFullSort listMod" placeholder="출고단가" value="55,000">
 							</td>
 							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<input class="tbox regFullSort listMod" placeholder="사용 수량" value="2">
 							</td>
-							<!-- <td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn modifySort popQualMod">품질</a>
-								</div>
-							</td> -->
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="비고" value="수박 품종 1 부민">
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
+									<a href="/rawMat/rawMatSpec" class="btn delSort">삭제</a>
 								</div>
 							</td>
 						</tr>

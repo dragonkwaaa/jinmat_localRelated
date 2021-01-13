@@ -1057,15 +1057,7 @@ header .headerNav .btn.userGradeSort:nth-child(2) {
 .section.horizontalManageSort .page_group .page_box li a {
 	line-height : 25px;
 }
-.page_group.underSort {
-	padding : 0;
-	/* position : absolute; */
-	bottom : 20px;
-	width : 100%;
-	display : block;
-    text-align : center;
-    padding-top : 40px;
-}
+
 .conGroup.verticalManageSort.bottomRowSort {
 	border-bottom : none;
 	position : relative;
@@ -2211,9 +2203,22 @@ body{
 /* :: close : ksg_20210112_1550 : [진맛] 원자재 목록 페이지 추가 내용. */
 
 /* :: open : ksg_20210113_1728 : [진맛] 생산품 목록 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
 .imgBgCase.noneCSort {
 	margin-left : 0;
 	margin-right : 0;
 	display : inline-block;
 }
+/* :: innerC : 신규 내용 추가. */
+/* :: innerO : 기존 내용 수정. */
+.page_group.underSort {
+	padding : 0;
+	bottom : 20px;
+	width : 100%;
+	display : block;
+    text-align : center;
+	padding-top : 40px;
+	padding-bottom : 40px;
+}
+/* :: innerC : 기존 내용 수정. */
 /* :: close : ksg_20210113_1728 : [진맛] 생산품 목록 페이지 내용. */
