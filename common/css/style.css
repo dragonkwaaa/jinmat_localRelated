@@ -1376,11 +1376,7 @@ table.infoGroup .regDateDisplay {
 .specRegGroup.hide {
 	display : none;
 }
-.horizontalGrandCover.quad2 {
-	display : inline-block;
-	width : 33%;
-	margin-left : 3px;
-}
+
 .section.horizontalManageSort.fullMod {
 	display: block;
 	width : 100%;
@@ -1394,16 +1390,7 @@ table.infoGroup .regDateDisplay {
 .section.horizontalManageSort.fullMod.limitedHeight2 {
 	min-height : 482px;
 }
-.section.horizontalManageSort.quad1 {
-	width : 33%;
-	min-height : 1045px;
-	min-width : auto;
-}
-.section.horizontalManageSort.quad3 {
-	width : 32%;
-	min-height : 1045px;
-	min-width : auto;
-}
+
 /* :: ksg_20200621_2036 before : close */
 
 
@@ -2235,3 +2222,39 @@ body{
 }
 /* :: innerC : 신규 내용 추가. */
 /* :: close : ksg_20210114_1051 : [진맛] 템플릿 페이지 추가 내용. */
+
+/* :: open : ksg_20210114_1458 : [진맛] 카테고리 페이지 내용. */
+/* :: innerO : 기존 내용 수정. */
+.section.horizontalManageSort.quad1 {
+	width : 25%;
+	min-height : 1045px;
+	min-width : auto;
+}
+.horizontalGrandCover.quad2 {
+	display : inline-block;
+	width : 25%;
+}
+.section.horizontalManageSort.quad3 {
+	width : 25%;
+	min-height : 1045px;
+	min-width : auto;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 신규 내용 추가. */
+.section.horizontalManageSort.quad2 {
+	width : 25%;
+	min-height : 1045px;
+	min-width : auto;
+}
+.section.horizontalManageSort.quad4 {
+	width : 25%;
+	min-height : 1045px;
+	min-width : auto;
+}
+.section.horizontalManageSort.equalQuadSort {
+	width : calc(25% - 2px);
+	min-height : 1045px;
+	min-width : auto;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210114_1458 : [진맛] 카테고리 페이지 내용. */

@@ -13,6 +13,12 @@
 					<span class="ml11">생산품 관리</span>
 				</a>
 			</li>
+			<li>
+				<a href="/standSet/cateSet" class="<?=($lCode == '0102' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">카테고리 관리</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>

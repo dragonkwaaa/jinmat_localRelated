@@ -26,9 +26,15 @@
 				</a>
 			</li>
 			<li>
-				<a href="/pageTemplete/triTableWithRegVertGroup.php" class="<?=($lCode == '0104' ? ' activated' : '')?>">
+				<a href="/pageTemplete/triTableWithRegVertGroup" class="<?=($lCode == '0104' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">3중(수직 인풋박스 그룹 포함)</span>
+				</a>
+			</li>
+			<li>
+				<a href="/pageTemplete/quadCate" class="<?=($lCode == '0105' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">4중(카테고리)</span>
 				</a>
 			</li>
 		</ul>

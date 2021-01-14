@@ -295,6 +295,7 @@
 							<col style="width : 70px;">
 							<col style="width : 90px;">
 							<col style="width : 50px;">
+							<col style="width : 50px;">
 							<col style="width : 200px;">
 							<col style="width : 50px;">
 						</colgroup>
@@ -311,6 +312,7 @@
 							<th>입고단가</th>
 							<th>출고단가</th>
 							<th>사용여부</th>
+							<th>품질</th>
 							<th>비고</th>
 							<th>관리</th>
 						</tr>
@@ -362,11 +364,11 @@
 								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 							</td>
 							<!-- :: open : ksg_4 : [진맛] 품질 팝업을 띄우는 버튼. -->
-							<!-- <td>
+							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort popQualMod">품질</a>
 								</div>
-							</td> -->
+							</td>
 							<!-- :: close : ksg_4 : [진맛] 품질 팝업을 띄우는 버튼. -->
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="비고" value="">
@@ -420,11 +422,11 @@
 								</select>
 								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 							</td>
-							<!-- <td>
+							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort popQualMod">품질</a>
 								</div>
-							</td> -->
+							</td>
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="비고" value="수박 품종 1 부민">
 							</td>
