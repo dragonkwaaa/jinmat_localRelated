@@ -124,10 +124,7 @@ header .headerNav .btn.logoutSort {
 	width : 5px;
 
 }
-.menuBox a i,
-.menuBox a span {
-	vertical-align : middle;
-}
+
 /* :: 좌측 메뉴 파트 close  */
 
 /* :: as기사 등록 페이지 파트 open */
@@ -1817,15 +1814,7 @@ body{
 	z-index : 100;
 	padding-top : 10px;
 }
-.sideMenu .conGroup .menuBox a {
-    position: relative;
-	width: calc(100% - 30px);
-	height : 50px;
-	line-height : 50px;
-    padding: 0 15px;
-	color: #fff;
-	display : block;
-}
+
 .sideMenu.majorSort .conGroup {
     position: relative;
     background-color: #fff;
@@ -2222,3 +2211,27 @@ body{
 }
 /* :: innerC : 기존 내용 수정. */
 /* :: close : ksg_20210113_1728 : [진맛] 생산품 목록 페이지 내용. */
+
+/* :: open : ksg_20210114_1051 : [진맛] 템플릿 페이지 추가 내용. */
+/* :: innerO : 기존 내용 수정. */
+.sideMenu .conGroup .menuBox a {
+    position: relative;
+	width: calc(100% - 30px);
+	height : auto;
+	line-height : 20px;
+    padding: 10px 15px;
+	color: #fff;
+	display : block;
+}
+.menuBox a i,
+.menuBox a span {
+	vertical-align : top;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 신규 내용 추가. */
+.menuBox a span {
+	display : inline-block;
+	width : calc(100% - 35px);
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210114_1051 : [진맛] 템플릿 페이지 추가 내용. */
