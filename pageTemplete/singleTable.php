@@ -1,5 +1,6 @@
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
+	$tCode					=	'099';
 	$lCode					=	'0100';
 ?>
 <body>

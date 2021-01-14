@@ -283,6 +283,20 @@ a.activated > .reportIcon {
 	height : 16px;
 	background : url(/common/img/icon_report_on.png) no-repeat center / cover;
 }
+/* :: innerO : [진맛] 카테고리 페이지 내용. */
+.increaseIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/common/img/icon_increase.png) no-repeat center / cover;
+}
+.decreaseIcon {
+	width : 30px;
+	height : 30px;
+	vertical-align: middle;
+    background: url(/common/img/icon_decrease.png) no-repeat center / cover;
+}
+/* :: innerC : [진맛] 카테고리 페이지 내용. */
 /* :: 아이콘 파트  close */
 
 
@@ -421,3 +435,5 @@ a.activated > .reportIcon {
 	right : 0;
 }
 /* :: 앱솔루트 관련 파트 close */
+
+

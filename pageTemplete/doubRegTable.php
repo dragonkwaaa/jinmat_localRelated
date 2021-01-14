@@ -3,6 +3,7 @@
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
+	$tCode					=	'099';
 	$lCode					=	'0103';
 ?>
 <body>

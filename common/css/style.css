@@ -1740,7 +1740,7 @@ tr.hide {
 	color : red;
 }
 .warn .tbox {
-	border : 1px solid red;
+	border : 1px solid #aaa;
 }
 /* :: ksg_20200804_1626 close : 추가 내용 */
 
@@ -2257,6 +2257,147 @@ body{
 .conGroup.verticalManageSort .searchResultTable tr.reged {
 	cursor : pointer;
 }
+.cateListGroup {
+	border: 1px solid #d7dae2;
+	padding : 3px;
+	background-color : #d7dae2;
+}
+.cateListGroup.slightShortMod {
+	width : 600px;
+}
+.cateCover.fstChd {
+	border-top : none;
+}
+.cateListGroup .cateCover {
+	border-top : 1px solid #d7dae2;
+	background-color : #fff;
+	position : relative;
+}
+
+.cateInfoCase  {
+	padding : 5px 0;
+	position : relative;
+}
+
+.cateInfoCase .infoBox {
+	display : inline-block;
+	vertical-align : middle;
+	text-align : center;
+}
+.cateInfoCase .infoBox.posChanSort {
+	width : 100px;
+}
+.infoBox.posChanSort .increaseIcon,
+.infoBox.posChanSort .decreaseIcon {
+	display : inline-block;
+	margin : 0 1px;
+}
+.cateInfoCase .infoBox.NameSort {
+	width : 150px;
+}
+.cateInfoCase .infoBox.useChkSort {
+	width : 120px;
+}
+.cateInfoCase .infoBox.controlSort {
+	width : 100px;
+	text-align : center;
+}
+.section .btnGroup.inListTable a.btn.modifySort,
+.section .btnGroup.inListTable a.btn.delSort {
+	margin : 0 1px;
+}
+.innerCateList {
+	width : 100%;
+	position : relative;
+}
+.infoBox.NameSort .tbox.regFullSort.listMod {
+	text-align : left;
+}
+.cateListGroup .cateCover.regMod {
+	background-color : #eee;
+}
+.cateListGroup .cateRegCover {
+	background-color: #eee;
+	border-top: 1px solid #d7dae2;
+}
+.hide {
+	display : none;
+}
+.cateInfoCase.sndSort {
+	padding-left : 30px;
+}
+.cateInfoCase.thrdSort {
+	padding-left : 60px;
+}
+.cateInfoCase.frthSort {
+	padding-left : 90px;
+}
+.cateInfoCase:before {
+	content : "";
+	position : absolute;
+	top : 9px;
+	left : 5px;
+	border-left : 1px solid #aaa;
+	width : auto;
+	height : 10px;
+}
+.cateInfoCase.fstSort:before {
+	content : none;
+}
+.cateInfoCase.sndSort:before {
+	left : 20px;
+}
+.cateInfoCase.thrdSort:before {
+	left : 50px;
+}
+.cateInfoCase.frthSort:before {
+	left : 80px;
+}
+.cateInfoCase:after {
+	content: "";
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    border-bottom: 1px solid #aaa;
+    width: 10px;
+    height: auto;
+}
+.cateInfoCase.fstSort:after {
+	content : none;
+}
+.cateInfoCase.sndSort:after {
+	left : 20px;
+}
+.cateInfoCase.thrdSort:after {
+	left : 50px;
+}
+.cateInfoCase.frthSort:after {
+	left : 80px;
+}
+.innerCateList:before {
+	content: "";
+    position: absolute;
+    top: 12px;
+    border-left: 1px solid #aaa;
+    width: auto;
+    height: calc(100% - 40px);
+    z-index: 5;
+}
+.innerCateList.sndSort:before {
+	left: 20px;
+}
+.innerCateList.thrdSort:before {
+	left: 50px;
+}
+.innerCateList.frthSort:before {
+	left: 80px;
+}
+.cateInfoCase .infoBox.titleBox {
+	width : 90px;
+	padding-left : 10px;
+	font-size : 12px;
+	font-weight : 800;
+}
 /* :: innerC : 신규 내용 추가. */
 /* :: innerO : 삭제한 기존 내용. */
 /* .conGroup.verticalManageSort .searchResultTable tr {
@@ -2264,3 +2405,4 @@ body{
 } */
 /* :: innerC : 삭제한 기존 내용. */
 /* :: close : ksg_20210114_1458 : [진맛] 카테고리 페이지 내용. */
+

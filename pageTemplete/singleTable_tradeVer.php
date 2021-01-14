@@ -1,14 +1,14 @@
 <!-- :: ksg_2 = ksg_20210114_1756 -->
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-    $tCode					=	'0100';
-	$lCode					=	'0103';
+    $tCode					=	'099';
+	$lCode					=	'0100-1';
 ?>
 <body>
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/standSet/pages/standSet_left.php'; ?>
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/pageTemplete/pages/pageTemplete_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">
@@ -72,7 +72,7 @@
                     </div>
 				</div>
 			</div>
-			<div class="section horizontalManageSort fullMod">
+			<div class="section horizontalManageSort searcManageSort fullMod">
 				<div class="titleBox manageHeadlineSort">납품처 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
