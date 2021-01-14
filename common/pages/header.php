@@ -12,48 +12,6 @@
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">기준항목 관리</span>
         </a>
-        
-		<a href="/budget/" class="<?=($tCode == '101' ? ' activated' : '')?> mr20">
-			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">예산관리</span>
-		</a>
-		<a href="/settlement/" class="<?=($tCode == '110' ? ' activated' : '')?> mr20">
-			<!-- <i class="branchIcon"></i> -->
-			<span class="">결산관리</span>
-		</a>
-		<a href="/setting/subjectList.php" class="<?=($tCode == '111' ? ' activated' : '')?> mr20">
-			<!-- <i class="branchIcon"></i> -->
-			<span class="">기초항목 관리</span>
-		</a>
-
-		<a href="/expense/expendList" class="<?=($tCode == '0102' ? ' activated' : '')?> mr20">
-			<!-- <i class="branchIcon"></i> -->
-			<span class="">지출자료관리</span>
-        </a>
-        <a href="/cardSetting/limit" class="<?=($tCode == '0108' ? ' activated' : '')?> mr20">
-			<!-- <i class="branchIcon"></i> -->
-			<span class="">카드한도관리</span>
-		</a>
-		<!-- <a href="/income/" class="<?=($tCode == '0104' ? ' activated' : '')?> mr20">
-			<span class="">영업소관리</span>
-		</a> -->
-		<!-- <a href="/outcome/" class="<?=($tCode == '0105' ? ' activated' : '')?> mr20">
-			<span class="">고정지출관리</span>
-		</a> -->
-		
-		<!-- <a href="/my/itemList" class="<?=($tCode == '0107' ? ' activated' : '')?> mr20">
-			<span class="">품목관리</span>
-		</a> -->
-		<a href="/staff/" class="<?=($tCode == '0103' ? ' activated' : '')?> mr20">
-			<!-- <i class="staffIcon"></i> -->
-			<span class="">관리자목록</span>
-		</a>
-		<!-- <a href="/set/payMethod" class="<?=($tCode == '0109' ? ' activated' : '')?> mr20">
-			<span class="">결제수단 관리</span>
-		</a> -->
-		<!-- <a href="/pay/" class="<?=($tCode == '0112' ? ' activated' : '')?> mr20">
-			<span class="">결제관리</span>
-		</a> -->
 	</div>
 
 	<div class="headerNav rightSideSort">

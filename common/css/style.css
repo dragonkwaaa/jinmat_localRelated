@@ -1069,9 +1069,7 @@ header .headerNav .btn.userGradeSort:nth-child(2) {
 	/* background-color : #60af9e; */
 	background-color : rgb(96, 175, 158, 0.2);
 }
-.conGroup.verticalManageSort .searchResultTable tr {
-	cursor : pointer;
-}
+
 table.infoGroup {
 	border: 1px solid #d7dae2;
 }
@@ -2256,5 +2254,13 @@ body{
 	min-height : 1045px;
 	min-width : auto;
 }
+.conGroup.verticalManageSort .searchResultTable tr.reged {
+	cursor : pointer;
+}
 /* :: innerC : 신규 내용 추가. */
+/* :: innerO : 삭제한 기존 내용. */
+/* .conGroup.verticalManageSort .searchResultTable tr {
+	cursor : pointer;
+} */
+/* :: innerC : 삭제한 기존 내용. */
 /* :: close : ksg_20210114_1458 : [진맛] 카테고리 페이지 내용. */

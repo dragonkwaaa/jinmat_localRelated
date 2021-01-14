@@ -417,9 +417,6 @@
 		</div>
 	</div>
 </div>
-
-
-
 <!-- :: 날짜 변경 팝업 내용 -->
 <div class="popup centerSort changeDatePop">
 	<div class="popupCon">
