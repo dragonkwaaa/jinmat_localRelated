@@ -25,6 +25,12 @@
 					<span class="ml11">납품처 관리</span>
 				</a>
 			</li>
+			<li>
+				<a href="/standSet/customerSet" class="<?=($lCode == '0104' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">고객 관리</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>
