@@ -6,14 +6,14 @@
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-    $tCode					=	'0100';
-	$lCode					=	'0102';
+    $tCode					=	'099';
+	$lCode					=	'0106';
 ?>
 <body>
 <div class="container">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/standSet/pages/standSet_left.php'; ?>
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/pageTemplete/pages/pageTemplete_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">
@@ -297,7 +297,120 @@
 						<!-- :: close : ksg_6 : [진맛] 1차 분류를 등록하는 인풋창. -->
 					</div>
 					<!-- :: close : ksg_6 : [진맛] 분류 리스트 파트. -->
+					<!-- :: open : ksg_6 : [진맛] 기존 분류 설정 파트. 새로운 것으로 교체하므로, 이것은 style="display : none;" 처리. -->
+					<table class="searchResultTable" style="display : none;">
+						<colgroup>
+							<col style="width : 200px;">
+							<col style="width : 90px;">
+							<col style="width : 60px;">
+						</colgroup>
+						<thead>
+						<tr>
+							<th>
+								분류명<br>
+								(분류코드)
+							</th>
+							<th>사용여부</th>
+							<th>관리</th>
+						</tr>
+						</thead>
+						<tbody>
+						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
+						<tr>
+							<td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="분류명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="분류코드" value="">
+								</div>
+							</td>
+							<td>
+								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option>미사용</option>
+								</select>
+								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn regSort">등록</a>
+								</div>
+							</td>
+						</tr>
+						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
+						<tr class="reged">
+							<td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="분류명" value="핵과류">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="분류코드" value="24555111" readonly>
+								</div>
+							</td>
+							<td>
+								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option>미사용</option>
+								</select>
+								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+                                    <a href="javascript:void(0);" class="btn modifySort">저장</a>
+                                    <a href="javascript:void(0);" class="btn delSort">삭제</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="reged">
+							<td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="분류명" value="견과류">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="분류코드" value="31224455" readonly>
+								</div>
+							</td>
+							<td>
+								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option>미사용</option>
+								</select>
+								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<!-- :: single : ksg_4 : [진맛] 라디오 버전의 사용/미사용 있던 곳. -->
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+                                    <a href="javascript:void(0);" class="btn modifySort">저장</a>
+                                    <a href="javascript:void(0);" class="btn delSort">삭제</a>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<!-- :: close : ksg_6 : [진맛] 기존 분류 설정 파트. 새로운 것으로 교체하므로, 이것은 style="display : none;" 처리. -->
 				</div>
+				<!-- :: open : ksg_6 : [진맛] 페이징 파트, 이것은 새로운 분류 구조에서는 필요 없을 것이므로, style="display : none;" 처리. -->
+				<div class="page_group underSort" style="display : none;">
+					<ul class="page_box">
+						<li class="prev arrow">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="pageNum on">
+							<a href="javascript:void(0);">1</a>
+						</li>
+						<li class="pageNum">
+							<a href="javascript:void(0);">2</a>
+						</li>
+						<li class="next arrow">
+							<a href="javascript:void(0); "></a>
+						</li>
+					</ul>
+				</div>
+				<!-- :: close : ksg_6 : [진맛] 페이징 파트, 이것은 새로운 분류 구조에서는 필요 없을 것이므로, style="display : none;" 처리. -->
             </div>
             <!-- :: close : ksg_5 : [진맛] 4배열 테이블 첫째 파트. -->
 		</div>

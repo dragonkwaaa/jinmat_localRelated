@@ -43,6 +43,12 @@
 					<span class="ml11">4중(진맛 4연장테이블)</span>
 				</a>
 			</li>
+			<li>
+				<a href="/pageTemplete/stackVertCate" class="<?=($lCode == '0106' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">수직 트리구조 카테고리</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>

@@ -2292,6 +2292,10 @@ body{
 	display : inline-block;
 	margin : 0 1px;
 }
+.infoBox.posChanSort .increaseIcon.hide,
+.infoBox.posChanSort .decreaseIcon.hide {
+	display : none;
+}
 .cateInfoCase .infoBox.NameSort {
 	width : 150px;
 }
@@ -2406,3 +2410,13 @@ body{
 /* :: innerC : 삭제한 기존 내용. */
 /* :: close : ksg_20210114_1458 : [진맛] 카테고리 페이지 내용. */
 
+/* :: open : ksg_20210115_1658 : [진맛] 거래처 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+.section.horizontalManageSort.leftFocused1 {
+	width : 60%;
+}
+.section.horizontalManageSort.leftFocused2 {
+	width : calc(40% - 5px);
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210115_1658 : [진맛] 거래처 페이지 내용. */
