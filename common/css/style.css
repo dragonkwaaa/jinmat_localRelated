@@ -812,15 +812,7 @@ header .headerNav .btn.userGradeSort:nth-child(2) {
 .inTableRadioGroup .radioCase:first-child {
 	margin-left : 0;
 }
-.section.horizontalManageSort {
-	display : inline-block;
-	width : calc(40% - 14px);
-	vertical-align : top;
-	border : 1px solid #d7dae2;
-	position : relative;
-	min-width : 300px;
-	/* margin-left : 5px; */
-}
+
 .section.horizontalManageSort:first-child {
     margin-left : 0;
 }
@@ -1140,14 +1132,7 @@ table.infoGroup .regDateDisplay {
 .sbox.regFullSort ul li a {
 	padding : 11px;
 }
-.btnGroup.horizontalBottomSort {
-	position : absolute;
-	bottom : 20px;
-	width : 100%;
-	text-align : center;
-	margin-left : 0;
-	margin-top : 0;
-}
+
 .btnGroup.horizontalBottomSort .btn.saveSort {
 	width: calc(100% - 20px);
     height: 25px;
@@ -1838,8 +1823,6 @@ body{
 
 /* :: open : ksg_20210109_2003 : [진맛] 원자재 목록 페이지(양쪽 테이블 버전) 내용. */
 /* :: innerO : 신규 내용 추가. */
-
-
 .inTblTitleBox {
 	font-weight : 800;
 	font-weight : 13px;
@@ -2541,9 +2524,54 @@ body{
 	text-align : right;
     vertical-align : middle;
 }
-
-
-
 /* :: innerC : 신규 내용 추가. */
 /* :: close : ksg_20210118_1137 : [진맛] 창고 관리 페이지 내용. */
 
+/* :: open : ksg_20210118_1707 : [진맛] 발주요청관리 페이지 내용. */
+/* :: innerO : 신규 내용 추가. */
+.inTblSchGroup {
+	padding : 5px;
+}
+.inTblCdBox {
+	position : relative;
+}
+.conGroup .tbox.searchInput.inTblSort {
+	height : 33px;
+	width : calc(100% - 400px);
+}
+.inTblSchGroup .sbox {
+	width : 120px;
+}
+.inTblSchGroup .btnGroup.inTableSearch {
+	margin-left : 3px;
+}
+.inTblCdListGroup {
+	padding : 5px;
+}
+.inTblCdListGroup .inTblCdBox {
+	border: 1px solid #d7dae2;
+	padding : 5px;
+	margin-top : 5px;
+}
+.inTblCdListGroup .inTblCdBox:first-child {
+	margin-top : 0;
+}
+.section.horizontalManageSort {
+	display : inline-block;
+	width : calc(40% - 14px);
+	vertical-align : top;
+	border : 1px solid #d7dae2;
+	position : relative;
+	min-width : 300px;
+	padding-bottom : 40px;
+}
+.btnGroup.horizontalBottomSort {
+	position : absolute;
+	bottom : 15px;
+	width : 100%;
+	text-align : center;
+	margin-left : 0;
+	margin-top : 0;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210118_1707 : [진맛] 발주요청관리 페이지 내용. */

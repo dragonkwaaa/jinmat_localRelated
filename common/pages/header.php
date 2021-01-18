@@ -11,6 +11,10 @@
 		<a href="/standSet/rawMatSet" class="<?=($tCode == '0100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">기준항목 관리</span>
+		</a>
+		<a href="/order/" class="<?=($tCode == '0200' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">기준항목 관리</span>
         </a>
 	</div>
 
