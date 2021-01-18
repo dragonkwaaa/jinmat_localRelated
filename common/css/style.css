@@ -1686,9 +1686,7 @@ td.hide {
 tr.hide {
     display : none;
 }
-.section .btnGroup.inListTable a.btn + a.btn {
-    margin-top : 3px;
-}
+
 .section.searcManageSort.compareMod {
     width : calc(50% - 2px);
 }
@@ -1876,10 +1874,7 @@ body{
 }
 /* :: innerC : 신규 내용 추가. */
 /* :: innerO : 기존 내용 수정. */
-.conGroup.verticalManageSort tr {
-	border-bottom: 1px solid #d7dae2;
-	position : relative;
-}
+
 .conGroup.verticalManageSort td {
     padding : 2px;
 	font-size : 11px;
@@ -2254,7 +2249,7 @@ body{
 	min-height : 1045px;
 	min-width : auto;
 }
-.conGroup.verticalManageSort .searchResultTable tr.reged {
+.conGroup.verticalManageSort tr.reged {
 	cursor : pointer;
 }
 .cateListGroup {
@@ -2306,10 +2301,7 @@ body{
 	width : 100px;
 	text-align : center;
 }
-.section .btnGroup.inListTable a.btn.modifySort,
-.section .btnGroup.inListTable a.btn.delSort {
-	margin : 0 1px;
-}
+
 .innerCateList {
 	width : 100%;
 	position : relative;
@@ -2420,3 +2412,138 @@ body{
 }
 /* :: innerC : 신규 내용 추가. */
 /* :: close : ksg_20210115_1658 : [진맛] 거래처 페이지 내용. */
+
+/* :: open : ksg_20210117_1820 : [진맛] 원자재 관리 페이지 추가 내용. */
+/* :: innerO : 기존 내용 수정. */
+.conGroup.verticalManageSort tr {
+	border-top: 1px solid #d7dae2;
+	position : relative;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 신규 내용 추가. */
+.conGroup.verticalManageSort tr.reged.activated {
+	background-color : rgb(96, 175, 158, 0.2);
+}
+
+.mockingTbl {
+	display : block;
+	margin : 5px;
+	width : calc(100% - 10px);
+	border : 1px solid #d7dae2;
+}
+.mockingTbl .mockingTHead {
+	display: block;
+	border-bottom : 1px solid #d7dae2;
+	background-color: #f5f6fa;
+}
+.mockingTbl .mockingTr {
+	display : block;
+	width : 100%;
+	font-size : 0;
+	border-top : 1px solid #d7dae2;
+}
+.mockingTbl .mockingTr:first-child {
+	border-top : none;
+}
+.mockingTbl .mockingTd {
+	display : inline-block;
+	vertical-align : middle;
+	padding : 5px 0;
+	border-left : 1px solid #d7dae2;
+	font-size : 10px;
+}
+.mockingTbl .mockingTd:first-child {
+	border-left : none;
+}
+
+.mockingTbl.subStgSetSort .mockingTd.fstSort {
+	width : calc(20% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.sndSort {
+	width : calc(20% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.thrdSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.frthSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.fifSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.sixSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.sevSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.egthSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl .mockingTHead .mockingTd {
+	min-height : 20px;
+	line-height : 20px;	
+}
+.mockingTbl .mockingTHead .mockingTd.highMod {
+	line-height : 1.1;
+}
+.mockingTbl .mockingTBody .mockingTd {
+	min-height : 55px;
+	line-height : 55px;	
+}
+.mockingTbl .mockingTBody .mockingTd.highMod {
+	line-height : 1;
+}
+.mockingTBody .mockingTd .tbox.regFullSort.listMod {
+	vertical-align : middle;
+}
+.mockingTBody .mockingTd .sbox.regFullSort {
+	vertical-align : middle;
+}
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210117_1820 : [진맛] 원자재 관리 페이지 추가 내용. */
+
+/* :: open : ksg_20210118_1137 : [진맛] 창고 관리 페이지 내용. */
+/* :: innerO : 기존 내용 수정. */
+.section .btnGroup.inListTable a.btn.modifySort,
+.section .btnGroup.inListTable a.btn.delSort {
+	margin : 1px;
+	vertical-align : middle;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 삭제한 기존 내용. */
+/* .section .btnGroup.inListTable a.btn + a.btn {
+    margin-top : 3px;
+} */
+/* :: innerC : 삭제한 기존 내용. */
+/* :: innerO : 신규 내용 추가. */
+.cateInfoCase.fifSort {
+	padding-left : 120px;
+}
+.cateInfoCase.fifSort:before {
+	left : 110px;
+}
+.cateInfoCase.fifSort:after {
+	left : 110px;
+}
+.innerCateList.fifSort:before {
+	left: 110px;
+}
+.infoBox.countMod .countWord {
+	font-size : 11px;
+	vertical-align : middle;
+	padding : 0 5px 0 15px;
+	font-weight : 800;
+}
+.tbox.regFullSort.countMod {
+    width : 50px;
+	padding : 0 5px;
+	text-align : right;
+    vertical-align : middle;
+}
+
+
+
+/* :: innerC : 신규 내용 추가. */
+/* :: close : ksg_20210118_1137 : [진맛] 창고 관리 페이지 내용. */
+

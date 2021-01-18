@@ -20,6 +20,12 @@
 				</a>
 			</li>
 			<li>
+				<a href="/pageTemplete/twoTblWithrightInnerTbl" class="<?=($lCode == '0101-1' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">병렬(우측 테이블 내 하위 테이블이 존재하는 버전)</span>
+				</a>
+			</li>
+			<li>
 				<a href="/pageTemplete/triTableWithCdBox" class="<?=($lCode == '0102' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">3중(진맛 카드박스)</span>

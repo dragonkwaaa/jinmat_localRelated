@@ -43,6 +43,12 @@
 					<span class="ml11">물류 배송업체 관리</span>
 				</a>
 			</li>
+			<li>
+				<a href="/standSet/wareHouseSet" class="<?=($lCode == '0106' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">창고 관리</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>
