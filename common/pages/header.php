@@ -14,7 +14,7 @@
 		</a>
 		<a href="/order/" class="<?=($tCode == '0200' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">기준항목 관리</span>
+			<span class="">납품/발주관리</span>
         </a>
 	</div>
 

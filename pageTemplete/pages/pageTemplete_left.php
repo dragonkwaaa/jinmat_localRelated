@@ -26,6 +26,12 @@
 				</a>
 			</li>
 			<li>
+				<a href="/pageTemplete/triTblRightTwoTbl" class="<?=($lCode == '0101-2' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">병렬(우측에 입력 파트가 두개 존재하고, 내부에 카드박스 리스트가 존재하는 버전)</span>
+				</a>
+			</li>
+			<li>
 				<a href="/pageTemplete/triTableWithCdBox" class="<?=($lCode == '0102' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">3중(진맛 카드박스)</span>
