@@ -5,7 +5,7 @@
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
 	$tCode					=	'200';
-	$lCode					=	'0201';
+	$lCode					=	'0202';
 ?>
 <body>
 <div class="container">
@@ -24,7 +24,7 @@
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort extendMod">
-				<div class="titleBox manageHeadlineSort">발주요청 목록</div>
+				<div class="titleBox manageHeadlineSort">발주계획 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
 						<!-- <div class="selectGroup monthSort">
@@ -69,15 +69,11 @@
 									<th>검색어</th>
 									<td>
 										<select class="sbox">
-											<option>발주코드</option>
-											<option>창고명</option>
-                                            <option>창고코드</option>
-                                            <option>거래처명</option>
+                                            <option>전체</option>
+										    <option>거래처명</option>
                                             <option>거래처코드</option>
                                             <option>품목명</option>
                                             <option>품목코드</option>
-                                            <option>품종명</option>
-                                            <option>품종코드</option>
                                             <option>생산품명</option>
                                             <option>생산품코드</option>
 										</select>
@@ -226,7 +222,7 @@
                     	</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<div class="titleBox inlistConSort">
-							<div class="titleText">발주요청 목록</div>
+							<div class="titleText">발주계획 목록</div>
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
@@ -245,18 +241,19 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 80px;">
-							<col style="width : 80px;">
-							<col style="width : 80px;">
+							<col style="width : 70px;">
+                            <col style="width : 70px;">
+                            <col style="width : 70px;">
+							<col style="width : 70px;">
 							<col style="width : 100px;">
                             <col style="width : 100px;">
-                            <col style="width : 60px;">
+                            <col style="width : 100px;">
                             <col style="width : 40px;">
 						</colgroup>
 						<thead>
 						<tr>
 							<th>
-								발주요청일<br>
+								발주일<br>
 								(발주코드)
 							</th>
 							<th>
@@ -267,9 +264,16 @@
                                 거래처명<br>
                                 (거래처코드)
                             </th>
-                            <th>발주요청상태</th>
+                            <th>
+                                품목명<br>
+                                (거래처코드)
+                            </th>
+                            <th>발주상태</th>
+                            <th>
+                                발주담당자<br>
+                                (담당자연락처)
+                            </th>
                             <th>비고</th>
-							<th>사용여부</th>
 							<th>관리</th>
 						</tr>
 						</thead>
@@ -301,6 +305,14 @@
 								</div>
                             </td>
                             <td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="품목명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="품목코드" value="">
+								</div>
+							</td>
+                            <td>
 								<select class="sbox regFullSort">
 									<option>발주요청</option>
                                     <option>발주요청승인</option>
@@ -310,15 +322,15 @@
 								</select>
                             </td>
                             <td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="담당자명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="연락처" value="">
+								</div>
+                            </td>
+                            <td>
 								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
@@ -328,12 +340,12 @@
 						</tr>
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
-                        <td>
+                            <td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="발주요청일" value="">
+									<input class="tbox regFullSort listMod" placeholder="발주요청일" value="2021.01.01">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="발주코드" value="">
+									<input class="tbox regFullSort listMod" placeholder="발주코드" value="A12391">
 								</div>
 							</td>
 							<td>
@@ -353,6 +365,14 @@
 								</div>
                             </td>
                             <td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="품목명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="품목코드" value="">
+								</div>
+							</td>
+                            <td>
 								<select class="sbox regFullSort">
 									<option>발주요청</option>
                                     <option>발주요청승인</option>
@@ -362,15 +382,15 @@
 								</select>
                             </td>
                             <td>
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="담당자명" value="">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="연락처" value="">
+								</div>
+                            </td>
+                            <td>
 								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
@@ -416,17 +436,77 @@
 							</colgroup>
 							<tbody>
 							<tr>
-								<th>발주요청일자</th>
+								<th>발주일</th>
 								<td>
-									<input class="tbox regFullSort" value="" readonly>
+									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
-								<th>발주요청코드</th>
+								<th>발주코드</th>
 								<td>
 									<input class="tbox regFullSort" value="" readonly>
 								</td>
-							</tr>
+                            </tr>
+                            <tr>
+								<th>품목명</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>품목코드</th>
+								<td>
+									<input class="tbox regFullSort" value="" readonly>
+								</td>
+                            </tr>
+                            <tr>
+								<th>품종명</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>품종코드</th>
+								<td>
+									<input class="tbox regFullSort" value="" readonly>
+								</td>
+                            </tr>
+                            <tr>
+								<th>유통기한</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>규격</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>수량</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>단가</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>공급가액</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
+                            <tr>
+								<th>부가세</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+                            </tr>
 							<tr>
 								<th>창고명</th>
 								<td>
@@ -452,260 +532,12 @@
 								</td>
                             </tr>
                             <tr>
-								<th>발주 요청자</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주요청품목</th>
-								<td>
-                                    <!-- :: open : ksg_5 : [진맛] 테이블 내에서 긴 카드박스 형태로 품목 여러개를 표시하는 내용. -->
-                                    <!-- :: open : ksg_5 : [진맛] 품목을 검색하고 등록하는 파트. -->
-                                    <div class="inTblSchGroup">
-                                        <select class="sbox">
-											<option>품목명</option>
-											<option>품목코드</option>
-										</select>
-                                        <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
-                                        <div class="btnGroup inTableSearch">
-								    		<a href="javascript:void(0);" class="btn searchSort">등록</a>
-								    	</div>
-                                    </div>
-                                    <!-- :: close : ksg_5 : [진맛] 품목을 검색하고 등록하는 파트. -->
-                                    <div class="inTblCdListGroup">
-                                        <!-- :: open : ksg_5 : [진맛] 테이블 개별 품목의 카드박스 내용. -->
-                                        <div class="inTblCdBox">
-                                            <div class="inTblTitleBox">딸기1</div>
-                                            <div class="inTblInfoBox materialSort">
-                                                <span class="infoWord">바코드1</span>
-                                                <span class="infoWord">제품명1</span>
-                                                <span class="infoWord">품번1</span>
-                                                <span class="infoWord">카테고리1</span>
-                                                <div class="stockCounter f_blue">450</div>
-                                            </div>
-                                            <a href="javascript:void(0);" class="linkCover"></a>
-                                        </div>
-                                        <!-- :: close : ksg_5 : [진맛] 테이블 개별 품목의 카드박스 내용. -->
-                                        <div class="inTblCdBox">
-                                            <div class="inTblTitleBox">딸기1</div>
-                                            <div class="inTblInfoBox materialSort">
-                                                <span class="infoWord">바코드1</span>
-                                                <span class="infoWord">제품명1</span>
-                                                <span class="infoWord">품번1</span>
-                                                <span class="infoWord">카테고리1</span>
-                                                <div class="stockCounter f_blue">450</div>
-                                            </div>
-                                            <a href="javascript:void(0);" class="linkCover"></a>
-                                        </div>
-                                    </div>
-                                    <!-- :: close : ksg_5 : [진맛] 테이블 내에서 긴 카드박스 형태로 품목 여러개를 표시하는 내용. -->
-								</td>
-                            </tr>
-                            <tr>
-								<th>상태</th>
+								<th>배송업체</th>
 								<td>
 									<select class="sbox regFullSort">
-									    <option>1. 발주요청</option>
-                                        <option>2. 발주요청승인</option>
-                                        <option>3. 발주취소요청</option>
-                                        <option>4. 발주취소</option>
-                                        <option>5. 발주완료</option>
+									    <option>1. 진짜 맛있는 과일 계약 물류배송 업체</option>
+                                        <option selected="">2. 거래처 계약 물류배송 업체</option>
                                     </select>
-                                    <div class="mt2">
-                                        <input class="tbox regFullSort" placeholder="취소 사유를 입력해 주십시오" value="">
-                                    </div>
-								</td>
-                            </tr>
-                            <tr>
-								<th>비고</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <!-- :: open : ksg_5 : [진맛] 여기서는 사용하지 않을 테이블 항목들. 때문에 display : none 처리 함, -->
-							<tr style="display : none;">
-								<th>분류</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 지사</option>
-										<option>3. 대리점</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>소속</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 인천지사</option>
-										<option>3. 경기지사</option>
-										<option>4. 부산지사</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>부서</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 간호부</option>
-										<option>2. 원무부</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>직급</th>
-								<td>
-									<input class="tbox regFullSort" value="과장">
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>사용여부</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>1. 사용</option>
-										<option>2. 미사용</option>
-									</select>
-								</td>
-                            </tr>
-                            <tr style="display : none;">
-								<th>승인 등급</th>
-								<td>
-                                    <select class="sbox regFullSort listMod">
-							        	<option>선택</option>
-							        	<option selected="">1. 일반승인자</option>
-							        	<option>2. 중간승인자</option>
-							        	<option>3. 최종승인자</option>
-							        </select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>권한</th>
-								<td>
-									<div class="inTableRadioGroup inListSort">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">대시보드</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">예산관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">집행관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">결산관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">기초항목관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">지출요청</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">수입관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">직원관리</div>
-										</div>
-									</div>
-								</td>
-                            </tr>
-                            <!-- :: close : ksg_5 : [진맛] 여기서는 사용하지 않을 테이블 항목들. 때문에 display : none 처리 함, -->
-							</tbody>
-						</table>
-					</div>
-				</div>
-                <!-- :: close : ksg_3 : [진맛] 우측의 내용 입력 파트. -->
-                <!-- :: open : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
-                <div class="specInfoGroup hide">
-                    <div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">발주입력 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-                            <tr>
-								<th>납품처명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>납품처 코드</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>납품처 연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>창고명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-                            <tr>
-								<th>창고 코드</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주처 배송업체</th>
-								<td>
-                                    <input class="tbox regFullSort" placeholder="배송업체명" value="">
-								</td>
-							</tr>
-                            <tr>
-								<th>거래처 배송업체</th>
-								<td>
-                                    <input class="tbox regFullSort" placeholder="배송업체명" value="">
 								</td>
                             </tr>
                             <tr>
@@ -713,9 +545,9 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+                            </tr>
                             <tr>
-								<th>거래수량</th>
+								<th>거래 수량</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
@@ -750,13 +582,13 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+                            </tr>
                             <tr>
 								<th>미납금</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+                            </tr>
                             <tr>
 								<th>입고자명</th>
 								<td>
@@ -788,150 +620,31 @@
 								</td>
 							</tr>
                             <tr>
+								<th>상태</th>
+								<td>
+									<select class="sbox regFullSort">
+									    <option>1. 발주요청</option>
+                                        <option>2. 발주요청승인</option>
+                                        <option>3. 발주취소요청</option>
+                                        <option>4. 발주취소</option>
+                                        <option>5. 발주완료</option>
+                                    </select>
+                                    <div class="mt2">
+                                        <input class="tbox regFullSort" placeholder="취소 사유를 입력해 주십시오" value="">
+                                    </div>
+								</td>
+                            </tr>
+                            <tr>
 								<th>비고</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
                             </tr>
-
-
-
-
-
-
-
-
-
-
-                            <!-- :: open : ksg_5 : [진맛] 여기서는 사용하지 않을 테이블 항목들. 때문에 display : none 처리 함, -->
-							<tr style="display : none;">
-								<th>분류</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 지사</option>
-										<option>3. 대리점</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>소속</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 본사</option>
-										<option>2. 인천지사</option>
-										<option>3. 경기지사</option>
-										<option>4. 부산지사</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>부서</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 간호부</option>
-										<option>2. 원무부</option>
-									</select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>직급</th>
-								<td>
-									<input class="tbox regFullSort" value="과장">
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>사용여부</th>
-								<td>
-									<select class="sbox regFullSort">
-										<option>1. 사용</option>
-										<option>2. 미사용</option>
-									</select>
-								</td>
-                            </tr>
-                            <tr style="display : none;">
-								<th>승인 등급</th>
-								<td>
-                                    <select class="sbox regFullSort listMod">
-							        	<option>선택</option>
-							        	<option selected="">1. 일반승인자</option>
-							        	<option>2. 중간승인자</option>
-							        	<option>3. 최종승인자</option>
-							        </select>
-								</td>
-							</tr>
-							<tr style="display : none;">
-								<th>권한</th>
-								<td>
-									<div class="inTableRadioGroup inListSort">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">대시보드</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">예산관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">집행관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">결산관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">기초항목관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">지출요청</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">수입관리</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">직원관리</div>
-										</div>
-									</div>
-								</td>
-                            </tr>
-                            <!-- :: close : ksg_5 : [진맛] 여기서는 사용하지 않을 테이블 항목들. 때문에 display : none 처리 함, -->
 							</tbody>
 						</table>
 					</div>
 				</div>
-                <!-- :: close : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
+                <!-- :: close : ksg_3 : [진맛] 우측의 내용 입력 파트. -->
                 <div class="btnGroup horizontalBottomSort">
 					<a href="javascript:void(0);" class="btn saveSort">저장</a>
                 </div>
