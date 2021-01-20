@@ -15,6 +15,10 @@
 		<a href="/order/" class="<?=($tCode == '0200' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">납품/발주관리</span>
+		</a>
+		<a href="/buy/obligation" class="<?=($tCode == '0300' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">구매(납품업체)관리현황</span>
         </a>
 	</div>
 

@@ -1864,13 +1864,7 @@ body{
 	border-right : 1px solid #d7dae2;
 	position : relative;
 }
-.inTblInfoBox .stockCounter {
-	position : absolute;
-	right : 20px;
-	top : 0;
-	font-size : 15px;
-	font-weight : 800;
-}
+
 /* :: innerC : 기존 내용 수정. */
 /* :: close : ksg_20210109_2003 : [진맛] 원자재 목록 페이지(양쪽 테이블 버전) 내용. */
 
@@ -2576,3 +2570,14 @@ body{
 /* :: innerC : 신규 내용 추가. */
 /* :: close : ksg_20210118_1707 : [진맛] 발주요청관리 페이지 내용. */
 
+/* :: open : ksg_20210120_1115 : [진맛] 매입청구서현황 페이지 내용. */
+/* ::: innerO : 기존 내용 수정. */
+.inTblInfoBox .stockCounter {
+	position : absolute;
+    right: 10px;
+    top: -12px;
+	font-size : 15px;
+	font-weight : 800;
+}
+/* ::: innerC : 기존 내용 수정. */
+/* :: close : ksg_20210120_1115 : [진맛] 매입청구서현황 페이지 내용. */
