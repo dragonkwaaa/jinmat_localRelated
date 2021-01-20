@@ -78,7 +78,7 @@
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 									</td>
                                 </tr>
-                                    <tr>
+                                <tr>
                                     <th>
                                         상태
 							    	</th>

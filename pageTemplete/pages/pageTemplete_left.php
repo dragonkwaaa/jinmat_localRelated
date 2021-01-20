@@ -14,6 +14,12 @@
 				</a>
 			</li>
 			<li>
+				<a href="/pageTemplete/singleTblWithTopTab" class="<?=($lCode == '0100-2' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">단일 테이블(상단에 메뉴탭 존재하는 버전)</span>
+				</a>
+			</li>
+			<li>
 				<a href="/pageTemplete/twoTableWithImg" class="<?=($lCode == '0101' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">병렬(진맛 이미지리스트)</span>

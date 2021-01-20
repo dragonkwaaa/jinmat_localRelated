@@ -25,6 +25,12 @@
 					<span class="ml11">매입청구서 현황</span>
 				</a>
 			</li>
+			<li>
+				<a href="/buy/cardBuy" class="<?=($lCode == '0304' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">매입내역조회</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>
