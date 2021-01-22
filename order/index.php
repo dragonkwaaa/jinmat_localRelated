@@ -529,12 +529,6 @@
 					</div>
 				</div>
                 <!-- :: close : ksg_3 : [진맛] 우측의 내용 입력 파트. -->
-                
-
-
-
-
-
                 <!-- :: open : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
                 <div class="specInfoGroup hide">
                     <div class="conGroup verticalManageSort">
@@ -669,21 +663,9 @@
 					</div>
 				</div>
                 <!-- :: close : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
-
-
-
-
                 <div class="btnGroup horizontalBottomSort">
 					<a href="javascript:void(0);" class="btn saveSort">저장</a>
                 </div>
-
-
-
-
-
-
-
-
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>

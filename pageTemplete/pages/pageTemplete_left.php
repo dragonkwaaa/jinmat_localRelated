@@ -20,6 +20,12 @@
 				</a>
 			</li>
 			<li>
+				<a href="/pageTemplete/twoTblWithRightinnerTwoTbl" class="<?=($lCode == '0100-3' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">단일(상세팝업 내에 유사 테이블이 2개 병렬로 들어간 버전)</span>
+				</a>
+			</li>
+			<li>
 				<a href="/pageTemplete/twoTableWithImg" class="<?=($lCode == '0101' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">병렬(진맛 이미지리스트)</span>
@@ -28,7 +34,7 @@
 			<li>
 				<a href="/pageTemplete/twoTblWithrightInnerTbl" class="<?=($lCode == '0101-1' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
-					<span class="ml11">병렬(우측 테이블 내 하위 테이블이 존재하는 버전)</span>
+					<span class="ml11">병렬(우측 테이블 내 하위 유사 테이블이 존재하는 버전)</span>
 				</a>
 			</li>
 			<li>
@@ -38,15 +44,15 @@
 				</a>
 			</li>
 			<li>
-				<a href="/pageTemplete/triTableWithCdBox" class="<?=($lCode == '0102' ? ' activated' : '')?>">
-					<i class="dashboardIcon"></i>
-					<span class="ml11">3중(진맛 카드박스)</span>
-				</a>
-			</li>
-			<li>
 				<a href="/pageTemplete/doubRegTable" class="<?=($lCode == '0103' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">병렬(진맛 등록테이블 구조)</span>
+				</a>
+			</li>
+			<li>
+				<a href="/pageTemplete/triTableWithCdBox" class="<?=($lCode == '0102' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">3중(진맛 카드박스)</span>
 				</a>
 			</li>
 			<li>

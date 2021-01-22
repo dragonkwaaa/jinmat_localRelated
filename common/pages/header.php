@@ -8,17 +8,21 @@
 			<!-- <i class="engineerIcon"></i> -->
 			<span class="">페이지 템플릿</span>
 		</a>
-		<a href="/standSet/rawMatSet" class="<?=($tCode == '0100' ? ' activated' : '')?> mr20">
+		<a href="/standSet/rawMatSet" class="<?=($tCode == '100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">기준항목 관리</span>
 		</a>
-		<a href="/order/" class="<?=($tCode == '0200' ? ' activated' : '')?> mr20">
+		<a href="/order/" class="<?=($tCode == '200' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">납품/발주관리</span>
 		</a>
-		<a href="/buy/obligation" class="<?=($tCode == '0300' ? ' activated' : '')?> mr20">
+		<a href="/buy/obligation" class="<?=($tCode == '300' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">구매(납품업체)관리현황</span>
+		</a>
+		<a href="/wearing/" class="<?=($tCode == '400' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">입고 관리</span>
         </a>
 	</div>
 
