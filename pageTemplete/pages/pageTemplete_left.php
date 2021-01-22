@@ -20,9 +20,15 @@
 				</a>
 			</li>
 			<li>
-				<a href="/pageTemplete/twoTblWithRightinnerTwoTbl" class="<?=($lCode == '0100-3' ? ' activated' : '')?>">
+				<a href="/pageTemplete/singleTblWithPopinnerTwoTbl" class="<?=($lCode == '0100-3' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">단일(상세팝업 내에 유사 테이블이 2개 병렬로 들어간 버전)</span>
+				</a>
+			</li>
+			<li>
+				<a href="/pageTemplete/singleTblWithPopinnerTwoTbl_trueTbl" class="<?=($lCode == '0100-4' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">단일(상세팝업 내에 table태그 사용한 정식 테이블이 2개 병렬로 들어간 버전)</span>
 				</a>
 			</li>
 			<li>
