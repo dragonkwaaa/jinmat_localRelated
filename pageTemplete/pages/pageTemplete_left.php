@@ -55,6 +55,14 @@
 					<span class="ml11">병렬(진맛 등록테이블 구조)</span>
 				</a>
 			</li>
+
+
+			<li>
+				<a href="/pageTemplete/twoTbl_leftSlightlyLongVer" class="<?=($lCode == '0103-1' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">병렬(비대칭_왼쪽이 55%인 버전)</span>
+				</a>
+			</li>
 			<li>
 				<a href="/pageTemplete/triTableWithCdBox" class="<?=($lCode == '0102' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>

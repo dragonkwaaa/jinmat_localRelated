@@ -23,9 +23,16 @@
 		<a href="/wearing/" class="<?=($tCode == '400' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">입고 관리</span>
+		</a>
+		<a href="/work/" class="<?=($tCode == '500' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">생산/작업지시 관리</span>
+		</a>
+		<a href="/release/" class="<?=($tCode == '600' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">출고 관리</span>
         </a>
 	</div>
-
 	<div class="headerNav rightSideSort">
 		<!-- <a href="/my/chiefLog" class="btn userGradeSort">최고관리자</a>
 		<a href="/my/myInfo" class="btn userGradeSort">내 정보</a> -->
