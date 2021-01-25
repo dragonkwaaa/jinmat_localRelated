@@ -32,6 +32,13 @@
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">출고 관리</span>
         </a>
+		<a href="/stock/" class="<?=($tCode == '700' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">재고 관리</span>   
+        </a>
+
+
+
 	</div>
 	<div class="headerNav rightSideSort">
 		<!-- <a href="/my/chiefLog" class="btn userGradeSort">최고관리자</a>

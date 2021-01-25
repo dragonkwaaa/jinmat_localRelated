@@ -1,0 +1,39 @@
+
+.section.horizontalManageSort1 {
+	display : inline-block;
+	vertical-align : top;  
+	border : 1px solid #d7dae2;
+	position : relative;
+	min-width : 300px;
+	padding-bottom : 40px;
+}
+
+.section.searcManageSort1 {
+	display : inline-block;
+	/* width : calc(33.33% - 10px); */
+	width : 30%;
+	min-width : 300px;  
+	vertical-align : top;
+	border : 1px solid #d7dae2;
+}
+
+
+
+section.horizontalManageSort1.AsymDoub3 {
+    width: 30%; 
+}    
+.section.horizontalManageSort1.AsymDoub4 { 
+	width : calc(70% - 5px);  
+}  
+
+.tipBox1{
+	font-size: 11px;
+	color: red;  
+}
+.trbt{
+	position: relative;
+	padding-bottom: 15px;
+}
+.conGroup.verticalManageSort .searchGroup .tbox.topLineSearch {
+	width : calc(100% - 200px);
+}

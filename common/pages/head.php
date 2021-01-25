@@ -13,10 +13,11 @@
 	<link type="text/css" rel="stylesheet" href="/common/css/reset.css">
 	<link type="text/css" rel="stylesheet" href="/common/css/ui.css">
 	<link type="text/css" rel="stylesheet" href="/common/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/common/css/styleP.css"> 
 	<link rel="stylesheet" type="text/css" href="/common/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="/common/css/customDatePick.css">
 
-
+    
 	<script src="/common/js/jquery-3.1.1.min.js"></script>
 	<script src="/common/js/jquery-ui-1.12.1.js"></script>
 	<script src="/common/js/ui.js"></script>

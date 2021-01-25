@@ -53,14 +53,14 @@
 									<td>
 										<select class="sbox">
 											<option>전체</option>
-											<option>항목명</option>
-											<option>항목코드</option>
-										</select>
+											<option>품목명</option>
+											<option>품목코드</option>
+										</select> 
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 									</td>
 								</tr>
 							</tbody>
-						</table>
+						</table>  
                     	<div class="btnGroup verticalBottomSort inTblSort">
                     	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     	</div>
@@ -94,8 +94,8 @@
 						</colgroup>
 						<thead>
 						<tr>
-							<th>항목명</th>
-							<th>항목코드</th>
+							<th>품목명</th>
+							<th>품목코드</th> 
 							<th>사용여부</th>
 							<th>관리</th>
 						</tr>
@@ -124,20 +124,20 @@
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="항목명" value="당도">
-                            </td>
+                                <input class="tbox regFullSort listMod" placeholder="품목명" value="사과">
+                            </td> 
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="항목코드" value="B101010">
+								<input class="tbox regFullSort listMod" placeholder="품목코드" value="AP">
 							</td>
 							<td>
 								<select class="sbox regFullSort">
 									<option selected="">사용</option>
 									<option>미사용</option>
 								</select>
-							</td>
+							</td> 
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn modifySort">등록</a>
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
 								</div>
 							</td>
 						</tr>
@@ -299,7 +299,7 @@
 							<div class="titleBox inlistConSort">
 								<div class="titleText">기초항목 상세</div>
 							</div>
-							<div class="tipBox mb15">* 규격이 범위가 아닐 경우, 시작규격만 입력하십시오.</div>
+							<div class="tipBox mb15"></div>
 							<!-- :: open : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 							<div class="sboxGroup listArraySort" style="display : none;">
 								<select class="sbox">
@@ -329,11 +329,8 @@
 						</colgroup>
 						<thead>
 						<tr>
-							<th>분류명</th>
-							<th>분류코드</th>
-							<th>시작규격</th>
-							<th>종료규격</th>
-							<th>단위</th>
+							<th>품종명</th>
+							<th>품종코드</th>
 							<th>사용여부</th>
 							<th>비고</th>
 							<th>관리</th>
@@ -343,20 +340,11 @@
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="분류명" value="">
+								<input class="tbox regFullSort listMod" placeholder="품종명" value="">
 							</td>
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="분류코드" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="시작규격" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="종료규격" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="단위" value="">
-							</td>
+								<input class="tbox regFullSort listMod" placeholder="품종코드" value="">
+							</td>  
 							<td>
 								<select class="sbox regFullSort">
 									<option>사용</option>
@@ -375,19 +363,10 @@
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="분류명" value="저당도">
+								<input class="tbox regFullSort listMod" placeholder="품종명" value="부사">
 							</td>
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="분류코드" value="B101010">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="시작규격" value="1.0">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="종료규격" value="1.0">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="단위" value="Brix">
+								<input class="tbox regFullSort listMod" placeholder="품종코드" value="AP01">
 							</td>
 							<td>
 								<select class="sbox regFullSort">
@@ -399,9 +378,8 @@
 								<input class="tbox regFullSort listMod" placeholder="비고" value="">
 							</td>
 							<td>
-								<div class="btnGroup inListTable">
+								<div class="btnGroup inListTable">  
 									<a href="javascript:void(0);" class="btn modifySort">저장</a>
-									<a href="javascript:void(0);" class="btn delSort">삭제</a>
 								</div>
 							</td>
 						</tr>
