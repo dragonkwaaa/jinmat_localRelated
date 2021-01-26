@@ -1718,12 +1718,12 @@ tr.hide {
 	border : none;
 }	
 .btnGroup.verticalBottomSort .btn.singleSearchMod {
-    width: 250px;
+    width: 150px;
     height: 25px;
     line-height: 25px;
     font-size: 12px;
     border-radius: 4px;
-    text-align: center;
+    text-align: center; 
     background-color: #60af9e;
     color: #fff;
 }
@@ -2396,6 +2396,9 @@ body{
 	width : calc(10% - 2px);
 }
 .mockingTbl.subStgSetSort .mockingTd.egthSort {
+	width : calc(10% - 2px);
+}
+.mockingTbl.subStgSetSort .mockingTd.nineSort { 
 	width : calc(10% - 2px);
 }
 .mockingTbl .mockingTHead .mockingTd {

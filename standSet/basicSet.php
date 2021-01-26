@@ -85,15 +85,13 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 150px;">
-							<col style="width : 70px;">
-							<col style="width : 90px;">
+							<col style="width : 250px;">
 							<col style="width : 150px;">
 							<col style="width : 90px;">
-							<col style="width : 60px;">
+							<col style="width : 50px;">
 						</colgroup>
 						<thead>
-						<tr>
+						<tr> 
 							<th>품목명</th>
 							<th>품목코드</th> 
 							<th>사용여부</th>
@@ -317,15 +315,12 @@
 							<!-- :: close : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 						</div>
 						<table class="infoGroup txtCSort">
-						<colgroup>
-							<col style="width : 80px;">
-							<col style="width : 80px;">
-							<col style="width : 70px;">
-							<col style="width : 70px;">
-							<col style="width : 80px;">
-							<col style="width : 80px;">
-							<col style="width : 200px;">
-							<col style="width : 70px;">
+						<colgroup>  
+							<col style="width : 250px;">
+							<col style="width : 150px;">
+							<col style="width : 90px;">
+							<col style="width : 150px;">
+							<col style="width : 50px;">
 						</colgroup>
 						<thead>
 						<tr>

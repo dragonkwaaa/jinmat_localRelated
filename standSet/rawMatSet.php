@@ -210,10 +210,10 @@
 							<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 							<table class="searchGroup inTblSort">
 								<colgroup>
-									<col style="width : 20%;">
-									<col style="width : 80%;">
+									<col style="width : 15%;">
+									<col style="width : 85%;">
 								</colgroup>
-								<tbody>
+								<tbody>  
 									<tr>
 										<th>검색어</th>
 										<td colspan="4">

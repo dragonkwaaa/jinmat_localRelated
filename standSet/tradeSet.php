@@ -23,7 +23,7 @@
 			</div>
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
 			<!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
-			<div class="section horizontalManageSort AsymDoub1">
+			<div class="section horizontalManageSort AsymDoub3">
 				<div class="titleBox manageHeadlineSort">납품처 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
@@ -183,8 +183,8 @@
 					</ul>
 				</div>
             </div>
-			<!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
-			<div class="section horizontalManageSort AsymDoub2">
+			<!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->  
+			<div class="section horizontalManageSort AsymDoub4">
                 <div class="titleBox manageHeadlineSort">상세정보</div>
 				<!-- :: open : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
 				<div class="specRegGroup hide">
@@ -205,46 +205,54 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
 								<th>납품처코드</th>
 								<td>
 									<input class="tbox regFullSort" value="">
-								</td>
+								</td> 
 							</tr>
 							<tr>
-								<th>거래처구분</th>
+								<th>납품처주소</th>
 								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+								<th>납품담당자</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr> 
+							<tr>
+								<th>거래처구분</th>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>세무신고거래처</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>종사업장번호</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>대표자명</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
-							<tr>
+							<tr>  
 								<th>업태</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" placeholder="업태명(업태코드)" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>종목</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" placeholder="종목명(종목코드)" value="">
 								</td>
 							</tr>
@@ -252,101 +260,85 @@
 								<th>유선전화</th>
 								<td>
 									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>모바일전화</th>
+								</td> 
+								<th>대표자 휴대폰</th>
 								<td>
 									<input class="tbox regFullSort" value="">
-								</td>
+								</td> 
 							</tr>
 							<tr>
 								<th>팩스</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
 								<th>이메일</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+							</tr>	
 							<tr>
 								<th>주소</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>홈페이지</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>검색창 내용</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="#내용1, #내용2, #내용3">
 								</td>
 							</tr>
 							<tr>
 								<th>업종구분</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래처그룹</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>출하대상거래처</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래유형</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" placeholder="영업/구매" value="">
 								</td>
 							</tr>
 							<tr>
-								<th>납품처주소</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>납품담당자</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
 								<th>담당자 연락처1</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>담당자 연락처2</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>담당자 연락처3</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래타입</th>
-								<td>
+								<td colspan="2"> 
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
@@ -355,140 +347,6 @@
 					</div>
                 </div>
 				<!-- :: close : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
-				<!-- :: open : ksg_5 : [진맛] 납품처의 생산품 목록 파트. -->
-				<div class="specInfoGroup hide">
-					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">생산품 목록</div>
-							</div>
-						</div>
-						<table class="infoGroup txtCSort">
-						<colgroup>
-							<col style="width : 100px;">
-							<col style="width : 60px;">
-							<col style="width : 60px;">
-							<col style="width : 60px;">
-							<col style="width : 60px;">
-							<col style="width : 60px;">
-							<col style="width : 150px;">
-							<col style="width : 50px;">
-						</colgroup>
-						<thead>
-						<tr>
-							<th>
-								<div>생산품명</div>
-								<div>(생산품코드)</div>
-							</th>
-							<th>
-								생산품<br>
-								이미지
-							</th>
-                            <th>기준Kg</th>
-							<th>평균가</th>
-							<th>생산규모</th>
-							<th>생산량</th>
-							<th>비고</th>
-							<th>관리</th>
-						</tr>
-						</thead>
-						<tbody>
-						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="생산품명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="">
-								</div>
-							</td>
-							<td>
-								<div class="imgUploadBox">
-									<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
-									<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-								</div>
-							</td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="기준Kg" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="평균가" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="생산규모" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="생산량" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>
-							</td>
-						</tr>
-						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="생산품명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="">
-								</div>
-							</td>
-							<td>
-								<div class="imgBgCase">
-                                	<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
-								</div>
-							</td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="기준Kg" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="평균가" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="생산규모" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="생산량" value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
-									<a href="/rawMat/rawMatSpec" class="btn delSort">삭제</a>
-								</div>
-							</td>
-						</tr>
-						</tbody>
-						</table>
-					</div>
-					<div class="page_group underSort">
-						<ul class="page_box">
-							<li class="prev arrow">
-								<a href="javascript:void(0);"></a>
-							</li>
-							<li class="pageNum on">
-								<a href="javascript:void(0);">1</a>
-							</li>
-							<li class="pageNum">
-								<a href="javascript:void(0);">2</a>
-							</li>
-							<li class="next arrow">
-								<a href="javascript:void(0); "></a>
-							</li>
-						</ul>
-					</div>
-					<!-- :: single : ksg_4 : [진맛] 우측 하단의 창고별 재고 확인 테이블 내용 있던 곳. -->
-				</div>
-				<!-- :: close : ksg_5 : [진맛] 납품처의 생산품 목록 파트. -->
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>

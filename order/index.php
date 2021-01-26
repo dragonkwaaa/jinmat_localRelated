@@ -60,9 +60,6 @@
 								    	<div class="dateInputCase topLineSearchMod">
 								    		<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
 								    	</div>
-								    	<div class="btnGroup inTableSearch">
-								    		<a href="javascript:void(0);" class="btn searchSort">검색</a>
-								    	</div>
 								    </td>
                                 </tr>
 								<tr>

@@ -86,12 +86,10 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 150px;">
-							<col style="width : 70px;">
-							<col style="width : 90px;">
+							<col style="width : 250px;">
 							<col style="width : 150px;">
 							<col style="width : 90px;">
-							<col style="width : 60px;">
+							<col style="width : 50px;">
 						</colgroup>
 						<thead>
 						<tr>
@@ -238,6 +236,14 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
+
+								<td rowspan="3">
+									<div class="imgUploadBox">
+										<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
+										<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
+									</div>
+								</td>
+				
 							</tr>
 							<tr>
 								<th>생산품 코드</th>
@@ -245,17 +251,6 @@
 									<input class="tbox regFullSort" value="" readonly>
 								</td>
 							</tr>
-							<!-- :: open : ksg_5 : [진맛] 이미지 등록 파트. -->
-							<tr>
-								<th>이미지</th>
-								<td>
-									<div class="imgUploadBox">
-										<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
-										<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-									</div>
-								</td>
-							</tr>
-                            <!-- :: close : ksg_5 : [진맛] 이미지 등록 파트. -->
 							<tr>
 								<th>기준 Kg</th>
 								<td>
@@ -264,53 +259,53 @@
 							</tr>
 							<tr>
 								<th>규격</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>생산지 형태</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>생산지명</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>생산지 주소</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>인건비</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 
 							<tr>
 								<th>생산단가</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>출고단가</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>비고</th>
-								<td>
+								<td colspan="2">
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
+							</tr> 
 							</tbody>
 						</table>
 					</div>
@@ -390,8 +385,7 @@
 								<div>원자재명</div>
 								<div>(원자재코드)</div>
 							</th>
-							<th>
-								품종<br>
+							<th> 
 								이미지
 							</th>
                             <th>규격</th>
@@ -451,18 +445,15 @@
 
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
 <div class="popup centerSort wearingPop">
-	<div class="popupCon wideSort">
-		<a href="javascript:closePop()">
+	<div class="popupCon fullwideSort">  
+		<a href="javascript:closePop()">  
 			<img src="/common/img/close.png" class="close">
 		</a>
 		<div class="titleBox popupSort">
-			항목 관리
+			원자재 관리
 		</div>
 		<div class="conGroup verticalManageSort">
 			<table class="infoGroup">
-				<colgroup>
-					<col width="*">
-				</colgroup>
 				<tbody>
                 <!-- :: open : ksg_3 : [진맛] 입력팝업에서는 사용하지 않는 발주/입고번호 내용. display : none 처리. -->
                 <tr style="display : none;">
@@ -479,16 +470,15 @@
                 </tr>
                 <!-- :: close : ksg_3 : [진맛] 입력팝업에서는 사용하지 않는 발주/입고번호 내용. display : none 처리. -->
                 <tr>
-					<th>발주요청품목</th>
 					<td>
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <div class="inTblBoxGroup twinSort wearingGoodsMod">
+                        <div class="inTblBoxGroup twinSort1 wearingGoodsMod">
                             <!-- :: open : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
                             <div class="inTblSchGroup">
                                 <select class="sbox">
-						    		<option>품목명</option>
-						    		<option>품목코드</option>
+						    		<option>원자재명</option>
+						    		<option>원자재코드</option> 
 						    	</select>
                                 <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
                                 <div class="btnGroup inTableSearch">
@@ -497,105 +487,52 @@
                             </div>
                             <!-- :: close : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
                             <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
-                            <div class="mockingTbl subStgSetSort">
-								<div class="mockingTHead">
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>품목명</div>
-											<div>(품목코드)</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-											<div>품종명</div>
-											<div>(품종코드)</div>
-										</div>
-										<div class="mockingTd thrdSort">이미지</div>
-										<div class="mockingTd frthSort">규격</div>
-										<div class="mockingTd fifSort">수량</div>
-										<div class="mockingTd sixSort">단가</div>
-                                        <div class="mockingTd sevSort">공급가액</div>
-                                        <div class="mockingTd egthSort">부가세</div>
-									</div>
-								</div>
-								<div class="mockingTBody">
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>
-												사과1
-											</div>
-											<div class="mt2">
-												(A101010)
-											</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-                                            <div>
-                                                부사1
-											</div>
-											<div class="mt2">
-												(B101010)
-											</div>
-										</div>
-										<div class="mockingTd thrdSort">
+                            <table>  
+							<colgroup> 
+								<col style="width : 100px;">
+								<col style="width : 50px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 10px;">  
+							</colgroup>							
+								<thead>
+									<tr>
+										<th>원자재명<br>
+											(원자재코드)
+										</th>
+										<th>이미지</th>
+										<th>규격</th>
+										<th>기준Kg</th>
+										<th>입고단가</th> 
+                                        <th>출고단가</th>
+										<th>관리</th> 
+									</tr>
+								</thead>
+								<tbody style="text-align: center;">  
+									<tr>
+										<td>
+											<div>사과-부사-01-01</div>
+											<div class="mt2">(AP-01-01-01)</div>
+										</td>  
+										<td>
 											<div class="imgBgCase">
                                 				<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
 											</div> 
+										</td>
+										<td>대</td>
+										<td>15Kg</td>
+										<td>4,5000원</td>
+										<td>5,5000원</td>
+										<td>
+										<div class="btnGroup inListTable">
+											<a href="javascript:void(0);" class="btn regSort">등록</a>
 										</div>
-										<div class="mockingTd frthSort">
-											24
-										</div>
-										<div class="mockingTd fifSort">
-											450
-										</div>
-										<div class="mockingTd sixSort">
-											4,500원
-										</div>
-										<div class="mockingTd sevSort">
-											3,800원
-                                        </div>
-                                        <div class="mockingTd egthSort">
-											380원
-										</div>
-									</div>
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계1" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계2" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd thrdSort">
-											<input class="tbox regFullSort listMod" placeholder="규격" value="">
-										</div>
-										<div class="mockingTd frthSort">
-											<input class="tbox regFullSort listMod" placeholder="기준Kg" value="">
-										</div>
-										<div class="mockingTd fifSort">
-											<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
-										</div>
-										<div class="mockingTd sixSort">
-											<select class="sbox regFullSort">
-												<option>사용</option>
-												<option>미사용</option>
-											</select>
-										</div>
-										<div class="mockingTd sevSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-                                        </div>
-                                        <div class="mockingTd sevSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-										</div>
-									</div>
-								</div>
-							</div>
+										</td>		 
+									</tr>
+								</tbody>
+							</table> 
                             <!-- :: close : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
                             <!-- :: open : ksg_3 : [진맛] 검색 결과에 대한 내부 페이징 파트. -->
                             <div class="page_group underSort">
@@ -618,108 +555,54 @@
                         </div>
                         <!-- :: close : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
                         <!-- :: open : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
-                        <div class="inTblBoxGroup twinSort wearingGoodsMod">
+                        <div class="inTblBoxGroup twinSort1 wearingGoodsMod">  
                             <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
-                            <div class="mockingTbl subStgSetSort">
-                                <div class="mockingTHead">
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>품목명</div>
-											<div>(품목코드)</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-											<div>품종명</div>
-											<div>(품종코드)</div>
-										</div>
-										<div class="mockingTd thrdSort">이미지</div>
-										<div class="mockingTd frthSort">규격</div>
-										<div class="mockingTd fifSort">수량</div>
-										<div class="mockingTd sixSort">단가</div>
-                                        <div class="mockingTd sevSort">공급가액</div>
-                                        <div class="mockingTd egthSort">부가세</div>
-									</div>
-								</div>
-								<div class="mockingTBody">
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계1" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계2" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd thrdSort">
-											<input class="tbox regFullSort listMod" placeholder="규격" value="">
-										</div>
-										<div class="mockingTd frthSort">
-											<input class="tbox regFullSort listMod" placeholder="기준Kg" value="">
-										</div>
-										<div class="mockingTd fifSort">
-											<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
-										</div>
-										<div class="mockingTd sixSort">
-											<select class="sbox regFullSort">
-												<option>사용</option>
-												<option>미사용</option>
-											</select>
-										</div>
-										<div class="mockingTd sevSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-                                        </div>
-                                        <div class="mockingTd egthSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-										</div>
-									</div>
-									<div class="mockingTr">
-										<div class="mockingTd fstSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계1" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd sndSort highMod">
-											<div>
-												<input class="tbox regFullSort listMod" placeholder="단계2" value="">
-											</div>
-											<div class="mt2">
-												<input class="tbox regFullSort listMod" placeholder="단계코드" value="">
-											</div>
-										</div>
-										<div class="mockingTd thrdSort">
-											<input class="tbox regFullSort listMod" placeholder="규격" value="">
-										</div>
-										<div class="mockingTd frthSort">
-											<input class="tbox regFullSort listMod" placeholder="기준Kg" value="">
-										</div>
-										<div class="mockingTd fifSort">
-											<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
-										</div>
-										<div class="mockingTd sixSort">
-											<select class="sbox regFullSort">
-												<option>사용</option>
-												<option>미사용</option>
-											</select>
-										</div>
-										<div class="mockingTd sevSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-                                        </div>
-                                        <div class="mockingTd sevSort">
-											<input class="tbox regFullSort listMod" placeholder="비고" value="">
-										</div>
-									</div>
-								</div>
-							</div>
+                            <table>  
+							<colgroup> 
+								<col style="width : 100px;">
+								<col style="width : 50px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 20px;">
+								<col style="width : 10px;">  
+							</colgroup>		 					
+								<thead>
+									<tr> 
+										<th>원자재명<br>
+											(원자재코드)
+										</th>
+										<th>이미지</th>
+										<th>규격</th>
+										<th>기준Kg</th>
+										<th>입고단가</th> 
+                                        <th>출고단가</th>
+										<th>관리</th> 
+									</tr>
+								</thead>
+								<tbody style="text-align: center;">  
+									<tr>
+										<td>
+											<div>사과-부사-01-01</div>
+											<div class="mt2">(AP-01-01-01)</div> 
+										</td>   
+										<td>
+											<div class="imgBgCase">
+                                				<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
+											</div> 
+										</td>  
+										<td>대</td>
+										<td>15Kg</td>
+										<td>4,5000원</td>
+										<td>5,5000원</td> 
+										<td>
+											<div class="btnGroup inListTable">
+												<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+											</div> 
+										</td>		 
+									</tr>
+								</tbody>
+							</table> 
                             <!-- :: close : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
                         </div>
                         <!-- :: close : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
@@ -730,8 +613,8 @@
 			</table>
 		</div>
 		<div class="btnGroup verticalBottomSort">
-			<a href="javascript:closePop();" class="btn searchSort">저장</a>
-		</div>
+			<a href="javascript:closePop();" class="btn searchSort1">저장</a>  
+		</div> 
 	</div>
 </div>  
 <!-- :: close : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
