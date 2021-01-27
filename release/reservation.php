@@ -1,10 +1,9 @@
-<!-- :: ksg_4 = ksg_20210124_2146 -->
 <!-- :: ksg_3 = ksg_20210124_1910 -->
 <!-- :: ksg_2 = ksg_20210114_1756 -->
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
     $tCode					=	'600';
-	$lCode					=	'600';
+	$lCode					=	'601';
 ?>
 <body>
 <div class="container">
@@ -35,10 +34,14 @@
 										<option>창고코드</option>
 										<option>품목명</option>
 										<option>품목코드</option>
+										<option>품종명</option>
+										<option>품종코드</option>
 										<option>생산품명</option>
 										<option>생산품코드</option>
-										<option>출고담당자</option>
-										<option>담당자코드</option>
+										<option>고객명</option>
+										<option>고객코드</option>
+										<option>출고담당자명</option>
+										<option>출고담당자코드</option>
 										<option>주문자명</option>
 										<option>주문자연락처</option>
 										<option>실수령자명</option>
@@ -234,13 +237,9 @@
 				</div>
 			</div>
 			<div class="section horizontalManageSort fullMod">
-				<div class="titleBox manageHeadlineSort">출고 목록</div>
+				<div class="titleBox manageHeadlineSort">출고예약 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
-						<div class="titleBox inlistConSort">
-					    	<div class="titleText">출고 목록</div>
-                            <a href="javascript:void(0);" class="btn headRightAbMod releasePopBtn">출고내역 추가</a>
-					    </div>
 						<div class="sboxGroup listArraySort">
 							<!-- :: open : ksg_2 : [진맛] 테이블 우상단의 컨트롤 버튼 그룹. 여기서는 사용하지 않으므로 모두 style="display : none;" 처리 함. -->
                             <a style="display : none;" href="javascript:popdateChan();" class="btn listTopSort dateChanBtn">결제일변경</a>
@@ -281,129 +280,123 @@
 					<!-- :: close : ksg_2 : [진맛] 메인 테이블 상단에 표시되는 작은 테이블. 통계 수치를 표시하는 역할. 여기서는 사용하지 않으므로 style="display : none;" 처리 함. -->
 					<table class="searchResultTable">
 						<colgroup>
+                            <col style="width : 90px;">
+                            <col style="width : 180px;">
+							<col style="width : 90px;">
+							<col style="width : 90px;">
+							<col style="width : 90px;">
+							<col style="width : 150px;">
+							<col style="width : 150px;">
+                            <col style="width : 220px;">
+                            <col style="width : 130px;">
+                            <col style="width : 60px;">
                             <col style="width : 100px;">
-                            <col style="width : 100px;">
-							<col style="width : 100px;">
-							<col style="width : 50px;">
-							<col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 100px;">
-							<col style="width : 100px;">
-							<col style="width : 120px;">
-                            <col style="width : 140px;">
+                            <col style="width : 110px;">
+                            <col style="width : 80px;">
+                            <col style="width : 50px;">
                         </colgroup>
 						<thead>
 						<tr>
-							<th>
-								출고번호<br>
-								(출고날짜)
-							</th>
-							<th>출고 출처</th>
-							<th>
-								창고명<br>
-								(창고코드)
-							</th>
-							<th>
-								<div>고객명</div>
-								<div>(고객코드)</div>
-							</th>
-							<th>
-								<div>생산품명</div>
-								<div>(생산품코드)</div>
-							</th>
                             <th>
-                                주문자명<br>
-                                (주문자연락처)
+                                출고<br>
+                                예약번호
                             </th>
-							<th>
+                            <th>
+                                출고 출처<br>
+                                (출고날짜)
+                            </th>
+                            <th>
+                                창고명<br>
+                                (창고코드)
+                            </th>
+                            <th>
+                                고객명<br>
+                                (고객코드)
+                            </th>
+                            <th>
+                                품목명<br>
+                                (품목코드)
+                            </th>
+                            <th>
+                                주문자<br>
+                                (연락처)
+                            </th>
+                            <th>
                                 실수령자<br>
-                                (실수령자연락처)
-							</th>
-							<th>수령주소</th>
-							<th>
-								결제방법<br>
-								(송하인번호)<br>
-								(입금날짜)
+                                (연락처)
                             </th>
+                            <th>수령주소</th>
+                            <th>결제방법</th>
+                            <th>송하인번호</th>
                             <th>
-								<div>출고담당자</div>
-								<div>(담당자코드)</div>
-							</th>
+                                출고담당자<br>
+                                (출고담당코드)
+                            </th>
                             <th>출고상태</th>
                             <th>출고금액</th>
-                            <th>비고</th>
-                            <th>관리</th>
+							<th>관리</th>
 						</tr>
 						</thead>
 						<tbody>
-						<tr>
+						<tr class="reged">
+							<td>115522</td>
 							<td>
-								1231234
-								(2020.12.24)
-							</td>
-							<td>3동 1열 240번</td>
+                                <div>경기1</div>
+                                <div>(2021.01.12 12:34:55)</div>
+                            </td>
 							<td>
-								<div>경남창고1</div>
-								<div class="mt2">(115566)</div>
-							</td>
-							<td>
-								<div>곽고객</div>
-								<div class="mt2">(111555)</div>
-							</td>
-							<td>
-								<div>사과</div>
-								<div class="mt2">(141414)</div>
+								<div>경기창고1</div>
+								<div class="mt2">(451412)</div>
 							</td>
 							<td>
 								<div>곽반장</div>
-								<div class="mt2">(145566)</div>
-							</td>
-							<td>
-								<div>곽주문</div>
+								<div class="mt2">(566672)</div>
+                            </td>
+                            <td>
+								<div>사과</div>
+								<div class="mt2">(566672)</div>
+                            </td>
+                            <td>
+								<div>곽주주</div>
 								<div class="mt2">(010-1234-1234)</div>
-							</td>
-							<td>서울시 영등포구 여의도동 아파트 101-1001</td>
-							<td>
-								<div>카드결제</div>
-								<div class="mt2">(AS1010101)</div>
-								<div class="mt2">(2021.01.01 12:03:41)</div>
-							</td>
-							<td>
-								<div>곽손님</div>
-								<div class="mt2">(010-1234-1234)</div>
-							</td>
-
-
-
+                            </td>
+                            <td>
+								<div>곽고객</div>
+                                <div class="mt2">(010-1234-1234)</div>
+                            </td>
+                            <td>서울시 영등포구 여의도동 여의중학교</td>
 							<td>
                                 <select class="sbox regFullSort">
 									<option>-선택-</option>
-									<option>1. 출고 대기</option>
-                                    <option>2. 출고중</option>
-									<option>3. 출고 완료</option>
-									<option selected="">4. 출고 취소</option>
+									<option>카드결제</option>
+                                    <option selected="">계좌이체</option>
+									<option>무통장입금</option>
+								</select>
+							</td>
+                            <td>114455</td>
+                            <td>
+								<div>곽명인</div>
+                                <div class="mt2">(1144567)</div>
+                            </td>
+                            <td>
+                                <select class="sbox regFullSort">
+									<option>-선택-</option>
+									<option>출고대기</option>
+                                    <option selected="">출고중</option>
+                                    <option>출고완료</option>
+                                    <option>출고취소</option>
 								</select>
 								<div class="mt2">
-                                    <input class="tbox regFullSort" placeholder="취소 사유" value="고객 요청 취소">
+                                    <input class="tbox regFullSort" placeholder="취소 사유" value="">
                                 </div>
-							</td>
-							<td>50,000 원</td>
-                            <td>고객 요청으로 취소함</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn delSort">삭제</a>
+                            </td>
+                            <td>145,670,000</td>
+                            <td>
+                                <div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort releasePopBtn">상세</a>
-								</div>
-							</td>
-						</tr>
+								</div> 
+                            </td>
+                        </tr>
 						</tbody>
                     </table>
 				</div>
@@ -427,7 +420,10 @@
 		</div>
 	</div>
 </div>
-<!-- :: open : ksg_4 : [진맛] 출고내역 상세내용/등록 팝업. -->
+
+
+
+<!-- :: open : ksg_20ba0127_1d18 : [진맛] 상세 팝업 파트. -->
 <div class="popup centerSort releasePop">
 	<div class="popupCon wideSort">
 		<a href="javascript:closePop()">
@@ -443,13 +439,13 @@
 				</colgroup>
 				<tbody>
 				<tr>
-					<th>출고번호</th>
+					<th>출고예약번호</th>
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
                 </tr>
 				<tr>
-					<th>출고날짜</th>
+					<th>출고예약날짜</th>
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
@@ -483,7 +479,7 @@
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
-				</tr>
+                </tr>
 				<tr>
 					<th>품목정보</th>
 					<td>
@@ -783,25 +779,25 @@
 				<tr>
 					<th>송하인번호</th>
 					<td>
-						<input class="tbox regFullSort" value="" readonly>
+						<input class="tbox regFullSort" value="">
 					</td>
 				</tr>
 				<tr>
 					<th>출고담당자</th>
 					<td>
-						<input class="tbox regFullSort" value="" readonly>
+						<input class="tbox regFullSort" value="">
 					</td>
 				</tr>
 				<tr>
 					<th>담당자코드</th>
 					<td>
-						<input class="tbox regFullSort" value="" readonly>
+						<input class="tbox regFullSort" value="">
 					</td>
 				</tr>
 				<tr>
 					<th>출고금액</th>
 					<td>
-						<input class="tbox regFullSort" value="" readonly>
+						<input class="tbox regFullSort" value="">
 					</td>
                 </tr>
 				</tbody>
@@ -812,15 +808,24 @@
 		</div>
 	</div>
 </div>  
-<!-- :: close : ksg_4 : [진맛] 출고내역 상세내용/등록 팝업. -->
+<!-- :: close : ksg_20ba0127_1d18 : [진맛] 상세 팝업 파트. -->
 <script src="/common/js/datePick.js"></script>
 <script>
-// :: open : ksg_4 : [진맛] 좌측 리스트의 "입고내역 추가" 버튼 클릭 시, 상세정보/등록 팝업창 표시하는 스크립트.
+// :: open : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+$(document).on('click', '.conGroup.verticalManageSort .searchResultTable tr.reged', function(){
+    $('.specInfoGroup.hide').removeClass('hide');
+	$('.specRegGroup').removeClass('hide');
+    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
+	$(this).siblings('tr').removeClass('activated');
+	$(this).addClass('activated');
+});
+// :: close : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+// :: open : ksg_b021ja27_1d3a : [진맛] : 팝업 오픈하는 스크립트.
 $(document).on('click', '.btn.releasePopBtn', function(){
 	$('.popup.centerSort.releasePop').show();
 	$('.contents').addClass('overlay');
 });
-// :: close : ksg_4 : [진맛] 좌측 리스트의 "입고내역 추가" 버튼 클릭 시, 상세정보/등록 팝업창 표시하는 스크립트.
+// :: close : ksg_b021ja27_1d3a : [진맛] : 팝업 오픈하는 스크립트.
 </script>
 </body>
 </html>

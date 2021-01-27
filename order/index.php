@@ -596,11 +596,13 @@
 							</tbody>
 						</table>
 					</div>
+					<!-- :: open : ksg_b0210ab7_1201 : [진맛] 우측 테이블 구조 내부의 길이가 짧은 "저장" 버튼 내용. 우측 테이블을 따라서 같이 숨겨지거나 표시됨. -->
+					<div class="btnGroup horizontalBottomSort">
+						<a href="javascript:void(0);" class="btn saveShortSort">저장</a>
+					</div>
+					<!-- :: close : ksg_b0210ab7_1201 : [진맛] 우측 테이블 구조 내부의 길이가 짧은 "저장" 버튼 내용. 우측 테이블을 따라서 같이 숨겨지거나 표시됨. -->
 				</div>
-                <!-- :: close : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
-                <div class="btnGroup horizontalBottomSort">
-					<a href="javascript:void(0);" class="btn saveSort">저장</a>
-                </div>
+				<!-- :: close : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>
