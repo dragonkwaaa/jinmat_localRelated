@@ -2770,3 +2770,14 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 }
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210127_1711 : [진맛] 재고목록 페이지 내용 파트. */
+
+
+.cateListGroup.fullMod {
+	width : 100%;
+}
+.cateListGroup.fullMod .cateInfoCase .infoBox.NameSort {
+	width : 115px;
+}
+.cateListGroup.fullMod .cateCover {
+	cursor : pointer;
+}

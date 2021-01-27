@@ -35,6 +35,14 @@
 		<a href="/stock/" class="<?=($tCode == '700' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">재고 관리</span>   
+		</a>
+		<a href="/staff/" class="<?=($tCode == '800' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">직원 관리</span>   
+		</a>
+		<a href="/setting/tokSet" class="<?=($tCode == '900' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">기타 관리</span>   
         </a>
 
 
