@@ -1238,11 +1238,7 @@ table.infoGroup .regDateDisplay {
     z-index: 101;
 }
 
-.popup .popupCon {
-    position: relative;
-    min-width: 400px;
-    padding-bottom: 20px;
-}
+
 .popup.centerSort .close {
     position: absolute;
     top: 0;
@@ -1779,12 +1775,7 @@ body{
 	font-size : 0;
 	min-width : 1400px;
 }
-.popup.centerSort {
-    top: 50%;
-    left: 50%;
-    transform: translate(-48%, -48%);
-    background-color: #fff;
-}
+
 /* :: innerC : 기존 내용 수정. */
 /* :: innerO : 삭제한 기존 내용. */
 /* .sideMenu.majorSort .conGroup:after {
@@ -2727,3 +2718,43 @@ body{
 }
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210124_2259 : [진맛] 출고관리 페이지 내용 파트. */
+
+
+/* :: open : ksg_20b1j1b7_a20d : [진맛] 발주요청관리 페이지 내용 파트. */
+/* :: innerO : 신규 내용 파트. */
+.btnGroup.horizontalBottomSort .btn.saveShortSort {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #60af9e;
+    color: #fff;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: innerO : 기존 내용 수정. */
+.popup.centerSort {
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -48%);
+	background-color: #fff;
+	height : calc(100% - 150px);
+}
+.popup .popupCon {
+    position: relative;
+    min-width: 400px;
+	padding-bottom: 20px;
+	height : calc(100% - 30px);
+	overflow-y : scroll;
+}
+/* :: innerC : 기존 내용 수정. */
+/* :: innerO : 기존 내용 제거. */
+/* .popup.centerSort {
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -48%);
+    background-color: #fff;
+} */
+/* :: innerC : 기존 내용 제거. */
+/* :: close : ksg_20b1j1b7_a20d : [진맛] 발주요청관리 페이지 내용 파트. */
