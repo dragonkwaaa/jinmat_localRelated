@@ -49,6 +49,12 @@
 					<span class="ml11">창고 관리</span>
 				</a>
 			</li>
+			<li>
+				<a href="/standSet/factorySet" class="<?=($lCode == '0107' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i> 
+					<span class="ml11">공장 관리</span>
+				</a> 
+			</li>
 		</ul>
 	</div>
 </nav>

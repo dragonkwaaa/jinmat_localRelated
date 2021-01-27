@@ -780,6 +780,11 @@ header .headerNav .btn.userGradeSort:nth-child(2) {
 	float : right;
 	margin-bottom : 10px;
 }
+.sboxGroup.listArraySortLeft {
+	display : inline-block;
+	float : left;
+	margin-bottom : 10px;
+}
 .sboxGroup.listArraySort .sbox {
     width : 100px;
     margin-left : 5px;
@@ -2006,7 +2011,7 @@ body{
 	padding : 0;
 }
 .headLineBox.pageControlSort {
-	text-align : right;
+	text-align : right; 
 }
 .sideMenu.majorSort:before {
     content: "";

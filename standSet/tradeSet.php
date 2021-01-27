@@ -142,7 +142,7 @@
 								<div class="mt5">
 									010-1234-1234
 								</div>
-								<div class="mt5">
+								<div class="mt5">  
 									010-1234-5678
 								</div>
 							</td>
@@ -159,7 +159,7 @@
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>  
 								</div>
 							</td>
 						</tr>
@@ -191,7 +191,7 @@
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
 							<div class="titleBox inlistConSort">
-								<div class="titleText">납품처 정보</div>
+								<div class="titleText">납품처 상세정보</div>
 							</div>
 						</div>
 						<table class="infoGroup">
@@ -222,39 +222,37 @@
 							</tr> 
 							<tr>
 								<th>거래처구분</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>세무신고거래처</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>종사업장번호</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>대표자명</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>  
 								<th>업태</th>
-								<td colspan="2">
+								<td>
 									<input class="tbox regFullSort" placeholder="업태명(업태코드)" value="">
 								</td>
-							</tr>
-							<tr>
 								<th>종목</th>
-								<td colspan="2">
+								<td> 
 									<input class="tbox regFullSort" placeholder="종목명(종목코드)" value="">
-								</td>
+								</td>  
 							</tr>
 							<tr>
 								<th>유선전화</th>
@@ -278,74 +276,123 @@
 							</tr>	
 							<tr>
 								<th>주소</th>
-								<td colspan="2">
-									<input class="tbox regFullSort" value="">
+								<td colspan="4">
+									<input class="tbox regFullSort" value="">  
 								</td>
 							</tr>
 							<tr>
 								<th>홈페이지</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>검색창 내용</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="#내용1, #내용2, #내용3">
 								</td>
 							</tr>
 							<tr>
 								<th>업종구분</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래처그룹</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>출하대상거래처</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래유형</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" placeholder="영업/구매" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>담당자 연락처1</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>담당자 연락처2</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>담당자 연락처3</th>
-								<td colspan="2">
+								<td colspan="4">
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>거래타입</th>
-								<td colspan="2"> 
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
+								<td colspan="4">
+									<div class="inTableRadioGroup">
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="radio" name="cate_1a" value="1" checked="">
+												<label></label>
+											</div>
+											<div class="radioTitle">직거래 가능</div>
+										</div>
+										<div class="radioCase">
+											<div class="radioIconBox">
+												<input type="radio" name="cate_1a" value="2">
+												<label></label>
+											</div>
+											<div class="radioTitle">직거래 불가능</div>
+										</div>
+									</div>
+								</td>  
+							</tr>  
 							</tbody>
 						</table>
 					</div>
-                </div>
+				</div>
+				<div class="specRegGroup hide">
+					<div class="conGroup verticalManageSort">
+						<div class="headLineBox listControlSort">
+							<div class="titleBox inlistConSort">
+								<div class="titleText">생산품 정보</div>
+							</div>
+						</div>
+							<table class="searchResultTable ">
+							<thead>
+								<tr> 
+									<th>생산품</th>
+									<th>생산양</th>
+									<th>주기</th>
+								</tr>
+							</thead> 
+							<tbody>
+								<tr>
+									<td>
+									<input class="tbox regFullSort" value="">
+									</td>
+									<td>
+									<input class="tbox regFullSort" value="">
+									</td>
+									<td>
+									<input class="tbox regFullSort" value="">
+									</td> 
+								</tr> 
+							</tbody>
+							</table>
+					</div>	
+					<div class="headLineBox pageControlSort center"> 
+						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+					</div>  		 
+				</div>	
 				<!-- :: close : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
             </div>
             <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->

@@ -23,7 +23,7 @@
 			</div>
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
-			<div class="section horizontalManageSort searcManageSort AsymDoub1">
+			<div class="section horizontalManageSort searcManageSort AsymDoub3">
 				<div class="titleBox manageHeadlineSort">기초항목 관리</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
@@ -102,10 +102,10 @@
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="항목명" value="">
+                                <input class="tbox regFullSort listMod" placeholder="품목명" value="">
                             </td>
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="항목코드" value="">
+								<input class="tbox regFullSort listMod" placeholder="품목코드" value="">
 							</td>
 							<td>
 								<select class="sbox regFullSort">
@@ -160,11 +160,8 @@
 				</div>
             </div>
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
-			<div class="section horizontalManageSort AsymDoub2">
+			<div class="section horizontalManageSort AsymDoub4">  
                 <div class="titleBox manageHeadlineSort">상세정보</div>
-
-
-
 				<!-- :: open : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. 여기서는 우측에 테이블만 표시할 것이므로 이것은 style="display : none;" 처리. -->
 				<div class="specRegGroup hide" style="display : none;">
 					<div class="conGroup verticalManageSort">

@@ -24,25 +24,23 @@
 					<table class="searchGroup">
 						<colgroup>
 							<col style="width : 15%;">
-							<col style="width : 35%;">
-							<col style="width : 15%;">
-							<col style="width : 35%;">
-						</colgroup>
+							<col style="width : 85%;">    
+						</colgroup>  
 						<tbody>
 							<tr>
 								<th>검색어</th>
 								<td>
-									<select class="sbox">
+									<select class="sbox">  
 										<option>전체</option>
 										<option>고객명</option>
                                         <option>고객코드</option>
-                                        <option>전화번호</option>
+                                        <option>연락처</option>  
 									</select>
-									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
 								</td>
-                                <th>
-									구분
-								</th>
+							</tr>
+							<tr>
+								<th>구분</th>
 								<td>
 									<div class="inTableCheckGroup">
 										<div class="checkBoxCase">
@@ -132,10 +130,10 @@
 						<colgroup>
                             <col style="width : 100px;">
                             <col style="width : 100px;">
-                            <col style="width : 100px;">
+                            <col style="width : 80px;">
                             <col style="width : 150px;">
                             <col style="width : 250px;">
-                            <col style="width : 50px;">
+                            <col style="width : 60px;">
                             <col style="width : 250px;">
                             <col style="width : 50px;">
                         </colgroup>
@@ -144,11 +142,7 @@
 							<th>고객명</th>
 							<th>고객코드</th>
                             <th>
-                                <div>구분</div>
-                                <div class="guideWord mt5">
-                                    <div>1. 개인</div>
-                                    <div>2. 업체</div>
-                                </div>
+								구분 (개인,업체)
                             </th>
                             <th>연락처</th>
                             <th>주소</th>
@@ -166,7 +160,10 @@
                                 <input class="tbox regFullSort listMod" placeholder="고객코드" value="">
                             </td>
                             <td>
-                                <input class="tbox regFullSort listMod" placeholder="구분" value="">
+								<select class="sbox regFullSort">
+									<option>개인</option>
+									<option>업체</option>
+								</select> 
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="연락처" value="">
@@ -185,11 +182,11 @@
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="/rawMat/rawMatSpec" class="btn regSort">등록</a>
-								</div>
-							</td>
+									<a href="javascript:void(0);" class="btn regSort">등록</a>
+								</div> 
+							</td>  
                         </tr>
-                        <tr>
+                        <tr>  
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="고객명" value="곽팀장">
                             </td>
@@ -197,7 +194,10 @@
                                 <input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010">
                             </td>
                             <td>
-                                <input class="tbox regFullSort listMod" placeholder="구분" value="1. 개인">
+								<select class="sbox regFullSort">
+									<option>개인</option>
+									<option>업체</option>
+								</select>
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="연락처" value="010-1345-1234">

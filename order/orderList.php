@@ -24,9 +24,9 @@
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort extendMod">
-				<div class="titleBox manageHeadlineSort">발주요청 목록</div>
+				<div class="titleBox manageHeadlineSort">발주목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
-					<div class="headLineBox listControlSort">
+					<div class="headLineBox listControlSort"> 
 						<!-- <div class="selectGroup monthSort">
 							<select>
 								<option selected>2020년</option>
@@ -69,8 +69,8 @@
 											<option>발주코드</option>
 											<option>창고명</option>
                                             <option>창고코드</option>
-                                            <option>거래처명</option>
-                                            <option>거래처코드</option>
+                                            <option>납품처명</option>
+                                            <option>납품처코드</option>
                                             <option>품목명</option>
                                             <option>품목코드</option>
                                             <option>품종명</option>
@@ -220,7 +220,8 @@
                     	</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<div class="titleBox inlistConSort">
-							<div class="titleText">발주요청 목록</div>
+							<div class="titleText">발주목록</div>
+							<a href="javascript:void(0);" class="btn headRightAbMod addorderBtn">발주추가</a>  
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
@@ -239,113 +240,70 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 80px;">
-							<col style="width : 80px;">
-							<col style="width : 80px;">
+							<col style="width : 70px;">
 							<col style="width : 100px;">
-                            <col style="width : 100px;">
-                            <col style="width : 60px;">
-                            <col style="width : 40px;">
+							<col style="width : 70px;">
+							<col style="width : 70px;">
+                            <col style="width : 50px;">
+							<col style="width : 85px;">  
+							<col style="width : 120px;"> 
 						</colgroup>
 						<thead>
 						<tr>
 							<th>
-								발주요청일<br>
+								발주일자<br>
 								(발주코드)
 							</th>
 							<th>
-                                창고명<br>
-                                (창고코드)
+                                생산품명<br>
+                                (생산품코드)
                             </th>
                             <th>
-                                거래처명<br>
-                                (거래처코드)
-                            </th>
-                            <th>발주요청상태</th>
+                                납품처명<br>
+                                (납품처코드)
+							</th>
+							<th>담당자<br>
+							(담당자번호)
+							</th> 
+							<th>배송방법</th>
+                            <th>진행상태</th>
                             <th>비고</th>
-							<th>사용여부</th>
-							<th>관리</th>
 						</tr>
 						</thead>
 						<tbody>
-						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="발주요청일" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="발주코드" value="">
-								</div>
-							</td>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="창고명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="창고코드" value="">
-								</div>
-							</td>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="거래처명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="거래처코드" value="">
-								</div>
-                            </td>
-                            <td>
-								<select class="sbox regFullSort">
-									<option>발주요청</option>
-                                    <option>발주요청승인</option>
-                                    <option>발주취소요청</option>
-                                    <option>발주취소</option>
-                                    <option>발주완료</option>
-								</select>
-                            </td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>
-							</td>
-						</tr>
-						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
-                        <td>
+							<td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="발주요청일" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="발주코드" value="">
-								</div>
+                                    21/01/22
+                                </div>
+                                <div class="mt5">
+                                    (G12341111)
+                                </div>
 							</td>
 							<td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="창고명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="창고코드" value="">
-								</div>
+                                    홍시
+                                </div>
+                                <div class="mt5">
+                                    (G12341111)
+                                </div>
 							</td>
 							<td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="거래처명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="거래처코드" value="">
-								</div>
-                            </td>
+                                    ㅇㅇ청과
+                                </div>
+                                <div class="mt5">
+                                    (G12341111)
+                                </div>
+							<td>
+								<div>
+                                    김별
+                                </div> 
+                                <div class="mt5">
+                                    (010-5100-0429)
+                                </div>
+							</td>
+							<td>새벽배송</td>
                             <td>
 								<select class="sbox regFullSort">
 									<option>발주요청</option>
@@ -354,25 +312,15 @@
                                     <option>발주취소</option>
                                     <option>발주완료</option>
 								</select>
-                            </td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="비고" value="">
-							</td>
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-							</td>
-							<td>
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort">저장</a>
-								</div>
-							</td>
+								</div> 
+                            </td>
+                            <td>
+								<input class="tbox regFullSort listMod" placeholder="비고" value="">
+							</td> 
 						</tr>
-						</tbody>
+						</tbody> 
 					</table>
 				</div>
 				<div class="page_group underSort">
@@ -960,6 +908,18 @@ $(document).on('click', '.btn.popQualMod', function(){
 	$('.contents').addClass('overlay');
 });
 // :: close : ksg_4 : [진맛] 품종 리스트의 "품질" 버튼 클릭 시, 품질 팝업창 표시하는 스크립트.
+
+
+
+// :: open : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+$(document).on('click', '.btn.headRightAbMod.addorderBtn', function(){
+    $('.specInfoGroup.hide').removeClass('hide');
+	$('.specRegGroup').removeClass('hide');
+    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
+	$(this).siblings('tr').removeClass('activated');
+	$(this).addClass('activated');
+}); 
+// :: close : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 
 
 </script>

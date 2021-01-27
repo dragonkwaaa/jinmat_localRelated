@@ -23,7 +23,7 @@
 			</div>
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
-			<div class="section horizontalManageSort1 searcManageSort1 AsymDoub3">  
+			<div class="section horizontalManageSort notWidth searcManageSort AsymDoub1">    
 				<div class="titleBox manageHeadlineSort">원자재 품목</div>  
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
@@ -68,7 +68,7 @@
 						<div class="titleBox inlistConSort">
 							<div class="titleText">원자재 품목</div>
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
-						</div>
+						</div> 
 						<div class="sboxGroup listArraySort">
 							<select class="sbox">
 								<option>번호순▼</option>
@@ -161,7 +161,7 @@
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="품목코드" value="AP">
 								</div>
-								<div class="tipBox1">
+								<div class="tipBoxwarning"> 
 									동일한 코드는 사용하실 수 없습니다.
 								</div>
 							</td>
@@ -197,11 +197,11 @@
 						<li class="next arrow">
 							<a href="javascript:void(0); "></a>
 						</li>
-					</ul>
+					</ul>  
 				</div>
             </div>
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
-			<div class="section horizontalManageSort1 AsymDoub4">  
+			<div class="section horizontalManageSort notWidth AsymDoub2">    
                 <div class="titleBox manageHeadlineSort">상세정보</div>
 				<!-- :: open : ksg_3 : [진맛] 좌측 테이블과 유사한 구조의, 우측 상품 상세정보 내용. -->
 				<div class="specInfoGroup hide">
@@ -225,10 +225,10 @@
 											<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 										</td> 
 									</tr>
-									<tr>
+									<tr>  
 										<th>단가</th>
 										<td colspan="2">
-											<input type="text"> ~ <input type="text">	 
+											<input type="text">원 ~ <input type="text">	원 
 										</td>
 									</tr>
 									<tr>

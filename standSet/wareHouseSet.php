@@ -27,7 +27,7 @@
 				<div class="titleBox manageHeadlineSort">창고 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
-						<div class="titleBox inlistConSort">
+						<div class="titleBox inlistConSort">  
 							<div class="titleText">창고 목록</div>
                             <a href="javascript:void(0);" class="btn headRightAbMod addWHouseBtn">창고 추가</a>
 						</div>
@@ -157,7 +157,7 @@
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
 							<div class="titleBox inlistConSort">
-								<div class="titleText">생산품 정보</div>
+								<div class="titleText">창고 정보</div> 
 							</div>
 						</div>
 						<table class="infoGroup">
@@ -189,7 +189,104 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-                            </tr>
+							</tr>
+							<tr>
+								<th>근무요일</th>
+								<td>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">월</div>
+                                        </div>
+                                        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">화</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">수</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">목</div>
+                                        </div>
+                                        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">금</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">토</div>
+										</div>  
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">일</div>
+                                        </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>근무시간</th>
+								<td>
+								<div class="sboxGroup listArraySortLeft">
+									<select class="sbox small">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									시
+									<select class="sbox small">
+										<option>1</option>
+										<option>2</option>  
+										<option>3</option>
+										<option>4</option>  
+										<option>5</option>  
+									</select>  
+									분
+								</div>  
+								<div class="sboxGroup listArraySortLeft">
+									<select class="sbox small">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									시
+									<select class="sbox small">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>  
+									</select>
+									분
+								</div>  
+								</td>  
+							</tr>
 							</tbody>
 						</table>
 					</div>
@@ -201,9 +298,9 @@
 				<!-- :: open : ksg_6 : [진맛] 창고의 특정 위치에 대한 정보를 표시하는 내용 파트.. -->
 				<div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
+						<div class="headLineBox listControlSort">  
 							<div class="titleBox inlistConSort">
-								<div class="titleText">재고 현황</div>
+								<div class="titleText">구역 현황</div>
 							</div>
                         </div>
                         <!-- :: open : ksg_6 : [진맛] 특정 위치를 트리 구조로 표시하는 depth 테이블 내용.. -->
