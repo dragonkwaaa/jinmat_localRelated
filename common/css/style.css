@@ -1714,6 +1714,7 @@ tr.hide {
 	border : none;
 }	
 .btnGroup.verticalBottomSort .btn.singleSearchMod {
+	display : inline-block;
     width: 150px;
     height: 25px;
     line-height: 25px;
@@ -2758,3 +2759,14 @@ body{
 } */
 /* :: innerC : 기존 내용 제거. */
 /* :: close : ksg_20b1j1b7_a20d : [진맛] 발주요청관리 페이지 내용 파트. */
+
+/* :: open : ksg_20210127_1711 : [진맛] 재고목록 페이지 내용 파트. */
+/* :: innerO : 신규 내용 파트. */
+table.infoGroup.noneImgSort .inTblTitleBox {
+	padding-top : 5px;
+}
+table.infoGroup.noneImgSort .inTblInfoBox {
+	padding-bottom : 5px;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210127_1711 : [진맛] 재고목록 페이지 내용 파트. */

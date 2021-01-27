@@ -29,18 +29,29 @@
 								<td>
 									<select class="sbox">
 										<option>전체</option>
-										<option>생산번호</option>
-										<option>생산품명</option>
-										<option>생산품코드</option>
+										<option>출고출처</option>
 										<option>창고명</option>
 										<option>창고코드</option>
-										<option>생산담당자</option>
-										<option>담당자코드</option>
+										<option>품목명</option>
+										<option>품목코드</option>
+										<option>품종명</option>
+										<option>품종코드</option>
+										<option>생산품명</option>
+										<option>생산품코드</option>
+										<option>고객명</option>
+										<option>고객코드</option>
+										<option>출고담당자명</option>
+										<option>출고담당자코드</option>
+										<option>주문자명</option>
+										<option>주문자연락처</option>
+										<option>실수령자명</option>
+										<option>실수령자연락처</option>
+										<option>수령주소</option>
 									</select>
 									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
 								</td>
 								<th>
-									생산지시일
+									출고날짜
 								</th>
 								<td>
 									<div class="dateInputCase topLineSearchMod">
@@ -49,6 +60,172 @@
 									<div class="betweenWaveText">~</div>
 									<div class="dateInputCase topLineSearchMod">
 										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>
+                            	    출고상태
+								</th>
+								<td>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="" checked>
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">출고대기</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">출고중</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">출고 완료</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">출고 취소</div>
+                            	        </div>
+									</div>
+								</td>
+								<th>결제방법</th>
+								<td>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="" checked>
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">카드결제</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">계좌이체</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">무통장입금</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									입금날짜
+								</th>
+								<td>
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
+									</div>
+									<div class="betweenWaveText">~</div>
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+									</div>
+								</td>
+								<th>권역</th>
+								<td>
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="" checked>
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">1권역</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">2권역</div>
+                            	        </div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>배송방법</th>
+								<td colspan="3">
+									<div class="inTableCheckGroup">
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="" checked>
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">전체</div>
+                            	        </div>
+                            	        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">택배배송</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">퀵서비스</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">직접배송</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">새벽배송</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">산지직배송</div>
+                            	        </div>
 									</div>
 								</td>
 							</tr>
