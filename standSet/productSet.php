@@ -35,7 +35,7 @@
 								<option >2017년</option>
 							</select>
 							<select>
-								<option selected>6월</option>
+								<option selected>6월</option>  
 								<option >5월</option>
 								<option >4월</option>
 								<option >3월</option>
@@ -68,6 +68,7 @@
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<div class="titleBox inlistConSort">
 							<div class="titleText">생산품 품목</div>
+							<a href="javascript:void(0);" class="btn headRightAbMod addProductBtn">생산품 추가</a>
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
@@ -87,8 +88,8 @@
 					<table class="searchResultTable ">
 						<colgroup>
 							<col style="width : 250px;">
-							<col style="width : 150px;">
-							<col style="width : 90px;">
+							<col style="width : 50px;">
+							<col style="width : 55px;">
 							<col style="width : 50px;">
 						</colgroup>
 						<thead>
@@ -104,36 +105,6 @@
 						</thead>
 						<tbody>
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="품목명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="품목번호" value="">
-								</div>
-							</td>
-							<td>
-								<div class="imgUploadBox">
-									<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
-									<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-								</div>
-							</td> 
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>
-							</td>
-						</tr>
-						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
 							<td>
 								<div>
@@ -316,68 +287,24 @@
 				<div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
-							<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
-							<table class="searchGroup inTblSort" style="display : none;">
-								<colgroup>
-									<col style="width : 30%;">
-									<col style="width : 70%;">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>검색어</th>
-										<td>
-											<select class="sbox">
-												<option>전체</option>
-												<option>품목명</option>
-												<option>품목코드</option>
-												<option>품종</option>
-											</select>
-											<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
-							<!-- :: open : ksg_5 : [진맛] 테이블 내의 "검색" 버튼 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
-                    		<div class="btnGroup verticalBottomSort inTblSort" style="display : none;">
-                    		    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
-                    		</div>
 							<!-- :: close : ksg_5 : [진맛] 테이블 내의 "검색" 버튼 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 							<div class="titleBox inlistConSort">
-								<div class="titleText">사용 원자재 목록</div>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn wearingPopBtn">불러오기</a>
+								<div class="titleText">사용 원자재 목록
+									<a href="javascript:void(0);" class="btn loadSort wearingPopBtn">불러오기</a>
 								</div>
-							</div>
-							<!-- :: open : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
-							<div class="sboxGroup listArraySort" style="display : none;">
-								<select class="sbox">
-									<option>번호순▼</option>
-									<option>번호순▲</option>
-									<option>등록순▼</option>
-									<option>등록순▲</option>
-								</select>
-								<select class="sbox">
-									<option>40개씩</option>
-									<option>80개씩</option>
-									<option>100개씩</option>
-								</select>
-							</div>
-							<!-- :: close : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
+							</div> 
 						</div>
 						<table class="infoGroup txtCSort">
 						<colgroup>
-							<col style="width : 80px;">
-							<col style="width : 80px;">
+							<col style="width : 100px;">
+							<col style="width : 45px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
 							<col style="width : 70px;">
+							<col style="width : 70px;"> 
 							<col style="width : 70px;">
-							<col style="width : 70px;">
-							<col style="width : 90px;">
-							<col style="width : 70px;">
-							<col style="width : 150px;">
-							<col style="width : 50px;">
+							<col style="width : 100px;">
+							<col style="width : 40px;">
 						</colgroup>
 						<thead>
 						<tr>
@@ -394,6 +321,7 @@
 							<th>출고단가</th>
 							<th>사용 양</th>
 							<th>비고</th>
+							<th>관리</th> 
 						</tr>
 						</thead>
 						<tbody>
@@ -429,10 +357,18 @@
 							<td> 
 								<input class="tbox regFullSort listMod" placeholder="비고" value="수박 품종 1 부민">
 							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+								</div>
+							</td>	   
 						</tr>
 						</tbody>
 						</table>  
 					</div>
+					<div class="headLineBox pageControlSort center">
+						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+					</div>  
 
 					<!-- :: single : ksg_4 : [진맛] 우측 하단의 창고별 재고 확인 테이블 내용 있던 곳. -->
 				</div>
@@ -450,7 +386,7 @@
 			<img src="/common/img/close.png" class="close">
 		</a>
 		<div class="titleBox popupSort">
-			원자재 관리
+			원자재 관리 
 		</div>
 		<div class="conGroup verticalManageSort">
 			<table class="infoGroup">
@@ -473,7 +409,7 @@
 					<td>
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <div class="inTblBoxGroup twinSort1 wearingGoodsMod">
+                        <div class="inTblBoxGroup twinSort highHeight wearingGoodsMod"> 
                             <!-- :: open : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
                             <div class="inTblSchGroup">
                                 <select class="sbox">
@@ -487,7 +423,7 @@
                             </div>
                             <!-- :: close : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
                             <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
-                            <table>  
+							<table class="infoGroup txtCSort">   
 							<colgroup> 
 								<col style="width : 100px;">
 								<col style="width : 50px;">
@@ -497,7 +433,7 @@
 								<col style="width : 20px;">
 								<col style="width : 10px;">  
 							</colgroup>							
-								<thead>
+								<thead>  
 									<tr>
 										<th>원자재명<br>
 											(원자재코드)
@@ -509,8 +445,8 @@
                                         <th>출고단가</th>
 										<th>관리</th> 
 									</tr>
-								</thead>
-								<tbody style="text-align: center;">  
+								</thead> 
+								<tbody>  
 									<tr>
 										<td>
 											<div>사과-부사-01-01</div>
@@ -555,9 +491,9 @@
                         </div>
                         <!-- :: close : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
                         <!-- :: open : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
-                        <div class="inTblBoxGroup twinSort1 wearingGoodsMod">  
+                        <div class="inTblBoxGroup twinSort highHeight wearingGoodsMod">    
                             <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
-                            <table>  
+                            <table class="infoGroup txtCSort">   
 							<colgroup> 
 								<col style="width : 100px;">
 								<col style="width : 50px;">
@@ -612,10 +548,10 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="btnGroup verticalBottomSort">
-			<a href="javascript:closePop();" class="btn searchSort1">저장</a>  
-		</div> 
-	</div>
+		<div class="headLineBox pageControlSort center">
+			<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+		</div>  
+	</div>  
 </div>  
 <!-- :: close : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
 
@@ -648,8 +584,17 @@ $(document).on('click', '.conGroup.verticalManageSort .searchResultTable tr.rege
 
 $(document).on('click', '.btn.wearingPopBtn', function(){
 	$('.popup.centerSort.wearingPop').show();
-	$('.contents').addClass('overlay');
+	$('.contents').addClass('overlay'); 
 });
+// :: open : ksg_6 : [진맛] "생산품 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+$(document).on('click', '.btn.headRightAbMod.addProductBtn', function(){  
+    $('.specInfoGroup.hide').removeClass('hide');  
+	$('.specRegGroup').removeClass('hide');
+    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
+	$(this).siblings('tr').removeClass('activated');
+	$(this).addClass('activated');
+});
+// :: close : ksg_6 : [진맛] "생산품 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 
 </script>
 </body>

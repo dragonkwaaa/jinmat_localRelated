@@ -1,7 +1,7 @@
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
 	$tCode					=	'100';
-	$lCode					=	'0105';
+	$lCode					=	'0107';
 ?>
 <body>
 <div class="container">
@@ -9,7 +9,7 @@
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/standSet/pages/standSet_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<div class="wrapper">
+	<div class="wrapper">  
 		<div class="contents">
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
@@ -25,39 +25,14 @@
 								<td>
 									<select class="sbox">
 										<option>전체</option>
-										<option>업체명</option>
-                                        <option>업체코드</option>
-                                        <option>업체연락처</option>
+										<option>공장명</option>
+                                        <option>공장코드</option>
+										<option>공장연락처</option>
+										<option>관리자명</option>
+                                        <option>관리자코드</option> 
+                                        <option>관리자연락처</option>
 									</select>
 									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
-								</td>
-							</tr>
-							<tr>
-								<th>업체방식</th> 
-								<td>
-									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
-                                        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">단독</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">업체</div>
-										</div>
-									</div>
 								</td>
 							</tr>
 							<tr>
@@ -83,7 +58,7 @@
 										<div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
-												<label></label> 
+												<label></label>
 											</div>
 											<div class="checkBoxTitle">미사용</div>
 										</div>
@@ -98,7 +73,7 @@
 				</div>
 			</div>
 			<div class="section horizontalManageSort searcManageSort fullMod">
-				<div class="titleBox manageHeadlineSort">배송업체 목록</div>
+				<div class="titleBox manageHeadlineSort">공장 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
 						<div class="sboxGroup listArraySort">
@@ -123,120 +98,97 @@
 						<colgroup>
                             <col style="width : 150px;">
                             <col style="width : 100px;">
-							<col style="width : 80px;">
-							<col style="width : 130px;">
-                            <col style="width : 80px;">
-                            <col style="width : 200px;">
-                            <col style="width : 90px;">
 							<col style="width : 100px;">
-							<col style="width : 70px;">
-                            <col style="width : 200px;">
-                            <col style="width : 50px;">
+							<col style="width : 80px;">
+                            <col style="width : 100PX;"> 
+                            <col style="width : 100PX;">  
+                            <col style="width : 70px;"> 
+							<col style="width : 50px;">
+							<col style="width : 150px;">  
+                            <col style="width : 40px;">
                         </colgroup>
 						<thead>
 						<tr>
-							<th>업체명</th>
-							<th>업체코드</th>
-                            <th>
-                               방식 (단독,업체)
-							</th>
-							<th>연락처</th>
-                            <th>
-                                업체규모<br>
-                                (배송기사 수)
-                            </th>
-                            <th>작업지시</th>
-							<th>패널티 점수<br>
-							(시간 준수/배송상태 등)
-							</th>
-							<th>누적 거래금액</th>
+							<th>공장명</th>
+							<th>공장코드</th> 
+							<th>공장연락처</th>
+                            <th>공장관리자명</th>
+                            <th>공장관리자코드</th>
+							<th>관리자 연락처</th>
                             <th>사용여부</th>
-                            <th>비고</th>
+							<th>등록일</th>
+							<th>비고</th>
 							<th>관리</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체명" value="">
+                                <input class="tbox regFullSort listMod" placeholder="공장명" value="">
                             </td>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체코드" value="">
+                                <input class="tbox regFullSort listMod" placeholder="공장코드" value="">
+                            </td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장연락처" value=""> 
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자명" value="">
+							</td> 
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자코드" value="">
                             </td>
                             <td>
-								<select class="sbox regFullSort">
-									<option>단독</option>
-									<option>업체</option> 
-								</select> 
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="연락처" value="">
-							</td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="업체규모" value="">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="작업지시" value="">
-                            </td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="패널티 점수" value="">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod priceMod" placeholder="누적 거래금액" value="">
-                                <span class="priceWord">원</span>
+                                <input class="tbox regFullSort listMod" placeholder="관리자 연락처" value="">
 							</td>
 							<td>
                                 <select class="sbox regFullSort">
 									<option>사용</option>
 									<option>미사용</option>
 								</select>
-                            </td>
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="등록일" value=""> 
+							</td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="비고" value="">
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>
+									<a href="javascript:void(0);" class="btn regSort">등록</a> 
+								</div> 
 							</td>
                         </tr>
                         <tr>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체명" value="강남배송">
+                                <input class="tbox regFullSort listMod" placeholder="공장명" value="횡성공장">
                             </td>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체코드" value="G01011111">
+                                <input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+                            </td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장연락처" value="051-2512-2121">
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자명" value="김별">
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자코드" value="0215421">
                             </td>
                             <td>
-								<select class="sbox regFullSort">
-									<option>단독</option>
-									<option>업체</option> 
-								</select>  
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="연락처" value="010-5100-0429">
-							</td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="업체규모" value="42">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="작업지시" value="매일 오전..">
-                            </td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="패널티 점수" value="72">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod priceMod" placeholder="누적 거래금액" value="450,000,000">
-                                <span class="priceWord">원</span>
+                                <input class="tbox regFullSort listMod" placeholder="관리자 연락처" value="010-5100-0429">
 							</td>
 							<td>
                                 <select class="sbox regFullSort">
 									<option>사용</option>
 									<option selected="">미사용</option>
 								</select>
-                            </td>
+							</td> 
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="등록일" value=""> 
+							</td>
                             <td>
-                                <input class="tbox regFullSort listMod" placeholder="비고" value="패널티 누적으로 3일 사용 중단">
+                                <input class="tbox regFullSort listMod" placeholder="비고" value="">
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
@@ -245,7 +197,7 @@
 							</td>
                         </tr>
 						</tbody>
-                    </table>
+                    </table>  
 				</div>
 				<div class="page_group underSort">
 					<ul class="page_box">

@@ -9,7 +9,7 @@
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/buy/pages/buy_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<div class="wrapper">
+	<div class="wrapper"> 
 		<div class="contents">
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
@@ -17,9 +17,7 @@
 					<table class="searchGroup">
 						<colgroup>
 							<col style="width : 15%;">
-							<col style="width : 35%;">
-							<col style="width : 15%;">
-							<col style="width : 35%;">
+							<col style="width : 85%;">
 						</colgroup>
 						<tbody>
 							<tr>
@@ -27,18 +25,18 @@
 								<td>
 									<select class="sbox">
 										<option>전체</option>
-										<option>거래처명</option>
-                                        <option>거래처코드</option>
-                                        <option>적요</option>
-                                        <option>거래처코드</option>
+										<option>납품처명</option>
+                                        <option>납품처코드</option>  
 									</select>
 									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                                 </td>
-                                <th>
-									검색일자
+                            </tr>
+							<tr>
+								<th>
+									날짜  
 								</th>
 								<td>
-									<div class="dateInputCase topLineSearchMod">
+									<div class="dateInputCase topLineSearchMod"> 
 										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
 									</div>
 									<div class="betweenWaveText">~</div>
@@ -46,7 +44,7 @@
 										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
 									</div>  
 								</td>
-                            </tr>     
+							</tr>     
 						</tbody>
                     </table>
                     <div class="btnGroup verticalBottomSort inTblSort">
@@ -87,8 +85,8 @@
 						<thead>
 						<tr>
 							<th>
-                                거래처명<br>
-                                (거래처코드)
+                                납품처명<br>
+                                (납품처코드)
                             </th>
                             <th>금액</th>
                             <th>적요(비고)</th>
@@ -100,10 +98,10 @@
 						<tr>
                             <td>
                                 <div>
-                                    <input class="tbox regFullSort listMod" placeholder="거래처명" value="">
+                                    <input class="tbox regFullSort listMod" placeholder="납품처명" value="">
                                 </div>
                                 <div class="mt2">
-                                    <input class="tbox regFullSort listMod" placeholder="거래처코드" value="">
+                                    <input class="tbox regFullSort listMod" placeholder="납품처코드" value="">
                                 </div>
                             </td>
 							<td>

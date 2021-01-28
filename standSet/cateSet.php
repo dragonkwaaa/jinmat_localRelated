@@ -26,7 +26,7 @@
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: open : ksg_5 : [진맛] 4배열 테이블 첫째 파트. -->
             <div class="section horizontalManageSort fullMod">
-				<div class="titleBox manageHeadlineSort">1차 분류</div>
+				<!-- <div class="titleBox manageHeadlineSort">1차 분류</div> -->
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
 						<div class="titleBox inlistConSort">
