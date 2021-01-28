@@ -2776,7 +2776,8 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210127_1711 : [진맛] 재고목록 페이지 내용 파트. */
 
-
+/* :: open : ksg_20210128_1553 : [진맛] 직원 목록 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
 .cateListGroup.fullMod {
 	width : 100%;
 }
@@ -2786,3 +2787,5 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 .cateListGroup.fullMod .cateCover {
 	cursor : pointer;
 }
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210128_1553 : [진맛] 직원 목록 페이지 내용. */
