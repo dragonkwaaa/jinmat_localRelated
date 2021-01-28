@@ -5,6 +5,13 @@
 .section.horizontalManageSort.AsymDoub4 {
 	width : calc(50% - 5px);
 }  
+
+.section.horizontalManageSort.AsymDoub5 {
+	width : 35%; 
+}
+.section.horizontalManageSort.AsymDoub6 {
+	width : calc(65% - 5px); 
+}  
   
 .tipBoxwarning{
 	font-size: 11px;   
@@ -83,4 +90,71 @@
     line-height: 35px;
     text-align: center;
     border-radius: 4px;  
+}
+
+.btnGroup.inListTable a.btn.deleteSort {
+	display : inline-block;
+	margin : 0 auto;
+	width : auto;
+	padding : 0 5px;
+	height : 25px;
+	line-height : 25px;
+	text-align : center;
+	border-radius : 4px;
+	background-color :#C90000; 
+	color  : #fff;
+	font-size : 12px;
+}    
+ 
+.tarea.full {
+    display: block;  
+    resize: none;
+    width: calc(100% - 65px);
+    height: 104px;  
+    padding: 13px 30px;
+    font-family: "Noto Sans KR",sans-serif;  
+    background-color: #ffffff;
+}
+.mt15{
+  
+	margin-top: 15px;
+}
+.ftred{ 
+	color: red;
+}
+
+.tbox.small { 
+	width : 150px;
+	height: 20px;
+}
+
+.tbox.normal {
+	width : 200px; 
+	height : 100%;
+	height : 25px;
+	/* border : none; */
+	padding : 0 5px;
+} 
+
+.tbox.regFullSort.Textleft {
+    /* width : 100%; */
+    width : calc(100% - 4px);
+	padding : 0; 
+}
+.sbox.tiny { 
+    width: 125px;
+    border: none;
+    background-color: #fff;
+    height: 27px;
+	border: 1px solid #d7dae2;
+} 
+
+
+
+.section.searcManageSort.Six {
+	width : 60%; 
+}
+	section.horizontalManageSort.Four {  
+		/* width : calc(55% - 14px); */
+		width : calc(40% - 4px); 
 }

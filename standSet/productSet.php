@@ -23,7 +23,7 @@
 			</div>
 			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
-			<div class="section horizontalManageSort searcManageSort AsymDoub1">
+			<div class="section horizontalManageSort searcManageSort AsymDoub5">
 				<div class="titleBox manageHeadlineSort">생산품 품목</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
@@ -182,8 +182,8 @@
 					</ul>
 				</div>
             </div>
-            <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
-			<div class="section horizontalManageSort AsymDoub2">
+            <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. --> 
+			<div class="section horizontalManageSort AsymDoub6">
                 <div class="titleBox manageHeadlineSort">상세정보</div>
 
 
@@ -290,7 +290,7 @@
 							<!-- :: close : ksg_5 : [진맛] 테이블 내의 "검색" 버튼 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 							<div class="titleBox inlistConSort">
 								<div class="titleText">사용 원자재 목록
-									<a href="javascript:void(0);" class="btn loadSort wearingPopBtn">불러오기</a>
+									<a href="javascript:void(0);" class="btn headRightAbMod wearingPopBtn">불러오기</a>
 								</div>
 							</div> 
 						</div>
@@ -299,7 +299,7 @@
 							<col style="width : 100px;">
 							<col style="width : 45px;">
 							<col style="width : 70px;">
-							<col style="width : 70px;">
+							<col style="width : 70px;">  
 							<col style="width : 70px;">
 							<col style="width : 70px;"> 
 							<col style="width : 70px;">
@@ -492,9 +492,12 @@
                         <!-- :: close : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
                         <!-- :: open : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
                         <div class="inTblBoxGroup twinSort highHeight wearingGoodsMod">    
-                            <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
-                            <table class="infoGroup txtCSort">   
-							<colgroup> 
+							<!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
+							<div class="titleBox inlistConSort">
+								<div class="titleText"> 사용 원자재 목록</div>
+							</div>     
+                            <table class="infoGroup txtCSort" style="margin-top: 14px ;">    
+							<colgroup>   
 								<col style="width : 100px;">
 								<col style="width : 50px;">
 								<col style="width : 20px;">
@@ -504,7 +507,7 @@
 								<col style="width : 10px;">  
 							</colgroup>		 					
 								<thead>
-									<tr> 
+									<tr>   
 										<th>원자재명<br>
 											(원자재코드)
 										</th>
@@ -519,7 +522,7 @@
 								<tbody style="text-align: center;">  
 									<tr>
 										<td>
-											<div>사과-부사-01-01</div>
+											<div>사과-부사-01-01</div>  
 											<div class="mt2">(AP-01-01-01)</div> 
 										</td>   
 										<td>

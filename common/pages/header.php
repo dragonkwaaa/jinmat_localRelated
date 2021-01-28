@@ -43,7 +43,11 @@
 		<a href="/setting/tokSet" class="<?=($tCode == '900' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">기타 관리</span>   
-        </a>
+		</a>
+		<a href="/additional/" class="<?=($tCode == '1000' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">부가기능</span>    
+        </a> 
 
 
 
