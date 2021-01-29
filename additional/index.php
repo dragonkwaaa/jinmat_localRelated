@@ -4,8 +4,9 @@
 <!-- :: ksg_2 = ksg_20210109_1554 -->
 <!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-    $tCode					=	'1000';
-?>
+	$tCode					=	'1000';
+	$lCode					=	'01000';
+?> 
 <body>
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?> 
@@ -57,14 +58,7 @@
 								<tr>
 									<th>답변여부</th> 
 									<td>
-										<div class="inTableCheckGroup">
-							    			<div class="checkBoxCase">
-							    				<div class="checkBoxIconBox">
-							    					<input type="checkbox" name="" value="" checked>
-							    					<label></label>
-							    				</div>
-							    				<div class="checkBoxTitle">전체</div>
-                                            </div>
+										<div class="inTableCheckGroup">  
                                             <div class="checkBoxCase">
 							    				<div class="checkBoxIconBox">
 							    					<input type="checkbox" name="" value="">

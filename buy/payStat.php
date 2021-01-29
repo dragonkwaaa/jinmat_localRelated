@@ -28,7 +28,7 @@
 										<option>납품처명</option>
                                         <option>납품처코드</option>  
 									</select>
-									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                                 </td>
                             </tr>
 							<tr>

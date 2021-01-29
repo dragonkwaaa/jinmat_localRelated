@@ -24,9 +24,7 @@
 					<table class="searchGroup">
 						<colgroup>
 							<col style="width : 15%;">
-							<col style="width : 35%;">
-							<col style="width : 15%;">
-							<col style="width : 35%;">
+							<col style="width : 85%;">  
 						</colgroup>
 						<tbody>
 						<tr>
@@ -40,9 +38,11 @@
                                     <option>입금계좌</option>
                                     <option>예금주</option>
 								</select>
-								<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+								<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                             </td>
-                            <th>
+						</tr>  
+						<tr>
+						<th>
 								검색일자
 							</th>
 							<td>
@@ -54,7 +54,7 @@
 									<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
 								</div>
 							</td>
-                        </tr>  
+						</tr> 
                         <tr>
                             <th>
                                 상태

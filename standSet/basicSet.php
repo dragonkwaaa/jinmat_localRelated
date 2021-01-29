@@ -16,12 +16,6 @@
 	<div class="wrapper">
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort AsymDoub3">
 				<div class="titleBox manageHeadlineSort">기초항목 관리</div>
@@ -70,6 +64,8 @@
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
+							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
 								<option>번호순▼</option>
 								<option>번호순▲</option>
@@ -139,6 +135,28 @@
 								</div>
 							</td>
 						</tr>
+						<tr class="reged">
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="품목명" value="사과">
+                            </td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="품목코드" value="AP">
+								<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
+								</div>
+							</td>
+							<td>
+								<select class="sbox regFullSort">
+									<option selected="">사용</option>
+									<option>미사용</option>
+								</select>
+							</td> 
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+								</div>
+							</td>
+						</tr>
 						</tbody>
 					</table>
 				</div>
@@ -162,105 +180,6 @@
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
 			<div class="section horizontalManageSort AsymDoub4">  
                 <div class="titleBox manageHeadlineSort">상세정보</div>
-				<!-- :: open : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. 여기서는 우측에 테이블만 표시할 것이므로 이것은 style="display : none;" 처리. -->
-				<div class="specRegGroup hide" style="display : none;">
-					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">생산품 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-							<tr>
-								<th>생산품명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산품 코드</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-							</tr>
-							<!-- :: open : ksg_5 : [진맛] 이미지 등록 파트. -->
-							<tr>
-								<th>이미지</th>
-								<td>
-									<div class="imgUploadBox">
-										<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
-										<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
-									</div>
-								</td>
-							</tr>
-                            <!-- :: close : ksg_5 : [진맛] 이미지 등록 파트. -->
-							<tr>
-								<th>바코드 이미지</th>
-								<td>
-									<div class="imgBgCase noneCSort">
-										<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>바코드 번호</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-							</tr>
-							<tr>
-								<th>기준 Kg</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>규격</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지 형태</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지 주소</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산단가</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>출고단가</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-                </div>
-				<!-- :: close : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. 여기서는 우측에 테이블만 표시할 것이므로 이것은 style="display : none;" 처리. -->
-				<!-- :: open : ksg_20210117_1542 : [진맛] 기초항목 세부 분류표 파트. -->
 				<div class="specInfoGroup hide">
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
@@ -359,6 +278,31 @@
 							</td>
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="품종코드" value="AP01">
+							</td>
+							<td>
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option selected="">미사용</option>
+								</select>
+							</td>
+                            <td>
+								<input class="tbox regFullSort listMod" placeholder="비고" value="">
+							</td>
+							<td>
+								<div class="btnGroup inListTable">  
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="품종명" value="부사">
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="품종코드" value="AP01">
+								<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
+								</div> 
 							</td>
 							<td>
 								<select class="sbox regFullSort">

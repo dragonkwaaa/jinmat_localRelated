@@ -18,11 +18,9 @@
 				<div class="conGroup verticalManageSort">
 					<table class="searchGroup">
 						<colgroup>
-							<col width="70">
-							<col width="*">
-							<col width="70">
-							<col width="*">
-						</colgroup>
+							<col width="15%">
+							<col width="85%">
+						</colgroup>   
 						<tbody>
 							<tr>
 								<th>검색어</th>
@@ -34,24 +32,36 @@
 										<option>창고코드</option>
 										<option>품목명</option>
 										<option>품목코드</option>
-										<option>품종명</option>
-										<option>품종코드</option>
 										<option>생산품명</option>
 										<option>생산품코드</option>
-										<option>고객명</option>
-										<option>고객코드</option>
-										<option>출고담당자명</option>
-										<option>출고담당자코드</option>
+										<option>출고담당자</option>
+										<option>담당자코드</option>
 										<option>주문자명</option>
 										<option>주문자연락처</option>
 										<option>실수령자명</option>
 										<option>실수령자연락처</option>
 										<option>수령주소</option>
 									</select>
-									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
 								</td>
+							</tr>
+							<tr>
 								<th>
 									출고날짜
+								</th>
+								<td>
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
+									</div>
+									<div class="betweenWaveText">~</div>
+									<div class="dateInputCase topLineSearchMod">
+										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th> 
+									입금날짜
 								</th>
 								<td>
 									<div class="dateInputCase topLineSearchMod">
@@ -69,13 +79,6 @@
 								</th>
 								<td>
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                            	        </div>
                             	        <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -106,16 +109,11 @@
                             	        </div>
 									</div>
 								</td>
-								<th>결제방법</th>
+							</tr>
+							<tr>
+							<th>결제방법</th>
 								<td>
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                            	        </div>
                             	        <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -141,28 +139,9 @@
 								</td>
 							</tr>
 							<tr>
-								<th>
-									입금날짜
-								</th>
-								<td>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
-									</div>
-									<div class="betweenWaveText">~</div>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
-									</div>
-								</td>
 								<th>권역</th>
 								<td>
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                            	        </div>
                             	        <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -182,15 +161,8 @@
 							</tr>
 							<tr>
 								<th>배송방법</th>
-								<td colspan="3">
+								<td colspan="3">  
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                            	        </div>
                             	        <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -234,12 +206,16 @@
 					<div class="btnGroup verticalBottomSort inTblSort">
                         <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     </div>
-				</div>
+				</div>  
 			</div>
 			<div class="section horizontalManageSort fullMod">
 				<div class="titleBox manageHeadlineSort">출고예약 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
+						<div class="titleBox inlistConSort">
+					    	<div class="titleText">출고 예약목록</div>
+                            <a href="javascript:void(0);" class="btn headRightAbMod releasePopBtn">출고내역 추가</a>
+					    </div> 
 						<div class="sboxGroup listArraySort">
 							<!-- :: open : ksg_2 : [진맛] 테이블 우상단의 컨트롤 버튼 그룹. 여기서는 사용하지 않으므로 모두 style="display : none;" 처리 함. -->
                             <a style="display : none;" href="javascript:popdateChan();" class="btn listTopSort dateChanBtn">결제일변경</a>

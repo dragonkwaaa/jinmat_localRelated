@@ -17,11 +17,9 @@
 					<table class="searchGroup">
 						<colgroup>
 							<col style="width : 15%;">
-							<col style="width : 35%;">
-							<col style="width : 15%;">
-							<col style="width : 35%;">
+							<col style="width : 85%;">
 						</colgroup>
-						<tbody>
+						<tbody> 
 							<tr>
 								<th>검색어</th>
 								<td>
@@ -30,13 +28,14 @@
 										<option>거래처명</option>
                                         <option>거래처코드</option>
                                         <option>품목명</option>
-                                        <option>품목코드</option>
-                                        <option>적요</option>
+                                        <option>품목코드</option> 
 									</select>
-									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                                 </td>
-                                <th>
-									검색일자
+							</tr> 
+							<tr>
+								<th>
+									검색일자 
 								</th>
 								<td>
 									<div class="dateInputCase topLineSearchMod">
@@ -46,8 +45,8 @@
 									<div class="dateInputCase topLineSearchMod">
 										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
 									</div>
-								</td>
-                            </tr>     
+								</td>  
+							</tr>     
 						</tbody>
                     </table>
                     <div class="btnGroup verticalBottomSort inTblSort">

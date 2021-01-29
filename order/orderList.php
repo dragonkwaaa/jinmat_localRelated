@@ -16,12 +16,6 @@
 	<div class="wrapper">
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort Six">  
 				<div class="titleBox manageHeadlineSort">발주목록</div>
@@ -195,10 +189,12 @@
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a> 
+                            	<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
 								<option>번호순▼</option>
 								<option>번호순▲</option>
-								<option>등록순▼</option>
+								<option>등록순▼</option>  
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">

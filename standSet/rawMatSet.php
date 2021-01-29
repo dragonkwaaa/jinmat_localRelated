@@ -16,12 +16,6 @@
 	<div class="wrapper">
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort notWidth searcManageSort AsymDoub1">    
 				<div class="titleBox manageHeadlineSort">원자재 품목</div>  
@@ -70,7 +64,9 @@
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div> 
 						<div class="sboxGroup listArraySort">
-							<select class="sbox">
+							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
+							<select class="sbox"> 
 								<option>번호순▼</option>
 								<option>번호순▲</option>
 								<option>등록순▼</option>
@@ -161,8 +157,8 @@
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="품목코드" value="AP">
 								</div>
-								<div class="tipBoxwarning"> 
-									동일한 코드는 사용하실 수 없습니다.
+								<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
 								</div>
 							</td>
 							<td>

@@ -16,12 +16,6 @@
 	<div class="wrapper">
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort AsymDoub5">
 				<div class="titleBox manageHeadlineSort">생산품 품목</div>
@@ -72,7 +66,9 @@
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
 						<div class="sboxGroup listArraySort">
-							<select class="sbox">
+							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
+							<select class="sbox">  
 								<option>번호순▼</option>
 								<option>번호순▲</option>
 								<option>등록순▼</option>
@@ -108,10 +104,10 @@
 						<tr class="reged">
 							<td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="품목명" value="수박">
+									<input class="tbox regFullSort listMod" placeholder="생산품명" value="수박">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="품목번호" value="24555111">
+									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="24555111">
 								</div>
 							</td>
 							<td>
@@ -136,10 +132,42 @@
 						<tr class="reged">
 							<td>
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="품목명" value="사과">
+									<input class="tbox regFullSort listMod" placeholder="생산품명" value="사과">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="품목번호" value="31224455">
+									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="31224455">
+								</div>
+							</td>
+							<td>
+								<div class="imgBgCase">
+									<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
+								</div>
+							</td>
+							<td>
+								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option>미사용</option>
+								</select>
+								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<!-- :: single : ksg_4 : [진맛] 라디오 버전의 사용/미사용 있던 곳. -->
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="reged">
+							<td> 
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="생산품명" value="사과">
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="31224455">
+									<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
+									</div> 
 								</div>
 							</td>
 							<td>

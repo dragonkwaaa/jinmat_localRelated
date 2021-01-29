@@ -17,12 +17,6 @@
 	<div class="wrapper">
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
 			<div class="section horizontalManageSort searcManageSort AsymDoub1">
 				<div class="titleBox manageHeadlineSort">창고 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
@@ -32,7 +26,9 @@
                             <a href="javascript:void(0);" class="btn headRightAbMod addWHouseBtn">창고 추가</a>
 						</div>
 						<div class="sboxGroup listArraySort">
-							<select class="sbox">
+							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
+							<select class="sbox"> 
 								<option>번호순▼</option>
 								<option>번호순▲</option>
 								<option>등록순▼</option>
@@ -265,12 +261,12 @@
 										<option>4</option>  
 										<option>5</option>  
 									</select>  
-									분
-								</div>  
-								<div class="sboxGroup listArraySortLeft">
+									분  
+								</div> 
+								<div class="sboxGroup listArraySortLeft"> 
 									<select class="sbox small">
 										<option>1</option>
-										<option>2</option>
+										<option>2</option>  
 										<option>3</option>
 										<option>4</option>
 										<option>5</option>

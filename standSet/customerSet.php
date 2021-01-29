@@ -43,13 +43,6 @@
 								<th>구분</th>
 								<td>
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
                                         <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -72,15 +65,8 @@
 									사용여부
 								</th>
 								<td colspan="4">
-									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
-                                        <div class="checkBoxCase">
+									<div class="inTableCheckGroup"> 
+                                        <div class="checkBoxCase">  
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
 												<label></label>
@@ -192,6 +178,43 @@
                             </td>
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010">
+                            </td>
+                            <td>
+								<select class="sbox regFullSort">
+									<option>개인</option>
+									<option>업체</option>
+								</select>
+                            </td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="연락처" value="010-1345-1234">
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="주소" value="서울시 영등포구 여의도동 여의중학교">
+							</td>
+							<td>
+                                <select class="sbox regFullSort">
+									<option>사용</option>
+									<option selected="">미사용</option>
+								</select>
+                            </td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="비고" value="정기 고객1">
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
+								</div>
+							</td>
+						</tr>
+						<tr>  
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="고객명" value="곽팀장">
+                            </td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010">
+								<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
+								</div>
                             </td>
                             <td>
 								<select class="sbox regFullSort">

@@ -40,14 +40,7 @@
 									사용여부
 								</th>
 								<td colspan="4">
-									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
+									<div class="inTableCheckGroup">  
                                         <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">

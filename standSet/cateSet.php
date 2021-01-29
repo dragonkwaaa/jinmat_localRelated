@@ -17,13 +17,7 @@
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">
-			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
-			<!-- :: open : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
-			<div class="headLineBox pageControlSort">
-                <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-				<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-			</div>
-			<!-- :: close : ksg_3 : [진맛] 테이블 병렬일 때의 총괄 컨트롤 박스 파트. -->
+			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->  
             <!-- :: open : ksg_5 : [진맛] 4배열 테이블 첫째 파트. -->
             <div class="section horizontalManageSort fullMod">
 				<!-- <div class="titleBox manageHeadlineSort">1차 분류</div> -->

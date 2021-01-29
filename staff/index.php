@@ -19,16 +19,14 @@
 				<div class="conGroup verticalManageSort">
 					<table class="searchGroup">  
 						<colgroup>
-							<col style="width : 10%;">
-							<col style="width : 40%;">
-							<col style="width : 10%;">
-							<col style="width : 40%;">
-						</colgroup>
+							<col style="width : 15%;">
+							<col style="width : 85%;">
+						</colgroup>  
 						<tbody>
 						<tr>
 							<th>검색어</th>
 							<td>
-								<select class="sbox">
+								<select class="sbox">  
 									<option>전체</option>
                                     <option>품목명</option>
                                     <option>품목코드</option>

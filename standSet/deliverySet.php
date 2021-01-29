@@ -36,13 +36,6 @@
 								<th>업체방식</th> 
 								<td>
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
                                         <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">
@@ -63,16 +56,9 @@
 							<tr>
                                 <th>
 									사용여부
-								</th>
+								</th> 
 								<td colspan="4">
 									<div class="inTableCheckGroup">
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="" checked>
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">전체</div>
-                                        </div>
                                         <div class="checkBoxCase">
 											<div class="checkBoxIconBox">
 												<input type="checkbox" name="" value="">

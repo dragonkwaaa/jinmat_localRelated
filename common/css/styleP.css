@@ -119,6 +119,12 @@
   
 	margin-top: 15px;
 }
+  
+.mt10{
+  
+	margin-top: 10px;
+}
+
 .ftred{ 
 	color: red;
 }
@@ -157,4 +163,9 @@
 	section.horizontalManageSort.Four {  
 		/* width : calc(55% - 14px); */
 		width : calc(40% - 4px); 
+}
+
+
+.betweenWaveText.left {
+	float: left;    
 }

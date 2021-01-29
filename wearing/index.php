@@ -19,11 +19,9 @@
 				<div class="conGroup verticalManageSort">
 					<table class="searchGroup">
 						<colgroup>
-							<col style="width : 10%;">
-							<col style="width : 40%;">
-							<col style="width : 10%;">
-							<col style="width : 40%;">
-						</colgroup>
+							<col style="width : 15%;">
+							<col style="width : 85%;">
+						</colgroup> 
 						<tbody>
 						<tr>
 							<th>검색어</th>
@@ -33,14 +31,16 @@
                                     <option>발주번호</option>
                                     <option>입고번호</option>
                                     <option>납품처명</option>
-                                    <option>납품처코드</option>
+                                    <option>납품처코드</option>  
                                     <option>창고명</option>
                                     <option>창고코드</option>
                                     <option>입고담당자</option>
 								</select>
-								<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+								<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                             </td>
-                            <th>
+						</tr>  
+						<tr>
+							<th>
 								입고일
 							</th>
 							<td>
@@ -52,20 +52,13 @@
 									<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
 								</div>
 							</td>
-                        </tr>  
+						</tr> 
                         <tr>
                             <th>
                                 배송방식
 							</th>
 							<td>
-								<div class="inTableCheckGroup">
-									<div class="checkBoxCase">
-										<div class="checkBoxIconBox">
-											<input type="checkbox" name="" value="" checked>
-											<label></label>
-										</div>
-										<div class="checkBoxTitle">전체</div>
-                                    </div>
+								<div class="inTableCheckGroup">  
                                     <div class="checkBoxCase">
 										<div class="checkBoxIconBox">
 											<input type="checkbox" name="" value="">
@@ -82,18 +75,13 @@
 									</div>
 								</div>
                             </td>
-                            <th>
+						</tr> 
+						<tr>
+							<th> 
                                 상태
 							</th>
 							<td>
-								<div class="inTableCheckGroup">
-									<div class="checkBoxCase">
-										<div class="checkBoxIconBox">
-											<input type="checkbox" name="" value="" checked>
-											<label></label>
-										</div>
-										<div class="checkBoxTitle">전체</div>
-                                    </div>
+								<div class="inTableCheckGroup">  
                                     <div class="checkBoxCase">
 										<div class="checkBoxIconBox">
 											<input type="checkbox" name="" value="">
@@ -138,7 +126,7 @@
 									</div>
 								</div>
 							</td>
-						</tr>  
+						</tr> 
 						</tbody>
                     </table>
                     <div class="btnGroup verticalBottomSort inTblSort">

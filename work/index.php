@@ -18,12 +18,10 @@
 				<div class="conGroup verticalManageSort">
 					<table class="searchGroup">
 						<colgroup>
-							<col width="70">
-							<col width="*">
-							<col width="70">
-							<col width="*">
+							<col width="15%">
+							<col width="85%">
 						</colgroup>
-						<tbody>
+						<tbody> 
 							<tr>
 								<th>검색어</th>
 								<td>
@@ -34,13 +32,15 @@
 										<option>생산품코드</option>
 										<option>창고명</option>
 										<option>창고코드</option>
-										<option>생산담당자</option>
+										<option>생산담당자</option> 
 										<option>담당자코드</option>
 									</select>
-									<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
+									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
 								</td>
+							</tr>
+							<tr>
 								<th>
-									생산지시일
+									생산지시일 
 								</th>
 								<td>
 									<div class="dateInputCase topLineSearchMod">
