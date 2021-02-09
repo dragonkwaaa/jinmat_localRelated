@@ -83,13 +83,20 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 250px;">
+							<col style="width : 30px;">
+							<col style="width : 200px;">
 							<col style="width : 50px;">
-							<col style="width : 55px;">
+							<col style="width : 70px;">
 							<col style="width : 50px;">
 						</colgroup>
 						<thead>
 						<tr>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</th> 
 							<th>
 								생산품명<br>
 								(생산품코드)
@@ -103,11 +110,17 @@
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
 							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</td>
+							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="생산품명" value="수박">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="24555111">
+									<input class="tbox regFullSort listMod" value="24555111" readonly>
 								</div>
 							</td>
 							<td>
@@ -131,11 +144,17 @@
 						</tr>
 						<tr class="reged">
 							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</td> 
+							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="생산품명" value="사과">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="31224455">
+									<input class="tbox regFullSort listMod"  value="31224455" readonly>
 								</div>
 							</td>
 							<td>
@@ -159,13 +178,19 @@
 							</td>
 						</tr>
 						<tr class="reged">
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</td> 
 							<td> 
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="생산품명" value="사과">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="생산품코드" value="31224455">
-									<div class="tipBoxwarning mt10"> 
+									<input class="tbox regFullSort listMod" value="31224455" readonly>
+									<div class="tipBoxwarning mt10">  
 									동일한 코드가 존재합니다.
 									</div> 
 								</div>
@@ -235,61 +260,36 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-
-								<td rowspan="3">
+								<td rowspan="6">
 									<div class="imgUploadBox">
 										<input type="file" class="hide" accept="image/*" name="img_1" onchange="img_sel(this, event)">
 										<a href="javascript:void(0);" class="upload_btn" onclick="img_upload(this);"></a>
 									</div>
 								</td>
 				
-							</tr>
+							</tr>   
 							<tr>
 								<th>생산품 코드</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-							</tr>
-							<tr>
-								<th>기준 Kg</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>규격</th>
-								<td colspan="2">
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지 형태</th>
-								<td colspan="2">
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지명</th>
-								<td colspan="2">
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>생산지 주소</th>
-								<td colspan="2">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>인건비</th>
-								<td colspan="2">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 
 							<tr>
 								<th>생산단가</th>
-								<td colspan="2">
+								<td>  
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
@@ -466,11 +466,14 @@
 										<th>원자재명<br>
 											(원자재코드)
 										</th>
-										<th>이미지</th>
+										<th>납품처(코드)</th> 
+										<th>4차</th>
 										<th>규격</th>
 										<th>기준Kg</th>
-										<th>입고단가</th> 
-                                        <th>출고단가</th>
+										<th> 
+											<div>입고단가</div>
+											<div class="mt10">출고단가</div>
+										</th> 
 										<th>관리</th> 
 									</tr>
 								</thead> 
@@ -480,15 +483,18 @@
 											<div>사과-부사-01-01</div>
 											<div class="mt2">(AP-01-01-01)</div>
 										</td>  
-										<td>
-											<div class="imgBgCase">
-                                				<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
-											</div> 
-										</td>
+										<td>00농장</td>
+										<td></td> 
 										<td>대</td>
 										<td>15Kg</td>
-										<td>4,5000원</td>
-										<td>5,5000원</td>
+										<td>
+											<div>
+												<input class="tbox regFullSort listMod" placeholder="입고단가" value="">
+											</div>
+											<div class="mt10"> 
+												<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
+											</div> 
+										</td> 
 										<td>
 										<div class="btnGroup inListTable">
 											<a href="javascript:void(0);" class="btn regSort">등록</a>
@@ -526,24 +532,27 @@
 							</div>     
                             <table class="infoGroup txtCSort" style="margin-top: 14px ;">    
 							<colgroup>   
-								<col style="width : 100px;">
+								<col style="width : 80px;">
+								<col style="width : 50px;">
 								<col style="width : 50px;">
 								<col style="width : 20px;">
 								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 10px;">  
+								<col style="width : 50px;"> 
+								<col style="width : 10px;">   
 							</colgroup>		 					
 								<thead>
 									<tr>   
 										<th>원자재명<br>
 											(원자재코드)
 										</th>
-										<th>이미지</th>
+										<th>납품처(코드)</th>  
+										<th>4차</th>
 										<th>규격</th>
 										<th>기준Kg</th>
-										<th>입고단가</th> 
-                                        <th>출고단가</th>
+										<th> 
+											<div>입고단가</div>
+											<div class="mt10">출고단가</div>
+										</th> 
 										<th>관리</th> 
 									</tr>
 								</thead>
@@ -553,15 +562,18 @@
 											<div>사과-부사-01-01</div>  
 											<div class="mt2">(AP-01-01-01)</div> 
 										</td>   
-										<td>
-											<div class="imgBgCase">
-                                				<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
-											</div> 
-										</td>  
+										<td>00농장</td>  
+										<td></td>
 										<td>대</td>
 										<td>15Kg</td>
-										<td>4,5000원</td>
-										<td>5,5000원</td> 
+										<td>
+											<div> 
+												<input class="tbox regFullSort listMod" placeholder="입고단가" value="1,500" readonly>
+											</div>
+											<div class="mt10"> 
+												<input class="tbox regFullSort listMod" placeholder="출고단가" value="2,500" readonly>
+											</div>  
+										</td> 
 										<td>
 											<div class="btnGroup inListTable">
 												<a href="javascript:void(0);" class="btn modifySort">취소</a> 
@@ -590,7 +602,7 @@
 
 
 
-<script src="/common/js/exif-js.js"></script>
+<script src="/common/js/exif-js.js"></script>  
 <script src="/common/js/imgSet.js"></script>
 <script src="/common/js/datePick.js"></script>
 <script>

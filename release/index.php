@@ -367,9 +367,6 @@
 									<option>3. 출고 완료</option>
 									<option selected="">4. 출고 취소</option>
 								</select>
-								<div class="mt2">
-                                    <input class="tbox regFullSort" placeholder="취소 사유" value="고객 요청 취소">
-                                </div>
 							</td>
 							<td>50,000 원</td>
                             <td>고객 요청으로 취소함</td>
@@ -780,6 +777,12 @@
 						<input class="tbox regFullSort" value="" readonly>
 					</td>
                 </tr>
+				<tr>
+					<th>비고</th> 
+					<td>
+						<textarea class="tarea full"></textarea>
+					</td>  
+				</tr>
 				</tbody>
 			</table>
 		</div>

@@ -8,17 +8,17 @@
 			<!-- <i class="engineerIcon"></i> -->
 			<span class="">페이지 템플릿</span>
 		</a>
-		<a href="/standSet/rawMatSet" class="<?=($tCode == '100' ? ' activated' : '')?> mr20">
+		<a href="/standSet/basicSet" class="<?=($tCode == '100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">기준항목 관리</span>
+			<span class="">기준항목 관리</span> 
 		</a>
 		<a href="/order/orderList" class="<?=($tCode == '200' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">납품/발주관리</span> 
+			<span class="">발주관리</span> 
 		</a>
-		<a href="/buy/obligation" class="<?=($tCode == '300' ? ' activated' : '')?> mr20">
+		<a href="/delivery/deliveryList" class="<?=($tCode == '300' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">구매(납품업체)관리현황</span>
+			<span class="">납품관리</span>    
 		</a>
 		<a href="/wearing/" class="<?=($tCode == '400' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
@@ -46,8 +46,12 @@
 		</a>
 		<a href="/additional/" class="<?=($tCode == '1000' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
-			<span class="">부가기능</span>    
-        </a> 
+			<span class="">부가기능</span>     
+        </a>
+		<a href="/buy/obligation" class="<?=($tCode == '1100' ? ' activated' : '')?> mr20">
+			<!-- <i class="dashboardIcon"></i> -->
+			<span class="">납품관리현황</span>
+		</a> 
 
 
 

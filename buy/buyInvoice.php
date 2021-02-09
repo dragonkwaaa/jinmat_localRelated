@@ -1,9 +1,9 @@
 <!-- :: ksg_2 = ksg_20210120_1102 -->
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$tCode					=	'300';
-	$lCode					=	'0303';
-?>
+	$tCode					=	'1100';
+	$lCode					=	'1103';
+?> 
 <body>
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>

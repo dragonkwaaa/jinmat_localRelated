@@ -469,7 +469,7 @@
 
                         <table class="infoGroup">
 							<colgroup>
-								<col width="100">
+								<col width="100"> 
 								<col width="*">
 							</colgroup>
 							<tbody>

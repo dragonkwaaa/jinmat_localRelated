@@ -505,6 +505,19 @@
                 </tr>
                 <!-- :: close : ksg_3 : [진맛] 입력팝업에서는 사용하지 않는 발주/입고번호 내용. display : none 처리. -->
 				<tr>
+					<th>입고상태</th>
+					<td>
+						<select class="sbox normal">
+						    <option>입고 대기</option>
+						    <option>입고 승인</option>
+							<option>입고 출발</option>
+						    <option>입고중</option> 
+							<option>입고완료</option>
+							<option>입고취소</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
 					<th>납품처</th>
 					<td>
 						<input class="tbox regFullSort" value="">

@@ -18,7 +18,7 @@
 				<div class="conGroup verticalManageSort">
 					<table class="searchGroup">
 						<colgroup>
-							<col width="15%">
+							<col width="15%">  
 							<col width="85%">
 						</colgroup>
 						<tbody> 
@@ -30,8 +30,8 @@
 										<option>생산번호</option>
 										<option>생산품명</option>
 										<option>생산품코드</option>
-										<option>창고명</option>
-										<option>창고코드</option>
+										<option>공장명</option>
+										<option>공장코드</option>
 										<option>생산담당자</option> 
 										<option>담당자코드</option>
 									</select>
@@ -103,6 +103,7 @@
 					<!-- :: close : ksg_2 : [진맛] 메인 테이블 상단에 표시되는 작은 테이블. 통계 수치를 표시하는 역할. 여기서는 사용하지 않으므로 style="display : none;" 처리 함. -->
 					<table class="searchResultTable">
 						<colgroup>
+							<col style="width : 30px;">
                             <col style="width : 100px;">
                             <col style="width : 100px;">
 							<col style="width : 100px;">
@@ -114,6 +115,12 @@
                         </colgroup>
 						<thead>
 						<tr>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</th>
 							<th>생산번호</th>
 							<th>생산지시일</th>
 							<th>
@@ -122,8 +129,8 @@
 							</th>
 							<th>생산수량</th>
 							<th>
-								<div>창고명</div>
-								<div>(창고코드)</div>
+								<div>공장명</div>
+								<div>(공장코드)</div>
 							</th>
 							<th>
 								<div>생산담당</div>
@@ -164,11 +171,8 @@
                                     <option>2. 생산중</option>
 									<option>3. 생산 완료</option>
 									<option>4. 생산 취소</option>
-								</select>
-								<div class="mt2">
-                                    <input class="tbox regFullSort" placeholder="취소 사유" value="">
-                                </div>
-							</td>
+								</select>  
+							</td>  
                             
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="" value="">                                
@@ -181,6 +185,12 @@
 						</tr>
 						<!-- :: close : ksg_3 : [진맛] 인풋으로 구성된 좌측 테이블 내용 파트. 여기서는 고정폼을 사용할 것이므로 display : none 처리. -->
 						<tr class="reged">
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</td>
 							<td>115522</td>
 							<td>01.05</td>
 							<td>
@@ -204,9 +214,6 @@
 									<option>3. 생산 완료</option>
 									<option>4. 생산 취소</option>
 								</select>
-								<div class="mt2">
-                                    <input class="tbox regFullSort" placeholder="취소 사유" value="">
-                                </div>
 							</td>
                             <td>
                                 01.05 생산내용                         
@@ -496,9 +503,6 @@
 										<option>3. 생산 완료</option>
 										<option>4. 생산 취소</option>
 									</select>
-									<div class="mt2 hide">
-                        	            <input class="tbox regFullSort" placeholder="취소 사유" value="">
-                        	        </div>
 								</td>
 								<td>
 									<input class="tbox regFullSort listMod" placeholder="비고" value="5일 일반 생산작업">
