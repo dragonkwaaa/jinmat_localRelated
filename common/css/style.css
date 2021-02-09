@@ -2789,3 +2789,44 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 }
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210128_1553 : [진맛] 직원 목록 페이지 내용. */
+
+
+/* :: open : ksg_20210209_1707 : [진맛] 기준항목관리_생산품관리 페이지 내용. */
+/* :: innerO : 신규 내용 파트. */
+.popup.innerFlowSort .popupCon {
+	min-width: 1500px;
+	overflow-y : unset;
+	height : 100%;
+}
+.popup.innerFlowSort .conGroup.verticalManageSort {
+	height: calc(100% - 48px);
+}
+.popup.innerFlowSort .inTblBoxGroup.twinSort.highHeight {
+	height : 650px;
+}
+.popup.innerFlowSort table.infoGroup.fullHSort {
+	height : 100%;
+}
+.popup.innerFlowSort .inTblBoxGroup.scrollSort {
+	/* overflow-y : scroll; */
+}
+.popup.centerSort.innerFlowSort {
+	height : 710px;
+}
+.popup.innerFlowSort .inTblBoxGroup.twinSort.highHeight.scrollSort {
+    height: 600px;
+	position : relative;
+	padding-bottom : 50px;
+}
+.popup.innerFlowSort .headLineBox.pageControlSort.center {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+}
+.popup.innerFlowSort .limitHeightTblCase {
+	height: calc(100% - 50px);
+    overflow-y : scroll;
+	border-bottom: 1px solid #ccc;
+}
+/* :: innerC : 신규 내용 파트. */
+/* :: close : ksg_20210209_1707 : [진맛] 기준항목관리_생산품관리 페이지 내용. */

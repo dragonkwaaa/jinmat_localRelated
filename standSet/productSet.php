@@ -396,8 +396,7 @@
 					</div>
 					<div class="headLineBox pageControlSort center">
 						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
-					</div>  
-
+					</div>
 					<!-- :: single : ksg_4 : [진맛] 우측 하단의 창고별 재고 확인 테이블 내용 있던 곳. -->
 				</div>
 				<!-- :: close : ksg_5 : [진맛] 생산품에 필요한 원자재 목록 파트. -->
@@ -408,7 +407,7 @@
 </div>
 
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
-<div class="popup centerSort wearingPop">
+<div class="popup centerSort innerFlowSort wearingPop">
 	<div class="popupCon fullwideSort">  
 		<a href="javascript:closePop()">  
 			<img src="/common/img/close.png" class="close">
@@ -417,7 +416,7 @@
 			원자재 관리 
 		</div>
 		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
+			<table class="infoGroup fullHSort">
 				<tbody>
                 <!-- :: open : ksg_3 : [진맛] 입력팝업에서는 사용하지 않는 발주/입고번호 내용. display : none 처리. -->
                 <tr style="display : none;">
@@ -525,64 +524,69 @@
                         </div>
                         <!-- :: close : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
                         <!-- :: open : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
-                        <div class="inTblBoxGroup twinSort highHeight wearingGoodsMod">    
+                        <div class="inTblBoxGroup twinSort highHeight scrollSort wearingGoodsMod">    
 							<!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
 							<div class="titleBox inlistConSort">
 								<div class="titleText"> 사용 원자재 목록</div>
 							</div>     
-                            <table class="infoGroup txtCSort" style="margin-top: 14px ;">    
-							<colgroup>   
-								<col style="width : 80px;">
-								<col style="width : 50px;">
-								<col style="width : 50px;">
-								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 50px;"> 
-								<col style="width : 10px;">   
-							</colgroup>		 					
-								<thead>
-									<tr>   
-										<th>원자재명<br>
-											(원자재코드)
-										</th>
-										<th>납품처(코드)</th>  
-										<th>4차</th>
-										<th>규격</th>
-										<th>기준Kg</th>
-										<th> 
-											<div>입고단가</div>
-											<div class="mt10">출고단가</div>
-										</th> 
-										<th>관리</th> 
-									</tr>
-								</thead>
-								<tbody style="text-align: center;">  
-									<tr>
-										<td>
-											<div>사과-부사-01-01</div>  
-											<div class="mt2">(AP-01-01-01)</div> 
-										</td>   
-										<td>00농장</td>  
-										<td></td>
-										<td>대</td>
-										<td>15Kg</td>
-										<td>
-											<div> 
-												<input class="tbox regFullSort listMod" placeholder="입고단가" value="1,500" readonly>
-											</div>
-											<div class="mt10"> 
-												<input class="tbox regFullSort listMod" placeholder="출고단가" value="2,500" readonly>
-											</div>  
-										</td> 
-										<td>
-											<div class="btnGroup inListTable">
-												<a href="javascript:void(0);" class="btn modifySort">취소</a> 
-											</div> 
-										</td>		 
-									</tr>
-								</tbody>
-							</table> 
+							<div class="limitHeightTblCase">
+								<table class="infoGroup txtCSort">    
+									<colgroup>   
+										<col style="width : 80px;">
+										<col style="width : 50px;">
+										<col style="width : 50px;">
+										<col style="width : 20px;">
+										<col style="width : 20px;">
+										<col style="width : 50px;"> 
+										<col style="width : 10px;">   
+									</colgroup>		 					
+									<thead>
+										<tr>   
+											<th>원자재명<br>
+												(원자재코드)
+											</th>
+											<th>납품처(코드)</th>  
+											<th>4차</th>
+											<th>규격</th>
+											<th>기준Kg</th>
+											<th> 
+												<div>입고단가</div>
+												<div class="mt10">출고단가</div>
+											</th> 
+											<th>관리</th> 
+										</tr>
+									</thead>
+									<tbody style="text-align: center;">  
+										<tr>
+											<td>
+												<div>사과-부사-01-01</div>  
+												<div class="mt2">(AP-01-01-01)</div> 
+											</td>   
+											<td>00농장</td>  
+											<td></td>
+											<td>대</td>
+											<td>15Kg</td>
+											<td>
+												<div> 
+													<input class="tbox regFullSort listMod" placeholder="입고단가" value="1,500" readonly>
+												</div>
+												<div class="mt10"> 
+													<input class="tbox regFullSort listMod" placeholder="출고단가" value="2,500" readonly>
+												</div>  
+											</td> 
+											<td>
+												<div class="btnGroup inListTable">
+													<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+												</div> 
+											</td>		 
+										</tr>
+									</tbody>
+								</table> 
+							</div>
                             <!-- :: close : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
+							<div class="headLineBox pageControlSort center">
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+							</div> 
                         </div>
                         <!-- :: close : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
                         <!-- :: close : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
@@ -590,10 +594,7 @@
                 </tr>
 				</tbody>
 			</table>
-		</div>
-		<div class="headLineBox pageControlSort center">
-			<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
-		</div>  
+		</div> 
 	</div>  
 </div>  
 <!-- :: close : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
