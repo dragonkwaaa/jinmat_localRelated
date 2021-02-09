@@ -54,6 +54,41 @@
 								</td>
 							</tr>
 							<tr>
+								<th>업체종류</th> 
+								<td>
+									<div class="inTableCheckGroup">
+                                        <div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">일반</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">새벽</div>
+										</div>
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">퀵</div>
+										</div> 
+										<div class="checkBoxCase">
+											<div class="checkBoxIconBox">
+												<input type="checkbox" name="" value="">
+												<label></label>
+											</div>
+											<div class="checkBoxTitle">기타</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
                                 <th>
 									사용여부
 								</th> 
@@ -107,34 +142,41 @@
                     </div>
 					<table class="searchResultTable">
 						<colgroup>
+							<col style="width : 30px;">
                             <col style="width : 150px;">
                             <col style="width : 100px;">
 							<col style="width : 80px;">
+							<col style="width : 80px;">
 							<col style="width : 130px;">
                             <col style="width : 80px;">
-                            <col style="width : 200px;">
                             <col style="width : 90px;">
 							<col style="width : 100px;">
-							<col style="width : 70px;">
+							<col style="width : 70px;"> 
                             <col style="width : 200px;">
                             <col style="width : 50px;">
                         </colgroup>
 						<thead>
 						<tr>
-							<th>업체명</th>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</th>
 							<th>업체코드</th>
+							<th>업체명</th> 
                             <th>
                                방식 (단독,업체)
-							</th>
+							</th> 
+							<th>업체종류</th>
 							<th>연락처</th>
                             <th>
                                 업체규모<br>
                                 (배송기사 수)
                             </th>
-                            <th>작업지시</th>
 							<th>패널티 점수<br>
 							(시간 준수/배송상태 등)
-							</th>
+							</th> 
 							<th>누적 거래금액</th>
                             <th>사용여부</th>
                             <th>비고</th>
@@ -143,16 +185,25 @@
 						</thead>
 						<tbody>
 						<tr>
+							<td></td>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체명" value="">
+								<input class="tbox regFullSort listMod" placeholder="업체코드" value="">
                             </td>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체코드" value="">
-                            </td>
+								<input class="tbox regFullSort listMod" placeholder="업체명" value="">
+							</td> 
                             <td>
 								<select class="sbox regFullSort">
 									<option>단독</option>
 									<option>업체</option> 
+								</select> 
+							</td>
+							<td>
+								<select class="sbox regFullSort">
+									<option>일반</option> 
+									<option>새벽</option>
+									<option>퀵</option> 
+									<option>기타</option> 
 								</select> 
 							</td>
 							<td>
@@ -161,9 +212,6 @@
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="업체규모" value="">
 							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="작업지시" value="">
-                            </td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="패널티 점수" value="">
 							</td>
@@ -188,11 +236,17 @@
                         </tr>
                         <tr>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체명" value="강남배송">
-                            </td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>  
+							</td>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="업체코드" value="G01011111">
-                            </td>
+								<input class="tbox regFullSort listMod" placeholder="업체코드" value="G01011111" readonly>
+                            </td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="업체명" value="강남배송">
+							</td>
                             <td>
 								<select class="sbox regFullSort">
 									<option>단독</option>
@@ -200,14 +254,19 @@
 								</select>  
 							</td>
 							<td>
+								<select class="sbox regFullSort">
+									<option>일반</option> 
+									<option>새벽</option>
+									<option>퀵</option> 
+									<option>기타</option> 
+								</select> 
+							</td> 
+							<td>
 								<input class="tbox regFullSort listMod" placeholder="연락처" value="010-5100-0429">
 							</td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="업체규모" value="42">
 							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="작업지시" value="매일 오전..">
-                            </td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="패널티 점수" value="72">
 							</td>

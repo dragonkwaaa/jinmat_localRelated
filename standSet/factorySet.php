@@ -89,6 +89,7 @@
                     </div>
 					<table class="searchResultTable">
 						<colgroup>
+							<col style="width : 30px;">
                             <col style="width : 150px;">
                             <col style="width : 100px;">
 							<col style="width : 100px;">
@@ -102,8 +103,14 @@
                         </colgroup>
 						<thead>
 						<tr>
-							<th>공장명</th>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</th> 
 							<th>공장코드</th> 
+							<th>공장명</th>
 							<th>공장연락처</th>
                             <th>공장관리자명</th>
                             <th>공장관리자코드</th>
@@ -116,11 +123,12 @@
 						</thead>
 						<tbody>
 						<tr>
+							<td></td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="">
+							</td>
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="공장명" value="">
-                            </td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="공장코드" value="">
                             </td>
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="공장연락처" value=""> 
@@ -154,11 +162,17 @@
                         </tr>
                         <tr>
 							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+							</td>  
+							<td>
                                 <input class="tbox regFullSort listMod" placeholder="공장명" value="횡성공장">
                             </td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
-                            </td> 
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="공장연락처" value="051-2512-2121">
 							</td>

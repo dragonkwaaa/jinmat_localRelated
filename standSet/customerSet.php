@@ -114,6 +114,7 @@
                     </div>
 					<table class="searchResultTable">
 						<colgroup>
+							<col style="width : 30px;"> 
                             <col style="width : 100px;">
                             <col style="width : 100px;">
                             <col style="width : 80px;">
@@ -125,8 +126,14 @@
                         </colgroup>
 						<thead>
 						<tr>
-							<th>고객명</th>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</th>
 							<th>고객코드</th>
+							<th>고객명</th>
                             <th>
 								구분 (개인,업체)
                             </th>
@@ -139,11 +146,12 @@
 						</thead>
 						<tbody>
 						<tr>
+							<td></td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="고객코드" value="">
+							</td>
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="고객명" value="">
-                            </td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="고객코드" value="">
                             </td>
                             <td>
 								<select class="sbox regFullSort">
@@ -172,12 +180,18 @@
 								</div> 
 							</td>  
                         </tr>
-                        <tr>  
+                        <tr> 
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010" readonly>
+							</td>
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="고객명" value="곽팀장">
-                            </td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010">
                             </td>
                             <td>
 								<select class="sbox regFullSort">
@@ -206,15 +220,21 @@
 								</div>
 							</td>
 						</tr>
-						<tr>  
+						<tr>
 							<td>
-                                <input class="tbox regFullSort listMod" placeholder="고객명" value="곽팀장">
-                            </td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td>   
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="고객코드" value="C101010">
 								<div class="tipBoxwarning mt10"> 
 									동일한 코드가 존재합니다.
 								</div>
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="고객명" value="곽팀장">
                             </td>
                             <td>
 								<select class="sbox regFullSort">

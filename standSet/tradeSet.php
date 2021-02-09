@@ -83,17 +83,24 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
+							<col style="width : 30px;">
 							<col style="width : 90px;">
 							<col style="width : 90px;">
 							<col style="width : 130px;">
 							<col style="width : 80px;">
 							<col style="width : 100px;">
 							<col style="width : 120px;">
-							<col style="width : 80px;">
+							<col style="width : 80px;">  
 							<col style="width : 50px;">
 						</colgroup>
 						<thead>
 						<tr>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</th>
 							<th>
 								납품처명(상호)<br>
 								(납품처코드)
@@ -109,6 +116,12 @@
 						</thead>
 						<tbody>
 						<tr class="reged">
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</td> 
 							<td>
 								<div>
 									강남농원
@@ -218,7 +231,11 @@
 							</tr> 
 							<tr>
 								<th>거래처구분</th>
-								<td colspan="4">
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+								<th>업종구분</th>
+								<td> 
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
@@ -272,13 +289,11 @@
 							</tr>	
 							<tr>
 								<th>주소</th>
-								<td colspan="4">
+								<td> 
 									<input class="tbox regFullSort" value="">  
 								</td>
-							</tr>
-							<tr>
 								<th>홈페이지</th>
-								<td colspan="4">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
@@ -286,12 +301,6 @@
 								<th>검색창 내용</th>
 								<td colspan="4">
 									<input class="tbox regFullSort" value="#내용1, #내용2, #내용3">
-								</td>
-							</tr>
-							<tr>
-								<th>업종구분</th>
-								<td colspan="4">
-									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
@@ -357,15 +366,15 @@
 				</div>
 				<div class="specRegGroup hide">
 					<div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
+						<div class="headLineBox listControlSort"> 
 							<div class="titleBox inlistConSort">
-								<div class="titleText">생산품 정보</div>
+								<div class="titleText">원자재 정보</div>
 							</div>
 						</div>
 							<table class="searchResultTable ">
 							<thead>
 								<tr> 
-									<th>생산품</th>
+									<th>원자재</th> 
 									<th>생산양</th>
 									<th>주기</th>
 								</tr>
@@ -381,7 +390,7 @@
 									<td>
 									<input class="tbox regFullSort" value="">
 									</td> 
-								</tr> 
+								</tr>  
 							</tbody>
 							</table>
 					</div>	

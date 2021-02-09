@@ -200,3 +200,9 @@ input[type="checkbox"] {
 .textRight{
 	text-align: right;
 }   
+.betweenText{
+	vertical-align : top;
+	line-height : 35px;
+	float: left; 
+	padding: 0 5px; 
+}

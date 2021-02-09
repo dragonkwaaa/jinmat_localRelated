@@ -198,11 +198,13 @@
 								</div> 
 							</td> 
 							<td>
-								<div class="textRight">
-									<input class="tbox regFullSort listMod" placeholder="입고단가" value="">
+								<div>
+									<input class="tbox regFullSort listMod priceMod" placeholder="입고단가" value="">
+									<span class="priceWord">원</span> 
 								</div>
-								<div class="mt10 textRight"> 
-									<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
+								<div>   
+									<input class="tbox regFullSort listMod priceMod" placeholder="출고단가" value="">
+									<span class="priceWord">원</span> 
 								</div>     
 							</td>   
 							<td>  
@@ -293,13 +295,15 @@
 							</td> 
 							<td>
 								<div>
-									<input class="tbox regFullSort listMod"  value="1,500">
+									<input class="tbox regFullSort listMod priceMod"  value="1,500">
+									<span class="priceWord">원</span> 
 								</div> 
 								<div class="mt10"> 
-									<input class="tbox regFullSort listMod" value="2,500">
-								</div> 
-							</td>   
-							<td>
+									<input class="tbox regFullSort listMod priceMod" value="2,500">
+									<span class="priceWord">원</span> 
+								</div>
+							</td>     
+							<td> 
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 								<select class="sbox regFullSort">
 									<option>사용</option>

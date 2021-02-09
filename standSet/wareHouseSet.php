@@ -43,8 +43,9 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
+							<col style="width : 30px;">
 							<col style="width : 150px;">
-							<col style="width : 220px;">
+							<col style="width : 220px;"> 
 							<col style="width : 100px;">
 							<col style="width : 80px;">
 							<col style="width : 50px;">
@@ -52,11 +53,17 @@
 						<thead>
 						<tr>
 							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</th>
+							<th>
 								창고명<br>
 								(창고 코드)
 							</th>
 							<th>주소</th>
-                            <th>전화번호</th>
+                            <th>창고연락처</th>
 							<th>사용여부</th>
 							<th>관리</th>
 						</tr>
@@ -64,6 +71,7 @@
 						<tbody>
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
+							<td></td>
 							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="창고명" value="">
@@ -76,10 +84,10 @@
 								<input class="tbox regFullSort listMod" placeholder="주소" value="">
                             </td>
                             <td>
-								<input class="tbox regFullSort listMod" placeholder="전화번호" value="">
+								<input class="tbox regFullSort listMod" placeholder="창고연락처" value="">
 							</td>
 							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
+								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. --> 
 								<select class="sbox regFullSort">
 									<option>사용</option>
 									<option>미사용</option>
@@ -94,21 +102,27 @@
 						</tr>
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td> 
                             <td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="창고명" value="경남창고1">
 								</div>
 								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="창고 코드" value="W10101044">
+									<input class="tbox regFullSort listMod" placeholder="창고 코드" value="W10101044" readonly>
 								</div>
 							</td>
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="주소" value="경상남도 진주시 진주읍 진주리">
                             </td>
                             <td>
-								<input class="tbox regFullSort listMod" placeholder="전화번호" value="010-1234-1234">
+								<input class="tbox regFullSort listMod" placeholder="창고연락처" value="010-1234-1234">
 							</td>
-							<td>
+							<td> 
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
 								<select class="sbox regFullSort">
 									<option>사용</option>
@@ -158,37 +172,37 @@
 						</div>
 						<table class="infoGroup">
 							<colgroup>
-								<col width="100">
-								<col width="*">
+								<col width="17%">
+								<col width="33%">
 							</colgroup>
 							<tbody>
 							<tr>
 								<th>창고명</th>
-								<td>
+								<td colspan="4"> 
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>창고 코드</th>
-								<td>
+								<td colspan="4"> 
 									<input class="tbox regFullSort" value="" readonly>
 								</td>
-                            </tr>
+							</tr>
                             <tr>
 								<th>주소</th>
-								<td>
+								<td colspan="4"> 
 									<input class="tbox regFullSort" value="">
 								</td>
                             </tr>
                             <tr>
-								<th>전화번호</th>
-								<td>
+								<th>창고연락처</th>
+								<td colspan="4"> 
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>근무요일</th>
-								<td>
+								<td colspan="4"> 
 									<div class="inTableCheckGroup">
 										<div class="checkBoxCase">
 											<div class="checkBoxIconBox">
@@ -244,7 +258,7 @@
 							</tr>
 							<tr>
 								<th>근무시간</th>
-								<td>
+								<td colspan="4"> 
 								<div class="sboxGroup listArraySortLeft">
 									<select class="sbox small">
 										<option>1</option>
@@ -262,7 +276,8 @@
 										<option>5</option>  
 									</select>  
 									분  
-								</div> 
+								</div>
+								<div class="betweenText"> ~ </div> 
 								<div class="sboxGroup listArraySortLeft"> 
 									<select class="sbox small">
 										<option>1</option>
@@ -282,6 +297,16 @@
 									분
 								</div>  
 								</td>  
+							</tr>
+							<tr>
+								<th>담당자명</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+								<th>담당자연락처</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
 							</tr>
 							</tbody>
 						</table>
