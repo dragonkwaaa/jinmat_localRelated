@@ -64,7 +64,7 @@
                         <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     </div>
 				</div>
-			</div>
+			</div>  
 			<div class="section horizontalManageSort searcManageSort fullMod">
 				<div class="titleBox manageHeadlineSort">공장 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
@@ -73,13 +73,11 @@
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>공장코드▼</option>
+								<option>공장코드▲</option>
 								<option>등록순▼</option>
 								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>
-							</select>
+							</select> 
 							<select class="sbox">
 								<option>40개씩</option>
 								<option>80개씩</option>
@@ -90,15 +88,15 @@
 					<table class="searchResultTable">
 						<colgroup>
 							<col style="width : 30px;">
-                            <col style="width : 150px;">
                             <col style="width : 100px;">
-							<col style="width : 100px;">
+                            <col style="width : 100px;">
 							<col style="width : 80px;">
-                            <col style="width : 100PX;"> 
-                            <col style="width : 100PX;">  
-                            <col style="width : 70px;"> 
-							<col style="width : 50px;">
-							<col style="width : 150px;">  
+							<col style="width : 80px;">
+                            <col style="width : 80PX;">  
+                            <col style="width : 80PX;">  
+                            <col style="width : 55px;"> 
+							<col style="width : 80px;">
+							<col style="width : 180px;">  
                             <col style="width : 40px;">
                         </colgroup>
 						<thead>
@@ -166,9 +164,9 @@
 									<input type="checkbox" name value>
 									<label></label>
 								</div> 
-							</td>
+							</td> 
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111" readonly>
 							</td>  
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="공장명" value="횡성공장">
@@ -189,6 +187,52 @@
                                 <select class="sbox regFullSort">
 									<option>사용</option>
 									<option selected="">미사용</option>
+								</select>
+							</td> 
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="등록일" value="2021-02-21"> 
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="비고" value="별관 공사중">
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+								<div class="tipBoxwarning mt10">  
+									동일한 코드가 존재합니다.
+								</div> 
+							</td>  
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장명" value="경주공장">
+                            </td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장연락처" value="051-2512-2121">
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자명" value="허평강">
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자코드" value="09522145">
+                            </td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="관리자 연락처" value="010-4300-6138">
+							</td>
+							<td>
+                                <select class="sbox regFullSort">
+									<option selected>사용</option>
+									<option>미사용</option> 
 								</select>
 							</td> 
 							<td>

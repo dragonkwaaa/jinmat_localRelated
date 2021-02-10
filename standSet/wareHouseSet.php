@@ -29,11 +29,11 @@
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox"> 
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>창고코드▼</option>
+								<option>창고코드▲</option>
 								<option>등록순▼</option>
 								<option>등록순▲</option>
-							</select>
+							</select> 
 							<select class="sbox">
 								<option>40개씩</option>
 								<option>80개씩</option>
@@ -69,38 +69,6 @@
 						</tr>
 						</thead>
 						<tbody>
-						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td></td>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="창고명" value="">
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" placeholder="창고 코드" value="">
-								</div>
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="주소" value="">
-                            </td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="창고연락처" value="">
-							</td>
-							<td>
-								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. --> 
-								<select class="sbox regFullSort">
-									<option>사용</option>
-									<option>미사용</option>
-								</select>
-								<!-- :: close : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>
-							</td>
-						</tr>
-						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
 							<td>
 								<div class="checkBoxCase">
@@ -178,28 +146,24 @@
 							<tbody>
 							<tr>
 								<th>창고명</th>
-								<td colspan="4"> 
+								<td> 
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
 								<th>창고 코드</th>
-								<td colspan="4"> 
-									<input class="tbox regFullSort" value="" readonly>
+								<td>  
+									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
                             <tr>
 								<th>주소</th>
-								<td colspan="4"> 
+								<td> 
+									<input class="tbox regFullSort" value="">
+								</td>
+								<th>창고연락처</th>
+								<td>  
 									<input class="tbox regFullSort" value="">
 								</td>
                             </tr>
-                            <tr>
-								<th>창고연락처</th>
-								<td colspan="4"> 
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
 							<tr>
 								<th>근무요일</th>
 								<td colspan="4"> 
@@ -308,6 +272,12 @@
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
+							<tr>
+								<th>비고</th>
+								<td colspan="4">
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr> 
 							</tbody>
 						</table>
 					</div>
@@ -677,6 +647,9 @@
 					    </div>
                         <!-- :: close : ksg_6 : [진맛] 특정 위치를 트리 구조로 표시하는 depth 테이블 내용.. -->
 					</div>
+					<div class="headLineBox pageControlSort center"> 
+					<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+					</div>  	  
 				</div>
                 <!-- :: close : ksg_6 : [진맛] 창고의 특정 위치에 대한 정보를 표시하는 내용 파트.. -->
             </div>

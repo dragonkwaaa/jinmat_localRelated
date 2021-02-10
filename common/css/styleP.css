@@ -162,14 +162,18 @@
 
 
 
-.section.searcManageSort.Six {
-	width : 60%; 
+.section.searcManageSort.Seven {
+	width : 70%;    
 }
-	section.horizontalManageSort.Four {  
-		/* width : calc(55% - 14px); */
-		width : calc(40% - 4px); 
+.section.horizontalManageSort.Three {
+    display: inline-block;
+    width: calc(30% - 14px);
+    vertical-align: top; 
+    border: 1px solid #d7dae2;
+    position: relative;
+    min-width: 300px;
+    padding-bottom: 40px;
 }
-
 
 .betweenWaveText.left {
 	float: left;    

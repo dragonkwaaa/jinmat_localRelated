@@ -17,7 +17,7 @@
 		<div class="contents">
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
-			<div class="section horizontalManageSort searcManageSort Six">  
+			<div class="section horizontalManageSort searcManageSort topLineMod">  
 				<div class="titleBox manageHeadlineSort">발주계획 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort"> 
@@ -206,88 +206,141 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
+							<col style="width : 30px;">
 							<col style="width : 70px;">
-							<col style="width : 100px;">
 							<col style="width : 70px;">
+							<col style="width : 60px;">
 							<col style="width : 70px;">
-                            <col style="width : 50px;">
-							<col style="width : 85px;">  
-							<col style="width : 120px;">
-							<col style="width : 50px;"> 
+                            <col style="width : 80px;">
+							<col style="width : 80px;">  
+							<col style="width : 90px;">
+							<col style="width : 70px;">
+							<col style="width : 180px;"> 
+							<col style="width : 70px;">
+                            <col style="width : 30px;"> 
 						</colgroup>
 						<thead>
 						<tr>
 							<th>
-								발주일자<br>
-								(발주코드)
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
 							</th>
 							<th>
-                                원자재명<br>
-                                (원자재코드)
+								발주코드<br>
+								(발주원본코드)
+							</th>
+							<th>발주타입</th>
+							<th>주문일자</th>
+							<th>
+                                주문자명<br>
+                                주문자 전화번호<br>
+								주문자 핸드폰번호
                             </th>
                             <th>
-                                납품처명<br>
-                                (납품처코드)  
+                               상품명
 							</th> 
-							<th>발주담당자<br>
-							(담당자연락처)
-							</th> 
-							<th>배송사항</th>
-                            <th>진행상태</th>
-							<th>비고</th>
+							<th>총 결제금액<br>
+								총 품목금액<br>
+								총 배송금액
+							</th>
+							<th>금액처리방법</th> 
+							<th>받는분<br>
+								받는분 전화번호<br>
+								받는분 핸드폰번호
+							</th>
+							<th>배송지정보</th>
+							<th>발주상태</th>
 							<th>관리</th>
 						</tr>
 						</thead>
 						<tbody>
 						<tr class="reged">
 							<td>
-								<div>
-                                    2021-01-22 10:00
-                                </div>
-                                <div class="mt5">
-                                    (G12341111)
-                                </div>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
 							</td>
 							<td>
 								<div>
-                                    사과
-                                </div>
-                                <div class="mt5">
-                                    (G12341111)
-                                </div>
+									210211
+								</div>
+								<div class="mt2">
+									164521
+								</div>
+							</td>
+							<td>일반발주</td>
+							<td>
+								2021-02-21
 							</td>
 							<td>
 								<div>
-                                    ㅇㅇ청과
-                                </div>
-                                <div class="mt5">
-                                    (G12341111)
-                                </div>
+									허평강
+								</div>
+								<div class="mt2">
+									031-846-6918
+								</div>
+								<div class="mt2">
+									010-4300-6138
+								</div>
+							<td>
+								<div class="mt2">
+									사과세트A
+								</div>
+							</td>
 							<td>
 								<div>
-                                    김별
-                                </div> 
-                                <div class="mt5">
-                                    (010-5100-0429)
-                                </div>
+								53,000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									50,000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									3,000
+									<span class="priceWord">원</span>
+								</div>
 							</td>
-							<td>새벽배송</td>
+							<td>
+								선불
+                            </td>
+							<td>
+								<div>
+									김별
+								</div>
+								<div class="mt2">
+									02-454-6918
+								</div>
+								<div class="mt2">
+									010-5100-0429
+								</div>
+							</td>
+							<td>
+								<div>
+									123-874
+								</div>
+								<div class="mt2">
+									서울시 도봉구 방학동 인경빌라 203호
+								</div>
+							</td>	
                             <td>
 								<select class="sbox regFullSort">
 									<option>발주요청</option>
                                     <option>발주요청승인</option>
                                     <option>발주취소요청</option>
                                     <option>발주취소</option>
-                                    <option>발주완료</option>
+                                    <option>발주완료</option> 
 								</select>
                             </td>
-                            <td>
-								<input class="tbox regFullSort Textleft"> 
-							</td> 
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn modifySort">발주</a>
-									<a href="javascript:void(0);" class="btn deleteSort">삭제</a>
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+								</div>
+								<div class="btnGroup inListTable">
+									<a href="/order/orderSpec" class="btn modifySort">상세</a>
 								</div> 
 							</td>
 						</tr>
@@ -312,204 +365,6 @@
 				</div>
             </div>
             <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
-			<div class="section horizontalManageSort Four"> 
-                <div class="titleBox manageHeadlineSort">상세정보</div>
-				<!-- :: open : ksg_3 : [진맛] 우측의 내용 입력 파트. -->
-                <div class="specInfoGroup hide">
-                    <div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">납품처 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-                            <tr> 
-								<th>납품처명(코드)</th>
-								<td colspan="3">
-									<input class="tbox normal" value="">
-								</td>
-                            </tr> 
-                            <tr>
-								<th>납품처 연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-								<th>납품처 주소</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td> 
-                            </tr>
-							<tr>
-								<th>배송방법</th>
-								<td>
-									<select class="sbox tiny"> 
-										<option>택배배송</option>
-										<option>직접배송</option>
-										<option>새벽배송</option> 
-										<option>퀵서비스</option>
-										<option>산지직배송</option>
-									</select>
-								</td>  
-								<th>권역</th>
-								<td>
-									<select class="sbox tiny">
-										<option>센터1</option>  
-										<option>센터2</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>금액처리방법</th>
-								<td colspan="3">
-									<select class="sbox tiny">
-										<option>선금</option>
-										<option>납입시</option>
-										<option>후불</option>
-										<option>후불여신(_개월)</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th>납품일</th>
-								<td colspan="3">  
-								    <input class="tbox dateBox small" id="startDate" readonly="" placeholder="납품일">
-								</td>   
-							</tr>
-							<tr>
-								<th>납품처 특이사항</th>
-								<td colspan="3">
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							</tbody>
- 						</table>  
-
-						 <div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">납품목록</div>
-							</div>
-						</div>	
-						<table class="infoGroup">
-						<colgroup>
-							<col style="width : 170px;">  
-							<col style="width : 100px;">  
-							<col style="width : 100px;">
-							<col style="width : 170px;"> 
-							<col style="width : 250px;"> 
-							<col style="width : 220px;">
-						</colgroup> 
-						<thead>
-						<tr>
-							<th>원자재명</th>
-							<th>규격</th> 
-							<th>수량</th>
-							<th>단가</th>
-							<th>금액</th>  
-							<th>비고</th>
-						</tr>
-						</thead>
-						<tbody>
-						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
-						<tr>
-							<td>
-								<div>
-									<input class="tbox regFullSort Textleft" placeholder="원자재명(코드)" value="">
-								</div>
-							</td> 
-							<td> 
-								<div>
-									<input class="tbox regFullSort Textleft" placeholder="규격" value="">
-								</div>
-							</td> 
-							<td>
-								<div>
-									<input class="tbox regFullSort Textleft" placeholder="수량" value="">
-								</div>
-							</td> 
-							<td>
-								<div>
-									<input class="tbox regFullSort Textleft" placeholder="단가" value="">
-								</div>
-							</td> 
-							<td>
-								<div>
-									<input class="tbox regFullSort Textleft" placeholder="금액" value="">
-								</div>
-							</td> 
-							<td>
-								<div>  
-									<input class="tbox regFullSort Textleft" placeholder="비고" value="">
-								</div>
-							</td>        				
-						</tr>  
-						</tbody>
-						</table>
-
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">계산합계</div>
-							</div>
-						</div>	
-						<table class="infoGroup">
-							<colgroup>
-								<col width="33%">
-								<col width="*">
-							</colgroup>
-						<thead>
-							<th>공급가액</th> 
-							<th>부가세액</th>
-							<th>총합계</th>
-						</thead>	
-						<tbody>
-							<tr>
-								<td>
-									2,800	
-								</td>
-								<td>
-									1,000
-								</td>
-								<td>
-									5,500
-								</td>
-							</tr>
-						</tbody>
-						</table>
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">발주담당자 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-                            <tr>
-								<th>발주담당자명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-								<th>담당자연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>  
-							</tbody>
- 						</table>	 	  
-					</div>   
-					<div class="headLineBox pageControlSort center"> 
-						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
-					</div>  
-				</div>
-                <!-- :: close : ksg_5 : [진맛] 우측 하단의 내용 입력창 파트. -->
-            </div>
-            <!-- :: close : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>
 	</div>
 </div>

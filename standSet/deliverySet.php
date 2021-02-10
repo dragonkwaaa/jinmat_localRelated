@@ -126,12 +126,10 @@
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>업체코드▼</option>
+								<option>업체코드▲</option>  
 								<option>등록순▼</option>
 								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>
 							</select>
 							<select class="sbox">
 								<option>40개씩</option>
@@ -143,7 +141,7 @@
 					<table class="searchResultTable">
 						<colgroup>
 							<col style="width : 30px;">
-                            <col style="width : 150px;">
+                            <col style="width : 100px;">
                             <col style="width : 100px;">
 							<col style="width : 80px;">
 							<col style="width : 80px;">
@@ -152,7 +150,7 @@
                             <col style="width : 90px;">
 							<col style="width : 100px;">
 							<col style="width : 70px;"> 
-                            <col style="width : 200px;">
+                            <col style="width : 200px;"> 
                             <col style="width : 50px;">
                         </colgroup>
 						<thead>
@@ -282,6 +280,64 @@
                             </td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="비고" value="패널티 누적으로 3일 사용 중단">
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
+								</div>
+							</td>
+                        </tr>
+						<tr>
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>  
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="업체코드" value="A45678945">
+								<div class="tipBoxwarning mt10"> 
+									동일한 코드가 존재합니다.
+								</div>
+                            </td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="업체명" value="빠른배송">
+							</td>
+                            <td>
+								<select class="sbox regFullSort">
+									<option>단독</option>
+									<option selected>업체</option> 
+								</select>  
+							</td> 
+							<td>
+								<select class="sbox regFullSort">
+									<option>일반</option> 
+									<option>새벽</option>
+									<option selected>퀵</option> 
+									<option>기타</option> 
+								</select> 
+							</td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="연락처" value="010-5100-0429">
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="업체규모" value="150">
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="패널티 점수" value="0">
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod priceMod" placeholder="누적 거래금액" value="450,000,000">
+                                <span class="priceWord">원</span>
+							</td>
+							<td>
+                                <select class="sbox regFullSort">
+									<option selected>사용</option>
+									<option>미사용</option> 
+								</select> 
+                            </td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="비고" value="퀵배송전문">
 							</td>
 							<td>
 								<div class="btnGroup inListTable">

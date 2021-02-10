@@ -75,12 +75,10 @@
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>원자재코드▼</option>
+								<option>원자재코드▲</option>
 								<option>등록순▼</option>
-								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>  
+								<option>등록순▲</option>  
 							</select>
 							<select class="sbox">
 								<option>40개씩</option>
