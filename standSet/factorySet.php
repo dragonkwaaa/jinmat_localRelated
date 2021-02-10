@@ -64,7 +64,7 @@
                         <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     </div>
 				</div>
-			</div>
+			</div>  
 			<div class="section horizontalManageSort searcManageSort fullMod">
 				<div class="titleBox manageHeadlineSort">공장 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
@@ -73,13 +73,11 @@
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>공장코드▼</option>
+								<option>공장코드▲</option>
 								<option>등록순▼</option>
 								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>
-							</select>
+							</select> 
 							<select class="sbox">
 								<option>40개씩</option>
 								<option>80개씩</option>
@@ -90,15 +88,15 @@
 					<table class="searchResultTable">
 						<colgroup>
 							<col style="width : 30px;">
-                            <col style="width : 150px;">
                             <col style="width : 100px;">
-							<col style="width : 100px;">
+                            <col style="width : 100px;">
 							<col style="width : 80px;">
-                            <col style="width : 100PX;"> 
-                            <col style="width : 100PX;">  
-                            <col style="width : 70px;"> 
-							<col style="width : 50px;">
-							<col style="width : 150px;">  
+							<col style="width : 80px;">
+                            <col style="width : 80PX;">  
+                            <col style="width : 80PX;">  
+                            <col style="width : 55px;"> 
+							<col style="width : 80px;">
+							<col style="width : 180px;">  
                             <col style="width : 40px;">
                         </colgroup>
 						<thead>
@@ -166,9 +164,9 @@
 									<input type="checkbox" name value>
 									<label></label>
 								</div> 
-							</td>
+							</td> 
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111" readonly>
 							</td>  
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="공장명" value="횡성공장">
@@ -192,6 +190,53 @@
 								</select>
 							</td> 
 							<td>
+                                <input class="tbox regFullSort listMod" placeholder="등록일" value="2021-02-21"> 
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="비고" value="별관 공사중">
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
+									<a href="javascript:void(0);" class="btn modifySort">창고관리</a>
+								</div> 
+							</td> 
+                        </tr>
+						<tr>
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
+								<div class="tipBoxwarning mt10">  
+									동일한 코드가 존재합니다.
+								</div> 
+							</td>  
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장명" value="경주공장">
+                            </td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="공장연락처" value="051-2512-2121">
+							</td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자명" value="허평강">
+							</td>
+							<td>
+                                <input class="tbox regFullSort listMod" placeholder="공장관리자코드" value="09522145">
+                            </td>
+                            <td>
+                                <input class="tbox regFullSort listMod" placeholder="관리자 연락처" value="010-4300-6138">
+							</td>
+							<td>
+                                <select class="sbox regFullSort"> 
+									<option selected>사용</option>
+									<option>미사용</option> 
+								</select>
+							</td> 
+							<td>
                                 <input class="tbox regFullSort listMod" placeholder="등록일" value=""> 
 							</td>
                             <td>
@@ -199,9 +244,10 @@
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
-								</div>
-							</td>
+									<a href="/rawMat/rawMatSpec" class="btn modifySort ">저장</a>
+									<a href="javascript:void(0);" class="btn modifySort wearingPopBtn">창고관리</a> 
+								</div> 
+							</td> 
                         </tr>
 						</tbody>
                     </table>  
@@ -226,36 +272,120 @@
 		</div>
 	</div>
 </div>
-<!-- :: 날짜 변경 팝업 내용 -->
-<div class="popup centerSort changeDatePop">
-	<div class="popupCon">
-		<a href="javascript:closePop()">
+
+
+<!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
+<div class="popup centerSort innerFlowSort wearingPop">
+	<div class="popupCon fullwideSort">  
+		<a href="javascript:closePop()">  
 			<img src="/common/img/close.png" class="close">
 		</a>
 		<div class="titleBox popupSort">
-			결제일변경
+			창고목록  
 		</div>
 		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
-				<colgroup>
-					<col width="100">
-					<col width="*">
-				</colgroup>
+			<table class="infoGroup fullHSort">
 				<tbody>
-					<tr>
-						<th>변경 날짜</th>
-						<td>
-                            <input class="tbox regFullSort listMod priceMod" value="" placeholder="입력 형식 예 ) 7월 1일 = 07.01">
-						</td>
-					</tr>
+                <tr>
+					<td> 
+                        <div class="inTblBoxGroup twinSort highHeight scrollSort wearingGoodsMod">   
+							<div class="limitHeightTblCase">
+								<table class="infoGroup txtCSort">    
+									<colgroup>   
+										<col style="width : 20px;">
+										<col style="width : 70px;">
+										<col style="width : 100px;">
+										<col style="width : 50px;">
+										<col style="width : 40px;">   
+										<col style="width : 50px;">
+										<col style="width : 20px;">      
+									</colgroup>		 					
+									<thead>
+									<tr>
+										<th>
+											<div class="checkBoxCase">
+												<input type="checkbox" name value>
+												<label></label>
+											</div> 
+										</th>   
+										<th>
+											<div>창고명</div>
+											<div>(창고코드)</div>
+										</th>
+										<th>주소</th>
+										<th>창고연락처</th>
+										<th>담당자명</th> 
+										<th>담당자 연락처</th> 
+										<th>관리</th> 
+									</tr>
+									</thead>
+									<tbody style="text-align: center;">  
+										<tr>
+											<td>
+												<div class="checkBoxCase">
+													<input type="checkbox" name value>
+													<label></label>
+												</div>  
+											</td>
+											<td>
+											<div>
+												<input class="tbox regFullSort listMod"  value="경남창고1" readonly>
+											</div>
+											<div>
+												<input class="tbox regFullSort listMod"  value="W10101044" readonly>
+											</div>
+											</td>    
+											<td>
+												<div>
+													<input class="tbox regFullSort listMod" value="경상남도 진주시 진주읍 진주리" readonly>
+												</div>
+											</td> 
+											<td>
+												<div>
+													<input class="tbox regFullSort listMod"  value="010-1234-1234" readonly>
+												</div>
+											</td>
+											<td> 
+												<div>
+													<input class="tbox regFullSort listMod"  value="김별" readonly>
+												</div>
+											</td> 													
+											<td>
+												<div>
+													<input class="tbox regFullSort listMod" value="010-5100-0429" readonly> 
+												</div> 
+											</td>  
+											<td>
+												<div class="btnGroup inListTable">
+													<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+												</div> 
+											</td>		 
+										</tr>
+									</tbody>
+								</table> 
+							</div>
+                            <!-- :: close : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
+							<div class="headLineBox pageControlSort center">
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+							</div> 
+                        </div>
+                        <!-- :: close : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
+                        <!-- :: close : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
+					</td>
+                </tr>
 				</tbody>
 			</table>
-		</div>
-		<div class="btnGroup verticalBottomSort">
-			<a href="javascript:choicePop();" class="btn searchSort">변경</a>
-		</div>
-	</div>
-</div>
+		</div>   
+	</div>  
+</div>  
+<!-- :: close : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
+
+
+
+
+
+
+
 
 <script src="/common/js/datePick.js"></script>
 <script>
@@ -306,6 +436,12 @@ $(document).mouseup(function (e) {
 		popupM.hide();
 		overlay.removeClass('overlay');
 	}
+});
+
+
+$(document).on('click', '.btn.wearingPopBtn', function(){
+	$('.popup.centerSort.wearingPop').show();
+	$('.contents').addClass('overlay'); 
 });
 </script>
 </body>

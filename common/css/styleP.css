@@ -147,7 +147,7 @@
 	padding : 0 5px;
 } 
 
-.tbox.regFullSort.Textleft {
+.tbox.regFullSort.Textleft {  
     /* width : 100%; */
     width : calc(100% - 4px);
 	padding : 0; 
@@ -158,18 +158,28 @@
     background-color: #fff;
     height: 27px;
 	border: 1px solid #d7dae2;
+}  
+.sbox.tinys { 
+    width: 103px; 
+    border: none;
+    background-color: #fff;
+    height: 27px;
+	border: 1px solid #d7dae2;
 } 
 
 
-
-.section.searcManageSort.Six {
-	width : 60%; 
+.section.searcManageSort.Seven {
+	width : 70%;    
 }
-	section.horizontalManageSort.Four {  
-		/* width : calc(55% - 14px); */
-		width : calc(40% - 4px); 
+.section.horizontalManageSort.Three {
+    display: inline-block;
+    width: calc(30% - 14px);
+    vertical-align: top; 
+    border: 1px solid #d7dae2;
+    position: relative;
+    min-width: 300px;
+    padding-bottom: 40px;
 }
-
 
 .betweenWaveText.left {
 	float: left;    
@@ -206,3 +216,29 @@ input[type="checkbox"] {
 	float: left; 
 	padding: 0 5px; 
 }
+.inTblBoxGroup.fullSort {
+    display: inline-block;
+    width: calc(100% - 10px);
+    margin: 3px; 
+    border: 1px solid #ccc;
+    vertical-align: top;
+    height: 180px;   
+    overflow-y: scroll;   
+}  
+
+.popup.centerSort.normal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -48%);
+    background-color: #fff;
+    height: auto;
+}    
+
+.popup.centerSort {
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -48%);
+    background-color: #fff;
+    height: auto; 
+}
+  

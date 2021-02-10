@@ -3,16 +3,16 @@
 <!-- :: ksg_2 = ksg_20210120_1102 -->
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
-	$tCode					=	'700';
-	$lCode					=	'0700';
+    $tCode					=	'600';
+	$lCode					=	'602';
 ?>
-<body>
+<body>  
 <div class="container">
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/stock/pages/stock_left.php'; ?>  
+	<?php include $_SERVER['DOCUMENT_ROOT'] . '/release/pages/release_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<div class="wrapper">
+	<div class="wrapper"> 
 		<div class="contents">  
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
@@ -47,12 +47,13 @@
                     </div>
 				</div>
             </div>  
-			<div class="section horizontalManageSort AsymDoub1">
-				<div class="titleBox manageHeadlineSort">재고 목록</div> 
+			<div class="section horizontalManageSort AsymDoub2">   
+				<div class="titleBox manageHeadlineSort">출고 대기 상품 목록</div> 
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
                         <div class="titleBox inlistConSort">
-							<div class="titleText">재고 목록</div> 
+							<div class="titleText">출고 대기 상품 목록</div> 
+                         
                             <div class="tipBox mb15">* 재고내역을 클릭 시, 창고별 상세재고를 표시하는 테이블이 나타납니다.</div>
 					    </div>
 						<div class="sboxGroup listArraySort">
@@ -75,22 +76,39 @@
                     </div>
 					<table class="searchResultTable">
 						<colgroup>
-                            <col style="width : 200px;">
-                            <col style="width : 30px;">
-                        </colgroup>
+							<col style="width : 100px;">
+							<col style="width : 100px;">
+							<col style="width : 80px;"> 
+							<col style="width : 120px;">
+							<col style="width : 40px;"> 
+                        </colgroup> 
 						<thead>
-						<tr> 
-							<th>원자재명 (코드)</th>
-							<th>관리</th> 
+						<tr>
+							<th>출고 대기 상품 코드</th>
+							 <th>상품명<br>
+							 	(코드)
+							 </th>
+							 <th>수량</th>
+							 <th>비고</th>
+							<th>관리</th>
 						</tr>
 						</thead>
 						<tbody>
-						<tr>
+						<tr class="reged"> 
 							<td>
+								<input class="tbox regFullSort listMod" placeholder="" value="" readonly> 
+							</td>
+							<td>    
 								<div>
-									<input class="tbox regFullSort listMod" placeholder="원자재명(코드)" value="">
-								</div>
-							</td>  
+									<input class="tbox regFullSort listMod" placeholder="" value=""> 
+								</div> 
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="" value="" readonly> 
+							</td> 
+							<td>
+								<input class="tbox regFullSort listMod" placeholder="" value=""> 
+							</td> 
 							<td> 
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn regSort">등록</a>
@@ -99,12 +117,18 @@
 						</tr>
                         <!-- :: open : ksg_3 : [진맛] 즉석 수정이 불가능하도록 고정된 텍스트로 표시하는 내용 파트. -->
                         <tr class="reged">
-							<td>
+							<td>51000429</td>
+							<td>   
 								<div>
-									<input class="tbox regFullSort listMod"  value="경주 꿀 부사" readonly>
+									경주 꿀 부사
 								</div>
-							</td> 
-							<td>
+								<div class="mt2">
+									ap15488212 
+								</div>
+							</td>
+							<td>1,000</td>  
+							<td>품질좋은것 우선으로 챙겨주세요</td> 
+							<td> 
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort">저장</a>
 								</div>
@@ -132,33 +156,29 @@
 				</div>
             </div>
 			<!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->  
-			<div class="section horizontalManageSort AsymDoub2">
+			<div class="section horizontalManageSort AsymDoub1">
                 <div class="titleBox manageHeadlineSort">상세정보</div>
 				<!-- :: open : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
 				<div class="specRegGroup hide">
 					<div class="conGroup verticalManageSort">
 						<div class="headLineBox listControlSort">
 							<div class="titleBox inlistConSort">
-								<div class="titleText">창고별 재고 정보</div>
+								<div class="titleText">공장별 재고 정보</div>
 							</div>
 						</div>
 						<table class="infoGroup txtCSort">
-							<colgroup>
-								<col style="width : 120px;">
-								<col style="width : 250px;">
+							<colgroup> 
 								<col style="width : 100px;">
-								<col style="width : 100px;">
-								<col style="width : 120px;">
+								<col style="width : 80px;">
+								<col style="width : 120px;">  
 							</colgroup>
 							<thead>
 							<tr>
 								<th>
-									<div>창고명</div>
-									<div>(창고코드)</div>
+									<div>공장명</div>
+									<div>(코드)</div> 
 								</th>
-								<th>창고주소</th>
-								<th>재고수량</th>
-								<th>알림 설정 재고량</th>
+								<th>수량</th>
 								<th>관리</th>
 							</tr>
 							</thead>
@@ -167,19 +187,13 @@
 							<tr>
 								<td>
 									<div>
-										<input class="tbox regFullSort listMod" placeholder="창고명(코드)" value="">
+										<input class="tbox regFullSort listMod" placeholder="공장명(코드)" value="">
 									</div> 
+								</td>  
+								<td> 
+									<input class="tbox regFullSort listMod" placeholder="수량" value="">
 								</td>
-								<td>
-									<input class="tbox regFullSort listMod" placeholder="창고주소" value="">
-								</td>
-								<td>
-									<input class="tbox regFullSort listMod" placeholder="재고수량" value="">
-								</td>
-								<td>
-									<input class="tbox regFullSort listMod" placeholder="알림 설정 재고량" value="">
-								</td>
-								<td>
+								<td> 
 									<div class="btnGroup inListTable">
 										<a href="javascript:void(0);" class="btn regSort">등록</a>
 									</div>
@@ -191,15 +205,10 @@
 									<div>
 										<input class="tbox regFullSort listMod" placeholder="창고명" value="경남창고1" readonly>
 									</div>
-								</td>
+								</td>   
+	  
 								<td>
-									<input class="tbox regFullSort listMod" placeholder="창고주소" value="경상남도 경산시 00면 00리 1-11" readonly>
-								</td> 
-								<td>
-									<input class="tbox regFullSort listMod" placeholder="재고수량" value="457">
-								</td>
-								<td>
-									<input class="tbox regFullSort listMod" placeholder="알림 설정 재고량" value="150">
+									<input class="tbox regFullSort listMod" placeholder="수량" value="457">
 								</td>
 								<td>
 									<div class="btnGroup inListTable">
@@ -225,14 +234,14 @@
 		<a href="javascript:closePop()">
 			<img src="/common/img/close.png" class="close">
 		</a>
-		<div class="titleBox popupSort">
-			항목 관리
+		<div class="titleBox popupSort">  
+			재고 이동  
 		</div>
 		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
+			<table class="infoGroup">  
 				<colgroup>
-					<col style="width : 100px;">
-					<col style="width : 1000px;">
+					<col style="width : 30%;"> 
+					<col style="width : 70%;">
 				</colgroup>
 				<tbody>
 				<tr>
@@ -242,11 +251,11 @@
 							<option>-선택-</option>
 							<option>서울</option>
 							<option>경기</option>
-						</select>
+						</select> 
 					</td>
 				</tr>
 				<tr>
-					<th>이동할 창고</th>
+					<th>이동할 공장</th>
 					<td>
 						<select class="sbox regFullSort">
 							<option>-선택-</option>
@@ -290,19 +299,19 @@
 				<tbody>
 					<tr>
 						<td>
-							<div class="inTblTitleBox">재고변경(경남창고1)</div>
+							<div class="inTblTitleBox">재고변경(경남공장1)</div>
                             <div class="inTblInfoBox materialSort">
                                 <div class="stockCounter f_blue">변경수량 : 450 → 500</div>
                             </div>
                             <a href="javascript:void(0);" class="linkCover"></a>
 						</td>
                     </tr>
-                    <tr>
+                    <tr>    
 						<td>
-                            <div class="inTblTitleBox">재고이동(서울창고 → 경남창고1)</div>
+                            <div class="inTblTitleBox">재고이동(서울공장 → 경남공장1)</div>
                             <div class="inTblInfoBox materialSort">
                                 <div class="stockCounter f_blue">이동 수량 : 250</div>
-                            </div> 
+                            </div>
                             <a href="javascript:void(0);" class="linkCover"></a>
 						</td>
                     </tr>

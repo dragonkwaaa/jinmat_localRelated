@@ -49,8 +49,10 @@
 											<option>전체</option>
 											<option>납품처명</option>
 											<option>납품처코드</option>
-											<option>대표자명</option>
-											<option>납품담당자명</option>
+											<option>대표자명</option> 
+											<option>대표자연락처</option>
+											<option>담당자명</option>
+											<option>담당자연락처</option>
 										</select>
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 									</td>
@@ -69,8 +71,8 @@
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox"> 
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>납품처코드▼</option>
+								<option>납품처코드▲</option>
 								<option>등록순▼</option>
 								<option>등록순▲</option>
 							</select>
@@ -83,15 +85,13 @@
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
-							<col style="width : 30px;">
-							<col style="width : 90px;">
-							<col style="width : 90px;">
+							<col style="width : 30px;"> 
+							<col style="width : 110px;">
+							<col style="width : 70px;">
 							<col style="width : 130px;">
-							<col style="width : 80px;">
-							<col style="width : 100px;">
-							<col style="width : 120px;">
-							<col style="width : 80px;">  
-							<col style="width : 50px;">
+							<col style="width : 70px;">
+							<col style="width : 55px;">  
+							<col style="width : 40px;">
 						</colgroup>
 						<thead>
 						<tr>
@@ -105,12 +105,14 @@
 								납품처명(상호)<br>
 								(납품처코드)
 							</th>
-							<th>대표자정보</th>
-							<th>주소</th>
-							<th>납품담당자</th>
-							<th>담당자전화번호</th>
-							<th>비고</th>
-							<th>사용여부</th>
+							<th>대표자명<br>
+								(대표자연락처)
+							</th>
+							<th>주소</th>  
+							<th>담당자명<br>
+								(담당자연락처)
+							</th>
+							<th>사용여부</th>  
 							<th>관리</th>
 						</tr>
 						</thead>
@@ -124,39 +126,32 @@
 							</td> 
 							<td>
 								<div>
-									강남농원
+									<input class="tbox regFullSort listMod" value="강남농원">
 								</div>
-								<div class="mt5">
-									G115200
+								<div class="mt2">
+									<input class="tbox regFullSort listMod"  value="G115200" readonly>
 								</div>
 							</td>
 							<td>
 								<div>
-									곽반장
+									<input class="tbox regFullSort listMod" value="김별">
 								</div>
-								<div class="mt5">
-									010-1234-1234
+								<div class="mt2">
+									<input class="tbox regFullSort listMod"  value="010-5100-0429">
 								</div>
-							</td>
+							</td> 
 							<td>
-								서울시 영등포구 여의도동 1
-							</td>
-							<td>
-								장팀장
+								<div>
+									<input class="tbox regFullSort listMod" value="서울시 도봉구 방학2동 11-12">
+								</div>
 							</td>
 							<td>
 								<div>
-									010-4321-4321
+									<input class="tbox regFullSort listMod" value="별팀장">
 								</div>
-								<div class="mt5">
-									010-1234-1234
+								<div class="mt2">
+									<input class="tbox regFullSort listMod"  value="010-5100-5487">
 								</div>
-								<div class="mt5">  
-									010-1234-5678
-								</div>
-							</td>
-							<td>
-								납품처 거래항목 1.2.3.4.5.6
 							</td>
 							<td>
 								<!-- :: open : ksg_4 : [진맛] 사용/미사용 드롭박스 내용. -->
@@ -260,19 +255,19 @@
 							<tr>  
 								<th>업태</th>
 								<td>
-									<input class="tbox regFullSort" placeholder="업태명(업태코드)" value="">
+									<input class="tbox regFullSort" placeholder="업태명" value="">
 								</td>
 								<th>종목</th>
-								<td> 
-									<input class="tbox regFullSort" placeholder="종목명(종목코드)" value="">
+								<td>  
+									<input class="tbox regFullSort" placeholder="종목명" value="">
 								</td>  
 							</tr>
 							<tr>
-								<th>유선전화</th>
+								<th>유선전화</th> 
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td> 
-								<th>대표자 휴대폰</th>
+								<th>대표자 연락처</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td> 
@@ -359,10 +354,19 @@
 										</div>
 									</div>
 								</td>  
-							</tr>  
+							</tr>
+							<tr>
+								<th>비고</th>
+								<td colspan="4">
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>   
 							</tbody>
 						</table>
 					</div>
+					<div class="headLineBox pageControlSort center"> 
+						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
+					</div>   	  
 				</div>
 				<div class="specRegGroup hide">
 					<div class="conGroup verticalManageSort">
@@ -371,7 +375,7 @@
 								<div class="titleText">원자재 정보</div>
 							</div>
 						</div>
-							<table class="searchResultTable ">
+						<table class="searchResultTable ">
 							<thead>
 								<tr> 
 									<th>원자재</th> 
@@ -392,11 +396,24 @@
 									</td> 
 								</tr>  
 							</tbody>
-							</table>
-					</div>	
-					<div class="headLineBox pageControlSort center"> 
-						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   
-					</div>  		 
+						</table>
+					</div>
+					<div class="page_group underSort">
+						<ul class="page_box">
+						<li class="prev arrow">
+							<a href="javascript:void(0);"></a>
+						</li>
+						<li class="pageNum on">
+							<a href="javascript:void(0);">1</a>
+						</li>
+						<li class="pageNum">
+							<a href="javascript:void(0);">2</a>
+						</li>
+						<li class="next arrow">
+							<a href="javascript:void(0); "></a>
+						</li>
+					</ul>
+					</div>		 
 				</div>	
 				<!-- :: close : ksg_5 : [진맛] 생산품의 상세정보 파트. 입력창 형식. -->
             </div>
@@ -453,11 +470,11 @@
 							<input class="tbox regFullSort listMod" placeholder="" value="매우 무름">
 						</td>
 					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btnGroup verticalBottomSort">
-			<a href="javascript:closePop();" class="btn searchSort">저장</a>
+					<div class="btnGroup verticalBottomSort">
+						<a href="javascript:closePop();" class="btn searchSort">저장</a>
+					</div>      
+				</tbody>   
+			</table>    
 		</div>
 	</div>
 </div>  

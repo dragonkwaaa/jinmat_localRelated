@@ -65,13 +65,12 @@
 						</div>
 						<div class="sboxGroup listArraySort">
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-                            <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
-								<option>등록순▼</option>
+								<option>품목코드▼</option>
+								<option>품목코드▲</option>  
+								<option>등록순▼</option> 
 								<option>등록순▲</option>
-							</select>
+							</select> 
 							<select class="sbox">
 								<option>40개씩</option>
 								<option>80개씩</option>
@@ -80,14 +79,21 @@
 						</div>
 					</div>
 					<table class="searchResultTable ">
-						<colgroup>
+						<colgroup>  
+							<col style="width : 30px;">
 							<col style="width : 250px;">
 							<col style="width : 150px;">
 							<col style="width : 90px;">
 							<col style="width : 50px;">
 						</colgroup>
 						<thead>
-						<tr> 
+						<tr>
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div> 
+							</th>   
 							<th>품목명</th>
 							<th>품목코드</th> 
 							<th>사용여부</th>
@@ -97,6 +103,7 @@
 						<tbody>
 						<!-- :: open : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr>
+							<td></td>
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="품목명" value="">
                             </td>
@@ -118,6 +125,12 @@
 						<!-- :: close : ksg_4 : [진맛] 테이블에 등록하는 파트. -->
 						<tr class="reged">
 							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>  
+							</td>
+							<td>
                                 <input class="tbox regFullSort listMod" placeholder="품목명" value="사과">
                             </td> 
 							<td>
@@ -136,6 +149,12 @@
 							</td>
 						</tr>
 						<tr class="reged">
+							<td>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>   
+							</td>						
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="품목명" value="사과">
                             </td> 
@@ -217,9 +236,9 @@
 							<!-- :: open : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->
 							<div class="sboxGroup listArraySort" style="display : none;">
 								<select class="sbox">
-									<option>번호순▼</option>
-									<option>번호순▲</option>
-									<option>등록순▼</option>
+									<option>품목코드▼</option>
+									<option>품목코드▲</option> 
+									<option>등록순▼</option> 
 									<option>등록순▲</option>
 								</select>
 								<select class="sbox">

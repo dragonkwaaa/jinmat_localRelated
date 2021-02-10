@@ -4,7 +4,7 @@
 <!-- :: ksg_1 = ksg_20210108_1726 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
 	$tCode					=	'300';
-	$lCode					=	'0301';
+	$lCode					=	'0302';
 ?>
 <body>
 <div class="container">
@@ -12,7 +12,7 @@
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/delivery/pages/delivery_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
-	<div class="wrapper"> 
+	<div class="wrapper">   
 		<div class="contents"> 
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
@@ -139,7 +139,7 @@
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">  
                         <div class="titleBox inlistConSort">  
-					    	<div class="titleText">납품 목록</div>
+					    	<div class="titleText">납품계획 목록</div>
                             <a href="javascript:void(0);" class="btn headRightAbMod wearingPopBtn">납품내역 추가</a>
                             <div class="tipBox mb15">* 입고내역을 클릭 시, 우측 박스에 상세정보가 표시됩니다.</div>
 					    </div> 
@@ -150,7 +150,7 @@
 								<option>번호순▼</option>
 								<option>번호순▲</option>
 								<option>등록순▼</option>
-								<option>등록순▲</option>
+								<option>등록순▲</option>  
                                 <option>과목순▼</option>
 								<option>과목순▲</option>
 							</select>
@@ -173,7 +173,6 @@
 						<col style="width : 100px;">  
 						<col style="width : 60px;">  
 						<col style="width : 70px;"> 
-						<col style="width : 85px;">    
 						<col style="width : 50px;">
                         </colgroup>
 						<thead>      
@@ -202,7 +201,6 @@
 								배송금액
 							</th>
 							<th>금액처리방법</th>  
-							<th>납품상태</th> 
                             <th>관리</th>
 						</tr>
 						</thead>
@@ -247,24 +245,12 @@
 								</div>  
 							</td> 
 							<td>선금</td>
-							<td>
-								<select class="sbox regFullSort">  
-								    <option>입고승인대기</option>
-								    <option>입고승인</option>
-								    <option>입고출하중</option>   
-									<option>입고출하완료</option>
-									<option>창고대기</option> 
-									<option>입고완료</option>
-									<option>입고취소요청</option>
-									<option>입고취소</option>
-								</select> 
-							</td>   
-                            <td>
+                            <td> 
 								<div class="btnGroup inListTable">
 									<a href="javascript:void(0);" class="btn modifySort wearingPopBtn">상세</a>
-									<a href="javascript:void(0);" class="btn modifySort wearingPopBtn">저장</a>
+									<a href="javascript:void(0);" class="btn regSort">등록</a>
 								</div> 
-							</td> 
+							</td>  
                         </tr>
                         <!-- :: close : ksg_3 : [진맛] 즉석 수정이 불가능하도록 고정된 텍스트로 표시하는 내용 파트. -->
 						</tbody>
@@ -310,18 +296,9 @@
 				<tr> 
 					<th>납품상태</th>
 					<td>
-						<select class="sbox normal">
-						    <option>입고승인대기</option>
-						    <option>입고승인</option>
-						    <option>입고출하중</option> 
-							<option>입고출하완료</option>
-							<option>창고대기</option> 
-							<option>입고완료</option>
-							<option>입고취소요청</option>
-							<option>입고취소</option>
-						</select> 
-					</td>
-				</tr>
+						납품대기
+					</td>  
+				</tr> 
 				<tr>
 					<th>납품요청일</th>
 					<td>

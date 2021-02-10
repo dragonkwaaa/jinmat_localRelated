@@ -4,7 +4,7 @@
 			<li>
 				<a href="/release/" class="<?=($lCode == '600' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
-					<span class="ml11">출고(주문) 관리</span>
+					<span class="ml11">출고 관리</span>
 				</a>
 			</li>
 			<li>
@@ -13,6 +13,12 @@
 					<span class="ml11">출고 예약 관리</span>
 				</a>
 			</li>
+			<li>
+				<a href="/release/wating" class="<?=($lCode == '602' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>
+					<span class="ml11">출고 대기 상품</span>
+				</a>
+			</li> 
 		</ul>
 	</div>
-</nav>
+</nav>    

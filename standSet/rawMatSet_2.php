@@ -75,12 +75,10 @@
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>원자재코드▼</option>
+								<option>원자재코드▲</option>
 								<option>등록순▼</option>
-								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>  
+								<option>등록순▲</option>  
 							</select>
 							<select class="sbox">
 								<option>40개씩</option>
@@ -92,7 +90,6 @@
 					<table class="searchResultTable">
 						<colgroup>
                             <col style="width : 30px;">
-                            <col style="width : 100px;">
 							<col style="width : 100px;">
 							<col style="width : 80px;">
                             <col style="width : 80PX;"> 
@@ -114,12 +111,11 @@
 									<label></label>
 								</div> 
 							</th> 
-							<th>원자재코드</th> 
-							<th>원자재명</th> 
+							<th>원자재코드</th>  
 							<th>품목명(코드)</th>
                             <th>품종명(코드)</th> 
                             <th>납품처(코드)</th>
-							<th>4차</th>
+							<th>옵션(코드)</th>
 							<th>생산지형태</th>
 							<th> 
 								<div>생산양</div>
@@ -148,11 +144,6 @@
 									<input class="tbox regFullSort listMod" placeholder="원자재코드" value="">
 								</div>
 							</td>   
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="원자재명" value="">
-								</div>
-							</td>
 							<td>
 								<div>
 									<input class="tbox regFullSort listMod" placeholder="품목명(코드)" value="">
@@ -244,11 +235,6 @@
 									<input class="tbox regFullSort listMod" placeholder="원자재코드" value="ap1234" readonly> 
 								</div> 
 							</td>   
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod" placeholder="원자재명" value="경주꿀사과">
-								</div>
-							</td>
 							<td> 
 								<div>
 									<input class="tbox regFullSort listMod"  value="부사">

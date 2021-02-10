@@ -21,35 +21,19 @@
 				<div class="titleBox manageHeadlineSort">생산품 품목</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
-						<!-- <div class="selectGroup monthSort">
-							<select>
-								<option selected>2020년</option>
-								<option >2019년</option>
-								<option >2018년</option>
-								<option >2017년</option>
-							</select>
-							<select>
-								<option selected>6월</option>  
-								<option >5월</option>
-								<option >4월</option>
-								<option >3월</option>
-							</select>
-						</div> -->
-						<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<table class="searchGroup inTblSort">
 							<colgroup>
 								<col style="width : 30%;">
 								<col style="width : 70%;">
 							</colgroup>
 							<tbody>
-								<tr>
+								<tr> 
 									<th>검색어</th>
 									<td>
 										<select class="sbox">
 											<option>전체</option>
-											<option>상품명</option>
-											<option>상품코드</option>
-											<option>생산지</option>
+											<option>생상품명</option>
+											<option>생상품코드</option>  
 										</select>
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
 									</td>
@@ -69,8 +53,8 @@
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
 							<select class="sbox">  
-								<option>번호순▼</option>
-								<option>번호순▲</option>
+								<option>생산품코드▼</option>  
+								<option>생산품코드▲</option>
 								<option>등록순▼</option>
 								<option>등록순▲</option>
 							</select>
@@ -295,8 +279,17 @@
 							</tr>
 							<tr>
 								<th>출고단가</th>
-								<td colspan="2">
+								<td>
 									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
+								<th>사용여부</th>
+								<td>
+								<select class="sbox regFullSort">
+									<option>사용</option>
+									<option>미사용</option>
+								</select>
 								</td>
 							</tr>
 							<tr>
@@ -323,13 +316,12 @@
 							</div> 
 						</div>
 						<table class="infoGroup txtCSort">
-						<colgroup>
-							<col style="width : 100px;">
-							<col style="width : 45px;">
+						<colgroup> 
+							<col style="width : 150px;">  
 							<col style="width : 70px;">
 							<col style="width : 70px;">  
-							<col style="width : 70px;">
-							<col style="width : 70px;"> 
+							<col style="width : 60px;">
+							<col style="width : 70px;">  
 							<col style="width : 70px;">
 							<col style="width : 100px;">
 							<col style="width : 40px;">
@@ -340,15 +332,21 @@
 								<div>원자재명</div>
 								<div>(원자재코드)</div>
 							</th>
+							<th>생산지형태</th>
 							<th> 
-								이미지
+								<div>생산양</div>
+								<div class="mt10">주기</div>
+							</th> 
+							<th> 
+								<div>규격</div>
+								<div class="mt10">기준Kg</div>
+							</th> 
+							<th> 
+								<div>입고단가</div>
+								<div class="mt10">출고단가</div>
 							</th>
-                            <th>규격</th>
-                            <th>기준Kg</th>
-							<th>입고단가</th>
-							<th>출고단가</th>
-							<th>사용 양</th>
-							<th>비고</th>
+							<th>사용 양(Kg)</th> 
+							<th>비고</th> 
 							<th>관리</th> 
 						</tr>
 						</thead>
@@ -361,24 +359,36 @@
 								<div class="mt2">
 									<input class="tbox regFullSort listMod" placeholder="원자재코드" readonly value="AP-01-01-01">
 								</div>
+							</td>
+							<td>
+								<input class="tbox regFullSort listMod"  value="노지" readonly> 
+							</td>
+							<td>
+								<div> 
+									<input class="tbox regFullSort listMod"  value="3t" readonly>
+								</div>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" value="매월" readonly>
+								</div> 
 							</td>  
 							<td>
-								<div class="imgBgCase">
-                                	<img src="/common/img/icon_status_topaz.png" class="img inTblSmSort">
+								<div>
+									<input class="tbox regFullSort listMod" placeholder="규격" value="대" readonly>
 								</div>
-							</td>
+								<div class="mt2">
+									<input class="tbox regFullSort listMod" placeholder="기준Kg" value="3" readonly>
+								</div> 
+							</td> 
 							<td>
-								<input class="tbox regFullSort listMod" placeholder="규격" readonly value="3kg">
-                            </td>
-                            <td>
-								<input class="tbox regFullSort listMod" placeholder="기준Kg" readonly value="">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="입고단가" value="45,000">
-							</td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="출고단가" value="55,000">
-							</td>
+								<div>
+									<input class="tbox regFullSort listMod priceMod"  value="">
+									<span class="priceWord">원</span> 
+								</div> 
+								<div class="mt10"> 
+									<input class="tbox regFullSort listMod priceMod" value=""> 
+									<span class="priceWord">원</span> 
+								</div>
+							</td>  
 							<td>
 								<input class="tbox regFullSort listMod" placeholder="사용 양" value="2">
 							</td>
@@ -451,53 +461,79 @@
                             <!-- :: close : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
                             <!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
 							<table class="infoGroup txtCSort">   
-							<colgroup> 
+							<colgroup>   
 								<col style="width : 100px;">
 								<col style="width : 50px;">
-								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 20px;">
-								<col style="width : 10px;">  
-							</colgroup>							
+								<col style="width : 50px;">
+								<col style="width : 40px;"> 
+								<col style="width : 50px;">
+								<col style="width : 20px;">      
+							</colgroup>		 		 			
 								<thead>  
 									<tr>
-										<th>원자재명<br>
-											(원자재코드)
+										<th>
+											<div>원자재명</div>
+											<div>(원자재코드)</div>
 										</th>
-										<th>납품처(코드)</th> 
-										<th>4차</th>
-										<th>규격</th>
-										<th>기준Kg</th>
+										<th>생산지형태</th>
+										<th>
+											<div>생산양</div> 
+											<div class="mt10">주기</div>
+										</th>
 										<th> 
+											<div>규격</div>
+											<div class="mt10">기준Kg</div>
+										</th> 
+										<th>  
 											<div>입고단가</div>
 											<div class="mt10">출고단가</div>
-										</th> 
+										</th>
 										<th>관리</th> 
-									</tr>
+									</tr> 
 								</thead> 
 								<tbody>  
 									<tr>
-										<td>
-											<div>사과-부사-01-01</div>
-											<div class="mt2">(AP-01-01-01)</div>
-										</td>  
-										<td>00농장</td>
-										<td></td> 
-										<td>대</td>
-										<td>15Kg</td>
+										<td> 
+										<div>
+											<input class="tbox regFullSort listMod"  value="경주꿀사과" readonly>
+										</div>
+										<div>
+											<input class="tbox regFullSort listMod"  value="ap1234" readonly>
+										</div>
+										</td>    
 										<td>
 											<div>
-												<input class="tbox regFullSort listMod" placeholder="입고단가" value="">
+												<input class="tbox regFullSort listMod" value="노지" readonly>
 											</div>
-											<div class="mt10"> 
-												<input class="tbox regFullSort listMod" placeholder="출고단가" value="">
+										</td> 
+										<td>
+											<div>
+												<input class="tbox regFullSort listMod"  value="3t" readonly>
+											</div>
+											<div class="mt2">
+												<input class="tbox regFullSort listMod" value="매월" readonly>
+											</div> 
+										</td>
+										<td>
+											<div>
+												<input class="tbox regFullSort listMod"  value="대" readonly>
+											</div>
+											<div class="mt2">
+												<input class="tbox regFullSort listMod" value="15" readonly> 
 											</div> 
 										</td> 
 										<td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn regSort">등록</a>
-										</div>
+											<div> 
+												<input class="tbox regFullSort listMod"  value="1,500" readonly>
+											</div>
+											<div class="mt10"> 
+												<input class="tbox regFullSort listMod" value="2,500" readonly>
+											</div>  
+										</td>  
+										<td> 
+											<div class="btnGroup inListTable">
+												<a href="javascript:void(0);" class="btn regSort">등록</a> 
+											</div> 
 										</td>		 
 									</tr>
 								</tbody>
@@ -527,51 +563,77 @@
                         <div class="inTblBoxGroup twinSort highHeight scrollSort wearingGoodsMod">    
 							<!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
 							<div class="titleBox inlistConSort">
-								<div class="titleText"> 사용 원자재 목록</div>
+								<div class="titleText mt10"> 사용 원자재 목록</div>
 							</div>     
 							<div class="limitHeightTblCase">
 								<table class="infoGroup txtCSort">    
 									<colgroup>   
-										<col style="width : 80px;">
+										<col style="width : 100px;">
 										<col style="width : 50px;">
 										<col style="width : 50px;">
-										<col style="width : 20px;">
-										<col style="width : 20px;">
-										<col style="width : 50px;"> 
-										<col style="width : 10px;">   
+										<col style="width : 40px;"> 
+										<col style="width : 50px;">
+										<col style="width : 20px;">      
 									</colgroup>		 					
 									<thead>
-										<tr>   
-											<th>원자재명<br>
-												(원자재코드)
-											</th>
-											<th>납품처(코드)</th>  
-											<th>4차</th>
-											<th>규격</th>
-											<th>기준Kg</th>
-											<th> 
-												<div>입고단가</div>
-												<div class="mt10">출고단가</div>
-											</th> 
-											<th>관리</th> 
-										</tr>
+									<tr>
+										<th>
+											<div>원자재명</div>
+											<div>(원자재코드)</div>
+										</th>
+										<th>생산지형태</th>
+										<th>
+											<div>생산양</div> 
+											<div class="mt10">주기</div>
+										</th>
+										<th> 
+											<div>규격</div>
+											<div class="mt10">기준Kg</div>
+										</th> 
+										<th>  
+											<div>입고단가</div>
+											<div class="mt10">출고단가</div>
+										</th>
+										<th>관리</th> 
+									</tr>
 									</thead>
 									<tbody style="text-align: center;">  
 										<tr>
+											<td> 
+											<div>
+												<input class="tbox regFullSort listMod"  value="경주꿀사과" readonly>
+											</div>
+											<div>
+												<input class="tbox regFullSort listMod"  value="ap1234" readonly>
+											</div>
+											</td>    
 											<td>
-												<div>사과-부사-01-01</div>  
-												<div class="mt2">(AP-01-01-01)</div> 
-											</td>   
-											<td>00농장</td>  
-											<td></td>
-											<td>대</td>
-											<td>15Kg</td>
+												<div>
+													<input class="tbox regFullSort listMod" value="노지" readonly>
+												</div>
+											</td> 
+											<td>
+												<div>
+													<input class="tbox regFullSort listMod"  value="3t" readonly>
+												</div>
+												<div class="mt2">
+													<input class="tbox regFullSort listMod" value="매월" readonly>
+												</div> 
+											</td>
+											<td>
+												<div>
+													<input class="tbox regFullSort listMod"  value="대" readonly>
+												</div>
+												<div class="mt2">
+													<input class="tbox regFullSort listMod" value="15" readonly> 
+												</div> 
+											</td> 
 											<td>
 												<div> 
-													<input class="tbox regFullSort listMod" placeholder="입고단가" value="1,500" readonly>
+													<input class="tbox regFullSort listMod"  value="1,500" readonly>
 												</div>
 												<div class="mt10"> 
-													<input class="tbox regFullSort listMod" placeholder="출고단가" value="2,500" readonly>
+													<input class="tbox regFullSort listMod" value="2,500" readonly>
 												</div>  
 											</td> 
 											<td>
