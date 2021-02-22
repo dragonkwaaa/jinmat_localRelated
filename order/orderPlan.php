@@ -208,6 +208,7 @@
 					<table class="searchResultTable ">
 						<colgroup>
 							<col style="width : 30px;">
+<<<<<<< HEAD
 							<col style="width : 70px;">  
 							<col style="width : 70px;">
 							<col style="width : 80px;">  
@@ -216,42 +217,77 @@
 							<col style="width : 35px;">   
                             <col style="width : 60px;">
 							<col style="width : 70px;">  
+=======
 							<col style="width : 70px;">
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<col style="width : 70px;">
+							<col style="width : 60px;">
+							<col style="width : 70px;">
+<<<<<<< HEAD
 							<col style="width : 55px;">
 							<col style="width : 80px;">       
 							<col style="width : 180px;">  
                             <col style="width : 40px;"> 
 						</colgroup>  
 						<thead>  
+=======
+                            <col style="width : 80px;">
+							<col style="width : 80px;">  
+							<col style="width : 90px;">
+							<col style="width : 70px;">
+							<col style="width : 180px;"> 
+							<col style="width : 70px;">
+                            <col style="width : 30px;"> 
+						</colgroup>
+						<thead>
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 						<tr>
 							<th>
 								<div class="checkBoxCase">
 									<input type="checkbox" name value>
 									<label></label>
 								</div>
+<<<<<<< HEAD
+=======
 							</th>
 							<th>
+								발주코드<br>
+								(발주원본코드)
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
+							</th>
+							<th>발주타입</th>
+							<th>주문일자</th>
+							<th>
+<<<<<<< HEAD
 								발주코드<br>
 								채널<br> 
 								(발주원본코드) 
 							</th>
 							<th>주문일자</th> 
 							<th> 
+=======
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
                                 주문자명<br>
                                 주문자 전화번호<br>
 								주문자 핸드폰번호
                             </th>
+<<<<<<< HEAD
 							<th>주문 상품명</th>  
                             <th>   
                                상품명
 							</th>
 							<th>상품수량</th>
 							<th>판매가</th> 
+=======
+                            <th>
+                               상품명
+							</th> 
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>총 결제금액<br>
 								총 품목금액<br>
 								총 배송금액
 							</th>
+<<<<<<< HEAD
 							<th>예치금<br>
 								마일리지
 							</th>
@@ -259,12 +295,19 @@
 								총 상품할인금액<br>
 								총 쿠폰할인금액
 							</th>
+=======
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>금액처리방법</th> 
 							<th>받는분<br>
 								받는분 전화번호<br>
 								받는분 핸드폰번호
 							</th>
+<<<<<<< HEAD
 							<th>배송지정보</th> 
+=======
+							<th>배송지정보</th>
+							<th>발주상태</th>
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>관리</th>
 						</tr>
 						</thead>
@@ -275,18 +318,29 @@
 									<input type="checkbox" name value>
 									<label></label>
 								</div>
+<<<<<<< HEAD
 							</td>  
+=======
+							</td>
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<td>
 								<div>
 									210211
 								</div>
 								<div class="mt2">
+<<<<<<< HEAD
 									일반발주
 								</div> 
 								<div class="mt2">
 									164521
 								</div>
 							</td>
+=======
+									164521
+								</div>
+							</td>
+							<td>일반발주</td>
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<td>
 								2021-02-21
 							</td>
@@ -302,6 +356,7 @@
 								</div>
 							<td>
 								<div class="mt2">
+<<<<<<< HEAD
 									진한 청포도 외 1건
 								</div>
 							</td>
@@ -333,10 +388,42 @@
 								<div class="mt2">
 									0
 									<span class="priceWord">원</span>
+=======
+									사과세트A
 								</div>
 							</td>
 							<td>
 								<div>
+								53,000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									50,000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									3,000
+									<span class="priceWord">원</span>
+								</div>
+							</td>
+							<td>
+								선불
+                            </td>
+							<td>
+								<div>
+									김별
+								</div>
+								<div class="mt2">
+									02-454-6918
+								</div>
+								<div class="mt2">
+									010-5100-0429
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
+								</div>
+							</td>
+							<td>
+								<div>
+<<<<<<< HEAD
 									0
 									<span class="priceWord">원</span>
 								</div>
@@ -378,6 +465,30 @@
 								<div class="btnGroup inListTable">
 									<a href="/order/orderPlanSpec" class="btn modifySort">상세</a>
 								</div>  
+=======
+									123-874
+								</div>
+								<div class="mt2">
+									서울시 도봉구 방학동 인경빌라 203호
+								</div>
+							</td>	
+                            <td>
+								<select class="sbox regFullSort">
+									<option>발주요청</option>
+                                    <option>발주요청승인</option>
+                                    <option>발주취소요청</option>
+                                    <option>발주취소</option>
+                                    <option>발주완료</option> 
+								</select>
+                            </td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="javascript:void(0);" class="btn modifySort">저장</a>
+								</div>
+								<div class="btnGroup inListTable">
+									<a href="/order/orderSpec" class="btn modifySort">상세</a>
+								</div> 
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							</td>
 						</tr>
 						</tbody>  

@@ -67,7 +67,11 @@
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
 							<select class="sbox">
 								<option>품목코드▼</option>
+<<<<<<< HEAD
 								<option>품목코드▲</option>  
+=======
+								<option>품목코드▲</option> 
+>>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								<option>등록순▼</option> 
 								<option>등록순▲</option>
 							</select> 
