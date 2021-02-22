@@ -216,13 +216,14 @@
 							<col style="width : 40px;">   
                             <col style="width : 60px;"> 
 							<col style="width : 70px;">  
-							<col style="width : 70px;">  
+							<col style="width : 70px;">
+							<col style="width : 180px;"> 
 							<col style="width : 70px;">
 							<col style="width : 55px;">
 							<col style="width : 80px;">       
 							<col style="width : 180px;">  
 							<col style="width : 80px;">
-                            <col style="width : 40px;">   
+                            <col style="width : 40px;"> 
 						</colgroup>
 						<thead>  
 						<tr>
