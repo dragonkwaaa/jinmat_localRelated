@@ -208,36 +208,21 @@
 					<table class="searchResultTable ">
 						<colgroup>
 							<col style="width : 30px;">
-<<<<<<< HEAD
 							<col style="width : 70px;">  
 							<col style="width : 70px;">
 							<col style="width : 80px;">  
 							<col style="width : 90px;">
-							<col style="width : 90px;">    
-							<col style="width : 35px;">   
-                            <col style="width : 60px;">
+							<col style="width : 90px;">       
+							<col style="width : 40px;">   
+                            <col style="width : 60px;"> 
 							<col style="width : 70px;">  
-=======
+							<col style="width : 70px;">  
 							<col style="width : 70px;">
-							<col style="width : 70px;">
-							<col style="width : 60px;">
-							<col style="width : 70px;">
-                            <col style="width : 80px;">
-							<col style="width : 80px;">  
-							<col style="width : 90px;">
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
-							<col style="width : 70px;">
-							<col style="width : 180px;"> 
-							<col style="width : 70px;">
-<<<<<<< HEAD
 							<col style="width : 55px;">
 							<col style="width : 80px;">       
 							<col style="width : 180px;">  
 							<col style="width : 80px;">
-                            <col style="width : 40px;"> 
-=======
-                            <col style="width : 30px;"> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
+                            <col style="width : 40px;">   
 						</colgroup>
 						<thead>  
 						<tr>
@@ -249,39 +234,25 @@
 							</th>
 							<th>
 								발주코드<br>
-<<<<<<< HEAD
 								채널<br> 
 								(발주원본코드) 
 							</th>
 							<th>주문일자</th> 
-=======
-								(발주원본코드)
-							</th>
-							<th>발주타입</th>
-							<th>주문일자</th>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th> 
                                 주문자명<br>
                                 주문자 전화번호<br>
 								주문자 핸드폰번호
                             </th>
-<<<<<<< HEAD
 							<th>주문 상품명</th>  
                             <th>   
                                상품명
 							</th>
 							<th>상품수량</th>
 							<th>판매가</th> 
-=======
-                            <th>
-                               상품명
-							</th> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>총 결제금액<br>
 								총 품목금액<br>
 								총 배송금액
 							</th>
-<<<<<<< HEAD
 							<th>예치금<br>
 								마일리지
 							</th>
@@ -289,18 +260,12 @@
 								총 상품할인금액<br>
 								총 쿠폰할인금액
 							</th>
-=======
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>금액처리방법</th> 
 							<th>받는분<br>
 								받는분 전화번호<br>
 								받는분 핸드폰번호
 							</th>
-<<<<<<< HEAD
 							<th>배송지정보</th> 
-=======
-							<th>배송지정보</th>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>발주상태</th>
 							<th>관리</th>
 						</tr>
@@ -314,7 +279,6 @@
 								</div>
 							</td>
 							<td>
-<<<<<<< HEAD
 								<div>
 									210211
 								</div>
@@ -385,32 +349,6 @@
 								<div class="mt2">
 									0 
 									<span class="priceWord">원</span>
-=======
-								<div>
-									210211
-								</div>
-								<div class="mt2">
-									164521
-								</div>
-							</td>
-							<td>일반발주</td>
-							<td>
-								2021-02-21
-							</td>
-							<td>
-								<div>
-									허평강
-								</div>
-								<div class="mt2">
-									031-846-6918
-								</div>
-								<div class="mt2">
-									010-4300-6138
-								</div>
-							<td>
-								<div class="mt2">
-									사과세트A
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								</div>
 							</td>
 							<td>
@@ -418,7 +356,6 @@
                             </td>
 							<td>
 								<div>
-<<<<<<< HEAD
 									김별
 								</div>
 								<div class="mt2">
@@ -441,49 +378,6 @@
 									<option>발주요청</option>
                                     <option>발주취소</option> 
                                     <option>작업지시</option> 
-=======
-								53,000
-									<span class="priceWord">원</span>
-								</div>
-								<div class="mt2">
-									50,000
-									<span class="priceWord">원</span>
-								</div>
-								<div class="mt2">
-									3,000
-									<span class="priceWord">원</span>
-								</div>
-							</td>
-							<td>
-								선불
-                            </td>
-							<td>
-								<div>
-									김별
-								</div>
-								<div class="mt2">
-									02-454-6918
-								</div>
-								<div class="mt2">
-									010-5100-0429
-								</div>
-							</td>
-							<td>
-								<div>
-									123-874
-								</div>
-								<div class="mt2">
-									서울시 도봉구 방학동 인경빌라 203호
-								</div>
-							</td>	
-                            <td>
-								<select class="sbox regFullSort">
-									<option>발주요청</option>
-                                    <option>발주요청승인</option>
-                                    <option>발주취소요청</option>
-                                    <option>발주취소</option>
-                                    <option>발주완료</option> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								</select>
                             </td>
 							<td>
@@ -558,7 +452,7 @@ $(document).on('click', '.btn.headRightAbMod.addorderBtn', function(){
 }); 
 // :: close : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 
-
+  
 </script>
 </body>
 </html>

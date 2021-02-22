@@ -316,19 +316,11 @@
 							</div> 
 						</div>
 						<table class="infoGroup txtCSort">
-<<<<<<< HEAD
 						<colgroup> 
 							<col style="width : 150px;">  
 							<col style="width : 70px;">
 							<col style="width : 70px;">  
 							<col style="width : 60px;">
-=======
-						<colgroup>
-							<col style="width : 100px;">
-							<col style="width : 70px;">
-							<col style="width : 70px;">
-							<col style="width : 70px;">
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<col style="width : 70px;">  
 							<col style="width : 70px;">
 							<col style="width : 100px;">
@@ -340,18 +332,12 @@
 								<div>원자재명</div>
 								<div>(원자재코드)</div>
 							</th>
-<<<<<<< HEAD
 							<th>생산지형태</th>
 							<th> 
 								<div>생산양</div>
 								<div class="mt10">주기</div>
 							</th> 
 							<th> 
-=======
-							<th>납품처(코드)</th>
-							<th>4차</th>
-							<th> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								<div>규격</div>
 								<div class="mt10">기준Kg</div>
 							</th> 
@@ -359,11 +345,7 @@
 								<div>입고단가</div>
 								<div class="mt10">출고단가</div>
 							</th>
-<<<<<<< HEAD
 							<th>사용 양(Kg)</th> 
-=======
-							<th>사용 양</th> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<th>비고</th> 
 							<th>관리</th> 
 						</tr>
@@ -379,7 +361,6 @@
 								</div>
 							</td>
 							<td>
-<<<<<<< HEAD
 								<input class="tbox regFullSort listMod"  value="노지" readonly> 
 							</td>
 							<td>
@@ -388,16 +369,6 @@
 								</div>
 								<div class="mt2">
 									<input class="tbox regFullSort listMod" value="매월" readonly>
-=======
-								<input class="tbox regFullSort listMod" placeholder="납품처명(코드)" readonly value="강원농장(12)">
-							</td>
-							<td>
-								<div>
-									<input class="tbox regFullSort listMod"  value="경주" readonly>
-								</div>
-								<div class="mt2">
-									<input class="tbox regFullSort listMod" value="김명장" readonly>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								</div> 
 							</td>  
 							<td>
@@ -499,7 +470,6 @@
 								<col style="width : 20px;">      
 							</colgroup>		 		 			
 								<thead>  
-<<<<<<< HEAD
 									<tr>
 										<th>
 											<div>원자재명</div>
@@ -524,29 +494,6 @@
 								<tbody>  
 									<tr>
 										<td> 
-=======
-								<tr>
-									<th>
-										<div>원자재명</div>
-										<div>(원자재코드)</div>
-									</th>
-									<th>납품처(코드)</th>
-									<th>4차</th>
-									<th> 
-										<div>규격</div>
-										<div class="mt10">기준Kg</div>
-									</th> 
-									<th> 
-										<div>입고단가</div>
-										<div class="mt10">출고단가</div>
-									</th>
-									<th>관리</th> 
-								</tr>
-								</thead> 
-								<tbody>  
-								<tr>
-									<td>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 										<div>
 											<input class="tbox regFullSort listMod"  value="경주꿀사과" readonly>
 										</div>
@@ -554,7 +501,6 @@
 											<input class="tbox regFullSort listMod"  value="ap1234" readonly>
 										</div>
 										</td>    
-<<<<<<< HEAD
 										<td>
 											<div>
 												<input class="tbox regFullSort listMod" value="노지" readonly>
@@ -590,43 +536,6 @@
 											</div> 
 										</td>		 
 									</tr>
-=======
-									<td>
-										<div>
-											<input class="tbox regFullSort listMod" value="강원농장(12)" readonly>
-										</div>
-									</td> 
-									<td>
-										<div>
-											<input class="tbox regFullSort listMod"  value="경주" readonly>
-										</div>
-										<div class="mt2">
-											<input class="tbox regFullSort listMod" value="김명장" readonly>
-										</div> 
-									</td>
-									<td>
-										<div>
-											<input class="tbox regFullSort listMod"  value="대" readonly>
-										</div>
-										<div class="mt2">
-											<input class="tbox regFullSort listMod" value="15" readonly> 
-										</div> 
-									</td> 
-									<td>
-										<div> 
-											<input class="tbox regFullSort listMod"  value="1,500" readonly>
-										</div>
-										<div class="mt10"> 
-											<input class="tbox regFullSort listMod" value="2,500" readonly>
-										</div>  
-									</td>  
-									<td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn regSort">등록</a> 
-										</div> 
-									</td>		 
-								</tr>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 								</tbody>
 							</table> 
                             <!-- :: close : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
@@ -660,18 +569,10 @@
 								<table class="infoGroup txtCSort">    
 									<colgroup>   
 										<col style="width : 100px;">
-<<<<<<< HEAD
 										<col style="width : 50px;">
-=======
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 										<col style="width : 50px;">
 										<col style="width : 40px;"> 
 										<col style="width : 50px;">
-<<<<<<< HEAD
-=======
-										<col style="width : 40px;"> 
-										<col style="width : 50px;">
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 										<col style="width : 20px;">      
 									</colgroup>		 					
 									<thead>
@@ -680,25 +581,16 @@
 											<div>원자재명</div>
 											<div>(원자재코드)</div>
 										</th>
-<<<<<<< HEAD
 										<th>생산지형태</th>
 										<th>
 											<div>생산양</div> 
 											<div class="mt10">주기</div>
 										</th>
-=======
-										<th>납품처(코드)</th>
-										<th>4차</th>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 										<th> 
 											<div>규격</div>
 											<div class="mt10">기준Kg</div>
 										</th> 
-<<<<<<< HEAD
 										<th>  
-=======
-										<th> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 											<div>입고단가</div>
 											<div class="mt10">출고단가</div>
 										</th>
@@ -721,32 +613,11 @@
 												</div>
 											</td> 
 											<td>
-<<<<<<< HEAD
 												<div>
 													<input class="tbox regFullSort listMod"  value="3t" readonly>
 												</div>
 												<div class="mt2">
 													<input class="tbox regFullSort listMod" value="매월" readonly>
-=======
-											<div>
-												<input class="tbox regFullSort listMod"  value="경주꿀사과" readonly>
-											</div>
-											<div>
-												<input class="tbox regFullSort listMod"  value="ap1234" readonly>
-											</div>
-											</td>    
-											<td>
-												<div>
-													<input class="tbox regFullSort listMod" value="강원농장(12)" readonly>
-												</div>
-											</td> 
-											<td>
-												<div>
-													<input class="tbox regFullSort listMod"  value="경주" readonly>
-												</div>
-												<div class="mt2">
-													<input class="tbox regFullSort listMod" value="김명장" readonly>
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 												</div> 
 											</td>
 											<td>
