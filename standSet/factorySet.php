@@ -200,55 +200,6 @@
 							</td> 
 							<td>
                                 <input class="tbox regFullSort listMod" placeholder="등록일" value="2021-02-21"> 
-<<<<<<< HEAD
-=======
-							</td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="비고" value="별관 공사중">
-							</td>
-							<td>
-								<div class="btnGroup inListTable">
-									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
-								</div>
-							</td>
-                        </tr>
-						<tr>
-							<td>
-								<div class="checkBoxCase">
-									<input type="checkbox" name value>
-									<label></label>
-								</div> 
-							</td> 
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="공장코드" value="G01011111">
-								<div class="tipBoxwarning mt10">  
-									동일한 코드가 존재합니다.
-								</div> 
-							</td>  
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="공장명" value="경주공장">
-                            </td>
-							<td>
-								<input class="tbox regFullSort listMod" placeholder="공장연락처" value="051-2512-2121">
-							</td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="공장관리자명" value="허평강">
-							</td>
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="공장관리자코드" value="09522145">
-                            </td>
-                            <td>
-                                <input class="tbox regFullSort listMod" placeholder="관리자 연락처" value="010-4300-6138">
-							</td>
-							<td>
-                                <select class="sbox regFullSort">
-									<option selected>사용</option>
-									<option>미사용</option> 
-								</select>
-							</td> 
-							<td>
-                                <input class="tbox regFullSort listMod" placeholder="등록일" value=""> 
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							</td>
                             <td>
                                 <input class="tbox regFullSort listMod" placeholder="비고" value="별관 공사중">
