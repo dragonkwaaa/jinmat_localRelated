@@ -291,13 +291,7 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
-								<th>검색창 내용</th>
-								<td colspan="4">
-									<input class="tbox regFullSort" value="#내용1, #내용2, #내용3">
-								</td>
-							</tr>
+							</tr> 
 							<tr>
 								<th>거래처그룹</th>
 								<td colspan="4">

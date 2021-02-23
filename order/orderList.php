@@ -191,9 +191,9 @@
 						<div class="sboxGroup listArraySort">
 								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀업로드</a> 
 								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">작업지시</a>  
-							<select class="sbox"> 
-								<option>번호순▼</option>
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">작업지시</a>   
+							<select class="sbox">  
+								<option>번호순▼</option>  
 								<option>번호순▲</option>
 								<option>등록순▼</option>   
 								<option>등록순▲</option>
@@ -217,14 +217,13 @@
                             <col style="width : 60px;"> 
 							<col style="width : 70px;">  
 							<col style="width : 70px;">
-							<col style="width : 180px;"> 
 							<col style="width : 70px;">
 							<col style="width : 55px;">
 							<col style="width : 80px;">       
 							<col style="width : 180px;">  
-							<col style="width : 80px;">
+							<col style="width : 80px;">  
                             <col style="width : 40px;"> 
-						</colgroup>
+						</colgroup> 
 						<thead>  
 						<tr>
 							<th>
@@ -414,44 +413,111 @@
 		</div>
 	</div>
 </div>
+
+<div class="popup centerSort normal wearingPop">
+	<div class="popupCon normalSort">  
+		<a href="javascript:closePop()">
+			<img src="/common/img/close.png" class="close">
+		</a>
+		<div class="titleBox popupSort"> 
+		작업지시
+		</div>
+		<div class="conGroup verticalManageSort">
+			<table class="infoGroup">
+				<colgroup>
+					<col width="10%">
+					<col width="90%">
+				</colgroup>  
+				<tbody>
+				<tr> 
+					<th>공장</th>
+					<td>
+						<select class="sbox normal">
+						    <option>서울공장</option>
+						    <option>경기공장</option>
+						</select> 
+					</td>
+				</tr> 
+				<tr>
+					<th>작업지시일</th>  
+					<td>  
+					<div class="dateInputCase topLineSearchMod">
+						<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="작업지시일">
+					</div>
+					</td>
+                </tr> 
+                <tr>
+					<th>
+						관리
+					</th> 
+					<td>
+                        <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
+                        <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. --> 
+                        <div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
+							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. --> 
+							<table class="searchResultTable">
+								<colgroup> 
+									<col style="width : 100px;"> 
+									<col style="width : 30px;"> 
+									<col style="width : 120px;"> 
+									<col style="width : 80px;"> 
+									<col style="width : 60px;"> 
+									<col style="width : 60px;">    
+									<col style="width : 50px;">  
+                    		    </colgroup>   
+								<thead>
+								<tr>
+									<th>상품명</th>
+									<th>발주수량</th>
+									<th>원자재명</th>
+									<th>창고</th> 
+									<th>현재재고</th>
+									<th>필요수량</th>
+									<th>관리</th> 
+								</tr>  
+								</thead>
+								<tbody> 
+								<tr class="reged">
+									<td>
+										진한 청포도
+									</td>
+									<td>
+										10
+									</td>
+									<td>
+										청포도
+									</td>
+									<td>A창고</td> 
+									<td>10</td> 
+									<td>10</td> 
+									<td> 
+										<div class="btnGroup inListTable">
+											<a href="/stock/index" class="btn regSort">재고이동</a> 
+										</div>  
+									</td>		 
+								</tr>
+								</tbody> 
+                    		</table>
+                        </div>   
+					</td>
+                </tr>
+				</tbody> 
+			</table>
+		</div>
+		<div class="btnGroup verticalBottomSort">
+			<a href="javascript:closePop();" class="btn searchSort">저장</a>
+		</div>
+	</div>
+</div>  
+<!-- :: close : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
+
 <script src="/common/js/datePick.js"></script>
 <script>
-// :: open : ksg_2 : [진맛] 원자재 목록을 클릭 시, 우측의 테이블 내용과 하단 버튼이 나타나도록 하는 내용. "등록" 파트를 눌러도 우측 내용이 나오는 문제가 있어, 이것은 사용을 중단함.
-// $(document).on('click', '.conGroup.verticalManageSort .searchResultTable td', function(){
-//     $('.specInfoGroup.hide').removeClass('hide');
-//     $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
-// 	$('.specRegGroup').addClass('hide');
-// 	$(this).parent().siblings('tr').removeClass('activated');
-// 	$(this).parent('tr').addClass('activated');
-// });
-// :: close : ksg_2 : [진맛] 원자재 목록을 클릭 시, 우측의 테이블 내용과 하단 버튼이 나타나도록 하는 내용. "등록" 파트를 눌러도 우측 내용이 나오는 문제가 있어, 이것은 사용을 중단함.
-// :: open : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
-$(document).on('click', '.conGroup.verticalManageSort .searchResultTable tr.reged', function(){
-    $('.specInfoGroup.hide').removeClass('hide');
-    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
-	$('.specRegGroup').addClass('hide');
-	$(this).siblings('tr').removeClass('activated');
-	$(this).addClass('activated');
-});
-// :: close : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
-// :: open : ksg_4 : [진맛] 품종 리스트의 "품질" 버튼 클릭 시, 품질 팝업창 표시하는 스크립트.
-$(document).on('click', '.btn.popQualMod', function(){
-	$('.popup.centerSort.qualitypop').show();
+ 
+$(document).on('click', '.addStaffBtn', function(){
+	$('.popup.centerSort.wearingPop').show();
 	$('.contents').addClass('overlay');
-});
-// :: close : ksg_4 : [진맛] 품종 리스트의 "품질" 버튼 클릭 시, 품질 팝업창 표시하는 스크립트.
-
-
-
-// :: open : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
-$(document).on('click', '.btn.headRightAbMod.addorderBtn', function(){
-    $('.specInfoGroup.hide').removeClass('hide');
-	$('.specRegGroup').removeClass('hide');
-    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
-	$(this).siblings('tr').removeClass('activated');
-	$(this).addClass('activated');
 }); 
-// :: close : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 
   
 </script>

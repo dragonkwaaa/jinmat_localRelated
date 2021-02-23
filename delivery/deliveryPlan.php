@@ -390,15 +390,15 @@
 									<th>생산지형태</th>
 									<th>
 										<div>생산양</div> 
-										<div class="mt10">주기</div>
+										<div class="mt2">주기</div>
 									</th>
 									<th> 
 										<div>규격</div>
-										<div class="mt10">기준Kg</div>
+										<div class="mt2">기준Kg</div>
 									</th> 
 									<th>  
 										<div>입고단가</div>
-										<div class="mt10">출고단가</div>
+										<div class="mt2">출고단가</div>
 									</th>
 									<th>관리</th> 
 								</tr>  
@@ -438,7 +438,7 @@
 										<div> 
 											<input class="tbox regFullSort listMod"  value="1,500" readonly>
 										</div>
-										<div class="mt10"> 
+										<div class="mt2"> 
 											<input class="tbox regFullSort listMod" value="2,500" readonly>
 										</div>  
 									</td>  
@@ -475,15 +475,15 @@
 									<th>생산지형태</th>
 									<th>
 										<div>생산양</div> 
-										<div class="mt10">주기</div>
+										<div class="mt2">주기</div>
 									</th>
 									<th> 
 										<div>규격</div>
-										<div class="mt10">기준Kg</div>
+										<div class="mt2">기준Kg</div>
 									</th> 
 									<th>  
 										<div>입고단가</div>
-										<div class="mt10">출고단가</div>
+										<div class="mt2">출고단가</div>
 									</th>
 									<th>사용 양(Kg)</th>
 									<th>관리</th> 
@@ -524,7 +524,7 @@
 										<div> 
 											<input class="tbox regFullSort listMod"  value="" >
 										</div>
-										<div class="mt10">  
+										<div class="mt2">  
 											<input class="tbox regFullSort listMod" value="" >
 										</div>  
 									</td>    

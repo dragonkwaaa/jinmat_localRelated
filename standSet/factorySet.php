@@ -90,21 +90,12 @@
 							<col style="width : 30px;">
                             <col style="width : 100px;">
                             <col style="width : 100px;">
-<<<<<<< HEAD
 							<col style="width : 80px;">
 							<col style="width : 80px;">
                             <col style="width : 80PX;">  
                             <col style="width : 80PX;">  
                             <col style="width : 55px;"> 
 							<col style="width : 80px;">
-=======
-							<col style="width : 80px;">
-							<col style="width : 80px;">
-                            <col style="width : 80PX;">  
-                            <col style="width : 80PX;">  
-                            <col style="width : 55px;"> 
-							<col style="width : 80px;">
->>>>>>> 22f23cdacbac5707c1b7f13308289a607cb2f0aa
 							<col style="width : 180px;">  
                             <col style="width : 40px;">
                         </colgroup>

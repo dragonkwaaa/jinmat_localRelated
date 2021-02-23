@@ -14,49 +14,6 @@
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">  
-			<div class="section horizontalManageSort searcManageSort topLineMod">
-				<div class="titleBox manageHeadlineSort">검색</div>
-				<div class="conGroup verticalManageSort">
-					<table class="searchGroup">  
-						<colgroup>
-							<col style="width : 15%;">
-							<col style="width : 85%;">
-						</colgroup>  
-						<tbody>
-						<tr>
-							<th>검색어</th>
-							<td>
-								<select class="sbox">  
-									<option>전체</option>
-                                    <option>품목명</option>
-                                    <option>품목코드</option>
-                                    <option>품종명</option>
-                                    <option>품종코드</option>
-                                    <option>창고명</option>
-                                    <option>창고코드</option>  
-                                    <option>생상품명</option>
-									<option>생산품코드</option>
-								</select>
-								<input class="tbox searchInput topLineSearchMod ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
-                            </td>  
-                        </tr>    
-						</tbody>
-                    </table>
-                    <div class="btnGroup verticalBottomSort inTblSort">
-                        <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
-                    </div>
-				</div>
-            </div>  
-            
-            
-
-
-
-
-
-
-
-
             <div class="section horizontalManageSort asymDoub1">
 				<div class="titleBox manageHeadlineSort">부서 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
@@ -582,43 +539,7 @@
                             <div class="titleBox inlistConSort">
 								<div class="titleText">직원 목록</div>
 							</div>
-                            <table class="searchGroup inTblSort">
-								<colgroup>
-									<col style="width : 30%;">
-									<col style="width : 70%;">
-								</colgroup>
-								<tbody>
-									<tr>
-										<th>검색어</th>
-										<td>
-											<select class="sbox">
-												<option>전체</option>
-												<option>직원명</option>
-												<option>직원코드</option>
-											</select>
-											<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
-										</td>
-									</tr>
-									<!-- <tr>
-										<th>
-											작업지시일
-										</th>
-										<td>
-											<div class="dateInputCase topLineSearchMod">
-												<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
-											</div>
-											<div class="betweenWaveText">~</div>
-											<div class="dateInputCase topLineSearchMod">
-												<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
-											</div>
-										</td>
-									</tr> -->
-								</tbody>
-							</table>
-                    		<div class="btnGroup verticalBottomSort inTblSort">
-                    		    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
-                    		</div>	
-						</div>
+						</div> 
 						<table class="infoGroup txtCSort">
 							<colgroup>
 								<col style="width : 100px;">

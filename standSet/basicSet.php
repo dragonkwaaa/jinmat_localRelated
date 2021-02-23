@@ -21,21 +21,6 @@
 				<div class="titleBox manageHeadlineSort">기초항목 관리</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
-						<!-- <div class="selectGroup monthSort">
-							<select>
-								<option selected>2020년</option>
-								<option >2019년</option>
-								<option >2018년</option>
-								<option >2017년</option>
-							</select>
-							<select>
-								<option selected>6월</option>
-								<option >5월</option>
-								<option >4월</option>
-								<option >3월</option>
-							</select>
-						</div> -->
-						<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<table class="searchGroup inTblSort">
 							<colgroup>
 								<col style="width : 30%;">
@@ -47,7 +32,7 @@
 									<td>
 										<select class="sbox">
 											<option>전체</option>
-											<option>품목명</option>
+											<option>품목명</option> 
 											<option>품목코드</option>
 										</select> 
 										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">

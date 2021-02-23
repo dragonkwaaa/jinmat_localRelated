@@ -174,7 +174,7 @@
 								</div>
 								<div class="mt2">
 									<input class="tbox regFullSort listMod" value="31224455" readonly>
-									<div class="tipBoxwarning mt10">  
+									<div class="tipBoxwarning mt10">   
 									동일한 코드가 존재합니다.
 									</div> 
 								</div>
@@ -335,15 +335,15 @@
 							<th>생산지형태</th>
 							<th> 
 								<div>생산양</div>
-								<div class="mt10">주기</div>
+								<div class="mt2">주기</div>
 							</th> 
 							<th> 
 								<div>규격</div>
-								<div class="mt10">기준Kg</div>
+								<div class="mt2">기준Kg</div>
 							</th> 
 							<th> 
 								<div>입고단가</div>
-								<div class="mt10">출고단가</div>
+								<div class="mt2">출고단가</div>
 							</th>
 							<th>사용 양(Kg)</th> 
 							<th>비고</th> 
@@ -384,7 +384,7 @@
 									<input class="tbox regFullSort listMod priceMod"  value="">
 									<span class="priceWord">원</span> 
 								</div> 
-								<div class="mt10"> 
+								<div class="mt2"> 
 									<input class="tbox regFullSort listMod priceMod" value=""> 
 									<span class="priceWord">원</span> 
 								</div>
@@ -478,15 +478,15 @@
 										<th>생산지형태</th>
 										<th>
 											<div>생산양</div> 
-											<div class="mt10">주기</div>
+											<div class="mt2">주기</div>
 										</th>
 										<th> 
 											<div>규격</div>
-											<div class="mt10">기준Kg</div>
+											<div class="mt2">기준Kg</div>
 										</th> 
 										<th>  
 											<div>입고단가</div>
-											<div class="mt10">출고단가</div>
+											<div class="mt2">출고단가</div>
 										</th>
 										<th>관리</th> 
 									</tr> 
@@ -526,7 +526,7 @@
 											<div> 
 												<input class="tbox regFullSort listMod"  value="1,500" readonly>
 											</div>
-											<div class="mt10"> 
+											<div class="mt2"> 
 												<input class="tbox regFullSort listMod" value="2,500" readonly>
 											</div>  
 										</td>  
@@ -563,7 +563,7 @@
                         <div class="inTblBoxGroup twinSort highHeight scrollSort wearingGoodsMod">    
 							<!-- :: open : ksg_3 : [진맛] 검색 결과로 표시되는 내부 테이블 형식의 품목 목록 파트. -->
 							<div class="titleBox inlistConSort">
-								<div class="titleText mt10"> 사용 원자재 목록</div>
+								<div class="titleText mt2"> 사용 원자재 목록</div>
 							</div>     
 							<div class="limitHeightTblCase">
 								<table class="infoGroup txtCSort">    
@@ -584,15 +584,15 @@
 										<th>생산지형태</th>
 										<th>
 											<div>생산양</div> 
-											<div class="mt10">주기</div>
+											<div class="mt2">주기</div>
 										</th>
 										<th> 
 											<div>규격</div>
-											<div class="mt10">기준Kg</div>
+											<div class="mt2">기준Kg</div>
 										</th> 
 										<th>  
 											<div>입고단가</div>
-											<div class="mt10">출고단가</div>
+											<div class="mt2">출고단가</div>
 										</th>
 										<th>관리</th> 
 									</tr>
@@ -632,7 +632,7 @@
 												<div> 
 													<input class="tbox regFullSort listMod"  value="1,500" readonly>
 												</div>
-												<div class="mt10"> 
+												<div class="mt2"> 
 													<input class="tbox regFullSort listMod" value="2,500" readonly>
 												</div>  
 											</td> 

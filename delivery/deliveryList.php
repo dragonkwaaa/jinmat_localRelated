@@ -286,101 +286,92 @@
 						</li>
 					</ul>
 				</div>
-            </div>
-        
+            </div>  
 		</div>  
-	</div>
+	</div> 
 </div>
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
-<div class="popup centerSort normal wearingPop">
-	<div class="popupCon wideSort"> 
+<div class="popup centerSort delivery wearingPop"> 
+	<div class="popupCon wideSort">    
 		<a href="javascript:closePop()">
 			<img src="/common/img/close.png" class="close">
 		</a>
 		<div class="titleBox popupSort">
 			납품 상세 
 		</div>
-		<div class="conGroup verticalManageSort">
+		<div class="conGroup verticalManageSort delivery"> 
 			<table class="infoGroup">
-				<colgroup>
-					<col width="10%">
-					<col width="90%">
-				</colgroup>  
+				<colgroup> 
+					<col width="15%"> 
+					<col width="35%">
+					<col width="15%">   
+					<col width="35%">    
+				</colgroup>   
 				<tbody>
 				<tr> 
-					<th>납품상태</th>
-					<td>
+					<th>납품상태</th>   
+					<td> 
 						<select class="sbox normal">
 						    <option>입고승인대기</option>
 						    <option>입고승인</option>
 						    <option>입고출하중</option> 
 							<option>입고출하완료</option>
 							<option>창고대기</option> 
-							<option>입고완료</option>
+							<option>입고완료</option> 
 							<option>입고취소요청</option>
 							<option>입고취소</option>
-						</select> 
-					</td>
-				</tr>
-				<tr>
+						</select>  
+					</td> 
 					<th>납품요청일</th>
-					<td>
+					<td>  
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr> 
-                <tr>
-					<th>납품금액</th>
-					<td>
+				</tr>  
+                <tr> 
+					<th>납품금액</th> 
+					<td> 
+						<input class="tbox regFullSort" value="" >
+					</td>
+					<th>납품처명(코드)</th>
+					<td> 
 						<input class="tbox regFullSort" value="" >
 					</td>
                 </tr>  
-                <tr>
-					<th>납품처명(코드)</th>
-					<td>
-						<input class="tbox regFullSort" value="" >
-					</td>
-                </tr>
 				<tr>
 					<th>납품처주소</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="" >
 					</td>
-                </tr>
-                <tr> 
 					<th>납품처연락처</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="" >
 					</td>
                 </tr>
-				<tr>  
+				<tr>   
 					<th>납품등록 관리자명(코드)</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="" >
+					</td>
+					<th>창고명(코드)</th>
+					<td> 
+						<input class="tbox regFullSort" value="">
 					</td>
 				</tr>
-                <tr>   
-					<th>창고명(코드)</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
                 <tr>  
 					<th>창고연락처</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr>
-                <tr>
 					<th>창고주소</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="">
 					</td>   
                 </tr> 
-                <tr>
-					<th>
-						납품상품 관리
+                <tr> 
+					<th> 
+						납품상품 관리  
 					</th> 
-					<td>
+					<td colspan="3">  
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. --> 
                         <div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
@@ -397,13 +388,13 @@
                             </div>        
 							<table class="searchResultTable">
 								<colgroup> 
-								<col style="width : 140px;">
+									<col style="width : 140px;">
 									<col style="width : 80px;"> 
 									<col style="width : 80px;">
 									<col style="width : 80px;">
 									<col style="width : 100px;">
 									<col style="width : 30px;">
-                    		    </colgroup>   
+                    		    </colgroup>    
 								<thead>
 								<tr>
 									<th>
@@ -413,15 +404,15 @@
 									<th>생산지형태</th>
 									<th>
 										<div>생산양</div> 
-										<div class="mt10">주기</div>
+										<div class="mt2">주기</div>
 									</th>
 									<th> 
 										<div>규격</div>
-										<div class="mt10">기준Kg</div>
+										<div class="mt2">기준Kg</div>
 									</th> 
 									<th>  
 										<div>입고단가</div>
-										<div class="mt10">출고단가</div>
+										<div class="mt2">출고단가</div> 
 									</th>
 									<th>관리</th> 
 								</tr>  
@@ -461,7 +452,7 @@
 										<div> 
 											<input class="tbox regFullSort listMod"  value="1,500" readonly>
 										</div>
-										<div class="mt10"> 
+										<div class="mt2">  
 											<input class="tbox regFullSort listMod" value="2,500" readonly>
 										</div>  
 									</td>  
@@ -498,15 +489,15 @@
 									<th>생산지형태</th>
 									<th>
 										<div>생산양</div> 
-										<div class="mt10">주기</div>
+										<div class="mt2">주기</div>
 									</th>
 									<th> 
 										<div>규격</div>
-										<div class="mt10">기준Kg</div>
+										<div class="mt2">기준Kg</div>
 									</th> 
 									<th>  
 										<div>입고단가</div>
-										<div class="mt10">출고단가</div>
+										<div class="mt2">출고단가</div>
 									</th>
 									<th>사용 양(Kg)</th>
 									<th>관리</th> 
@@ -547,7 +538,7 @@
 										<div> 
 											<input class="tbox regFullSort listMod"  value="" >
 										</div>
-										<div class="mt10">  
+										<div class="mt2">  
 											<input class="tbox regFullSort listMod" value="" >
 										</div>  
 									</td>    
@@ -571,23 +562,21 @@
                 </tr>
                 <tr>
 					<th>배송방식</th>
-					<td>
+					<td> 
                         <select class="sbox regFullSort">
 							<option>-선택-</option>
 							<option>1. 진짜 맛있는 과일 배송업체</option>
 							<option>2. 거래처 계약 배송업체</option>
 						</select>
-					</td>
-                </tr>
-                <tr>
+					</td>  
 					<th>택배비</th>
-					<td>
+					<td> 
 						<input class="tbox regFullSort" value="">
-					</td>
+					</td> 
                 </tr>
-				<tr>
-					<th>금액처리방법</th>
-					<td>
+				<tr> 
+					<th>금액처리방법</th> 
+					<td colspan="3">  
                         <select class="sbox regFullSort">
 							<option>-선택-</option>
 							<option>1. 선금</option>
@@ -599,7 +588,7 @@
 							<input class="tbox regFullSort" placeholder="여신개월" value="">
 						</div>
 					</td>
-                </tr> 
+                </tr>  
 				</tbody>
 			</table>
 		</div>

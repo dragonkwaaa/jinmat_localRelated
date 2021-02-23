@@ -16,7 +16,7 @@
 		<div class="contents">
 			<div class="section horizontalManageSort searcManageSort topLineMod">
 				<div class="titleBox manageHeadlineSort">검색</div>
-				<div class="conGroup verticalManageSort">
+				<div class="conGroup verticalManageSort">    
 					<table class="searchGroup">
 						<colgroup>
 							<col style="width : 15%;">
@@ -272,12 +272,12 @@
 				</div>
 				<div class="page_group underSort">
 					<ul class="page_box">
-						<li class="prev arrow">
+						<li class="prev arrow">  
 							<a href="javascript:void(0);"></a>
 						</li>
 						<li class="pageNum on">
 							<a href="javascript:void(0);">1</a>
-						</li>
+						</li> 
 						<li class="pageNum">
 							<a href="javascript:void(0);">2</a>
 						</li>
@@ -287,193 +287,6 @@
 					</ul>
 				</div>
             </div>
-            <!-- :: open : ksg_3 : [진맛] 너비가 좁은 우측 내용 파트. 여기서는 풀 사이즈 싱글 테이블만 사용할 것이므로 이것은 display : none 처리. -->
-            <div class="section horizontalManageSort wearDoub2" style="display : none;">
-                <div class="titleBox manageHeadlineSort">상세정보</div>
-				<div class="specInfoGroup hide">
-                    <div class="conGroup verticalManageSort">
-						<div class="headLineBox listControlSort">
-							<div class="titleBox inlistConSort">
-								<div class="titleText">발주요청 정보</div>
-							</div>
-						</div>
-						<table class="infoGroup">
-							<colgroup>
-								<col width="100">
-								<col width="*">
-							</colgroup>
-							<tbody>
-							<tr>
-								<th>발주번호</th> 
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>입고번호</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
-								<th>납품처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>납품처코드</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-                            </tr>
-                            <tr>
-								<th>납품처주소</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-                            </tr>
-                            <tr>
-								<th>납품처연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주처코드</th>
-								<td>
-									<input class="tbox regFullSort" value="" readonly>
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주처연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>창고명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>창고코드</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>창고주소</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>창고연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>발주요청품목</th>
-								<td>
-                                    <!-- :: open : ksg_3 : [진맛] 테이블 내에서 긴 카드박스 형태로 품목 여러개를 표시하는 내용. -->
-                                    <!-- :: open : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
-                                    <div class="inTblSchGroup">
-                                        <select class="sbox">
-											<option>품목명</option>
-											<option>품목코드</option>
-										</select>
-                                        <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
-                                        <div class="btnGroup inTableSearch">
-								    		<a href="javascript:void(0);" class="btn searchSort">등록</a>
-								    	</div>
-                                    </div>
-                                    <!-- :: close : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
-                                    <div class="inTblCdListGroup">
-                                        <!-- :: open : ksg_3 : [진맛] 테이블 개별 품목의 카드박스 내용. -->
-                                        <div class="inTblCdBox">
-                                            <div class="inTblTitleBox">딸기1</div>
-                                            <div class="inTblInfoBox materialSort">
-                                                <span class="infoWord">바코드1</span>
-                                                <span class="infoWord">제품명1</span>
-                                                <span class="infoWord">품번1</span>
-                                                <span class="infoWord">카테고리1</span>
-                                                <div class="stockCounter f_blue">450</div>
-                                            </div>
-                                            <a href="javascript:void(0);" class="linkCover"></a>
-                                        </div>
-                                        <!-- :: close : ksg_3 : [진맛] 테이블 개별 품목의 카드박스 내용. -->
-                                        <div class="inTblCdBox">
-                                            <div class="inTblTitleBox">딸기1</div>
-                                            <div class="inTblInfoBox materialSort">
-                                                <span class="infoWord">바코드1</span>
-                                                <span class="infoWord">제품명1</span>
-                                                <span class="infoWord">품번1</span>
-                                                <span class="infoWord">카테고리1</span>
-                                                <div class="stockCounter f_blue">450</div>
-                                            </div>
-                                            <a href="javascript:void(0);" class="linkCover"></a>
-                                        </div>
-                                    </div>
-                                    <!-- :: close : ksg_3 : [진맛] 테이블 내에서 긴 카드박스 형태로 품목 여러개를 표시하는 내용. -->
-								</td>
-                            </tr>
-                            <tr>
-								<th>배송방식</th>
-								<td>
-                                    <select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 진짜 맛있는 과일 배송업체</option>
-										<option>2. 거래처 계약 배송업체</option>
-									</select>
-								</td>   
-                            </tr>
-                            <tr>
-								<th>택배비</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>택배수량</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
-                            </tr>
-                            <tr>
-								<th>입고상태</th>
-								<td>
-                                    <select class="sbox regFullSort">
-										<option>-선택-</option>
-										<option>1. 입고 대기</option>
-                                        <option>2. 입고 승인</option>
-                                        <option>3. 입고 출발</option>
-                                        <option>4. 입고중</option>
-                                        <option>5. 입고 완료</option>
-                                        <option>6. 입고 취소</option>
-                                    </select>
-                                    <div class="mt2">
-                                        <input class="tbox regFullSort" placeholder="취소 사유" value="">
-                                    </div>
-								</td>
-                            </tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-                <div class="btnGroup horizontalBottomSort">
-					<a href="javascript:void(0);" class="btn saveSort">저장</a>
-                </div>
-            </div>
-            <!-- :: close : ksg_3 : [진맛] 너비가 좁은 우측 내용 파트. 여기서는 풀 사이즈 싱글 테이블만 사용할 것이므로 이것은 display : none 처리. -->
 		</div>
 	</div>
 </div>
@@ -486,13 +299,15 @@
 		<div class="titleBox popupSort">
 			입고 상세 
 		</div>
-		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
-				<colgroup>
-					<col width="10%">
-					<col width="90%">
-				</colgroup> 
-				<tbody>
+		<div class="conGroup verticalManageSort">  
+			<table class="infoGroup">  
+				<colgroup> 
+					<col width="15%"> 
+					<col width="35%">
+					<col width="15%">    
+					<col width="35%">    
+				</colgroup>   
+				<tbody> 
                 <!-- :: open : ksg_3 : [진맛] 입력팝업에서는 사용하지 않는 발주/입고번호 내용. display : none 처리. -->
                 <tr style="display : none;">
 					<th>입고관리 코드</th>
@@ -515,32 +330,26 @@
 							<option>입고취소</option>
 						</select> 
 					</td>
-				</tr>
-				<tr>
 					<th>입고요청일</th>
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr> 
-                <tr>
+				</tr> 
+                <tr> 
 					<th>입고금액</th>
 					<td>
 						<input class="tbox regFullSort" value="" >
 					</td>
-                </tr>  
-                <tr>
 					<th>납품처명(코드)</th>
 					<td>
 						<input class="tbox regFullSort" value="" >
 					</td>
-                </tr>
+                </tr>  
 				<tr>
 					<th>납품처주소</th>
 					<td>
 						<input class="tbox regFullSort" value="" >
 					</td>
-                </tr>
-                <tr> 
 					<th>납품처연락처</th>
 					<td>
 						<input class="tbox regFullSort" value="" >
@@ -551,26 +360,16 @@
 					<td>
 						<input class="tbox regFullSort" value="" >
 					</td>
-				</tr>
-                <tr>
-					<th>입고등록일</th>
-					<td>
-						<input class="tbox regFullSort" value="" >
-					</td>
-				</tr>
-                <tr> 
 					<th>창고명(코드)</th>
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr>
+				</tr>
                 <tr>
 					<th>창고연락처</th>
 					<td>
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr>
-                <tr>
 					<th>창고주소</th>
 					<td>
 						<input class="tbox regFullSort" value="">
@@ -578,9 +377,9 @@
                 </tr>
                 <tr>
 					<th>
-						입고상품 관리
-					</th>
-					<td>
+						입고상품 관리 
+					</th> 
+					<td colspan="3">
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
                         <div class="inTblBoxGroup fullSort wearingGoodsMod">
@@ -684,8 +483,6 @@
 							<option>2. 거래처 계약 배송업체</option>
 						</select>
 					</td>
-                </tr>
-                <tr>
 					<th>택배비</th>
 					<td>
 						<input class="tbox regFullSort" value="">
@@ -693,7 +490,7 @@
                 </tr>
 				<tr>
 					<th>금액처리방법</th>
-					<td>
+					<td colspan="3">  
                         <select class="sbox regFullSort">
 							<option>-선택-</option>
 							<option>1. 선금</option>
@@ -704,9 +501,9 @@
 						<div class="mt2">
 							<input class="tbox regFullSort" placeholder="여신개월" value="">
 						</div>
-					</td>
+					</td> 
                 </tr> 
-				</tbody>
+				</tbody> 
 			</table>
 		</div>
 		<div class="btnGroup verticalBottomSort">

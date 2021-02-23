@@ -1,4 +1,4 @@
-<nav class="sideMenu majorSort">
+<!-- <nav class="sideMenu majorSort">
 	<div class="conGroup">
 		<ul class="menuBox">
 			<li>
@@ -14,5 +14,5 @@
 				</a>
 			</li>
 		</ul>
-	</div>
-</nav>
+	</div>  
+</nav> --> 

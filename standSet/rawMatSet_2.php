@@ -117,17 +117,17 @@
                             <th>납품처(코드)</th>
 							<th>옵션(코드)</th>
 							<th>생산지형태</th>
-							<th> 
+							<th>  
 								<div>생산양</div>
-								<div class="mt10">주기</div>
+								<div class="mt2">주기</div>
 							</th>
 							<th> 
 								<div>규격</div>
-								<div class="mt10">기준Kg</div>
+								<div class="mt2">기준Kg</div>
 							</th> 
 							<th> 
 								<div>입고단가</div>
-								<div class="mt10">출고단가</div>
+								<div class="mt2">출고단가</div>
 							</th>
 							<th>사용여부</th> 
 							<th>비고</th> 
@@ -284,7 +284,7 @@
 									<input class="tbox regFullSort listMod priceMod"  value="1,500">
 									<span class="priceWord">원</span> 
 								</div> 
-								<div class="mt10"> 
+								<div class="mt2"> 
 									<input class="tbox regFullSort listMod priceMod" value="2,500">
 									<span class="priceWord">원</span> 
 								</div>

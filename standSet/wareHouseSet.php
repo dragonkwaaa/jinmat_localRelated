@@ -140,7 +140,7 @@
 						</div>
 						<table class="infoGroup">
 							<colgroup>
-								<col width="17%">
+								<col width="17%"> 
 								<col width="33%">
 							</colgroup>
 							<tbody>

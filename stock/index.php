@@ -14,43 +14,32 @@
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">  
-			<div class="section horizontalManageSort searcManageSort topLineMod">
-				<div class="titleBox manageHeadlineSort">검색</div>
-				<div class="conGroup verticalManageSort">
-					<table class="searchGroup">  
-						<colgroup>
-							<col style="width : 15%;">
-							<col style="width : 85%;">
-						</colgroup>
-						<tbody>
-						<tr>
-							<th>검색어</th>
-							<td>
-								<select class="sbox">
-									<option>전체</option>
-                                    <option>품목명</option>
-                                    <option>품목코드</option>
-                                    <option>품종명</option>
-                                    <option>품종코드</option>
-                                    <option>창고명</option>  
-                                    <option>창고코드</option>  
-                                    <option>생상품명</option>
-									<option>생산품코드</option>
-								</select>
-								<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
-                            </td>  
-                        </tr>    
-						</tbody>
-                    </table>
-                    <div class="btnGroup verticalBottomSort inTblSort">
-                        <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
-                    </div>
-				</div>
-            </div>  
 			<div class="section horizontalManageSort AsymDoub1">
 				<div class="titleBox manageHeadlineSort">재고 목록</div> 
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
+						<table class="searchGroup inTblSort">
+							<colgroup>
+								<col style="width : 30%;">
+								<col style="width : 70%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>검색어</th>
+									<td>
+										<select class="sbox">
+											<option>전체</option>
+											<option>품목명</option>
+											<option>품목코드</option>
+										</select> 
+										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
+									</td>
+								</tr> 
+							</tbody>
+						</table>  
+                    	<div class="btnGroup verticalBottomSort inTblSort">
+                    	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
+                    	</div> 
                         <div class="titleBox inlistConSort">
 							<div class="titleText">재고 목록</div> 
                             <div class="tipBox mb15">* 재고내역을 클릭 시, 창고별 상세재고를 표시하는 테이블이 나타납니다.</div>
@@ -221,18 +210,18 @@
 </div>
 <!-- :: open : ksg_3 : [진맛] 재고이동 팝업. -->
 <div class="popup centerSort moveStockPop">
-	<div class="popupCon wideSort">
+	<div class="popupCon halfSort">  
 		<a href="javascript:closePop()">
 			<img src="/common/img/close.png" class="close">
 		</a>
-		<div class="titleBox popupSort">
-			항목 관리
+		<div class="titleBox popupSort">  
+			재고 이동  
 		</div>
 		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
+			<table class="infoGroup">  
 				<colgroup>
-					<col style="width : 100px;">
-					<col style="width : 1000px;">
+					<col style="width : 30%;"> 
+					<col style="width : 70%;">
 				</colgroup>
 				<tbody>
 				<tr>
@@ -242,11 +231,11 @@
 							<option>-선택-</option>
 							<option>서울</option>
 							<option>경기</option>
-						</select>
+						</select> 
 					</td>
 				</tr>
 				<tr>
-					<th>이동할 창고</th>
+					<th>이동할 공장</th>
 					<td>
 						<select class="sbox regFullSort">
 							<option>-선택-</option>
@@ -261,11 +250,11 @@
 						<input class="tbox regFullSort listMod" placeholder="" value="">
 					</td>
 				</tr>
-				<tr>
+				<tr>  
 					<th>메모</th>
 					<td>
-						<input class="tbox regFullSort listMod" placeholder="" value="">
-					</td>
+						<textarea class="tarea full"></textarea>
+					</td> 
 				</tr>
 				</tbody>
 			</table>
@@ -273,7 +262,7 @@
 		<div class="btnGroup verticalBottomSort">
 			<a href="javascript:closePop();" class="btn searchSort">저장</a>
 		</div>
-	</div>  
+	</div>   
 </div>  
 <!-- :: close : ksg_3 : [진맛] 재고이동 팝업. -->
 <!-- :: open : ksg_20210127_1650 : [진맛] 히스토리 팝업 내용. -->
@@ -285,7 +274,8 @@
 		<div class="titleBox popupSort">
 			재고 변경 내역
 		</div>
-		<div class="conGroup verticalManageSort">
+		<div class="scroll">
+		<div class="conGroup verticalManageSort Pop"> 
 			<table class="infoGroup noneImgSort">
 				<tbody>
 					<tr>
@@ -309,6 +299,7 @@
 				</tbody>
 			</table>
 		</div>
+		</div> 
 		<div class="btnGroup verticalBottomSort">
 			<a href="javascript:closePop();" class="btn searchSort">저장</a>
 		</div>

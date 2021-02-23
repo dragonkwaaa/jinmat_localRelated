@@ -876,7 +876,14 @@ header .headerNav .btn.userGradeSort:nth-child(2) {
 }
 .conGroup.verticalManageSort {
 	display : block;
+	padding : 10px; 
+
+}
+.conGroup.verticalManageSort.delivery {
+	display : block;  
 	padding : 10px;
+	overflow-y: scroll;
+    height: calc(100% - 60px);
 	/* border-bottom : 1px solid #d7dae2; */
 }
 .conGroup.verticalManageSort.underBtnMod {
@@ -2750,9 +2757,8 @@ body{
 .popup .popupCon {
     position: relative;
     min-width: 400px;
-	padding-bottom: 20px;
+	padding-bottom: 20px; 
 	height : calc(100% - 30px);
-	overflow-y : scroll;
 }
 /* :: innerC : 기존 내용 수정. */
 /* :: innerO : 기존 내용 제거. */

@@ -191,7 +191,6 @@
 						<div class="sboxGroup listArraySort">
 								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀업로드</a> 
 								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">작업지시</a>  
 							<select class="sbox"> 
 								<option>번호순▼</option>
 								<option>번호순▲</option> 
@@ -219,11 +218,10 @@
 							<col style="width : 70px;">
 							<col style="width : 60px;">
 							<col style="width : 70px;">
-							<col style="width : 55px;">
-							<col style="width : 80px;">       
+							<col style="width : 80px;">
 							<col style="width : 180px;">  
-                            <col style="width : 40px;"> 
-						</colgroup>  
+                            <col style="width : 40px;">  
+						</colgroup>   
 						<thead>  
 						<tr>
 							<th>
@@ -232,13 +230,11 @@
 									<label></label>
 								</div>
 							</th>
-							<th>발주타입</th>
-							<th>주문일자</th>
 							<th>
 								발주코드<br>
 								채널<br> 
 								(발주원본코드) 
-							</th>
+							</th> 
 							<th>주문일자</th> 
 							<th> 
                                 주문자명<br>
