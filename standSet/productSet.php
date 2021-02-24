@@ -524,12 +524,12 @@
 										</td> 
 										<td>
 											<div> 
-												<input class="tbox regFullSort listMod"  value="1,500" readonly>
+												<input class="tbox regFullSort listMod priceMod"  value="1,500" readonly>
 											</div>
 											<div class="mt2"> 
-												<input class="tbox regFullSort listMod" value="2,500" readonly>
+												<input class="tbox regFullSort listMod priceMod" value="2,500" readonly>
 											</div>  
-										</td>  
+										</td>   
 										<td> 
 											<div class="btnGroup inListTable">
 												<a href="javascript:void(0);" class="btn regSort">등록</a> 
@@ -630,11 +630,11 @@
 											</td> 
 											<td>
 												<div> 
-													<input class="tbox regFullSort listMod"  value="1,500" readonly>
+													<input class="tbox regFullSort listMod priceMod"  value="1,500" readonly>
 												</div>
 												<div class="mt2"> 
-													<input class="tbox regFullSort listMod" value="2,500" readonly>
-												</div>  
+													<input class="tbox regFullSort listMod priceMod" value="2,500" readonly>
+												</div>    
 											</td> 
 											<td>
 												<div class="btnGroup inListTable">

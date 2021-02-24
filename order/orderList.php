@@ -309,11 +309,11 @@
 							</td>
 							<td>진한 청포도</td>
 							<td>2</td>
-							<td> 
+							<td class="right">
 								10,000
 								<span class="priceWord">원</span>
 							</td>
-							<td>
+							<td class="right">
 								<div>
 									18,000
 									<span class="priceWord">원</span>
@@ -327,7 +327,7 @@
 									<span class="priceWord">원</span>
 								</div> 
 							</td> 
-							<td>
+							<td class="right">  
 								<div>
 									0
 									<span class="priceWord">원</span>
@@ -337,7 +337,7 @@
 									<span class="priceWord">원</span>
 								</div>
 							</td>
-							<td>
+							<td class="right"> 
 								<div>
 									0
 									<span class="priceWord">원</span>

@@ -39,9 +39,9 @@
 								<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
                             </td>
 						</tr>  
-						<tr>
+						<tr> 
 							<th>
-								입고일
+								입고일 
 							</th>
 							<td>
 								<div class="dateInputCase topLineSearchMod">
@@ -211,12 +211,12 @@
 							</td>   
                             <td>12345687</td>
 							<td>경남창고(164523)</td>
-							<td>
+							<td>  
 								<div>051-021-1234</div>
 								<div class="mt2">경상남도 창원시 북창동 12-13 </div>
 							</td>    
 							<td>경남공장(1677453)</td>
-							<td>
+							<td class="right"> 
 								<div>
 									180,000
 									<span class="priceWord">원</span>
@@ -259,7 +259,7 @@
 	</div>
 </div>
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
-<div class="popup centerSort normal wearingPop"> 
+<div class="popup centerSort delivery wearingPop"> 
 	<div class="popupCon wideSort">  
 		<a href="javascript:closePop()">
 			<img src="/common/img/close.png" class="close">
@@ -267,8 +267,8 @@
 		<div class="titleBox popupSort">
 			작업지시 상세 
 		</div>
-		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
+		<div class="conGroup verticalManageSort delivery">  
+			<table class="infoGroup"> 
 				<colgroup>
 					<col width="15%"> 
 					<col width="35%"> 
@@ -325,20 +325,30 @@
 					<td colspan="3"> 
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <div class="inTblBoxGroup fullSort wearingGoodsMod">
-							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
-							<table class="searchResultTable">
+                        <div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
+							<div class="inTblSchGroup">    
+                                <select class="sbox">   
+						    		<option>원자재명</option>
+						    		<option>원자재코드</option> 
+						    	</select>
+                                <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
+                                <div class="btnGroup inTableSearch">
+					        		<a href="javascript:void(0);" class="btn searchSort">검색</a>
+					        	</div>
+                            </div>         
+							<table class="searchResultTable"> 
 								<colgroup> 
-                    		        <col style="width : 100px;">
+                    		        <col style="width : 100px;"> 
 									<col style="width : 100px;">
+									<col style="width : 120px;"> 
+									<col style="width : 50px;">  
+									<col style="width : 70px;"> 
+									<col style="width : 70px;">
 									<col style="width : 100px;"> 
-									<col style="width : 100px;"> 
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 250px;">  
-                    		    </colgroup>  
+									<col style="width : 100px;">   
+									<col style="width : 180px;">    
+									<col style="width : 40px;">     
+                    		    </colgroup>     
 								<thead>    
 								<tr>  
 									<th> 
@@ -357,6 +367,7 @@
 									</th>  
                     		        <th>작업지시 상품 상태</th>
                     		        <th>비고</th> 
+									<th>관리</th> 
 								</tr>
 								</thead> 
 								<tbody>
@@ -383,7 +394,7 @@
 									</td>
 									<td>김별(Star11)</td> 
 									<td>  
-										<select class="sbox tiny">
+										<select class="sbox regFullSort"> 
 						   					<option>작업대기</option>
 						   					<option>작업중</option>
 						   					<option>작업완료</option> 
@@ -394,6 +405,93 @@
 									<td>
 									품질좋은것 우선으로 챙겨주세요
 									</td>
+									<td> 
+										<div class="btnGroup inListTable">
+											<a href="javascript:void(0);" class="btn regSort">등록</a> 
+										</div> 
+									</td>	 
+                    		    </tr>
+								</tbody>   
+                    		</table>
+							<!-- :: close : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
+                        </div>
+
+						<div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
+							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
+							<table class="searchResultTable">
+								<colgroup>    
+                    		        <col style="width : 100px;"> 
+									<col style="width : 100px;">
+									<col style="width : 120px;"> 
+									<col style="width : 50px;">  
+									<col style="width : 70px;"> 
+									<col style="width : 70px;">
+									<col style="width : 100px;"> 
+									<col style="width : 100px;">  
+									<col style="width : 180px;">   
+									<col style="width : 40px;">     
+                    		    </colgroup>  
+								<thead>    
+								<tr>  
+									<th> 
+                    		            작업지시 상품 코드<br>
+                    		            작업지시 코드
+                    		        </th> 
+                    		        <th>발주코드</th>
+                    		        <th>상품명<br>
+										(코드)
+									</th>
+									<th>규격</th>
+                    		        <th>발주수량</th>
+									<th>실제수량</th>
+									<th>작업자 관리자명<br>
+										(코드)
+									</th>  
+                    		        <th>작업지시 상품 상태</th>
+                    		        <th>비고</th> 
+									<th>관리</th> 
+								</tr>
+								</thead> 
+								<tbody>
+                    		    <tr class="reged">
+                    		        <td>
+                    		            <div>
+                    		                145262
+                    		            </div>
+                    		            <div class="mt5">
+                    		                154679
+                    		            </div>
+									</td>
+									<td>1642347</td>
+                    		        <td>  
+										<div>경주 꿀 부사</div>
+										<div class="mt5">ap15488212</div>
+									</td>
+                    		        <td>대</td> 
+									<td>
+										<input class="tbox regFullSort listMod" placeholder="" value="">
+									</td>
+									<td>
+										<input class="tbox regFullSort listMod" placeholder="" value="">
+									</td>
+									<td>김별(Star11)</td> 
+									<td>  
+										<select class="sbox regFullSort"> 
+						   					<option>작업대기</option>
+						   					<option>작업중</option>
+						   					<option>작업완료</option> 
+											<option>작업취소요청</option>
+											<option>작업취소</option> 
+										</select>  
+									</td>  
+									<td>
+									품질좋은것 우선으로 챙겨주세요
+									</td>
+									<td> 
+										<div class="btnGroup inListTable"> 
+											<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+										</div> 
+									</td>	 
                     		    </tr>
 								</tbody>   
                     		</table>

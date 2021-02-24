@@ -210,8 +210,8 @@
 								</tr>  
 								</thead>  
 								<tbody>
-                    		    <tr> 
-                    		       <td>A열 1층 1번</td>   
+                    		    <tr>  
+                    		       <td class="left">A열 1층 1번</td>   
 								   <td>
 								   <input class="tbox regFullSort" value="">
 								   </td> 

@@ -34,6 +34,10 @@
 	min-width: 1500px;
 	padding-bottom: 0%; 
 }
+.popup .popupCon.normalSort {
+	min-width: 700px; 
+	padding-bottom: 0%; 
+}
   
 .inTblBoxGroup.twinSort.highHeight {
 	display: inline-block;
@@ -112,20 +116,21 @@
 }    
  
 .tarea.full {
-    display: block;  
+    font-size: 11px;
+    display: block;
     resize: none;
-    width: calc(100% - 65px);
-    height: 104px;  
-    padding: 13px 30px;
-    font-family: "Noto Sans KR",sans-serif;  
+    width: calc(100% - 25px);
+    height: 104px;
+    padding: 5px 10px;
+    font-family: "Noto Sans KR",sans-serif;
     background-color: #ffffff;
-}
+}    
 .mt15{
   
 	margin-top: 15px;
 }
   
-.mt10{
+.mt10{ 
   
 	margin-top: 10px;
 }
@@ -276,6 +281,34 @@ input[type="checkbox"] {
 .popup .popupCon.halfSort { 
     min-width: 700px; 
 }
-.textLeft{   
-    text-align: left; 
-} 
+
+.conGroup.verticalManageSort td.right  {
+    padding: 2px; 
+    font-size: 11px;
+    border-right: 1px solid #d7dae2;
+    position: relative;
+    text-align: right; 
+}
+.conGroup.verticalManageSort td.left  {
+    padding: 2px; 
+    font-size: 11px;
+    border-right: 1px solid #d7dae2;
+    position: relative;
+    text-align: left;  
+}
+.conGroup.verticalManageSort td.center  {
+    padding: 2px; 
+    font-size: 11px; 
+    border-right: 1px solid #d7dae2;
+    position: relative;
+    text-align: center; 
+}
+.inTblBoxGroup.Sort.highHeight {
+    display: inline-block;
+    width: calc(100% - 10px);
+    margin: 3px;
+    border: 1px solid #ccc;
+    vertical-align: top; 
+    height: 650px; 
+    overflow-y: auto;
+}

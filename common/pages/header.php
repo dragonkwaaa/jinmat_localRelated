@@ -3,7 +3,10 @@
 		<!-- <i class="logo longSort"></i> -->
 		<span>진짜 맛있는 과일</span>
 	</a>
-	<div class="headerNav headerMainSort">  
+	<div class="headerNav headerMainSort">   
+		<a href="/pageTemplete/quadCate" class="<?=($tCode == '100' ? ' activated' : '')?> mr20">
+			<span class="">페이지 템플릿</span> 
+		</a>
 		<a href="/standSet/basicSet" class="<?=($tCode == '100' ? ' activated' : '')?> mr20">
 			<!-- <i class="dashboardIcon"></i> -->
 			<span class="">기준항목 관리</span> 

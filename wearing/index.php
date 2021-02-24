@@ -191,9 +191,7 @@
 								납품처 주소
 							</th> 
 							<th>납품처 연락처</th>
-							<th>입고등록 관리자명<br> 
-								(코드) 
-							</th>
+							<th>입고등록 관리자명(코드)</th> 
 							<th>입고등록일</th> 
 							<th>창고명(코드)<br>
 								창고주소 
@@ -232,7 +230,7 @@
 								<div class="mts">경상남도 창원시 의창동 12-15</div>
 							</td>
 							<td>진짜 맛있는 과일 배송업체</td>
-							<td>
+							<td class="right">  
 								<div>
 									18,000
 									<span class="priceWord">원</span>
@@ -248,7 +246,7 @@
 							</td> 
 							<td>선금</td>
 							<td>
-								<select class="sbox tinys"> 
+								<select class="sbox regFullSort">   
 								    <option>입고승인대기</option>
 								    <option>입고승인</option>
 								    <option>입고출하중</option>   
@@ -291,7 +289,7 @@
 	</div>
 </div>
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
-<div class="popup centerSort normal wearingPop">
+<div class="popup centerSort delivery wearingPop">  
 	<div class="popupCon wideSort"> 
 		<a href="javascript:closePop()">
 			<img src="/common/img/close.png" class="close">
@@ -299,7 +297,7 @@
 		<div class="titleBox popupSort">
 			입고 상세 
 		</div>
-		<div class="conGroup verticalManageSort">  
+		<div class="conGroup verticalManageSort delivery">  
 			<table class="infoGroup">  
 				<colgroup> 
 					<col width="15%"> 
@@ -382,20 +380,30 @@
 					<td colspan="3">
                         <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
                         <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <div class="inTblBoxGroup fullSort wearingGoodsMod">
-							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
+						<div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
+							<div class="inTblSchGroup">    
+                                <select class="sbox">
+						    		<option>원자재명</option>
+						    		<option>원자재코드</option> 
+						    	</select>
+                                <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
+                                <div class="btnGroup inTableSearch">
+					        		<a href="javascript:void(0);" class="btn searchSort">검색</a>
+					        	</div>
+                            </div>         
 							<table class="searchResultTable">
 								<colgroup> 
-                    		        <col style="width : 100px;">
-									<col style="width : 180px;"> 
-									<col style="width : 100px;">
-									<col style="width : 100px;"> 
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">
-									<col style="width : 100px;">  
+                    		        <col style="width : 80px;">   
+									<col style="width : 120px;"> 
+									<col style="width : 70px;">  
+									<col style="width : 70px;"> 
+									<col style="width : 95px;">   
+									<col style="width : 70px;"> 
+									<col style="width : 70px;">   
+									<col style="width : 70px;">
+									<col style="width : 70px;">
+									<col style="width : 70px;">   
+									<col style="width : 40px;"> 
                     		    </colgroup>  
 								<thead>
 								<tr>  
@@ -414,9 +422,10 @@
                     		        <th>입고상품 상태</th>
 									<th>규격</th>
 									<th>단가</th> 
-									<th>공급가액</th>  
+									<th>공급가액</th>   
 									<th>부가세</th>   
                     		        <th>전체금액</th>
+									<th>관리</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -441,9 +450,9 @@
 										<div>1,000</div>
 										<div class="mt2">1,001</div>
 									</td>
-                    		        <td>4,400원</td>
+                    		        <td class="right">4,400원</td>
 									<td>
-										<select class="sbox tiny">
+										<select class="sbox regFullSort"> 
 						   					<option>입고승인대기</option>
 						   					<option>입고승인</option>
 						   					<option>입고출하중</option> 
@@ -455,18 +464,120 @@
 										</select>  
 									</td>
 									<td>
-										<input class="tbox regFullSort listMod" placeholder="" value="">
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>  
+									<td>
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
 									</td>
 									<td>
-										<input class="tbox regFullSort listMod" placeholder="" value="">
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
 									</td>
 									<td>
-										<input class="tbox regFullSort listMod" placeholder="" value="">
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>
+                    		        <td class="right">4,600원</td>   
+									<td> 
+										<div class="btnGroup inListTable">
+											<a href="javascript:void(0);" class="btn regSort">등록</a> 
+										</div> 
+									</td>		
+                    		    </tr>
+								</tbody> 
+                    		</table>
+							<!-- :: close : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
+                        </div>
+
+						<div class="inTblBoxGroup fullSort scrollSort wearingGoodsMod">
+							<table class="searchResultTable">
+								<colgroup> 
+                    		        <col style="width : 80px;">   
+									<col style="width : 120px;">   
+									<col style="width : 70px;">  
+									<col style="width : 70px;"> 
+									<col style="width : 95px;">   
+									<col style="width : 70px;"> 
+									<col style="width : 70px;">   
+									<col style="width : 70px;">
+									<col style="width : 70px;">
+									<col style="width : 70px;">   
+									<col style="width : 40px;"> 
+                    		    </colgroup>  
+								<thead>
+								<tr>  
+									<th> 
+                    		            입고상품 관리코드<br>
+                    		            입고관리 코드
+                    		        </th> 
+                    		        <th>
+                    		            원자재명<br>
+										(코드) 
+                    		        </th>
+                    		        <th>입고요청 수량<br>
+										실제입고 수량
+									</th>
+                    		        <th>단품금액</th>
+                    		        <th>입고상품 상태</th>
+									<th>규격</th>
+									<th>단가</th> 
+									<th>공급가액</th>   
+									<th>부가세</th>   
+                    		        <th>전체금액</th>
+									<th>관리</th>
+								</tr>
+								</thead>
+								<tbody>
+                    		    <tr class="reged">
+                    		        <td>
+                    		            <div>
+                    		                145262
+                    		            </div>
+                    		            <div class="mt5">
+                    		                154679
+                    		            </div>
 									</td>
 									<td>
-										<input class="tbox regFullSort listMod" placeholder="" value="">
+                    		            <div>
+										경주 꿀 부사
+                    		            </div>
+                    		            <div class="mt5">
+                    		                ap1548212 
+                    		            </div>
+                    		        </td> 
+                    		        <td> 
+										<div>1,000</div>
+										<div class="mt2">1,001</div>
 									</td>
-                    		        <td>4,600원</td>   
+									<td class="right">4,400원</td> 
+									<td>
+										<select class="sbox regFullSort"> 
+						   					<option>입고승인대기</option>
+						   					<option>입고승인</option>
+						   					<option>입고출하중</option> 
+											<option>입고출하완료</option>
+											<option>창고대기</option> 
+											<option>입고완료</option>
+											<option>입고취소요청</option>
+											<option>입고취소</option>
+										</select>  
+									</td>
+									<td>
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>
+									<td> 
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>
+									<td>
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>  
+									<td>
+										<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
+									</td>
+                    		        <td class="right">4,600원</td>    
+									<td> 
+										<div class="btnGroup inListTable"> 
+											<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+										</div> 
+									</td>		
                     		    </tr>
 								</tbody> 
                     		</table>

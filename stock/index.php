@@ -225,22 +225,12 @@
 				</colgroup>
 				<tbody>
 				<tr>
-					<th>지역</th>
-					<td>
-						<select class="sbox regFullSort">
-							<option>-선택-</option>
-							<option>서울</option>
-							<option>경기</option>
-						</select> 
-					</td>
-				</tr>
-				<tr>
 					<th>이동할 공장</th>
 					<td>
 						<select class="sbox regFullSort">
-							<option>-선택-</option>
-							<option>서울</option>
-							<option>경기</option>
+							<option>-선택-</option> 
+							<option>서울공장</option>
+							<option>경기공장</option>
 						</select>
 					</td>
 				</tr>
@@ -282,15 +272,21 @@
 						<td>
 							<div class="inTblTitleBox">재고변경(경남창고1)</div>
                             <div class="inTblInfoBox materialSort">
+								<span class="infoWord">작업일시 : 2021-02-21 09:00:00</span>
+                                <span class="infoWord">작업자 : 김별</span> <br>   
+								<span class="infoWord">메모 : 작업 서둘러 진행해주세요.</span>  
                                 <div class="stockCounter f_blue">변경수량 : 450 → 500</div>
                             </div>
                             <a href="javascript:void(0);" class="linkCover"></a>
 						</td>
                     </tr>
                     <tr>
-						<td>
+						<td> 
                             <div class="inTblTitleBox">재고이동(서울창고 → 경남창고1)</div>
                             <div class="inTblInfoBox materialSort">
+								<span class="infoWord">작업일시 : 2021-02-21 09:00:00</span>
+                                <span class="infoWord">작업자 : 김별</span> <br>   
+								<span class="infoWord">메모 : 이동시 주의부탁드립니다.</span>  
                                 <div class="stockCounter f_blue">이동 수량 : 250</div>
                             </div> 
                             <a href="javascript:void(0);" class="linkCover"></a>

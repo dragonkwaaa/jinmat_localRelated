@@ -306,11 +306,11 @@
 							</td>
 							<td>진한 청포도</td>
 							<td>2</td>
-							<td> 
+							<td class="right"> 
 								10,000
 								<span class="priceWord">원</span>
 							</td>
-							<td>
+							<td class="right">
 								<div>
 									18,000
 									<span class="priceWord">원</span>
@@ -324,7 +324,7 @@
 									<span class="priceWord">원</span>
 								</div> 
 							</td> 
-							<td>
+							<td class="right">
 								<div>
 									0
 									<span class="priceWord">원</span>
@@ -334,7 +334,7 @@
 									<span class="priceWord">원</span>
 								</div>
 							</td>
-							<td>
+							<td class="right">
 								<div>
 									0
 									<span class="priceWord">원</span>
@@ -348,7 +348,7 @@
 									<span class="priceWord">원</span>
 								</div>
 							</td>
-							<td>
+							<td> 
 								선불
                             </td>
 							<td>
@@ -372,12 +372,9 @@
 							</td>
 							<td>
 								<div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn regSort">등록</a>
-								</div>   
-								<div class="btnGroup inListTable">
 									<a href="/order/orderPlanSpec" class="btn modifySort">상세</a>
 								</div>  
-							</td>
+							</td> 
 						</tr>
 						</tbody>  
 					</table>

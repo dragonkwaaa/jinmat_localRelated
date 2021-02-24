@@ -32,13 +32,13 @@
 						</colgroup>
 						<tbody>
 						<tr>
-							<th>채널</th> 
+							<th>발주코드</th> 
 							<td colspan="3">
 								<input class="tbox regFullSort" value="">
 							</td> 
                         </tr>
-						<tr>
-							<th>발주코드</th>
+						<tr> 
+							<th>채널</th>
 							<td>
 								<input class="tbox regFullSort" value="">
 							</td>
@@ -133,21 +133,22 @@
 					</div>	
 					<table class="infoGroup"> 
 					<colgroup>
-						<col style="width : 100px;"> 
-						<col style="width : 100px;">  
-						<col style="width : 100px;">   
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-						<col style="width : 100px;">  
-					</colgroup>  
-					<thead>
+						<col style="width : 90px;"> 
+						<col style="width : 90px;">  
+						<col style="width : 50px;">    
+						<col style="width : 50px;">   
+						<col style="width : 90px;">  
+						<col style="width : 90px;">  
+						<col style="width : 90px;">   
+						<col style="width : 90px;">  
+						<col style="width : 90px;">     
+						<col style="width : 90px;">  
+						<col style="width : 90px;">  
+						<col style="width : 90px;">  
+						<col style="width : 90px;">  
+						<col style="width : 30px;">  
+					</colgroup>   
+					<thead> 
 					<tr>
 						<th>주문 상품명</th>
 						<th>상품명</th>
@@ -161,7 +162,8 @@
 						<th>마일리지</th>  
 						<th>총 회원할인금액</th>
 						<th>총 상품할인금액</th>
-						<th>총 쿠폰할인금액</th> 
+						<th>총 쿠폰할인금액</th>
+						<th>관리</th> 
 					</tr>
 					</thead>
 					<tbody>
@@ -169,70 +171,95 @@
 					<tr>
 						<td>
 							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
+								<input class="tbox regFullSort" placeholder="" value="">
 							</div>
 						</td>  
 						<td>
 							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
+								<input class="tbox regFullSort" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort" placeholder="" value="">
+							</div>
+						</td>  
+						<td>  
+							<div>
+								<input class="tbox regFullSort" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>    
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
 							</div>
 						</td>   
 						<td>
 							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>   			
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
+							</div>
+						</td>  
+						<td>
+							<div>
+								<input class="tbox regFullSort listMod right" placeholder="" value="">
 							</div>
 						</td>   
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  			
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>  
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
-						</td>
-						<td>
-							<div>
-								<input class="tbox regFullSort Textleft" placeholder="" value="">
-							</div>
+						<td class="center">  
+							<div class="btnGroup inListTable">
+								<a href="javascript:void(0);" class="btn regSort">등록</a>
+							</div>   
 						</td>       
-					</tr>  
+					</tr>
+					<tr>
+						<td>진한 청포도</td>
+						<td>진한 청포도</td>
+						<td>1</td>
+						<td>2</td>
+						<td class="right">10000</td>
+						<td class="right">18000</td> 
+						<td class="right">20000</td>
+						<td class="right">0</td>
+						<td class="right">0</td>
+						<td class="right">0</td>
+						<td class="right">0</td>
+						<td class="right">0</td>
+						<td class="right">2000</td>   
+						<td class="center"> 
+							<div class="btnGroup inListTable">
+								<a href="javascript:void(0);" class="btn modifySort">취소</a> 
+							</div>   
+						</td>       
+					</tr>    
 					</tbody>
 					</table>
 					<div class="headLineBox listControlSort">

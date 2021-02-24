@@ -198,7 +198,7 @@
 							<td>
 								<div class="btnGroup inListTable">
 									<a href="/rawMat/rawMatSpec" class="btn modifySort">저장</a>
-									<a href="javascript:void(0);" class="btn modifySort">창고관리</a>
+									<a href="javascript:void(0);" class="btn modifySort wearingPopBtn">창고관리</a>  
 								</div> 
 							</td> 
                         </tr>
@@ -276,19 +276,28 @@
 
 <!-- :: open : ksg_3 : [진맛] 입고내역 상세내용/등록 팝업. -->
 <div class="popup centerSort innerFlowSort wearingPop">
-	<div class="popupCon fullwideSort">  
-		<a href="javascript:closePop()">  
+	<div class="popupCon normalSort">   
+		<a href="javascript:closePop()">    
 			<img src="/common/img/close.png" class="close">
 		</a>
 		<div class="titleBox popupSort">
 			창고목록  
 		</div>
 		<div class="conGroup verticalManageSort">
-			<table class="infoGroup fullHSort">
-				<tbody>
+			<div class="inTblSchGroup">  
+                <select class="sbox normal" style="float: left;">   
+					<option>경기공장</option>
+					<option>서울공장</option>  
+				</select>
+				<div class="btnGroup inListTable" style="float: left;">  
+					<a href="javascript:void(0);"  class="btn regSort">추가</a> 
+				</div> 
+            </div>
+			<table class="infoGroup fullSort">
+				<tbody>  
                 <tr>
 					<td> 
-                        <div class="inTblBoxGroup twinSort highHeight scrollSort wearingGoodsMod">   
+                        <div class="inTblBoxGroup Sort highHeight scrollSort wearingGoodsMod">   
 							<div class="limitHeightTblCase">
 								<table class="infoGroup txtCSort">    
 									<colgroup>   

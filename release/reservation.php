@@ -1,238 +1,201 @@
-<!-- :: ksg_3 = ksg_20210124_1910 -->
-<!-- :: ksg_2 = ksg_20210114_1756 -->
-<!-- :: ksg_1 = ksg_20210108_1726 -->
+<!-- :: ksg_5 = ksg_20210118_1639 -->
+<!-- :: ksg_4 = ksg_20210112_2039 -->
+<!-- :: ksg_3 = ksg_20210112_1604 -->
+<!-- :: ksg_2 = ksg_20210109_1554 -->
+<!-- :: ksg_1 = ksg_20210108_1930 -->
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/head.php';
     $tCode					=	'600';
-	$lCode					=	'601';
-?>
+	$lCode					=	'601'; 
+?> 
 <body>
 <div class="container">
-	<?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/common/pages/header.php'; ?>
     <!-- :: open : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/release/pages/release_left.php'; ?>
 	<!-- :: close : ksg_1 : [진맛] 좌측메뉴 파트. -->
 	<div class="wrapper">
 		<div class="contents">
-			<div class="section horizontalManageSort searcManageSort topLineMod">
-				<div class="titleBox manageHeadlineSort">검색</div>
-				<div class="conGroup verticalManageSort">
-					<table class="searchGroup">
-						<colgroup>
-							<col width="15%">
-							<col width="85%">
-						</colgroup>   
-						<tbody>
-							<tr>
-								<th>검색어</th>
-								<td>
-									<select class="sbox">
-										<option>전체</option>
-										<option>출고출처</option>
-										<option>창고명</option>
-										<option>창고코드</option>
-										<option>품목명</option>
-										<option>품목코드</option>
-										<option>생산품명</option>
-										<option>생산품코드</option>
-										<option>출고담당자</option>
-										<option>담당자코드</option>
-										<option>주문자명</option>
-										<option>주문자연락처</option>
-										<option>실수령자명</option>
-										<option>실수령자연락처</option>
-										<option>수령주소</option>
-									</select>
-									<input class="tbox searchInput topLineSearchMod normal ui-autocomplete-input" placeholder="검색어를 입력해주세요.">
-								</td>
-							</tr>
-							<tr>
-								<th>
-									출고날짜
-								</th>
-								<td>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
-									</div>
-									<div class="betweenWaveText">~</div>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th> 
-									입금날짜
-								</th>
-								<td>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
-									</div>
-									<div class="betweenWaveText">~</div>
-									<div class="dateInputCase topLineSearchMod">
-										<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>
-                            	    출고상태
-								</th>
-								<td>
-									<div class="inTableCheckGroup">
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">출고대기</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">출고중</div>
-                            	        </div>
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">출고 완료</div>
-                            	        </div>
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">출고 취소</div>
-                            	        </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-							<th>결제방법</th>
-								<td>
-									<div class="inTableCheckGroup">
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">카드결제</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">계좌이체</div>
-                            	        </div>
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">무통장입금</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>권역</th>
-								<td>
-									<div class="inTableCheckGroup">
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">1권역</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">2권역</div>
-                            	        </div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<th>배송방법</th>
-								<td colspan="3">  
-									<div class="inTableCheckGroup">
-                            	        <div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">택배배송</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">퀵서비스</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">직접배송</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">새벽배송</div>
-										</div>
-										<div class="checkBoxCase">
-											<div class="checkBoxIconBox">
-												<input type="checkbox" name="" value="">
-												<label></label>
-											</div>
-											<div class="checkBoxTitle">산지직배송</div>
-                            	        </div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="btnGroup verticalBottomSort inTblSort">
-                        <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
-                    </div>
-				</div>  
-			</div>
-			<div class="section horizontalManageSort fullMod">
-				<div class="titleBox manageHeadlineSort">출고예약 목록</div>
+			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
+            <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
+			<div class="section horizontalManageSort searcManageSort topLineMod">  
+				<div class="titleBox manageHeadlineSort">출고목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
-					<div class="headLineBox listControlSort">
-						<div class="titleBox inlistConSort">
-					    	<div class="titleText">출고 예약목록</div>
-                            <a href="javascript:void(0);" class="btn headRightAbMod releasePopBtn">출고내역 추가</a>
-					    </div> 
+					<div class="headLineBox listControlSort"> 
+						<!-- <div class="selectGroup monthSort">
+							<select>     
+								<option selected>2020년</option> 
+								<option >2019년</option>
+								<option >2018년</option>
+								<option >2017년</option>
+							</select>
+							<select>
+								<option selected>6월</option>
+								<option >5월</option>
+								<option >4월</option>
+								<option >3월</option>
+							</select>
+						</div> -->
+						<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
+						<table class="searchGroup inTblSort">
+							<colgroup>
+								<col style="width : 20%;">
+								<col style="width : 80%;">
+							</colgroup>
+							<tbody>
+                                <tr>
+                                    <th>
+								    	발주일자
+								    </th>
+								    <td>
+								    	<div class="dateInputCase topLineSearchMod">
+								    		<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
+								    	</div>
+								    	<div class="betweenWaveText">~</div>
+								    	<div class="dateInputCase topLineSearchMod">
+								    		<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+								    	</div>
+								    </td>
+                                </tr>  
+								<tr>
+									<th>검색어</th>
+									<td>
+										<select class="sbox">
+											<option>발주코드</option>
+											<option>창고명</option>
+                                            <option>창고코드</option>
+                                            <option>납품처명</option>
+                                            <option>납품처코드</option>
+                                            <option>품목명</option>
+                                            <option>품목코드</option>
+                                            <option>품종명</option>
+                                            <option>품종코드</option>
+                                            <option>생산품명</option>
+                                            <option>생산품코드</option>
+										</select>
+										<input class="tbox searchInput topLineSearchMod" name="dd" type="text" placeholder="검색어를 입력해주세요.">
+									</td>
+                                </tr>
+                                <tr>
+                                    <th>
+								    	배송일
+								    </th>
+								    <td>
+								    	<div class="dateInputCase topLineSearchMod">
+								    		<input class="tbox dateBox shortMod" id="startDate" readonly="" placeholder="시작일">
+								    	</div>
+								    	<div class="betweenWaveText">~</div>
+								    	<div class="dateInputCase topLineSearchMod">
+								    		<input class="tbox dateBox shortMod" id="endDate" readonly="" placeholder="종료일">
+								    	</div>
+								    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        배송방법
+							    	</th>
+							    	<td >
+							    		<div class="inTableCheckGroup">
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">택배배송</div>
+							    			</div>
+							    			<div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">직접배송</div>
+                                            </div>
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">새벽발송</div>
+                                            </div>
+											<div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">퀵서비스</div>
+                                            </div>
+											<div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">산지직배송</div>  
+                                            </div>
+							    		</div>
+							    	</td>
+                                </tr>
+                                <tr>
+                                    <th> 
+                                        상태
+							    	</th>
+							    	<td >
+							    		<div class="inTableCheckGroup">
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">발주요청</div>
+							    			</div>
+							    			<div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">발주요청승인</div>
+                                            </div>
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">발주취소요청</div>
+                                            </div>
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">발주취소</div>
+                                            </div>
+                                            <div class="checkBoxCase">
+							    				<div class="checkBoxIconBox">
+							    					<input type="checkbox" name="" value="">
+							    					<label></label>
+							    				</div>
+							    				<div class="checkBoxTitle">발주완료</div>
+							    			</div>
+							    		</div>
+							    	</td>
+							    </tr>
+							</tbody>
+						</table>
+                    	<div class="btnGroup verticalBottomSort inTblSort">
+                    	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
+                    	</div>
+						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. --> 
+						<div class="titleBox inlistConSort"> 
+							<div class="titleText">출고목록</div>    
+							<a href="/release/reservationSpec" class="btn headRightAbMod addorderBtn">출고추가</a>  
+							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
+						</div>
 						<div class="sboxGroup listArraySort">
-							<!-- :: open : ksg_2 : [진맛] 테이블 우상단의 컨트롤 버튼 그룹. 여기서는 사용하지 않으므로 모두 style="display : none;" 처리 함. -->
-                            <a style="display : none;" href="javascript:popdateChan();" class="btn listTopSort dateChanBtn">결제일변경</a>
-                            <a style="display : none;" href="javascript:void(0);" class="btn listTopSort dateChanBtn">선택삭제</a>
-                            <a style="display : none;" href="javascript:void(0);" class="btn listTopSort addStaffBtn">선택항목이체</a>
-                            <a style="display : none;" href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-							<a style="display : none;" href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-							<!-- :: close : ksg_2 : [진맛] 테이블 우상단의 컨트롤 버튼 그룹. 여기서는 사용하지 않으므로 모두 style="display : none;" 처리 함. -->
-							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
-							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
-							<select class="sbox">
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀업로드</a> 
+								<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
+							<select class="sbox"> 
 								<option>번호순▼</option>
 								<option>번호순▲</option>
-								<option>등록순▼</option>
+								<option>등록순▼</option>   
 								<option>등록순▲</option>
-                                <option>과목순▼</option>
-								<option>과목순▲</option>
 							</select>
 							<select class="sbox">
 								<option>40개씩</option>
@@ -241,140 +204,189 @@
 							</select>
 						</div>
 					</div>
-					<!-- :: open : ksg_2 : [진맛] 메인 테이블 상단에 표시되는 작은 테이블. 통계 수치를 표시하는 역할. 여기서는 사용하지 않으므로 style="display : none;" 처리 함. -->
-					<table class="searchResultTable summarySort" style="display : none;">
-						<tbody>
-						<tr>
-							<th>합계(일)</th>
-							<td>
-								<div class="tAlignR mt5">입금 합계 : 100,000,000 원</div>
-								<div class="tAlignR mt5">지출 합계 : 100,000,000 원</div>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-					<!-- :: close : ksg_2 : [진맛] 메인 테이블 상단에 표시되는 작은 테이블. 통계 수치를 표시하는 역할. 여기서는 사용하지 않으므로 style="display : none;" 처리 함. -->
-					<table class="searchResultTable">
+					<table class="searchResultTable ">
 						<colgroup>
-                            <col style="width : 90px;">
-                            <col style="width : 180px;">
+							<col style="width : 30px;">
+							<col style="width : 70px;">  
+							<col style="width : 70px;">  
+							<col style="width : 70px;">
+							<col style="width : 80px;">  
 							<col style="width : 90px;">
-							<col style="width : 90px;">
-							<col style="width : 90px;">
-							<col style="width : 150px;">
-							<col style="width : 150px;">
-                            <col style="width : 220px;">
-                            <col style="width : 130px;">
+							<col style="width : 90px;">    
+							<col style="width : 40px;">   
                             <col style="width : 60px;">
-                            <col style="width : 100px;">
-                            <col style="width : 110px;">
-                            <col style="width : 80px;">
-                            <col style="width : 50px;">
-                        </colgroup>
+							<col style="width : 70px;">  
+							<col style="width : 70px;">
+							<col style="width : 70px;">
+							<col style="width : 55px;">
+							<col style="width : 80px;">       
+							<col style="width : 180px;">   
+							<col style="width : 60px;">
+                            <col style="width : 40px;"> 
+						</colgroup> 
 						<thead>
 						<tr>
-                            <th>
-                                출고<br>
-                                예약번호
+							<th>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
+							</th>
+							<th>출고코드</th>
+							<th>
+								발주코드<br>
+								채널<br> 
+								(발주원본코드) 
+							</th>
+							<th>주문일자</th> 
+							<th> 
+                                주문자명<br>
+                                주문자 전화번호<br>
+								주문자 핸드폰번호
                             </th>
-                            <th>
-                                출고 출처<br>
-                                (출고날짜)
-                            </th>
-                            <th>
-                                창고명<br>
-                                (창고코드)
-                            </th>
-                            <th>
-                                고객명<br>
-                                (고객코드)
-                            </th>
-                            <th>
-                                품목명<br>
-                                (품목코드)
-                            </th>
-                            <th>
-                                주문자<br>
-                                (연락처)
-                            </th>
-                            <th>
-                                실수령자<br>
-                                (연락처)
-                            </th>
-                            <th>수령주소</th>
-                            <th>결제방법</th>
-                            <th>송하인번호</th>
-                            <th>
-                                출고담당자<br>
-                                (출고담당코드)
-                            </th>
-                            <th>출고상태</th>
-                            <th>출고금액</th>
+							<th>주문 상품명</th>  
+                            <th>   
+                               상품명
+							</th>
+							<th>상품수량</th>
+							<th>판매가</th> 
+							<th>총 결제금액<br>
+								총 품목금액<br>
+								총 배송금액
+							</th>
+							<th>예치금<br>
+								마일리지
+							</th>
+							<th>총 회원할인금액<br>
+								총 상품할인금액<br>
+								총 쿠폰할인금액
+							</th>
+							<th>금액처리방법</th> 
+							<th>받는분<br>
+								받는분 전화번호<br>
+								받는분 핸드폰번호
+							</th>
+							<th>배송지정보</th> 
+							<th>출고일</th>   
 							<th>관리</th>
-						</tr>
+						</tr> 
 						</thead>
 						<tbody>
 						<tr class="reged">
-							<td>115522</td>
 							<td>
-                                <div>경기1</div>
-                                <div>(2021.01.12 12:34:55)</div>
-                            </td>
-							<td>
-								<div>경기창고1</div>
-								<div class="mt2">(451412)</div>
+								<div class="checkBoxCase">
+									<input type="checkbox" name value>
+									<label></label>
+								</div>
 							</td>
+							<td>ch1234</td> 
 							<td>
-								<div>곽반장</div>
-								<div class="mt2">(566672)</div>
-                            </td>
-                            <td>
-								<div>사과</div>
-								<div class="mt2">(566672)</div>
-                            </td>
-                            <td>
-								<div>곽주주</div>
-								<div class="mt2">(010-1234-1234)</div>
-                            </td>
-                            <td>
-								<div>곽고객</div>
-                                <div class="mt2">(010-1234-1234)</div>
-                            </td>
-                            <td>서울시 영등포구 여의도동 여의중학교</td>
-							<td>
-                                <select class="sbox regFullSort">
-									<option>-선택-</option>
-									<option>카드결제</option>
-                                    <option selected="">계좌이체</option>
-									<option>무통장입금</option>
-								</select>
-							</td>
-                            <td>114455</td>
-                            <td>
-								<div>곽명인</div>
-                                <div class="mt2">(1144567)</div>
-                            </td>
-                            <td>
-                                <select class="sbox regFullSort">
-									<option>-선택-</option>
-									<option>출고대기</option>
-                                    <option selected="">출고중</option>
-                                    <option>출고완료</option>
-                                    <option>출고취소</option>
-								</select>
+								<div>
+									210211
+								</div>
 								<div class="mt2">
-                                    <input class="tbox regFullSort" placeholder="취소 사유" value="">
-                                </div>
-                            </td>
-                            <td>145,670,000</td>
-                            <td>
-                                <div class="btnGroup inListTable">
-									<a href="javascript:void(0);" class="btn modifySort releasePopBtn">상세</a>
+									일반발주
 								</div> 
+								<div class="mt2">
+									164521
+								</div>
+							</td>
+							<td>
+								2021-02-21
+							</td>
+							<td>
+								<div>
+									허평강
+								</div>
+								<div class="mt2">
+									031-846-6918
+								</div>
+								<div class="mt2">
+									010-4300-6138
+								</div>
+							<td>
+								<div class="mt2">
+									진한 청포도 외 1건
+								</div>
+							</td>
+							<td>진한 청포도</td>
+							<td>2</td>
+							<td class="right"> 
+								10,000
+								<span class="priceWord">원</span>
+							</td>
+							<td class="right">
+								<div>
+									18,000 
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									2,0000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									0 
+									<span class="priceWord">원</span>
+								</div> 
+							</td> 
+							<td class="right">
+								<div>
+									0
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									0
+									<span class="priceWord">원</span>
+								</div>
+							</td>
+							<td class="right">
+								<div>
+									0
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									2,000
+									<span class="priceWord">원</span>
+								</div>
+								<div class="mt2">
+									0 
+									<span class="priceWord">원</span>
+								</div>
+							</td>
+							<td>
+								선불
                             </td>
-                        </tr>
-						</tbody>
-                    </table>
+							<td>
+								<div>
+									김별
+								</div>
+								<div class="mt2">
+									02-454-6918
+								</div>
+								<div class="mt2">
+									010-5100-0429
+								</div>
+							</td>
+							<td>
+								<div>
+									123-874
+								</div>
+								<div class="mt2">
+									서울시 도봉구 방학동 인경빌라 203호
+								</div>
+							</td>
+							<td>  
+							<div>2021-02-21</div>
+							<div class="mt2">09:00:12</div> 
+							</td>
+							<td>
+								<div class="btnGroup inListTable">
+									<a href="/release/reservationSpec" class="btn modifySort">상세</a>
+								</div>    
+							</td>    
+						</tr>
+						</tbody>    
+					</table>
 				</div>
 				<div class="page_group underSort">
 					<ul class="page_box">
@@ -392,416 +404,51 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+            </div>
+            <!-- :: open : ksg_2 : [진맛] 우측 테이블 구조. -->
 		</div>
 	</div>
 </div>
-
-
-
-<!-- :: open : ksg_20ba0127_1d18 : [진맛] 상세 팝업 파트. -->
-<div class="popup centerSort releasePop">
-	<div class="popupCon wideSort">
-		<a href="javascript:closePop()">
-			<img src="/common/img/close.png" class="close">
-		</a>
-		<div class="titleBox popupSort">
-			상세정보
-		</div>
-		<div class="conGroup verticalManageSort">
-			<table class="infoGroup">
-				<colgroup>
-					<col width="*">
-				</colgroup>
-				<tbody>
-				<tr>
-					<th>출고예약번호</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>출고예약날짜</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-				</tr>
-				<tr>
-					<th>출고출처</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>창고명</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>창고코드</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>품목명</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>품목코드</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>품목정보</th>
-					<td>
-                        <!-- :: open : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
-                        <!-- :: open : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <div class="inTblBoxGroup twinSort wearingGoodsMod">
-                            <!-- :: open : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
-                            <div class="inTblSchGroup">
-                                <select class="sbox">
-						    		<option>품목명</option>
-						    		<option>품목코드</option>
-						    	</select>
-                                <input class="tbox searchInput inTblSort" placeholder="검색어를 입력해주세요.">
-                                <div class="btnGroup inTableSearch">
-					        		<a href="javascript:void(0);" class="btn searchSort">등록</a>
-					        	</div>
-                            </div>
-							<!-- :: close : ksg_3 : [진맛] 품목을 검색하고 등록하는 파트. -->
-							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
-							<table class="searchResultTable">
-								<colgroup>
-                    		        <col style="width : 100px;">
-                    		        <col style="width : 100px;">
-                    		        <col style="width : 100px;">
-                    		        <col style="width : 50px;">
-                    		    </colgroup>
-								<thead>
-								<tr>
-                    		        <th>
-                    		            품종명<br>
-                    		            (품종코드)
-                    		        </th>
-                    		        <th>수량</th>
-									<th>출고단가</th>
-                    		        <th>관리</th>
-								</tr>
-								</thead>
-								<tbody>
-                    		    <tr>
-                    		        <td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn regSort">선택</a>
-										</div>
-									</td>
-                    		    </tr>
-								</tbody>
-                    		</table>
-							<!-- :: close : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
-                            <!-- :: open : ksg_3 : [진맛] 검색 결과에 대한 내부 페이징 파트. -->
-                            <div class="page_group underSort">
-					        	<ul class="page_box">
-					        		<li class="prev arrow">
-					        			<a href="javascript:void(0);"></a>
-					        		</li>
-					        		<li class="pageNum on">
-					        			<a href="javascript:void(0);">1</a>
-					        		</li>
-					        		<li class="pageNum">
-					        			<a href="javascript:void(0);">2</a>
-					        		</li>
-					        		<li class="next arrow">
-					        			<a href="javascript:void(0); "></a>
-					        		</li>
-					        	</ul>
-					        </div>
-                            <!-- :: close : ksg_3 : [진맛] 검색 결과에 대한 내부 페이징 파트. -->
-                        </div>
-                        <!-- :: close : ksg_3 : [진맛] 왼쪽 품목 검색 파트. -->
-                        <!-- :: open : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
-                        <div class="inTblBoxGroup twinSort wearingGoodsMod">
-							<!-- :: open : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
-							<table class="searchResultTable">
-								<colgroup>
-									<col style="width : 100px;">
-                    		        <col style="width : 100px;">
-                    		        <col style="width : 100px;">
-                    		        <col style="width : 50px;">
-                    		    </colgroup>
-								<thead>
-								<tr>
-                    		        <th>
-                    		            품종명<br>
-                    		            (품종코드)
-                    		        </th>
-                    		        <th>수량</th>
-									<th>출고단가</th>
-                    		        <th>관리</th>
-								</tr>
-								</thead>
-								<tbody>
-                    		    <tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-                    		            <div>
-                    		                부사
-                    		            </div>
-                    		            <div class="mt5">
-                    		                (115122)
-                    		            </div>
-									</td>
-                    		        <td>450</td>
-                    		        <td>1,400원</td>
-                    		        <td>
-										<div class="btnGroup inListTable">
-											<a href="javascript:void(0);" class="btn delSort">삭제</a>
-										</div>
-									</td>
-								</tr>
-								</tbody>
-                    		</table>
-							<!-- :: close : ksg_4 : [진맛] 내부 테이블(진짜 <table> 태그 사용)에 대한 내용 파트. -->
-                        </div>
-                        <!-- :: close : ksg_3 : [진맛] 우측 선택된 품목 파트. -->
-                        <!-- :: close : ksg_3 : [진맛] 테이블 내에서 품목을 등록하는 병렬 내용 파트.. -->
-					</td>
-                </tr>
-				<tr>
-					<th>고객명</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>고객코드</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>송하인</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>실수령자</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				<tr>
-					<th>출고주소</th>
-					<td>
-						<div>
-							<input class="tbox regShortSort" value="">
-						</div>
-						<div class="mt2">
-							<input class="tbox regFullSort" value="">
-						</div>
-					</td>
-                </tr>
-				<tr>
-					<th>송하인번호</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-				</tr>
-				<tr>
-					<th>출고담당자</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-				</tr>
-				<tr>
-					<th>담당자코드</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-				</tr>
-				<tr>
-					<th>출고금액</th>
-					<td>
-						<input class="tbox regFullSort" value="">
-					</td>
-                </tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="btnGroup verticalBottomSort">
-			<a href="javascript:closePop();" class="btn searchSort">저장</a>
-		</div>
-	</div>
-</div>  
-<!-- :: close : ksg_20ba0127_1d18 : [진맛] 상세 팝업 파트. -->
 <script src="/common/js/datePick.js"></script>
 <script>
+// :: open : ksg_2 : [진맛] 원자재 목록을 클릭 시, 우측의 테이블 내용과 하단 버튼이 나타나도록 하는 내용. "등록" 파트를 눌러도 우측 내용이 나오는 문제가 있어, 이것은 사용을 중단함.
+// $(document).on('click', '.conGroup.verticalManageSort .searchResultTable td', function(){
+//     $('.specInfoGroup.hide').removeClass('hide');
+//     $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
+// 	$('.specRegGroup').addClass('hide');
+// 	$(this).parent().siblings('tr').removeClass('activated');
+// 	$(this).parent('tr').addClass('activated');
+// });
+// :: close : ksg_2 : [진맛] 원자재 목록을 클릭 시, 우측의 테이블 내용과 하단 버튼이 나타나도록 하는 내용. "등록" 파트를 눌러도 우측 내용이 나오는 문제가 있어, 이것은 사용을 중단함.
 // :: open : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
 $(document).on('click', '.conGroup.verticalManageSort .searchResultTable tr.reged', function(){
+    $('.specInfoGroup.hide').removeClass('hide');
+    $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
+	$('.specRegGroup').addClass('hide');
+	$(this).siblings('tr').removeClass('activated');
+	$(this).addClass('activated');
+});
+// :: close : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+// :: open : ksg_4 : [진맛] 품종 리스트의 "품질" 버튼 클릭 시, 품질 팝업창 표시하는 스크립트.
+$(document).on('click', '.btn.popQualMod', function(){
+	$('.popup.centerSort.qualitypop').show();
+	$('.contents').addClass('overlay');
+});
+// :: close : ksg_4 : [진맛] 품종 리스트의 "품질" 버튼 클릭 시, 품질 팝업창 표시하는 스크립트.
+
+
+
+// :: open : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+$(document).on('click', '.btn.headRightAbMod.addorderBtn', function(){
     $('.specInfoGroup.hide').removeClass('hide');
 	$('.specRegGroup').removeClass('hide');
     $('.specInfoGroup').next('.btnGroup.horizontalBottomSort').removeClass('hide');
 	$(this).siblings('tr').removeClass('activated');
 	$(this).addClass('activated');
-});
-// :: close : ksg_4 : [진맛] 원자재 목록 중, 등록된 테이블 라인(class="reged")가 있는 곳만, 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
-// :: open : ksg_b021ja27_1d3a : [진맛] : 팝업 오픈하는 스크립트.
-$(document).on('click', '.btn.releasePopBtn', function(){
-	$('.popup.centerSort.releasePop').show();
-	$('.contents').addClass('overlay');
-});
-// :: close : ksg_b021ja27_1d3a : [진맛] : 팝업 오픈하는 스크립트.
+}); 
+// :: close : ksg_6 : [진맛] "창고 추가" 버튼을 클릭했을 때 우측 상세정보가 표시되도록 하는 스크립트.
+
+
 </script>
 </body>
 </html>

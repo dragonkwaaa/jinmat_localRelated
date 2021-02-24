@@ -1422,6 +1422,12 @@ select.sbox.full {
 	padding : 0;
 	text-align : center;
 }
+.tbox.regFullSort.listMod.right {
+    /* width : 100%; */
+    width : calc(100% - 4px);
+	padding : 0;
+	text-align : right;
+}
 .tbox.regFullSort.priceMod {
     /* width : calc(100% - 11px); */
     width : calc(100% - 40px);
@@ -1722,8 +1728,7 @@ tr.hide {
 /*  */
 /* :: innerO : 신규 내용 추가. */
 .popup .tbox.regFullSort.priceMod {
-	width : calc(100% - 11px);
-	border : none;
+	width : calc(100% - 11px); 
 }	
 .btnGroup.verticalBottomSort .btn.singleSearchMod {
 	display : inline-block;
@@ -1817,12 +1822,14 @@ body{
 .materialSort .infoWord {
 	position : relative;
 	padding-right : 12px;
-	color : #888;
+	color : black; 
+	  
 }
+
 .materialSort .infoWord:before {
-	content : "|";
-	position : absolute;
-	right : 5px;
+
+	position : absolute;  
+	right : 5px;  
 }
 .linkCover {
 	position : absolute;
@@ -2778,6 +2785,7 @@ table.infoGroup.noneImgSort .inTblTitleBox {
 }
 table.infoGroup.noneImgSort .inTblInfoBox {
 	padding-bottom : 5px;
+	line-height: 1.5;
 }
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210127_1711 : [진맛] 재고목록 페이지 내용 파트. */

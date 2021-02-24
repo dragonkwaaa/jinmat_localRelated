@@ -138,9 +138,10 @@
 								<div class="titleText">창고 정보</div> 
 							</div>
 						</div>
+						
 						<table class="infoGroup">
 							<colgroup>
-								<col width="17%"> 
+								<col width="17%"> +_
 								<col width="33%">
 							</colgroup>
 							<tbody>

@@ -232,7 +232,7 @@
 								<div class="mt2">경상남도 창원시 의창동 12-15</div>
 							</td> 
 							<td>진짜 맛있는 과일 배송업체</td>
-							<td>
+							<td class="right">  
 								<div>
 									18,000
 									<span class="priceWord">원</span>
@@ -449,13 +449,13 @@
 										</div> 
 									</td> 
 									<td>
-										<div> 
-											<input class="tbox regFullSort listMod"  value="1,500" readonly>
+										<div>    
+											<input class="tbox regFullSort listMod priceMod"  value="1,500" readonly>
 										</div>
 										<div class="mt2">  
-											<input class="tbox regFullSort listMod" value="2,500" readonly>
+											<input class="tbox regFullSort listMod priceMod" value="2,500" readonly>
 										</div>  
-									</td>  
+									</td>   
 									<td> 
 										<div class="btnGroup inListTable">
 											<a href="javascript:void(0);" class="btn regSort">등록</a> 
@@ -533,16 +533,16 @@
 										<div class="mt2">
 											<input class="tbox regFullSort listMod" value="15" readonly> 
 										</div> 
-									</td> 
-									<td>
-										<div> 
-											<input class="tbox regFullSort listMod"  value="" >
+									</td>  
+									<td class="right">
+										<div>   
+											<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
 										</div>
 										<div class="mt2">  
-											<input class="tbox regFullSort listMod" value="" >
+											<input class="tbox regFullSort listMod priceMod" placeholder="" value="">
 										</div>  
 									</td>    
-									<td>
+									<td> 
 										<div> 
 											<input class="tbox regFullSort listMod"  value="" >
 										</div>
