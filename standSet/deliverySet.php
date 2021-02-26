@@ -132,9 +132,8 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
+								<option>10개씩</option>
+								<option>20개씩</option> 
 							</select>
 						</div>
                     </div>

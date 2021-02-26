@@ -139,9 +139,8 @@
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">  
                         <div class="titleBox inlistConSort">  
-					    	<div class="titleText">납품계획 목록</div>
+					    	<div class="titleText">납품계획 목록</div> 
                             <a href="javascript:void(0);" class="btn headRightAbMod wearingPopBtn">납품내역 추가</a>
-                            <div class="tipBox mb15">* 입고내역을 클릭 시, 우측 박스에 상세정보가 표시됩니다.</div>
 					    </div> 
 						<div class="sboxGroup listArraySort">
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
@@ -155,10 +154,9 @@
 								<option>과목순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
                         </div>  
                     </div>
 					<table class="searchResultTable">
@@ -295,58 +293,60 @@
 				</colgroup>   
 				<tbody>
 				<tr> 
+					<th>납품처명(코드)</th> 
+					<td colspan="3"> 
+						<input class="tbox regFullSort" value="" >
+					</td> 
+				</tr>  
+				<tr>
+					<th>납품요청일</th> 
+					<td>  
+						<input class="tbox regFullSort" value="">
+					</td>
 					<th>납품상태</th>   
 					<td> 
 						<select class="sbox normal">
 						    <option selected>납품대기</option>
 						</select>  
 					</td>  
-					<th>납품요청일</th> 
-					<td>  
-						<input class="tbox regFullSort" value="">
-					</td>
-				</tr>  
+				</tr>
                 <tr> 
-					<th>납품처명(코드)</th> 
-					<td> 
-						<input class="tbox regFullSort" value="" >
-					</td>
 					<th>납품금액</th> 
-					<td> 
+					<td colspan="3">  
 						<input class="tbox regFullSort" value="" >
 					</td>
                 </tr>  
 				<tr>
+					<th>납품처연락처</th>
+					<td> 
+						<input class="tbox regFullSort" value="" >
+					</td> 
 					<th>납품처주소</th>
-					<td colspan="3">  
+					<td>  
 						<input class="tbox regFullSort" value="" >
 					</td>
                 </tr>
 				<tr>   
 					<th>납품등록 관리자명(코드)</th>
-					<td> 
-						<input class="tbox regFullSort" value="" >
-					</td>
-					<th>납품처연락처</th>
-					<td> 
+					<td colspan="3">  
 						<input class="tbox regFullSort" value="" >
 					</td>
 				</tr>
                 <tr>  
 					<th>창고명(코드)</th>
-					<td> 
+					<td colspan="3"> 
 						<input class="tbox regFullSort" value="">
 					</td>
+                </tr>
+				<tr>  
 					<th>창고연락처</th>
 					<td> 
 						<input class="tbox regFullSort" value="">
 					</td>
-                </tr>
-				<tr> 
-				<th>창고주소</th>
+					<th>창고주소</th>
 					<td colspan="3">  
 						<input class="tbox regFullSort" value="">
-					</td>   
+					</td>     
 				</tr>  
                 <tr> 
 					<th> 

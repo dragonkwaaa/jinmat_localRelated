@@ -66,7 +66,8 @@
 						<div class="titleBox inlistConSort">
 							<div class="titleText">납품처 목록</div>
 							<a href="javascript:void(0);" class="btn headRightAbMod addTradeBtn">납품처 추가</a>
-						</div>
+							<div class="tipBox mb15">* 목록을 클릭 시, 우측 박스에 상세정보가 표시됩니다.</div>
+						</div> 
 						<div class="sboxGroup listArraySort">
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">인쇄</a>
@@ -77,11 +78,10 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
+								<option>10개씩</option>
+								<option>20개씩</option>
 							</select>
-						</div>
+						</div>   
 					</div>
 					<table class="searchResultTable ">
 						<colgroup>
@@ -205,21 +205,27 @@
 							</colgroup>
 							<tbody>
 							<tr>
-								<th>납품처명</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td>
 								<th>납품처코드</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td> 
-							</tr>
-							<tr>
-								<th>납품처주소</th>
+								<th>납품처명</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
+							</tr> 
+							<tr>
+								<th>납품처주소</th>
+								<td colspan="4">
+									<input class="tbox regFullSort" value="">
+								</td>
+							</tr>
+							<tr>
 								<th>납품담당자</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td>
+								<th>담당자연락처</th> 
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
@@ -235,22 +241,24 @@
 								</td>
 							</tr>
 							<tr>
-								<th>세무신고거래처</th>
-								<td colspan="4">
+								<th>종사업장번호</th>
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
-								<th>종사업장번호</th>
-								<td colspan="4">
+								<th>세무신고거래처</th>
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
 							<tr>
 								<th>대표자명</th>
-								<td colspan="4">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
+								<th>대표자 연락처</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td> 
 							</tr>
 							<tr>  
 								<th>업태</th>
@@ -267,40 +275,28 @@
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td> 
-								<th>대표자 연락처</th>
-								<td>
-									<input class="tbox regFullSort" value="">
-								</td> 
-							</tr>
-							<tr>
 								<th>팩스</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
+							</tr>
+							<tr>
 								<th>이메일</th>
 								<td>
 									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>	
-							<tr>
-								<th>주소</th>
-								<td> 
-									<input class="tbox regFullSort" value="">  
 								</td>
 								<th>홈페이지</th>
 								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr> 
+							</tr>	
 							<tr>
 								<th>거래처그룹</th>
-								<td colspan="4">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
-							</tr>
-							<tr>
 								<th>출하대상거래처</th>
-								<td colspan="4">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
 							</tr>
@@ -311,22 +307,16 @@
 								</td>
 							</tr>
 							<tr>
-								<th>담당자 연락처1</th>
-								<td colspan="4">
-									<input class="tbox regFullSort" value="">
-								</td>
-							</tr>
-							<tr>
 								<th>담당자 연락처2</th>
-								<td colspan="4">
+								<td>
 									<input class="tbox regFullSort" value="">
 								</td>
+								<th>담당자 연락처3</th>
+								<td>
+									<input class="tbox regFullSort" value="">
+								</td> 
 							</tr>
 							<tr>
-								<th>담당자 연락처3</th>
-								<td colspan="4">
-									<input class="tbox regFullSort" value="">
-								</td>
 							</tr>
 							<tr>
 								<th>거래타입</th>
@@ -356,7 +346,7 @@
 								</td>
 							</tr>   
 							</tbody>
-						</table>
+						</table>  
 					</div>
 					<div class="headLineBox pageControlSort center"> 
 						<a href="javascript:void(0);" class="btn listTopSort addStaffBtn ">저장</a>   

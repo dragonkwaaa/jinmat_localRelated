@@ -21,21 +21,6 @@
 				<div class="titleBox manageHeadlineSort">발주목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort"> 
-						<!-- <div class="selectGroup monthSort">
-							<select>   
-								<option selected>2020년</option>
-								<option >2019년</option>
-								<option >2018년</option>
-								<option >2017년</option>
-							</select>
-							<select>
-								<option selected>6월</option>
-								<option >5월</option>
-								<option >4월</option>
-								<option >3월</option>
-							</select>
-						</div> -->
-						<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<table class="searchGroup inTblSort">
 							<colgroup>
 								<col style="width : 20%;">
@@ -199,10 +184,9 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
 					</div>
 					<table class="searchResultTable ">

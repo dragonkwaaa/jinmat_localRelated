@@ -41,8 +41,8 @@
                     	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     	</div> 
                         <div class="titleBox inlistConSort">
-							<div class="titleText">재고 목록</div> 
-                            <div class="tipBox mb15">* 재고내역을 클릭 시, 창고별 상세재고를 표시하는 테이블이 나타납니다.</div>
+							<div class="titleText">재고 목록</div>  
+                            <div class="tipBox mb15">* 목록을 클릭 시, 창고별 상세재고를 표시하는 테이블이 나타납니다.</div>
 					    </div>
 						<div class="sboxGroup listArraySort">
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
@@ -56,9 +56,8 @@
 								<option>과목순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
+								<option>10개씩</option> 
+								<option>20개씩</option>
 							</select>
                         </div>
                     </div>

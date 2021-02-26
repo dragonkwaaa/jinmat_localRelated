@@ -46,8 +46,8 @@
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<div class="titleBox inlistConSort">
 							<div class="titleText">기초항목 목록</div>
-							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
-						</div>
+							<div class="tipBox mb15">* 목록을 클릭 시, 우측 박스에 상세정보가 표시됩니다.</div>
+						</div> 
 						<div class="sboxGroup listArraySort">
 							<a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
 							<select class="sbox">
@@ -57,10 +57,9 @@
 								<option>등록순▲</option>
 							</select> 
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
 					</div>
 					<table class="searchResultTable ">
@@ -193,7 +192,7 @@
 									<col style="width : 30%;">
 									<col style="width : 70%;">
 								</colgroup>
-								<tbody>
+								<tbody> 
 									<tr>
 										<th>검색어</th>
 										<td>
@@ -227,9 +226,8 @@
 									<option>등록순▲</option>
 								</select>
 								<select class="sbox">
-									<option>40개씩</option>
-									<option>80개씩</option>
-									<option>100개씩</option>
+									<option>10개씩</option>
+									<option>20개씩</option> 
 								</select>
 							</div>
 							<!-- :: close : ksg_5 : [진맛] 정렬 기준 파트. 위와 마찬가지로 생산물 리스트에서는 사용하지 않을 것이므로 display : none 처리. -->

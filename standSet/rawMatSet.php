@@ -66,7 +66,7 @@
                         <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     </div>
 				</div>
-			</div>
+			</div> 
 			<div class="section horizontalManageSort searcManageSort fullMod">
 				<div class="titleBox manageHeadlineSort">원자재 목록</div> 
 				<div class="conGroup verticalManageSort bottomRowSort">
@@ -81,10 +81,9 @@
 								<option>등록순▲</option>  
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
                     </div>
 					<table class="searchResultTable">

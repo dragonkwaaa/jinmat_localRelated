@@ -171,6 +171,13 @@
     height: 27px;
 	border: 1px solid #d7dae2;
 } 
+.sbox.normal { 
+    width: 175px; 
+    border: none; 
+    background-color: #fff;
+    height: 27px;
+	border: 1px solid #d7dae2;
+} 
 
 
 .section.searcManageSort.Seven {
@@ -311,4 +318,31 @@ input[type="checkbox"] {
     vertical-align: top; 
     height: 650px; 
     overflow-y: auto;
+}
+
+.btnGroup.inListTable a.btn.addSort {
+    color: white;
+    display: inline-block;
+    margin-left: 30px;
+    width: 50px;
+    padding: 0 5px;  
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 12px;
+    border: 1px solid #303847;
+}
+
+.inTblBoxGroup.Sort.middleHeight {
+    display: inline-block;
+    width: calc(100% - 10px);
+    margin: 3px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    height: 600px; 
+}
+.mb20{ 
+    margin-bottom: 20px; 
 }
