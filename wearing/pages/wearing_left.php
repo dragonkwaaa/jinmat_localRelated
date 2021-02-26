@@ -4,8 +4,8 @@
 			<li>
 				<a href="/wearing/" class="<?=($lCode == '0400' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
-					<span class="ml11">입고목록</span>
-				</a>
+					<span class="ml11">입고관리</span>
+				</a> 
 			</li>
 		</ul>
 	</div>

@@ -18,26 +18,11 @@
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort topLineMod">  
-				<div class="titleBox manageHeadlineSort">발주목록</div>
+				<div class="titleBox manageHeadlineSort">검색</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort"> 
-						<!-- <div class="selectGroup monthSort">
-							<select>   
-								<option selected>2020년</option>
-								<option >2019년</option>
-								<option >2018년</option>
-								<option >2017년</option>
-							</select>
-							<select>
-								<option selected>6월</option>
-								<option >5월</option>
-								<option >4월</option>
-								<option >3월</option>
-							</select>
-						</div> -->
-						<!-- :: open : ksg_4 : [진맛] 테이블 내의 검색어 파트. -->
 						<table class="searchGroup inTblSort">
-							<colgroup>
+							<colgroup> 
 								<col style="width : 20%;">
 								<col style="width : 80%;">
 							</colgroup>
@@ -183,6 +168,7 @@
                     	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     	</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. --> 
+						<div class="titleBox manageHeadlineSort">발주 목록</div>
 						<div class="titleBox inlistConSort">
 							<div class="titleText">발주목록</div> 
 							<a href="/order/orderSpec" class="btn headRightAbMod addorderBtn">발주추가</a>  
@@ -199,10 +185,9 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
 					</div>
 					<table class="searchResultTable ">

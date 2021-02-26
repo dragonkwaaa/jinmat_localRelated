@@ -182,9 +182,10 @@
                     	<div class="btnGroup verticalBottomSort inTblSort">
                     	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     	</div>
+						<div class="titleBox manageHeadlineSort">출고 목록</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. --> 
-						<div class="titleBox inlistConSort"> 
-							<div class="titleText">출고목록</div>   
+						<div class="titleBox inlistConSort">  
+							<div class="titleText">출고 목록</div>   
 							<a href="/release/releaseSpec" class="btn headRightAbMod addorderBtn">출고추가</a>  
 							<!-- :: single : ksg_4 : [진맛] 등록 페이지로 이동하는 버튼 있던 곳. -->
 						</div>
@@ -198,10 +199,9 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
 					</div>
 					<table class="searchResultTable ">

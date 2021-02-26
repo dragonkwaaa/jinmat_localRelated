@@ -79,10 +79,9 @@
 								<option>등록순▲</option>
 							</select> 
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
                     </div>
 					<table class="searchResultTable">
@@ -284,20 +283,20 @@
 			창고목록  
 		</div>
 		<div class="conGroup verticalManageSort">
-			<div class="inTblSchGroup">  
+			<div>      
                 <select class="sbox normal" style="float: left;">   
-					<option>경기공장</option>
+					<option>경기공장</option> 
 					<option>서울공장</option>  
-				</select>
+				</select> 
 				<div class="btnGroup inListTable" style="float: left;">  
-					<a href="javascript:void(0);"  class="btn regSort">추가</a> 
+					<a href="javascript:void(0);"  class="btn addSort">추가</a> 
 				</div> 
             </div>
 			<table class="infoGroup fullSort">
-				<tbody>  
+				<tbody>    
                 <tr>
 					<td> 
-                        <div class="inTblBoxGroup Sort highHeight scrollSort wearingGoodsMod">   
+                        <div class="inTblBoxGroup Sort middleHeight Sort wearingGoodsMod">   
 							<div class="limitHeightTblCase">
 								<table class="infoGroup txtCSort">    
 									<colgroup>   

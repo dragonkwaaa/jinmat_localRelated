@@ -18,10 +18,10 @@
 			<!-- :: single : ksg_4 : [진맛] 원자재 검색 파트 있던 곳. -->
             <!-- :: close : ksg_2 : [진맛] 입력창 / 검색버튼 / 추가버튼이 포함된 검색어 파트. -->
 			<div class="section horizontalManageSort searcManageSort topLineMod">  
-				<div class="titleBox manageHeadlineSort">발주계획 목록</div>
+				<div class="titleBox manageHeadlineSort">검색</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort"> 
-						<!-- <div class="selectGroup monthSort">
+						<!-- <div class="selectGroup monthSort"> 
 							<select>   
 								<option selected>2020년</option>
 								<option >2019년</option>
@@ -182,6 +182,7 @@
                     	<div class="btnGroup verticalBottomSort inTblSort">
                     	    <a href="javascript:void(0);" class="btn singleSearchMod">검색</a>
                     	</div>
+						<div class="titleBox manageHeadlineSort">발주계획 목록</div>
 						<!-- :: close : ksg_4 : [진맛] 테이블 내의 검색어 파트. --> 
 						<div class="titleBox inlistConSort">
 							<div class="titleText">발주계획 목록</div>  
@@ -198,10 +199,9 @@
 								<option>등록순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
 						</div>
 					</div>
 					<table class="searchResultTable ">

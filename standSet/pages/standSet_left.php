@@ -8,10 +8,10 @@
 				</a>
 			</li>
 			<li>
-				<a href="/standSet/rawMatSet_2" class="<?=($lCode == '0100' ? ' activated' : '')?>">
+				<a href="/standSet/rawMatSet" class="<?=($lCode == '0100' ? ' activated' : '')?>">
 					<i class="dashboardIcon"></i>
 					<span class="ml11">원자재 관리</span>
-				</a>  
+				</a>    
 			</li>    
 			<li>
 				<a href="/standSet/productSet" class="<?=($lCode == '0101' ? ' activated' : '')?>">

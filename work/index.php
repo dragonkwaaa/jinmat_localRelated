@@ -138,10 +138,9 @@
 				<div class="titleBox manageHeadlineSort">작업지시 목록</div>
 				<div class="conGroup verticalManageSort bottomRowSort">
 					<div class="headLineBox listControlSort">
-                        <div class="titleBox inlistConSort">
+                        <div class="titleBox inlistConSort"> 
 					    	<div class="titleText">작업지시 목록</div>
                             <a href="javascript:void(0);" class="btn headRightAbMod wearingPopBtn">작업지시 추가</a>
-                            <div class="tipBox mb15">* 입고내역을 클릭 시, 우측 박스에 상세정보가 표시됩니다.</div>
 					    </div>
 						<div class="sboxGroup listArraySort">
                             <a href="javascript:void(0);" class="btn listTopSort addStaffBtn">엑셀저장</a>
@@ -155,10 +154,9 @@
 								<option>과목순▲</option>
 							</select>
 							<select class="sbox">
-								<option>40개씩</option>
-								<option>80개씩</option>
-								<option>100개씩</option>
-							</select>
+								<option>10개씩</option>
+								<option>20개씩</option>
+							</select> 
                         </div>  
                     </div>
 					<table class="searchResultTable">
@@ -284,14 +282,22 @@
 					</td>
 				</tr>
 					<th>작업지시 코드</th> 
-					<td>
+					<td colspan="3">
 						<input class="tbox regFullSort" value="">
 					</td>
+                </tr>
+				<tr>
+					<th>등록자 관리자 코드</th>
+					<td colspan="3">
+						<input class="tbox regFullSort" value="" >
+					</td>   
+				</tr>
+				<tr>
 					<th>창고명(코드)</th>
-					<td>
+					<td colspan="3">
 						<input class="tbox regFullSort" value="" >
 					</td>
-                </tr> 
+				</tr> 
                 <tr>
 					<th>창고연락처</th>
 					<td>
@@ -304,19 +310,15 @@
                 </tr>
                 <tr> 
 					<th>공장명(코드)</th>
-					<td>
-						<input class="tbox regFullSort" value="" >
-					</td>
-					<th>인건비</th>
-					<td>
-						<input class="tbox regFullSort" value="" >
-					</td>
-                </tr>
-                <tr>
-					<th>등록자 관리자 코드</th>
 					<td colspan="3">
 						<input class="tbox regFullSort" value="" >
-					</td> 
+					</td>
+                </tr>  
+				<tr>
+					<th>인건비</th>
+					<td colspan="3">
+						<input class="tbox regFullSort" value="" >
+					</td>   
 				</tr>
                 <tr>
 					<th>  

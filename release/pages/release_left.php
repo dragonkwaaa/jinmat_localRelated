@@ -14,11 +14,11 @@
 				</a>
 			</li>
 			<li>
-				<a href="/release/wating" class="<?=($lCode == '602' ? ' activated' : '')?>">
-					<i class="dashboardIcon"></i>
-					<span class="ml11">출고 대기 상품</span>
+				<a href="/release/watingRelease" class="<?=($lCode == '602' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i>   
+					<span class="ml11">출고 대기</span>
 				</a>
-			</li> 
+			</li>   
 		</ul>
 	</div>
 </nav>    
