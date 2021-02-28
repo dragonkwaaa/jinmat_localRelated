@@ -476,10 +476,13 @@ input.dateBox:read-only {
 	left : 0;
 	width : 100%;
 	height : 1080px;
-	background : url(/common/img/loginBG.png) no-repeat center / cover;
+	/* :: inO : ksg_20210228_1946 : [진맛] 삭제 내용. */
+	/* background : url(/common/img/loginBG.png) no-repeat center / cover; */
+	/* :: inC : ksg_20210228_1946 : [진맛] 삭제 내용. */
 }
 .section.loginSect {
-	position : absolute;
+	/* :: inO : ksg_20210228_1947 : [진맛] 삭제 내용. */
+	/* position : absolute;
 	min-height : auto;
 	width : 400px;
 	text-align : center;
@@ -488,7 +491,21 @@ input.dateBox:read-only {
 	transform:translateX(-50%);
 	-webkit-transform:translateX(-50%);
 	z-index : 100;
+	background-color : transparent; */
+	/* :: inC : ksg_20210228_1947 : [진맛] 삭제 내용. */
+	/* :: inO : ksg_20210228_1947 : [진맛] 추가 내용. */
+	position : fixed;
+	top : 50%;
+	left : 50%;
+	transform:translate(-50% , -50%);
+	-webkit-transform:translate(-50% , -50%);
+	z-index : 100;
 	background-color : transparent;
+	text-align : center;
+	min-height : auto;
+	width : 100%;
+	max-width : 400px;
+	/* :: inC : ksg_20210228_1947 : [진맛] 추가 내용. */
 }
 .loginTitleBox {
 	font-size : 0;
