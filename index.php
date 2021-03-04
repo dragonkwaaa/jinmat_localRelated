@@ -49,11 +49,11 @@
 					<a href="javascript:Void(0);" class="btn regLinkBtn">더 보기</a>
 				</div>
 				<div class="conGroup inHorizon_double">
-					<!-- :: starting : ksg_20210304_1819 : [땡땡] 구역에서 절반의 너비를 차지하는 그래프 내용. -->
+					<!-- :: starting : ksg_20210304_1819 : [진맛] 구역에서 절반의 너비를 차지하는 그래프 내용. -->
 					<div class="graphCase lSide_relaNoScr">
 						<canvas id="barChart_1" style="height : 400px; width : 100%; min-width : 246px;"></canvas>
 					</div>
-					<!-- :: starting : ksg_20210304_1818 : [땡땡] 구역에서 절반의 너비를 차지하는 테이블 내용. 좌측에 그래프가 있을 때의 모습. -->
+					<!-- :: starting : ksg_20210304_1818 : [진맛] 구역에서 절반의 너비를 차지하는 테이블 내용. 좌측에 그래프가 있을 때의 모습. -->
 					<table class="listTable rSide_absol">
 						<colgroup>
 							<col style="width : 500px">

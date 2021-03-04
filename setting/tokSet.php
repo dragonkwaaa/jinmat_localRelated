@@ -21,9 +21,9 @@
 			<!-- :: open : ksg_20210128_1456 : [진맛] 메타태그, 카드박스 담긴 파트. -->
 			<div class="section horizontalManageSort fullMod">
 				<!-- :: open : ksg_20b10a28_1d47 : [진맛] 메타태그 테이블에 대한 제목 파트. -->
-				<div class="titleBox manageHeadlineSort">메타태그</div>
+				<div class="titleBox manageHeadlineSort" style="display : none;">메타태그</div>
 				<!-- :: close : ksg_20b10a28_1d47 : [진맛] 메타태그 테이블에 대한 제목 파트. -->
-				<div class="conGroup verticalManageSort bottomRowSort">
+				<div class="conGroup verticalManageSort bottomRowSort" style="display : none;">
 					<!-- :: open : ksg_2jb10ab8_a4d4 : [진맛] 메타태그 내용이 담긴 테이블 파트. -->
 					<table class="searchResultTable">
 						<colgroup>
@@ -76,121 +76,97 @@
 					<div class="multTxtSetGroup">
                         <div class="setTxtCdBox fstChd">
                             <div class="cdHeadLine">
-                                <div class="titleBox">회원가입 시</div>
+                                <div class="titleBox">납품요청 시</div>
                                 <div class="cdConBox">
-                                    <div class="radioCase">
+                                    <!-- <div class="radioCase">
 										<div class="radioIconBox">
 											<input type="checkbox" checked="">
 											<label></label>
 										</div>
 										<div class="radioTitle">사용</div>
-                                    </div>
-                                    <div class="btnGroup rightSided">
+                                    </div> -->
+                                    <!-- <div class="btnGroup rightSided">
                                         <a href="javascript:void(0);" class="btn small modifySort">저장</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="cdTxtRegCase">
-                                <div class="titleBox">사용가능한 머지문자</div>
-                                <div class="tagTxtSet">{아이디}</div>
+                                <!-- <div class="titleBox">사용가능한 머지문자</div>
+                                <div class="tagTxtSet">{아이디}</div> -->
                                 <div class="cdConBox">
-                                    <textarea class="tarea full"></textarea>
+                                    <textarea class="tarea full" readonly>납품 요청이 성공적으로 등록되었습니다.</textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="setTxtCdBox">
                             <div class="cdHeadLine">
-                                <div class="titleBox">회원가입 시</div>
+                                <div class="titleBox">납품승인 시</div>
                                 <div class="cdConBox">
-                                    <div class="radioCase">
+                                    <!-- <div class="radioCase">
 										<div class="radioIconBox">
 											<input type="checkbox" checked="">
 											<label></label>
 										</div>
 										<div class="radioTitle">사용</div>
-                                    </div>
-                                    <div class="btnGroup rightSided">
+                                    </div> -->
+                                    <!-- <div class="btnGroup rightSided">
                                         <a href="javascript:void(0);" class="btn small modifySort">저장</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="cdTxtRegCase">
-                                <div class="titleBox">사용가능한 머지문자</div>
-                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div>
+                                <!-- <div class="titleBox">사용가능한 머지문자</div>
+                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div> -->
                                 <div class="cdConBox">
-                                    <textarea class="tarea full"></textarea>
+                                    <textarea class="tarea full" readonly>등록하신 납품 요청이 승인되었습니다.</textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="setTxtCdBox">
                             <div class="cdHeadLine">
-                                <div class="titleBox">주문완료 시</div>
+                                <div class="titleBox">출하완료 시</div>
                                 <div class="cdConBox">
-                                    <div class="radioCase">
+                                    <!-- <div class="radioCase">
 										<div class="radioIconBox">
 											<input type="checkbox" checked="">
 											<label></label>
 										</div>
 										<div class="radioTitle">사용</div>
-                                    </div>
-                                    <div class="btnGroup rightSided">
+                                    </div> -->
+                                    <!-- <div class="btnGroup rightSided">
                                         <a href="javascript:void(0);" class="btn small modifySort">저장</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="cdTxtRegCase">
-                                <div class="titleBox">사용가능한 머지문자</div>
-                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div>
+                                <!-- <div class="titleBox">사용가능한 머지문자</div>
+                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div> -->
                                 <div class="cdConBox">
-                                    <textarea class="tarea full"></textarea>
+                                    <textarea class="tarea full" readonly>요청 상품이 출하되어 목적지로 이동 중입니다.</textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="setTxtCdBox" style="/* margin-left: 11px; */">
                             <div class="cdHeadLine">
-                                <div class="titleBox">입금완료시(구매자)</div>
+                                <div class="titleBox">입고완료 시</div>
                                 <div class="cdConBox">
-                                    <div class="radioCase">
+                                    <!-- <div class="radioCase">
 										<div class="radioIconBox">
 											<input type="checkbox" checked="">
 											<label></label>
 										</div>
 										<div class="radioTitle">사용</div>
-                                    </div>
-                                    <div class="btnGroup rightSided">
+                                    </div> -->
+                                    <!-- <div class="btnGroup rightSided">
                                         <a href="javascript:void(0);" class="btn small modifySort">저장</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="cdTxtRegCase">
-                                <div class="titleBox">사용가능한 머지문자</div>
-                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div>
+                                <!-- <div class="titleBox">사용가능한 머지문자</div>
+                                <div class="tagTxtSet">{아이디},{상품명},{날짜}</div> -->
                                 <div class="cdConBox">
-                                    <textarea class="tarea full"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="setTxtCdBox">
-                            <div class="cdHeadLine">
-                                <div class="titleBox">입금완료 시(판매자)</div>
-                                <div class="cdConBox">
-                                    <div class="radioCase">
-										<div class="radioIconBox">
-											<input type="checkbox" checked="">
-											<label></label>
-										</div>
-										<div class="radioTitle">사용</div>
-                                    </div>
-                                    <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cdTxtRegCase">
-                                <div class="titleBox">사용가능한 머지문자</div>
-                                <div class="tagTxtSet">{아이디}</div>
-                                <div class="cdConBox">
-                                    <textarea class="tarea full"></textarea>
+                                    <textarea class="tarea full" readonly>상품이 입고 완료되었습니다.</textarea>
                                 </div>
                             </div>
                         </div>
