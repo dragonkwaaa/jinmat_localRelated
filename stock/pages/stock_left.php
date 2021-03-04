@@ -16,5 +16,13 @@
 				</a>
 			</li>
 		</ul> 
+		<ul class="menuBox">
+			<li>
+				<a href="/stock/stockLimit" class="<?=($lCode == '702' ? ' activated' : '')?>">
+					<i class="dashboardIcon"></i> 
+					<span class="ml11">재고사용수량 관리</span> 
+				</a>
+			</li>
+		</ul> 
 	</div>
 </nav>  
