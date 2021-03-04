@@ -42,8 +42,14 @@ $(function() {
 // :: open : ksg_20210109_2138 : [진맛] 팝업창 외부를 클릭하면 팝업창이 닫히게 하는 스크립트.
 $(document).mouseup(function (e) {
 	let overlay = $('.contents');
-	let popupM = $('.popup.centerSort')
+	let popupM = $('.popup.centerSort');
+	let datepicker = $("#ui-datepicker-div");
+	
 	if (!popupM.is(e.target) && popupM.has(e.target).length === 0){
+
+		if(datepicker.has(e.target).length === 1){
+			return false;
+		}
 		popupM.hide();
 		overlay.removeClass('overlay');
 	}
