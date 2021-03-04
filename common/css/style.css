@@ -2861,3 +2861,24 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 }
 /* :: innerC : 신규 내용 파트. */
 /* :: close : ksg_20210209_1707 : [진맛] 기준항목관리_생산품관리 페이지 내용. */
+
+
+/* :: open : ksg_20210304_1825 : [진맛] 대시보드 페이지 내용. */
+.conGroup.inHorizon_double {
+	display : block;
+	width : 100%;
+	position : relative;
+}
+.conGroup.inHorizon_double .listTable.rSide_absol {
+	position : absolute;
+	top : 0;
+	right : 126px;
+	width : calc(50% - 70px);
+}
+.conGroup.inHorizon_double .graphCase.lSide_relaNoScr {
+	position : relative;
+	top : 0;
+	left : 0;
+	width : calc(50% - 70px);
+}
+/* :: close : ksg_20210304_1825 : [진맛] 대시보드 페이지 내용. */
