@@ -86,7 +86,7 @@
 										<div class="radioTitle">사용</div>
                                     </div>
                                     <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small purpleMod">저장</a>
+                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
 										<div class="radioTitle">사용</div>
                                     </div>
                                     <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small purpleMod">저장</a>
+                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
 										<div class="radioTitle">사용</div>
                                     </div>
                                     <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small purpleMod">저장</a>
+                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
 										<div class="radioTitle">사용</div>
                                     </div>
                                     <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small purpleMod">저장</a>
+                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@
 										<div class="radioTitle">사용</div>
                                     </div>
                                     <div class="btnGroup rightSided">
-                                        <a href="javascript:void(0);" class="btn small purpleMod">저장</a>
+                                        <a href="javascript:void(0);" class="btn small modifySort">저장</a>
                                     </div>
                                 </div>
                             </div>
@@ -197,14 +197,6 @@
 					</div>
 					<!-- :: close : ksg_b021j128_1e0a : [진맛] 상황별 문자 카드박스 그룹. -->
 				</div>
-
-
-
-
-
-
-
-
 			</div>
 			<!-- :: close : ksg_20210128_1456 : [진맛] 메타태그, 카드박스 담긴 파트. -->
 		</div>

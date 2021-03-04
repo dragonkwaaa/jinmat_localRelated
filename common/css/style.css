@@ -2882,3 +2882,63 @@ table.infoGroup.noneImgSort .inTblInfoBox {
 	width : calc(50% - 70px);
 }
 /* :: close : ksg_20210304_1825 : [진맛] 대시보드 페이지 내용. */
+
+
+/* :: open : ksg_20210304_2127 : [진맛] 알림톡관리 페이지 내용. */
+.multTxtSetGroup .setTxtCdBox {
+	display : inline-block;
+	width : calc(25% - 15px);
+	border : 1px solid #ccc;
+	margin-left : 15px;
+}
+.multTxtSetGroup .setTxtCdBox:nth-child(n + 4) {
+	margin-top : 10px;
+}
+.multTxtSetGroup .setTxtCdBox:nth-child(4n + 5) {
+	margin-left : 0;
+}
+
+.multTxtSetGroup .setTxtCdBox.fstChd {
+	margin-left : 0;
+}
+.setTxtCdBox .cdHeadLine {
+	border-bottom : 1px solid #ccc;
+}
+.setTxtCdBox .titleBox {
+	font-size : 14px;
+	text-align : center;
+	padding : 10px 0;
+	background-color : #eee;
+}
+.setTxtCdBox .cdConBox {
+	width : calc(100% - 20px);
+	padding : 10px;
+	position : relative;
+}
+.setTxtCdBox .btnGroup.rightSided {
+	position : absolute;
+	right : 10px;
+	top : 50%;
+	transform : translateY(-50%);
+	-webkit-transform : translateY(-50%);
+	margin-top: 0;
+    margin-left: 0;
+}
+.setTxtCdBox .tagTxtSet {
+	font-size : 14px;
+	text-align : left;
+	padding : 10px;
+	min-height : 13.5px;
+	border-bottom : 1px solid #ccc;
+}
+.section .btnGroup .btn.modifySort {
+    background-color : #303847;
+    color: #fff;
+}
+.section .btnGroup a.btn.small {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+/* :: close : ksg_20210304_2127 : [진맛] 알림톡관리 페이지 내용. */
