@@ -3,20 +3,35 @@
 	width : 50%; 
 }
 .section.horizontalManageSort.AsymDoub4 {
-	width : calc(50% - 5px);
+    /* :: inO : ksg_20210308_1650 : 삭제 내용. */
+	/* width : calc(50% - 5px); */
+    /* :: inC : ksg_20210308_1650 : 삭제 내용. */
+    /* :: inO : ksg_20210308_1650 : 추가 내용. */
+	width : calc(50% - 1vw);
+    /* :: inC : ksg_20210308_1650 : 추가 내용. */
 }  
 
 .section.horizontalManageSort.AsymDoub5 {
 	width : 35%; 
 }
 .section.horizontalManageSort.AsymDoub6 {
-	width : calc(65% - 5px); 
+    /* :: inO : ksg_20210308_1651 : 삭제 내용. */
+	/* width : calc(65% - 5px);  */
+    /* :: inC : ksg_20210308_1651 : 삭제 내용. */
+    /* :: inO : ksg_20210308_1651 : 추가 내용. */
+	width : calc(65% - 1vw); 
+    /* :: inC : ksg_20210308_1651 : 추가 내용. */
 }  
 .section.horizontalManageSort.AsymDoub7 {
 	width : 30%;  
 }
 .section.horizontalManageSort.AsymDoub8 {
-	width : calc(70% - 5px);   
+    /* :: inO : ksg_20210308_1652 : 삭제 내용. */
+	/* width : calc(70% - 5px);    */
+    /* :: inC : ksg_20210308_1652 : 삭제 내용. */
+    /* :: inO : ksg_20210308_1652 : 추가 내용. */
+	width : calc(70% - 1vw);   
+    /* :: inC : ksg_20210308_1652 : 추가 내용. */
 }     
   
 .tipBoxwarning{

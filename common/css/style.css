@@ -29,6 +29,9 @@
 header {
 	/* border-bottom: 1px solid #ccc; */
 	font-size: 0;
+	/* :: inO : ksg_20210308_1705 : 추가 내용. */
+	background-color: #f4f8fa;
+	/* :: inC : ksg_20210308_1705 : 추가 내용. */
 }
 header .logoCase {
 	display : inline-block;
@@ -1771,7 +1774,12 @@ tr.hide {
 /* :: innerO : 기존 내용 수정. */
 html, 
 body{
-	background-color: #f4f8fa;
+	/* :: inO : ksg_20210308_1655 : 추가 내용. */
+	background-color: #fff;
+	/* :: inC : ksg_20210308_1655 : 추가 내용. */
+	/* :: inO : ksg_20210308_1655 : 삭제 내용. */
+	/* background-color: #f4f8fa; */
+	/* :: inC : ksg_20210308_1655 : 삭제 내용. */
 	margin : 0 auto;
 	height : 100%;
 	min-width : 1600px;
@@ -1806,7 +1814,12 @@ body{
 .contents {
     position: relative;
 	padding: 10px;
-	background-color : #f4f8fa;
+	/* :: inO : ksg_20210308_1700 : 삭제 내용. */
+	/* background-color : #f4f8fa; */
+	/* :: inC : ksg_20210308_1700 : 삭제 내용. */
+	/* :: inO : ksg_20210308_1700 : 추가 내용. */
+	background-color : #fff;
+	/* :: inC : ksg_20210308_1700 : 추가 내용. */
 	font-size : 0;
 	min-width : 1400px;
 }
@@ -2055,7 +2068,12 @@ body{
 	width : 40%;
 }
 .section.horizontalManageSort.AsymDoub2 {
-	width : calc(60% - 5px);
+	/* :: inO : ksg_20210308_1646 : 삭제 내용 */
+	/* width : calc(60% - 5px); */
+	/* :: inC : ksg_20210308_1646 : 삭제 내용 */
+	/* :: inO : ksg_20210308_1646 : 추가 내용 */
+	width : calc(60% - 1vw);
+	/* :: inC : ksg_20210308_1646 : 추가 내용 */
 }
 .tipBox {
 	display : block;
@@ -2094,7 +2112,13 @@ body{
 	margin:0 auto;
 	position:relative;
 	height: auto;
-	background-color: #f4f8fa;
+	/* :: inO : ksg_20210308_1702 : 추가 내용. */
+	min-height : 100%;
+	background-color: #fff;
+	/* :: inC : ksg_20210308_1702 : 추가 내용. */
+	/* :: inO : ksg_20210308_1702 : 삭제 내용. */
+	/* background-color: #f4f8fa; */
+	/* :: inC : ksg_20210308_1702 : 삭제 내용. */
 	overflow : hidden;
 }
 .conGroup.verticalManageSort .searchGroup.inTblSort .tbox.topLineSearchMod {
@@ -2527,10 +2551,15 @@ body{
 	display : inline-block;
 	width : calc(40% - 14px);
 	vertical-align : top;
-	border : 1px solid #d7dae2;
 	position : relative;
 	min-width : 300px;
 	padding-bottom : 40px;
+	/* :: inO : ksg_20210308_1627 : 삭제 내용. */
+	/* border : 1px solid #d7dae2; */
+	/* :: inC : ksg_20210308_1627 : 삭제 내용. */
+	/* :: inO : ksg_20210308_1627 : 추가 내용. */
+	border : 0.1vw solid #d7dae2;
+	/* :: inC : ksg_20210308_1627 : 추가 내용. */
 }
 .btnGroup.horizontalBottomSort {
 	position : absolute;
